@@ -7,6 +7,7 @@ Web de instalación y reparación de porteros automáticos y videoporteros, crea
 ![Portada de escritorio](docs/porteros-desktop-1793002033606.jpg)
 
 - [Portada y municipio en móvil](docs/porteros-mobile-1793002017828.jpg).
+- [Teléfonos por zona en móvil](docs/contactos-movil-1793004436248.jpg).
 - [Auditoría de variedad editorial y límites](docs/content-audit.md), con [muestra reproducible](docs/content-audit.json).
 
 ## Contenido incluido
@@ -18,10 +19,13 @@ Web de instalación y reparación de porteros automáticos y videoporteros, crea
 | Servicios | 8 |
 | Marcas con fotografía propia de fabricante | 7 |
 | Guías prácticas | 5 |
-| Síntomas de avería disponibles | 16 |
-| Preguntas frecuentes disponibles | 24 |
+| Síntomas de avería disponibles | 48 |
+| Preguntas frecuentes disponibles | 48 |
 | Enfoques editoriales locales | 12 |
-| Páginas HTML generadas | 3.845 |
+| Páginas HTML generadas | 3.846 |
+| Municipios con referencias interiores verificadas | 1.600 |
+| Núcleos seleccionados del INE | 5.689 |
+| Distritos municipales documentados | 29 |
 
 Las marcas son **Tegui, BTicino, Legrand, Golmar, Fermax, Comelit y Auta**. Los servicios cubren instalación/renovación, reparación, comunidades, telefonillos y monitores, WiFi/móvil, apertura y accesos, casas/negocios y mantenimiento.
 
@@ -50,7 +54,7 @@ npm run check
 
 **No utilizar `porteros.example` como dominio de producción.** Es exclusivamente un origen de prueba y no está guardado en la configuración del sitio.
 
-El validador comprueba todos los HTML, rutas municipales, enlaces internos y anclas, imágenes/fuentes/JS/CSS, unicidad de títulos/descripciones, canonical, JSON-LD y sitemaps. Las pruebas unitarias cubren normalización del origen, selección reproducible, proximidad geográfica y escape del contenido.
+El validador comprueba la coherencia de versiones de recursos, el teléfono y provincia de las páginas locales, y todos los HTML, rutas municipales, enlaces internos y anclas, imágenes/fuentes/JS/CSS, unicidad de títulos/descripciones, canonical, JSON-LD y sitemaps. Las pruebas cubren asignación completa de teléfonos, rechazo de provincias sin contacto o duplicadas, selección estable de síntomas de distintos tipos, pertenencia municipal de los núcleos, normalización del origen, proximidad geográfica y escape del contenido.
 
 ## Desplegar en Netlify
 
@@ -70,32 +74,40 @@ El origen se obtiene por este orden:
 
 Al asignar el dominio definitivo, establecer `SITE_URL` con ese origen HTTPS, sin ruta ni parámetros, y reconstruir. Los títulos, canonical, JSON-LD y sitemaps se generan juntos para evitar mezclar dominios. Los deploy previews de Netlify (`CONTEXT` distinto de `production`) llevan `noindex`.
 
-Con un origen de producción se generan **3.842 páginas indexables**: el resto son privacidad, información legal y error 404. `sitemap.xml` es un índice de `sitemap-general.xml` y los 19 sitemaps provinciales. El total es 21 archivos XML contando el índice. `robots.txt` incluye el sitemap de producción.
+Con un origen de producción se generan **3.843 páginas indexables**: el resto son privacidad, información legal y error 404. `sitemap.xml` es un índice de `sitemap-general.xml` y los 19 sitemaps provinciales. El total es 21 archivos XML contando el índice. `robots.txt` incluye el sitemap de producción.
 
 Los errores de ruta mantienen un estado 404 mediante la configuración de Netlify. No se usa una reescritura global a la portada.
 
+## Teléfonos por provincia
+
+Los números facilitados por el titular están configurados en `data/site.json`, tanto para llamada como para preparar una consulta en WhatsApp:
+
+| Provincias | Teléfono |
+| --- | --- |
+| Madrid, Guadalajara y Toledo | **614 78 99 45** |
+| Asturias, Cantabria, Bizkaia, Gipuzkoa, Álava, Navarra, La Rioja y las nueve provincias de Castilla y León | **670 042 626** |
+
+Cada página de municipio o provincia selecciona su zona. La consulta y la barra móvil muestran su teléfono. Las páginas generales presentan las dos líneas y requieren elegir provincia; no asignan una por defecto. Cambiar de provincia actualiza el destinatario y los teléfonos de la consulta, limpia la ubicación anterior y retira sugerencias de otra provincia.
+
+El formulario prepara el texto localmente y abre `wa.me` a petición del visitante. El envío se confirma dentro de WhatsApp, y también existe la opción de copiar. Sin JavaScript, la preparación de mensajes queda deshabilitada; los enlaces de llamada siguen funcionando. No se crea una reserva ni se transmite la consulta automáticamente. La asociación del número con una cuenta activa de WhatsApp no se ha comprobado mediante un mensaje real.
+
 ## Datos pendientes del titular
 
-El repositorio inicial estaba vacío y no identificaba dominio, teléfono, WhatsApp, correo ni titular legal. No se han tomado números de otras empresas o de otras webs del propietario.
-
-Completar `data/site.json`, o usar estas variables:
+Siguen pendientes el dominio definitivo, correo, nombre o razón social, NIF y domicilio legal. Se completan en `data/site.json` o mediante variables de entorno:
 
 | Variable | Uso |
 | --- | --- |
 | `SITE_URL` | Origen HTTPS definitivo |
-| `CONTACT_PHONE` | Teléfono comercial, con prefijo +34 y nueve cifras |
-| `CONTACT_WHATSAPP` | Número de WhatsApp, con prefijo +34 y nueve cifras |
+| `CONTACT_PHONE_CENTRO`, `CONTACT_WHATSAPP_CENTRO` | Sustitución opcional de la línea de Madrid, Guadalajara y Toledo |
+| `CONTACT_PHONE_NORTE`, `CONTACT_WHATSAPP_NORTE` | Sustitución opcional de la línea de zona norte y Castilla y León |
 | `CONTACT_EMAIL` | Correo comercial |
 | `LEGAL_NAME` | Titular o razón social |
 | `LEGAL_TAX_ID` | NIF del titular |
 | `LEGAL_ADDRESS` | Domicilio legal |
 
-La consulta funciona en dos modos:
+Los teléfonos de configuración llevan prefijo `+34` y nueve cifras. Las variables genéricas `CONTACT_PHONE` y `CONTACT_WHATSAPP` se conservan como alternativa para una configuración futura sin zonas; no reemplazan las asignaciones provinciales actuales.
 
-- **Sin WhatsApp:** prepara el texto localmente y ofrece copiarlo. No simula un envío ni crea una solicitud de visita.
-- **Con WhatsApp:** abre el mensaje preparado en `wa.me`. El visitante revisa y envía desde WhatsApp; la web no lo envía automáticamente. También permite copiarlo.
-
-El teléfono aparece en la zona de consulta y en el acceso móvil cuando se configura. No se repite en cada bloque de contenido. No se han añadido analítica, píxeles publicitarios ni mapas de terceros. Las páginas informativas de privacidad/titular deben completarse con los datos reales antes de activar la atención comercial.
+No se han añadido analítica, píxeles publicitarios ni mapas de terceros. La información de privacidad y del titular indica expresamente qué datos identificativos quedan pendientes.
 
 ## Organización del código
 
@@ -115,6 +127,11 @@ scripts/components.mjs        Componentes compartidos
 scripts/pages.mjs             Composición de tipos de página
 scripts/utils.mjs             Rutas, selección, escape y proximidad
 scripts/check.mjs             Validación completa del resultado
+scripts/contact.mjs           Asignación de teléfonos por provincia
+scripts/import-localities.py   Importación reproducible del INE
+scripts/audit-content.py       Comparación antes/después con pares fijos
+data/localities.json           Núcleos y distritos con fuente identificada
+tests/contact.test.mjs         Enrutamiento y pertenencia geográfica
 public/assets/site.css        Diseño original y adaptación móvil
 public/assets/site.js         Menú, búsqueda, filtros y consulta
 tests/core.test.mjs            Pruebas del comportamiento crítico
@@ -134,6 +151,12 @@ Cada municipio tiene un H1 centrado en «Instalación y reparación de porteros 
 
 La selección editorial es **determinista**, basada en el código INE. No cambia al azar en cada build ni atribuye necesidades concretas al municipio. Combina enfoques, apartados complementarios, diagnósticos, servicios, marcas y preguntas. Los casos se describen como orientación técnica, nunca como trabajos realizados o averías verificadas en ese pueblo. Todos los servicios siguen accesibles desde cualquier localidad.
 
+El directorio `/averias/` permite buscar entre los 48 casos por palabra o por tipo. Cada municipio incorpora cuatro diagnósticos: uno relacionado con su enfoque y otros tres de tipos diferentes. Todo el catálogo sigue accesible, aunque un caso no aparezca en la selección local.
+
+En 1.600 páginas se añaden referencias interiores documentadas: 5.689 núcleos del Nomenclátor del INE 2025 y los 21 distritos de Madrid y ocho de Bilbao. Los nombres se presentan con su categoría correcta y un enlace a la fuente. Al elegir una referencia, se completa el municipio, la provincia y la zona en el formulario. Se omite el bloque si no hay referencias verificadas. No se infieren códigos postales. [Criterios, límites y reproducción](docs/localities-sources.md).
+
+La auditoría antes/después conserva exactamente los 240 pares originales y distingue el contenido completo del contenido sin la sección geográfica. Así puede comprobarse la reducción de repetición técnica sin atribuirla solamente a los nombres añadidos. [Informe y métricas](docs/content-audit.md).
+
 Una medición de similitud textual es una herramienta interna, no un porcentaje que Google emplee ni una garantía de indexación. La estructura y parte del contenido se comparten entre municipios. La siguiente mejora editorial debe partir de información real: trabajos documentados, condiciones de servicio verificadas y preguntas de clientes; no de inventar reseñas, calles, oficinas o estadísticas.
 
 Referencias SEO: [guía de Google](https://developers.google.com/search/docs/fundamentals/seo-starter-guide), [contenido útil](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [políticas sobre contenido a escala](https://developers.google.com/search/docs/essentials/spam-policies).
@@ -145,6 +168,8 @@ Referencias SEO: [guía de Google](https://developers.google.com/search/docs/fun
 - La población del archivo IGN solo ordena localidades destacadas. No se muestra como cifra actual: la fuente no especifica el año censal de ese campo.
 - Fotos: fuentes oficiales registradas por imagen en `data/brands.json` y `data/hero.json`. Las marcas y fotografías pertenecen a sus respectivos titulares. No se atribuyen a obras propias ni implican servicio técnico oficial.
 - Manrope: fuente local con licencia SIL Open Font License incluida en `public/assets/fonts/OFL-Manrope.txt`.
+- [Fuentes del catálogo de averías](docs/diagnostic-sources.md): documentación oficial de fabricantes y criterios de redacción original.
+- [Núcleos y distritos](docs/localities-sources.md): INE 2025 y ayuntamientos de Madrid y Bilbao; selección, fechas y atribuciones conservadas.
 - Las guías incorporan fuentes técnicas oficiales. WiFi no se equipara a ausencia de cables ni se supone compatibilidad entre equipos solo por tener dos hilos.
 
 ## Estado de entrega

@@ -221,5 +221,296 @@
       "reparacion",
       "instalacion"
     ]
+  },
+  {
+    "id": "timbre-silenciado",
+    "q": "¿Puede estar silenciado el timbre aunque el monitor encienda?",
+    "a": "Sí, determinados terminales permiten reducir o anular la llamada sin apagar las demás funciones. Busca el indicador de silencio y el ajuste previsto en su manual. Si el volumen está activo y no llega el aviso, ya conviene comprobar pulsador, configuración y recorrido de llamada.",
+    "tags": [
+      "reparacion",
+      "telefonillos"
+    ],
+    "sourceIds": [
+      "bticino-classe100"
+    ]
+  },
+  {
+    "id": "volumen-conversacion",
+    "q": "¿Subir el timbre mejora también la voz del visitante?",
+    "a": "No siempre: muchos equipos separan el volumen de llamada del volumen de conversación. Prueba el ajuste de audio mientras mantienes una comunicación, si el manual lo indica. Si solo falla un sentido o la voz sigue siendo débil, informa de ese detalle para revisar el terminal y la placa.",
+    "tags": [
+      "telefonillos",
+      "reparacion"
+    ],
+    "sourceIds": [
+      "bticino-classe100"
+    ]
+  },
+  {
+    "id": "eco-audio",
+    "q": "¿Es normal escuchar mi propia voz en el manos libres?",
+    "a": "Un retorno que dificulta hablar merece revisión. Se compara el comportamiento a ambos lados y con un volumen de uso razonable. La acústica y la respuesta del sistema influyen, pero no conviene atribuir el problema a una pieza sin probarlo. Explica quién oye el eco y desde qué terminal.",
+    "tags": [
+      "reparacion",
+      "mantenimiento"
+    ],
+    "sourceIds": [
+      "bticino-classe100"
+    ]
+  },
+  {
+    "id": "auricular-cordon",
+    "q": "¿Hay que cambiar todo el portero si falla el cable del auricular?",
+    "a": "Primero debe confirmarse que el fallo está en ese componente. Si existe un recambio adecuado, puede valorarse una reparación del terminal; si no, se estudia un sustituto compatible. Conserva la referencia del telefonillo y describe si el sonido cambia al cogerlo, sin tirar del cordón ni desmontarlo.",
+    "tags": [
+      "telefonillos",
+      "reparacion"
+    ],
+    "sourceIds": [
+      "comelit-mini"
+    ]
+  },
+  {
+    "id": "ocupado-placa",
+    "q": "¿El aviso de ocupado significa que el videoportero está averiado?",
+    "a": "Puede indicar que otro usuario está utilizando un canal compartido. Deja terminar la comunicación y vuelve a probar. Si permanece ocupado cuando nadie usa el sistema, anota desde qué placa ocurre y qué señal aparece: esa situación sí necesita una comprobación. Las indicaciones varían entre tecnologías.",
+    "tags": [
+      "comunidades",
+      "mantenimiento"
+    ],
+    "sourceIds": [
+      "golmar-soul",
+      "fermax-ocupado"
+    ]
+  },
+  {
+    "id": "autoencendido-llamada",
+    "q": "¿Puede funcionar la llamada y fallar la consulta de cámara?",
+    "a": "Sí, son situaciones de uso diferentes. El acceso a cámara puede depender de la selección de placa, la disponibilidad del canal o una función configurada. Comprueba si hay imagen cuando alguien llama desde la calle y si falla también desde el monitor. Esa comparación ayuda a orientar la revisión.",
+    "tags": [
+      "wifi",
+      "reparacion"
+    ],
+    "sourceIds": [
+      "fermax-ocupado"
+    ]
+  },
+  {
+    "id": "imagen-noche",
+    "q": "¿Qué se revisa si la cámara solo se ve mal por la noche?",
+    "a": "Se observa la iluminación del acceso, la protección de la cámara y la respuesta del equipo en ese horario. También interesa saber si la imagen queda oscura o deslumbrada. El sistema de iluminación que incorpore la placa debe comprobarse según su referencia; no todas las cámaras se comportan igual.",
+    "tags": [
+      "mantenimiento",
+      "viviendas"
+    ],
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "contraluz-monitor",
+    "q": "¿Un monitor nuevo arregla una imagen a contraluz?",
+    "a": "No se puede garantizar. Si el problema se produce en la escena que capta la cámara, cambiar únicamente la pantalla puede mantenerlo. Antes se valora la posición de la placa, de dónde llega la luz y qué ajustes o mejoras admite el conjunto. Una prueba en el horario afectado resulta útil.",
+    "tags": [
+      "instalacion",
+      "viviendas"
+    ],
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "limpieza-camara",
+    "q": "¿Puedo limpiar por fuera la cámara del portero?",
+    "a": "Consulta las indicaciones de limpieza de su fabricante y limita la actuación a la superficie exterior accesible. No abras la placa ni apliques productos abrasivos o agua a presión. Si el empañado está por dentro, la protección está rota o persiste la falta de nitidez, solicita revisión del conjunto.",
+    "tags": [
+      "mantenimiento",
+      "reparacion"
+    ],
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "secundario-imagen",
+    "q": "¿Por qué el monitor adicional suena sin encender la imagen?",
+    "a": "En algunos sistemas la imagen inicial se reserva a determinados terminales y los demás la muestran al atender o activar la pantalla. Hay que comprobar el papel principal o secundario y las capacidades de la instalación. Si antes funcionaba de otra forma, indica qué se cambió antes de que apareciera el problema.",
+    "tags": [
+      "telefonillos",
+      "viviendas"
+    ],
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "memoria-visitas",
+    "q": "¿Todos los videoporteros guardan las visitas que no atiendo?",
+    "a": "No. La memoria de imágenes o vídeo depende del modelo, sus ajustes y los accesorios disponibles. Algunos terminales solo muestran la llamada en directo. Antes de buscar una avería o contratar una mejora, confirma qué función tiene la referencia instalada y cómo está previsto que se active.",
+    "tags": [
+      "telefonillos",
+      "instalacion"
+    ],
+    "sourceIds": [
+      "comelit-mini",
+      "bticino-classe100"
+    ]
+  },
+  {
+    "id": "hora-visitas",
+    "q": "¿Una fecha incorrecta en las imágenes implica que la cámara falla?",
+    "a": "No necesariamente. La fecha y hora pueden depender de un ajuste local o de la sincronización del equipo. Comprueba el reloj del monitor y si el desfase reaparece después de un corte o una reconexión. Evita borrar la memoria como primera prueba si necesitas conservar alguna imagen.",
+    "tags": [
+      "mantenimiento",
+      "wifi"
+    ],
+    "sourceIds": [
+      "comelit-mini",
+      "auta-onex"
+    ]
+  },
+  {
+    "id": "ruido-cerradura",
+    "q": "¿Oír un clic en la cerradura confirma que el abrepuertas funciona bien?",
+    "a": "El sonido indica una respuesta, pero no confirma que la puerta libere y cierre correctamente. Hay que observar el mecanismo y el ajuste de la hoja, además de comprobar la alimentación que corresponde. Describe si la puerta permanece retenida, roza o queda libre; no la fuerces para compensar el fallo.",
+    "tags": [
+      "accesos",
+      "reparacion"
+    ],
+    "sourceIds": [
+      "fermax-abrepuertas"
+    ]
+  },
+  {
+    "id": "puerta-no-retiene",
+    "q": "¿Por qué el portal queda abierto después de entrar?",
+    "a": "Conviene distinguir que la hoja no alcance su posición de cierre de que el mecanismo quede liberado. También existen funciones de apertura o desbloqueo que pueden estar activadas. Anota qué sucede al cerrar con normalidad para revisar puerta, cierre y mando sin dar por supuesto que falla el telefonillo.",
+    "tags": [
+      "accesos",
+      "mantenimiento"
+    ],
+    "sourceIds": [
+      "fermax-abrepuertas",
+      "comelit-mini"
+    ]
+  },
+  {
+    "id": "tecla-auxiliar",
+    "q": "¿La tecla con un símbolo adicional siempre abre otra puerta?",
+    "a": "No. Una tecla configurable puede accionar una cerradura adicional, luces, intercomunicación u otra función admitida; incluso puede no estar habilitada. Su utilidad depende del sistema y de cómo se haya configurado. Identifica el equipo y el acceso que quieres controlar antes de encargar un accesorio.",
+    "tags": [
+      "accesos",
+      "viviendas"
+    ],
+    "sourceIds": [
+      "bticino-classe100"
+    ]
+  },
+  {
+    "id": "llavero-perdido",
+    "q": "¿Qué conviene hacer si se pierde un llavero del portal?",
+    "a": "Avisa a quien administra el control de acceso para que revise su anulación y, si procede, el alta de otro. El procedimiento depende del lector y de cómo se identifican las credenciales. No es necesario empezar borrando todos los usuarios ni intentar programar el sistema sin autorización.",
+    "tags": [
+      "accesos",
+      "comunidades"
+    ],
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "fallo-una-entrada",
+    "q": "¿Por qué desde un acceso llama bien y desde otro no?",
+    "a": "Las entradas pueden tener placas, configuraciones y recorridos diferentes. Comprueba qué funciones fallan en cada una y si sucede a otros vecinos. Esa comparación permite concentrar la revisión en el acceso afectado y su integración, sin asumir que deba sustituirse el monitor de todas las viviendas.",
+    "tags": [
+      "comunidades",
+      "mantenimiento"
+    ],
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "recambio-afecta-vecinos",
+    "q": "¿Un cambio de telefonillo puede afectar al resto de vecinos?",
+    "a": "Una intervención sobre un sistema compartido exige comprobar tecnología, conexiones y configuración. Si aparecen fallos después de un recambio, facilita las referencias del equipo anterior y del nuevo, y qué viviendas están afectadas. La coincidencia temporal orienta la revisión, aunque no demuestra por sí sola la causa.",
+    "tags": [
+      "telefonillos",
+      "comunidades"
+    ],
+    "sourceIds": [
+      "auta-onex",
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "parpadeo-actualizacion",
+    "q": "¿Debo reiniciar el monitor cuando sus luces parpadean?",
+    "a": "Primero identifica el patrón en el manual del modelo. Puede tratarse de una llamada, un modo activado o una actualización. Si el fabricante confirma que está actualizándose, evita interrumpir el proceso. Si el estado se prolonga o aparece un error, anota el mensaje y consulta antes de restablecer ajustes.",
+    "tags": [
+      "mantenimiento",
+      "wifi"
+    ],
+    "sourceIds": [
+      "fermax-actualizacion"
+    ]
+  },
+  {
+    "id": "compartir-app",
+    "q": "¿Cómo añado otro móvil sin que el mío pierda el acceso?",
+    "a": "Utiliza la opción de invitación o de compartir que contemple la aplicación. En algunos sistemas volver a emparejar el equipo con una cuenta nueva puede sustituir la asociación anterior. El titular debe revisar quién administra la vivienda y qué permisos tendrá la persona invitada antes de realizar el alta.",
+    "tags": [
+      "wifi",
+      "viviendas"
+    ],
+    "sourceIds": [
+      "fermax-usuarios"
+    ]
+  },
+  {
+    "id": "microfono-movil",
+    "q": "¿Por qué veo al visitante en el móvil, pero él no me oye?",
+    "a": "Comprueba que la llamada esté aceptada, el micrófono habilitado y su permiso concedido a la aplicación. También interesa saber si hay auriculares u otro dispositivo de audio conectado al móvil. Compara con una llamada atendida en el monitor para distinguir el funcionamiento de la app del audio de la instalación.",
+    "tags": [
+      "wifi",
+      "reparacion"
+    ],
+    "sourceIds": [
+      "fermax-corte-apertura"
+    ]
+  },
+  {
+    "id": "colgado-al-abrir",
+    "q": "¿Que se corte la conversación al abrir puede ser una función normal?",
+    "a": "Sí, algunos sistemas admiten finalizar la comunicación después de la apertura. También puede ocurrir al abrir desde una vista previa sin haber atendido la llamada. Se comprueba el comportamiento en monitor y app. Si en cambio se apaga y reinicia el equipo, describe esa diferencia para revisar la instalación.",
+    "tags": [
+      "reparacion",
+      "wifi"
+    ],
+    "sourceIds": [
+      "fermax-corte-apertura"
+    ]
+  },
+  {
+    "id": "fotos-aviso",
+    "q": "¿Qué fotos ayudan a preparar una reparación sin desmontar nada?",
+    "a": "Suelen ser útiles una vista exterior de la placa, otra del telefonillo o monitor y la referencia visible del equipo, si se puede leer sin abrirlo. Añade el síntoma y las viviendas afectadas. Evita incluir caras, nombres de vecinos, contraseñas o códigos de emparejamiento que no sean necesarios para la consulta.",
+    "tags": [
+      "reparacion",
+      "comunidades",
+      "mantenimiento"
+    ],
+    "sourceIds": []
+  },
+  {
+    "id": "fallo-esporadico",
+    "q": "¿Cómo describo una avería que no aparece siempre?",
+    "a": "Anota cuándo ocurre, desde qué entrada se llama, dónde se atiende y qué función falla. Interesa saber si coincide con abrir la puerta, usar otro monitor o cambiar de red. Un pequeño registro de varias incidencias permite buscar un patrón sin inventar una causa ni realizar pruebas repetidas sobre los equipos.",
+    "tags": [
+      "mantenimiento",
+      "reparacion",
+      "wifi"
+    ],
+    "sourceIds": []
   }
 ]

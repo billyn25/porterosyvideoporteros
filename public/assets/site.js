@@ -97,12 +97,46 @@
     const status=form.querySelector('[data-form-status]');
     const output=form.querySelector('[data-consultation-output]');
     const copyButton=form.querySelector('[data-copy-query]');
-    const whatsapp=form.dataset.whatsapp;
+    const province=form.querySelector('[name=provincia]');
+    const recipient=form.querySelector('[data-contact-recipient]');
+    const submitLabel=form.querySelector('[data-submit-label]');
+    let previousProvince=form.dataset.province || '';
+    const selectedProvince=()=>province?.selectedOptions[0];
+    const whatsappNumber=()=>selectedProvince()?.dataset.whatsapp || (!province?form.dataset.whatsapp:'');
+    function updateRecipient(clearLocation=false){
+      const option=selectedProvince();
+      if(clearLocation && previousProvince && previousProvince!==option?.value){
+        form.querySelector('[name=localidad]').value='';
+        form.querySelector('[name=zona]').value='';
+      }
+      previousProvince=option?.value || '';
+      const zone=form.querySelector('[name=zona]');
+      if(form.querySelector('#nucleos-consulta') && option?.value===form.dataset.province)zone.setAttribute('list','nucleos-consulta');
+      else zone.removeAttribute('list');
+      document.querySelectorAll('[data-routed-contact]').forEach(block=>{
+        if(!option?.value)return;
+        block.querySelector('.contact-area-label').textContent=option.dataset.contactLabel;
+        const link=block.querySelector('.contact-detail');
+        link.href=`tel:+${option.dataset.phoneDigits}`;
+        link.lastChild.textContent=option.dataset.phone;
+      });
+      document.querySelectorAll('[data-routed-phone]').forEach(link=>{
+        if(!option?.value)return;
+        link.href=`tel:+${option.dataset.phoneDigits}`;
+        link.firstChild.textContent=option.dataset.phone;
+      });
+      if(recipient)recipient.textContent=option?.value?`Contacto para ${option.textContent}: ${option.dataset.phone}.`:'Selecciona la provincia para dirigir tu consulta al teléfono de su zona.';
+      if(submitLabel)submitLabel.textContent=whatsappNumber() || !option?.value?'Continuar en WhatsApp':'Preparar y copiar consulta';
+      output.hidden=true;status.textContent='';
+    }
+    province?.addEventListener('change',()=>updateRecipient(true));
     function message(){
       const values=new FormData(form);
       return [
         'Consulta de porteros y videoporteros',
         `Localidad: ${String(values.get('localidad') || '').trim()}`,
+        `Provincia: ${selectedProvince()?.textContent || ''}`,
+        values.get('zona')?`Zona o referencia: ${String(values.get('zona')).trim()}`:'',
         `Necesidad: ${values.get('servicio')}`,
         `Instalación: ${values.get('inmueble')}`,
         `Marca: ${values.get('marca')}`,
@@ -125,10 +159,14 @@
     form.addEventListener('submit',e=>{
       e.preventDefault();if(!form.reportValidity())return;
       const text=renderMessage();
+      const whatsapp=whatsappNumber();
       if(whatsapp){window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(text)}`,'_blank','noopener,noreferrer');status.textContent='Se ha abierto WhatsApp con tu consulta. Revisa el mensaje y pulsa enviar allí.';}
       else copy(text);
     });
     copyButton?.addEventListener('click',()=>{if(form.reportValidity())copy(renderMessage());});
+    updateRecipient();
+    form.querySelector('[type=submit]').disabled=false;
+    if(copyButton)copyButton.disabled=false;
     const params=new URLSearchParams(location.search);
     if(params.has('servicio')) {
       const service=form.querySelector('[name=servicio]');
@@ -136,4 +174,37 @@
       if(match)service.value=match.value;
     }
   });
+
+  document.querySelectorAll('[data-locality-choice]').forEach(link=>{
+    link.addEventListener('click',()=>{
+      const input=document.querySelector('[name=zona]');
+      if(input){
+        const form=input.closest('[data-query-form]');
+        const province=form.querySelector('[name=provincia]');
+        province.value=link.dataset.localityProvince;
+        province.dispatchEvent(new Event('change',{bubbles:true}));
+        form.querySelector('[name=localidad]').value=link.dataset.localityTown;
+        input.value=link.dataset.localityChoice;
+        setTimeout(()=>input.focus({preventScroll:true}),0);
+      }
+    });
+  });
+
+  const diagnosticFilter=document.querySelector('[data-diagnostic-filter]');
+  if(diagnosticFilter){
+    const search=diagnosticFilter.querySelector('[name=sintoma]');
+    const topic=diagnosticFilter.querySelector('[name=tipo]');
+    const status=diagnosticFilter.querySelector('[data-diagnostic-status]');
+    const cases=[...document.querySelectorAll('[data-diagnostic-topic]')];
+    function filterCases(){
+      const terms=normalize(search.value).split(/\s+/).filter(Boolean);let count=0;
+      cases.forEach(item=>{
+        const match=(!topic.value || topic.value===item.dataset.diagnosticTopic) && terms.every(term=>normalize(item.textContent).includes(term));
+        item.hidden=!match;if(match)count++;
+      });
+      status.textContent=count?`${count} ${count===1?'caso disponible':'casos disponibles'}. Abre el que encaje con tu síntoma.`:'No hay coincidencias. Prueba otro término o elige todos los tipos.';
+    }
+    search.addEventListener('input',filterCases);topic.addEventListener('change',filterCases);
+    diagnosticFilter.addEventListener('submit',event=>{event.preventDefault();filterCases();});
+  }
 })();

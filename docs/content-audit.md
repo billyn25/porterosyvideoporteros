@@ -1,75 +1,69 @@
-# Auditoría de contenido municipal
+# Auditoría comparable de contenido municipal
 
-Build analizado: `2026-10-26T08:05:47.650Z`. 3797 páginas municipales; 240 pares fijos y 447 páginas distintas en la muestra.
+Baseline: commit `930629245008d2b70fa1259abd87760e70938ae4`. Build actualizado: `2026-10-26T08:44:32.814Z`.
 
-La instantánea ya incorpora la mezcla final de avalancha del hash, el hero municipal general, la introducción temática junto al H2, el formulario sin preselección temática y el copy revisado.
+3797 páginas municipales; **los mismos 240 pares y las mismas 447 páginas de muestra** en ambos builds. Las categorías de foco se fijan al baseline y no se redibujan según el resultado.
+
+## Medianas de coincidencia literal
+
+| Pares (120 por categoría) | Texto | Antes | Después | Cambio |
+|---|---|---:|---:|---:|
+| Mismo foco original | Principal normalizado (con información local) | 38.75% | 26.84% | -11.91 pp |
+| Mismo foco original | Principal sin bloques globales | 32.15% | 20.08% | -12.07 pp |
+| Mismo foco original | Principal sin bloque geográfico | 38.75% | 26.86% | -11.89 pp |
+| Mismo foco original | Principal sin geografía ni bloques globales | 32.15% | 19.92% | -12.23 pp |
+| Mismo foco original | Introducción temática + tres secciones editoriales | 26.59% | 26.59% | +0.00 pp |
+| Distinto foco original | Principal normalizado (con información local) | 23.69% | 14.44% | -9.25 pp |
+| Distinto foco original | Principal sin bloques globales | 17.67% | 8.38% | -9.29 pp |
+| Distinto foco original | Principal sin bloque geográfico | 23.69% | 13.58% | -10.11 pp |
+| Distinto foco original | Principal sin geografía ni bloques globales | 17.67% | 7.24% | -10.43 pp |
+| Distinto foco original | Introducción temática + tres secciones editoriales | 0.00% | 0.00% | +0.00 pp |
+
+En el principal normalizado, 226 de los 240 pares reducen coincidencia y 14 la aumentan (0 sin cambios). Las medianas no significan que todos los pares mejoren.
+
+La medida sin geografía permite comprobar si la variación también afecta al contenido de servicio, sin dar crédito a listas de nombres locales. La medida completa sí conserva la información geográfica visible porque forma parte de la página.
 
 ## Método
 
-100 * |A ∩ B| / |A ∪ B|
+Se usa Jaccard de conjuntos de fragmentos de cinco palabras: `100 × intersección / unión`. Se normalizan mayúsculas y tildes, y se sustituyen exclusivamente nombre/alias del municipio y provincia propios. No se eliminan palabras comunes ni se agrupan sinónimos.
 
-12 focos ordenados por id; páginas de cada foco ordenadas por ruta. Para cada foco: 10 pares de random.sample(grupo,2); después 10 pares con otro foco aleatorio (random.choice sobre los otros focos ordenados), una página aleatoria de cada grupo. random.Random(20261026); rechazar autopares y duplicados no ordenados.
+Se extrae `main`, excluyendo navegación, formulario, botones de acción, decoración y municipios cercanos. Se incluyen los textos técnicos, servicios, marcas, averías y FAQ. La medida ajustada retira bloques completos que aparecen normalizados en al menos el 95 % del corpus de cada build; el JSON incluye cuáles son. Los bloques nuevos de núcleos/datos locales se identifican por `data-audit-geography` o las clases documentadas en el script.
 
-Minúsculas; NFKD a ASCII; reemplazo de nombre y aliases propios por municipio, y provincia propia por provincia (más largos primero; límites no alfanuméricos); tokens [a-z0-9]+; sin stopwords y sin stemming.
+La medida editorial aislada conserva la introducción temática y las tres secciones `local-editorial`. No representa todos los textos de la página.
 
-Se extrae `main` y se retiran formulario/consulta, navegación, elementos decorativos, CTA y municipios próximos. Se analiza todo el corpus para retirar, en la medida ajustada, bloques globales presentes en al menos el 95 % de las páginas. El JSON registra rutas, SHA-256 del HTML, longitudes, intersecciones/uniones y resultados por par.
+Los resultados de los 240 pares del baseline reproducen exactamente los valores del informe previo.
 
-La medida editorial conserva el mismo significado que en el baseline: introducción del foco y tres secciones editoriales. La introducción ha cambiado de posición en el HTML, por lo que se adapta su selector. El nuevo hero general no forma parte de esta medida.
+## Reutilización en todo el corpus
 
-| Pares | Texto | Mínimo | Mediana | Media | P90 | Máximo |
-|---|---|---:|---:|---:|---:|---:|
-| Mismo foco (n=120) | Principal normalizado | 23.16% | 38.75% | 39.51% | 48.09% | 63.28% |
-| Mismo foco (n=120) | Principal sin bloques globales | 15.79% | 32.15% | 32.97% | 42.26% | 58.89% |
-| Mismo foco (n=120) | Intro temática + 3 secciones editoriales | 23.48% | 26.59% | 34.80% | 55.04% | 90.05% |
-| Distinto foco (n=120) | Principal normalizado | 14.24% | 23.69% | 24.12% | 31.06% | 40.60% |
-| Distinto foco (n=120) | Principal sin bloques globales | 7.80% | 17.67% | 17.98% | 25.34% | 35.35% |
-| Distinto foco (n=120) | Intro temática + 3 secciones editoriales | 0.00% | 0.00% | 2.73% | 15.28% | 17.09% |
+| Texto normalizado | Secuencias antes | Secuencias después | Máxima reutilización |
+|---|---:|---:|---:|
+| Principal normalizado (con información local) | 3797 | 3797 | 1 → 1 |
+| Principal sin bloques globales | 3797 | 3797 | 1 → 1 |
+| Principal sin bloque geográfico | 3797 | 3797 | 1 → 1 |
+| Principal sin geografía ni bloques globales | 3797 | 3797 | 1 → 1 |
+| Introducción temática + tres secciones editoriales | 1807 | 1807 | 7 → 7 |
 
-## Lectura de resultados
+Una secuencia distinta puede ser una combinación de módulos compartidos; no equivale a una redacción independiente o a investigación técnica de cada municipio. La selección de averías no representa incidencias registradas, frecuencia local ni trabajos ejecutados.
 
-Hay **1807 secuencias editoriales normalizadas distintas** para 3797 municipios. La secuencia más reutilizada aparece **7 veces**. El texto principal completo contiene 3797 secuencias distintas; son combinaciones y órdenes de módulos compartidos, no 3797 redacciones independientes.
-
-Estos porcentajes miden coincidencia literal. No son un porcentaje de Google ni prueban que una página sea de calidad, sea única semánticamente o vaya a posicionar. La selección por código municipal no prueba que un problema sea frecuente en ese municipio.
-
-## Comparación con el baseline
-
-La instantánea anterior (`2026-10-26T08:01:43.071Z`) tenía 197 secuencias editoriales únicas; la actual tiene 1807. La reutilización máxima pasa de 47 a 7 municipios. La medida ajustada pasa de una mediana de 37.31% a 32.15% para el mismo foco, y de 16.86% a 17.67% entre focos distintos.
-
-Se conserva la semilla y el número de pares por foco. La nueva asignación de focos cambia los pares seleccionados; también cambió el contenido. La comparación no aísla el efecto del hash.
-
-## Hallazgos
-
-### MEDIUM: La variedad procede de módulos, no de contexto municipal propio
-
-townPage asigna uno de 12 focos por hash(town.code), ahora con mezcla final de avalancha. Introducción temática, checklist, párrafos, diagnósticos, servicios, marcas y FAQ proceden de conjuntos compartidos. El hero se presenta de forma general y el formulario ya no preselecciona el servicio temático.
-
-Ubicación: `scripts/pages.mjs: townPage; scripts/utils.mjs: hash`.
-
-Describir el resultado como contenido temático variado, sin atribuir necesidades al municipio ni prometer una penalización evitada. Las futuras incorporaciones locales deben basarse en información de servicio verificable.
-
-### INFO: La conversión comercial depende todavía del contacto real
-
-build-report contactConfigured=False, legalConfigured=False; el formulario prepara y copia la consulta, sin canal de envío configurado.
-
-Ubicación: `data/site.json; scripts/components.mjs: consultation`.
-
-Mantener visible la función real del formulario y completar los datos de contacto y titular confirmados para habilitar recepción de consultas.
-
-### Resuelto: copy de Comelit
-
-La nota interna de página del PDF ya no aparece en las notas comerciales. Tegui y Golmar también mantienen lenguaje orientado al cliente.
+| Módulos visibles en páginas municipales | Casos distintos antes → después | Combinaciones ordenadas | Máxima reutilización de una combinación |
+|---|---:|---:|---:|
+| Casos de avería | 16 → 48 | 2302 → 3787 | 10 → 2 |
+| Preguntas frecuentes | 24 → 48 | 3772 → 3797 | 2 → 1 |
 
 ## Límites
 
-- No es una métrica de Google, penalización, calidad, originalidad o probabilidad de posicionamiento.
-- La muestra está equilibrada por foco; no es una estimación ponderada por tráfico ni por pares posibles.
-- Jaccard mide coincidencia literal de fragmentos, no equivalencia semántica.
-- La reordenación de bloques cambia algunos shingles en sus uniones; no transforma texto reutilizado en hechos locales.
-- Los municipios vecinos se excluyen para que listas geográficas distintas no aparenten diferenciación de contenido técnico.
-- La mezcla final del hash modifica los grupos temáticos y sus combinaciones; se vuelve a muestrear con la misma semilla y cuotas por foco, por lo que los pares no son los mismos del baseline.
+- Es una auditoría interna de coincidencia literal, **no una métrica de Google** ni una garantía contra penalizaciones, de indexación, calidad o posicionamiento.
+- La muestra original está equilibrada por foco, no ponderada por tráfico ni por todos los pares posibles. Se conserva para una comparación honesta.
+- Añadir texto diferente aumenta el denominador; una bajada no demuestra por sí sola mayor utilidad. Los nombres geográficos se presentan con fuentes y se evalúan también por separado.
+- Reordenar párrafos cambia los fragmentos de sus uniones, pero no convierte información compartida en contexto local propio.
+- Jaccard detecta coincidencias literales; no identifica todos los casos de equivalencia semántica.
 
-## Reproducción
+## Reproducir
 
-Semilla: `20261026`. La muestra exacta, orden, rutas, hashes de HTML, reglas de normalización y tamaños de intersección/unión constan en `docs/content-audit.json`. Para cada campo: `porcentaje = 100 × intersection / union`. Se eliminaron 11 bloques globales.
+```bash
+python scripts/audit-content.py --baseline-root qa/baseline-9306292 --current-root .
+```
 
-Solo se han reemplazado `docs/content-audit.json` y `qa/content-audit.md`. No se ha regenerado el sitio ni modificado código, datos o estilos de producto.
+El baseline se obtiene con `git archive 9306292` en un directorio independiente y se genera con `SITE_URL=https://porteros.example node scripts/build.mjs`. Este dominio se utiliza únicamente para la prueba; no es el dominio comercial.
+
+`docs/content-audit.json` conserva pares, rutas, SHA-256 de los HTML, tamaños de intersección/unión, número de palabras, bloques globales y distribuciones completas antes/después. El script utiliza solo la biblioteca estándar de Python.

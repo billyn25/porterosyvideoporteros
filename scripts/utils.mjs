@@ -15,6 +15,22 @@ export const hash = value => {
 export function choose(items, seed, count) {
   return items.map(item=>({item,key:hash(`${seed}:${item.id || item.code || item.name}`)})).sort((a,b)=>a.key-b.key).slice(0,count).map(row=>row.item);
 }
+export function selectDiagnostics(items, focusIds, seed, count=4) {
+  const first=choose(items.filter(item=>focusIds.includes(item.id)),`${seed}:focus`,1);
+  const selected=[...first];
+  const topics=new Set(first.map(item=>item.topic || item.scope));
+  const remaining=choose(items.filter(item=>!first.includes(item)),`${seed}:topics`,items.length);
+  for(const item of remaining) {
+    if(selected.length>=count)break;
+    const topic=item.topic || item.scope;
+    if(!topics.has(topic)){selected.push(item);topics.add(topic);}
+  }
+  for(const item of remaining) {
+    if(selected.length>=count)break;
+    if(!selected.includes(item))selected.push(item);
+  }
+  return selected;
+}
 export function distanceKm(a,b){
   const rad=Math.PI/180;const dlat=(b.lat-a.lat)*rad;const dlon=(b.lon-a.lon)*rad;
   const n=Math.sin(dlat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(dlon/2)**2;

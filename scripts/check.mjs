@@ -1,11 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
+import { contactForProvince } from './contact.mjs';
+import { phoneDigits } from './utils.mjs';
 
 // Validate the generated site, without network requests or additional packages.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
 const started = performance.now();
+const contactConfig=JSON.parse(fs.readFileSync(path.join(root,'data/site.json'),'utf8'));
+for(const area of contactConfig.contactAreas || []){
+  area.phone=process.env[`CONTACT_PHONE_${area.id.toUpperCase()}`] || area.phone;
+  area.whatsapp=process.env[`CONTACT_WHATSAPP_${area.id.toUpperCase()}`] || area.whatsapp;
+}
+const expectedAssetVersion=createHash('sha256').update(Buffer.concat(['site.css','site.js'].map(name=>fs.readFileSync(path.join(dist,'assets',name))))).digest('hex').slice(0,10);
 const errors = [];
 const warnings = [];
 const files = new Set();
@@ -81,6 +90,20 @@ function srcsetUrls(value) {
 function parsePage(filename) {
   const html = fs.readFileSync(filename, 'utf8');
   const record = { file: filename, route: routeFor(filename), title: '', description: '', ids: new Set(), links: [], resources: [], canonical: null, indexable: true };
+  for(const name of ['site.css','site.js']){
+    if(!html.includes(`/assets/${name}?v=${expectedAssetVersion}`))issue('error','MIXED_BUILD','La versión del HTML no coincide con los recursos del build.',filename);
+  }
+  if(record.route.startsWith('/porteros-videoporteros/')){
+    const slug=record.route.split('/')[2];
+    const contact=contactForProvince(contactConfig,slug);
+    if(contact){
+      if(!html.includes(`href="tel:+${phoneDigits(contact.phone)}"`))issue('error','CONTACT_PHONE','Falta el teléfono correspondiente a la provincia.',filename);
+      const form=attrs(html.match(/<form\b([^>]*\bdata-query-form\b[^>]*)>/)?.[1] || '');
+      if(form['data-whatsapp']!==phoneDigits(contact.whatsapp))issue('error','CONTACT_WHATSAPP','WhatsApp no corresponde a la provincia.',filename);
+      const selected=html.match(/<select[^>]+id="consulta-provincia"[^>]*>([\s\S]*?)<\/select>/)?.[1]?.match(/<option\s+value="([^"]+)"[^>]*\bselected\b/);
+      if(selected?.[1]!==slug)issue('error','CONTACT_PROVINCE','El formulario no selecciona la provincia de la página.',filename);
+    }
+  }
   const body = html.replace(/<!--[\s\S]*?-->/g, '');
   for (const match of body.matchAll(/<script\b([^>]*?)>([\s\S]*?)<\/script\s*>/gi)) {
     if (attrs(match[1]).type?.toLowerCase() !== 'application/ld+json') continue;

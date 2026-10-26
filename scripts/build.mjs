@@ -4,7 +4,8 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {escapeHtml as e,normalizeOrigin,nearbyTowns,phoneDigits} from './utils.mjs';
 import {pageLayout} from './components.mjs';
-import {homepage,servicesIndex,servicePage,brandsIndex,brandPage,zonesIndex,provincePage,townPage,guidesIndex,guidePage,supportPages} from './pages.mjs';
+import {validateContacts} from './contact.mjs';
+import {homepage,servicesIndex,servicePage,brandsIndex,brandPage,zonesIndex,provincePage,townPage,guidesIndex,guidePage,diagnosticsIndex,supportPages} from './pages.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const out=path.join(root,'dist');
@@ -16,6 +17,11 @@ config.email=process.env.CONTACT_EMAIL || config.email;
 config.legalName=process.env.LEGAL_NAME || config.legalName;
 config.taxId=process.env.LEGAL_TAX_ID || config.taxId;
 config.legalAddress=process.env.LEGAL_ADDRESS || config.legalAddress;
+for(const area of config.contactAreas || []) {
+  const suffix=area.id.toUpperCase();
+  area.phone=process.env[`CONTACT_PHONE_${suffix}`] || area.phone;
+  area.whatsapp=process.env[`CONTACT_WHATSAPP_${suffix}`] || area.whatsapp;
+}
 for(const field of ['phone','whatsapp']){
   if(!config[field])continue;
   const digits=phoneDigits(config[field]);
@@ -27,11 +33,12 @@ const indexable=Boolean(baseUrl && !isPreview && !/localhost|127\.0\.0\.1|\.loca
 const towns=read('municipalities');
 const provinceOrder=['asturias','cantabria','bizkaia','gipuzkoa','leon','palencia','alava','navarra','zamora','valladolid','burgos','la-rioja','salamanca','avila','segovia','soria','toledo','madrid','guadalajara'];
 const provinces=provinceOrder.map(slug=>{const members=towns.filter(t=>t.provinceSlug===slug);if(!members.length)throw new Error(`Provincia vacía: ${slug}`);return {slug,name:members[0].province,code:members[0].provinceCode,towns:members};});
+validateContacts(config,provinces);
 const counts=new Map();for(const town of towns)counts.set(town.name,(counts.get(town.name)||0)+1);
 const duplicateTownNames=new Set([...counts].filter(([,count])=>count>1).map(([name])=>name));
 const assets=['public/assets/site.css','public/assets/site.js'].map(p=>fs.readFileSync(path.join(root,p)));
 const assetVersion=createHash('sha256').update(Buffer.concat(assets)).digest('hex').slice(0,10);
-const ctx={config,baseUrl,indexable,towns,provinces,duplicateTownNames,assetVersion,year:new Date().getUTCFullYear(),brands:read('brands'),hero:read('hero'),services:read('services'),diagnostics:read('diagnostics'),faqs:read('faqs'),guides:read('guides'),localFocus:read('local-focus')};
+const ctx={config,baseUrl,indexable,towns,provinces,duplicateTownNames,assetVersion,year:new Date().getUTCFullYear(),brands:read('brands'),hero:read('hero'),services:read('services'),diagnostics:read('diagnostics'),faqs:read('faqs'),guides:read('guides'),localFocus:read('local-focus'),localities:read('localities')};
 if(ctx.brands.length!==7 || provinces.length!==19)throw new Error('Cobertura de marcas/provincias incompleta.');
 
 fs.mkdirSync(out,{recursive:true});
@@ -47,7 +54,7 @@ function writePage(page){
   fs.writeFileSync(target,pageLayout(ctx,page));
   pageRecords.push({path:page.path,title:page.title,description:page.description,kind:page.kind,indexable:indexable&&!page.noindex,focusId:page.focusId,selection:page.selection});
 }
-writePage(homepage(ctx));writePage(servicesIndex(ctx));writePage(brandsIndex(ctx));writePage(zonesIndex(ctx));writePage(guidesIndex(ctx));
+writePage(homepage(ctx));writePage(servicesIndex(ctx));writePage(brandsIndex(ctx));writePage(zonesIndex(ctx));writePage(guidesIndex(ctx));writePage(diagnosticsIndex(ctx));
 for(const s of ctx.services)writePage(servicePage(ctx,s));
 for(const b of ctx.brands)writePage(brandPage(ctx,b));
 for(const g of ctx.guides)writePage(guidePage(ctx,g));
@@ -71,7 +78,7 @@ if(baseUrl){
 fs.writeFileSync(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\n${baseUrl&&indexable?`\nSitemap: ${baseUrl}/sitemap.xml\n`:''}`);
 if(isPreview || !baseUrl)fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Robots-Tag: noindex, follow\n');
 fs.mkdirSync(path.join(root,'qa'),{recursive:true});
-const report={generatedAt:new Date().toISOString(),baseUrl,indexable,stats:{pages:pageRecords.length,municipalities:towns.length,provinces:provinces.length,brands:ctx.brands.length,services:ctx.services.length,guides:ctx.guides.length,indexablePages:pageRecords.filter(p=>p.indexable).length},contactConfigured:Boolean(config.phone||config.whatsapp||config.email),legalConfigured:Boolean(config.legalName&&config.taxId&&config.legalAddress&&config.email),pages:pageRecords};
+const report={generatedAt:new Date().toISOString(),baseUrl,indexable,stats:{pages:pageRecords.length,municipalities:towns.length,provinces:provinces.length,brands:ctx.brands.length,services:ctx.services.length,guides:ctx.guides.length,indexablePages:pageRecords.filter(p=>p.indexable).length},contactConfigured:Boolean(config.phone||config.whatsapp||config.email||config.contactAreas?.length),legalConfigured:Boolean(config.legalName&&config.taxId&&config.legalAddress&&config.email),pages:pageRecords};
 fs.writeFileSync(path.join(root,'qa','build-report.json'),JSON.stringify(report,null,2));
 console.log(`Generadas ${pageRecords.length} páginas: ${towns.length} municipios, ${provinces.length} provincias, ${ctx.services.length} servicios, ${ctx.brands.length} marcas y ${ctx.guides.length} guías.`);
 console.log(baseUrl?`Origen: ${baseUrl}. Indexación: ${indexable?'activada':'desactivada en vista previa'}.`:'Build local sin dominio: noindex; Netlify utilizará SITE_URL o URL en producción.');

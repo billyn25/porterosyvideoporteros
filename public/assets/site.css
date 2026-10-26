@@ -23,3 +23,32 @@
 .local-editorial{margin-top:25px}.local-editorial h3{font-size:1.16rem;line-height:1.35;margin-bottom:11px}.local-editorial p{font-size:.92rem}.local-focus{align-self:start}
 
 @media(max-width:760px){.hero-image{object-position:left center}.hero-art--product .hero-image{object-position:center}}
+
+/* Referencias locales, contacto por provincia y consulta de síntomas. */
+.contact-area{margin-top:27px;padding-top:21px;border-top:1px solid #52605a}
+.contact-area-label{font-size:.78rem;font-weight:600;margin:0!important;color:#cbd5cd!important}
+.contact-area .contact-detail{margin-top:8px;letter-spacing:.02em}
+.field-optional{font-weight:400;color:#bbc8be}
+.form-recipient{grid-column:1/-1;font-size:.81rem;color:#e9c4ae;margin:0}
+.locality-heading{max-width:780px;margin-bottom:30px}
+.locality-heading h2{margin-bottom:20px}
+.locality-heading>p:last-child{max-width:700px;color:var(--muted)}
+.locality-group+.locality-group{margin-top:35px}
+.locality-group h3{font-size:1rem;margin-bottom:18px}
+.locality-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;list-style:none;padding:0;margin:0}
+.locality-list li{min-width:0}
+.locality-list a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:55px;padding:14px 17px;border:1px solid #bcc9ba;background:#ffffff60;border-radius:4px;font-size:.85rem;font-weight:600;transition:background .2s,border-color .2s}
+.locality-list a:hover{background:var(--paper);border-color:var(--ink)}
+.locality-list a .arrow{width:17px;min-width:17px}
+.locality-source,.locality-note{font-size:.76rem;color:var(--muted);max-width:850px;line-height:1.7;margin:18px 0 0}
+.locality-source a{text-decoration:underline;text-underline-offset:3px}
+.locality-note{margin-top:26px}
+.diagnostic-intro>.text-link{display:table;margin-top:18px}
+.diagnostic-filter{display:grid;grid-template-columns:1.4fr 1fr;gap:22px;max-width:900px}
+.diagnostic-filter .field label{color:var(--ink);font-size:.85rem}
+.diagnostic-filter .field input,.diagnostic-filter .field select,.diagnostic-filter .field option{color:var(--ink);background:#fff;border-color:var(--line)}
+.diagnostic-filter .field input::placeholder{color:var(--muted)}
+.diagnostic-filter>p,.diagnostic-filter>noscript{grid-column:1/-1;font-size:.86rem;color:var(--muted);margin:0}
+body[data-page="diagnostics"] .diagnostic-intro{align-self:start;position:sticky;top:120px}
+@media(max-width:760px){.locality-list{grid-template-columns:repeat(2,minmax(0,1fr))}.locality-list a{font-size:.79rem;padding:13px 12px}.locality-heading h2 br{display:none}body[data-page="diagnostics"] .diagnostic-intro{position:static}.diagnostic-filter{grid-template-columns:1fr}}
+@media(max-width:460px){.locality-list{grid-template-columns:1fr}.form-recipient{grid-column:1}.contact-detail{font-size:1.35rem}}

@@ -11,7 +11,8 @@
       "Preguntar si el problema afecta también a otra vivienda."
     ],
     "nextStep": "Indica si no suena nunca o solo a veces y si las demás funciones responden.",
-    "serviceId": "reparacion"
+    "serviceId": "reparacion",
+    "topic": "llamada"
   },
   {
     "id": "audio-un-sentido",
@@ -25,7 +26,8 @@
       "Comparar el resultado con otro vecino si es posible."
     ],
     "nextStep": "Describe el sentido del fallo para orientar la comprobación de micrófono, altavoz y conexiones.",
-    "serviceId": "reparacion"
+    "serviceId": "reparacion",
+    "topic": "audio"
   },
   {
     "id": "ruido-audio",
@@ -39,7 +41,8 @@
       "Anotar si comenzó después de sustituir un terminal."
     ],
     "nextStep": "Una prueba comparativa permite decidir qué parte de la instalación revisar primero.",
-    "serviceId": "reparacion"
+    "serviceId": "reparacion",
+    "topic": "audio"
   },
   {
     "id": "sin-imagen",
@@ -53,7 +56,8 @@
       "Averiguar si otro monitor del edificio muestra imagen."
     ],
     "nextStep": "Envía el modelo y explica si la pantalla está negra, iluminada o muestra un mensaje.",
-    "serviceId": "reparacion"
+    "serviceId": "reparacion",
+    "topic": "imagen"
   },
   {
     "id": "imagen-intermitente",
@@ -67,7 +71,8 @@
       "Registrar si el equipo vuelve a su pantalla inicial."
     ],
     "nextStep": "Describe una secuencia que permita reproducir el fallo sin desmontar los equipos.",
-    "serviceId": "mantenimiento"
+    "serviceId": "mantenimiento",
+    "topic": "imagen"
   },
   {
     "id": "puerta-no-abre",
@@ -81,7 +86,8 @@
       "Indicar si la puerta roza o necesita empujarse para cerrar."
     ],
     "nextStep": "Especifica si hay sonido en la cerradura y evita forzar el mecanismo.",
-    "serviceId": "accesos"
+    "serviceId": "accesos",
+    "topic": "apertura"
   },
   {
     "id": "abre-sin-orden",
@@ -95,7 +101,8 @@
       "Comprobar únicamente los modos de uso visibles del terminal."
     ],
     "nextStep": "Solicita revisión del acceso y explica si el cierre vuelve a retener en algún momento.",
-    "serviceId": "accesos"
+    "serviceId": "accesos",
+    "topic": "apertura"
   },
   {
     "id": "todos-sin-servicio",
@@ -109,7 +116,8 @@
       "Anotar si coincide con un corte eléctrico o trabajos en el edificio."
     ],
     "nextStep": "Coordina el aviso con la persona responsable de la comunidad para facilitar el acceso a los equipos comunes.",
-    "serviceId": "comunidades"
+    "serviceId": "comunidades",
+    "topic": "sistema"
   },
   {
     "id": "varias-viviendas",
@@ -123,7 +131,8 @@
       "Indicar si hubo una sustitución reciente de terminal."
     ],
     "nextStep": "Traslada la relación de viviendas y funciones afectadas sin manipular la línea comunitaria.",
-    "serviceId": "mantenimiento"
+    "serviceId": "mantenimiento",
+    "topic": "sistema"
   },
   {
     "id": "llamada-equivocada",
@@ -137,7 +146,8 @@
       "Indicar si el problema comenzó después de una intervención."
     ],
     "nextStep": "Prepara la correspondencia observada para revisar identificación, conexiones o direcciones según el sistema.",
-    "serviceId": "comunidades"
+    "serviceId": "comunidades",
+    "topic": "llamada"
   },
   {
     "id": "wifi-offline",
@@ -151,7 +161,8 @@
       "Anotar si cambió el router, el nombre de red o la contraseña."
     ],
     "nextStep": "Indica modelo, aplicación y mensaje mostrado; no compartas contraseñas en el formulario.",
-    "serviceId": "wifi"
+    "serviceId": "wifi",
+    "topic": "conectividad"
   },
   {
     "id": "app-sin-aviso",
@@ -165,7 +176,8 @@
       "Comprobar si otro usuario autorizado recibe la llamada."
     ],
     "nextStep": "Facilita el nombre de la app y el sistema del móvil para seguir las comprobaciones apropiadas.",
-    "serviceId": "wifi"
+    "serviceId": "wifi",
+    "topic": "conectividad"
   },
   {
     "id": "cambio-router",
@@ -179,7 +191,8 @@
       "Confirmar que el videoportero continúa funcionando en el monitor."
     ],
     "nextStep": "Podemos revisar la reconexión y probar la recepción remota con el equipo identificado.",
-    "serviceId": "wifi"
+    "serviceId": "wifi",
+    "topic": "conectividad"
   },
   {
     "id": "pulsador-falla",
@@ -193,7 +206,8 @@
       "Indicar si requiere varias pulsaciones o no responde nunca."
     ],
     "nextStep": "La referencia de la placa permite valorar recambio, reparación o adaptación.",
-    "serviceId": "reparacion"
+    "serviceId": "reparacion",
+    "topic": "llamada"
   },
   {
     "id": "placa-humedad",
@@ -207,7 +221,8 @@
       "Indicar qué funciones y viviendas quedan afectadas."
     ],
     "nextStep": "No abras la placa; describe el comportamiento para revisar el equipo y su montaje.",
-    "serviceId": "mantenimiento"
+    "serviceId": "mantenimiento",
+    "topic": "sistema"
   },
   {
     "id": "llamada-insuficiente",
@@ -221,6 +236,587 @@
       "Explicar si se busca otro punto de atención o una señal visual."
     ],
     "nextStep": "Estudiamos una mejora compatible con la instalación y con la necesidad concreta de la persona.",
-    "serviceId": "telefonillos"
+    "serviceId": "telefonillos",
+    "topic": "uso"
+  },
+  {
+    "id": "audio-bajo",
+    "title": "La voz llega muy baja aunque el timbre se oye",
+    "symptom": "audio",
+    "scope": "vivienda",
+    "summary": "El volumen de conversación y el de llamada pueden regularse por separado. Si la voz sigue siendo débil después de comprobar el ajuste de usuario, interesa saber si el visitante oye bien y si sucede también en otros terminales.",
+    "checks": [
+      "Probar una conversación con una persona situada frente a la placa.",
+      "Consultar el control de volumen de conversación del modelo, sin confundirlo con el timbre.",
+      "Anotar si la dificultad está en ambos sentidos o solo al escuchar."
+    ],
+    "nextStep": "Una foto del terminal y la dirección del audio afectada ayudan a preparar la revisión.",
+    "serviceId": "reparacion",
+    "topic": "audio",
+    "sourceIds": [
+      "bticino-classe100"
+    ]
+  },
+  {
+    "id": "audio-entrecortado",
+    "title": "La conversación se corta en fragmentos",
+    "symptom": "audio",
+    "scope": "vivienda",
+    "summary": "Conviene separar un audio entrecortado en el terminal de una conversación que falla únicamente en el móvil. En el primer caso se revisa la instalación; en el segundo se comprueba también la conexión remota. Un mensaje que llega no garantiza que el audio sea estable.",
+    "checks": [
+      "Comparar una llamada atendida en el monitor con otra atendida desde la app, si existe.",
+      "Observar si desaparece la voz, la imagen o ambas a la vez.",
+      "Indicar si el visitante también percibe los cortes."
+    ],
+    "nextStep": "Describe dónde atendías la llamada y qué funciones se interrumpieron.",
+    "serviceId": "reparacion",
+    "topic": "audio",
+    "sourceIds": [
+      "fermax-prueba-local"
+    ]
+  },
+  {
+    "id": "eco-manos-libres",
+    "title": "Se oye la propia voz o cuesta hablar a la vez",
+    "symptom": "audio",
+    "scope": "vivienda",
+    "summary": "En manos libres puede percibirse retorno de voz o una conversación poco natural. Antes de intervenir se compara el comportamiento en ambos extremos y se comprueba el ajuste de volumen accesible. La respuesta del equipo puede variar según su tecnología de audio.",
+    "checks": [
+      "Realizar la prueba hablando por turnos y a distancia normal del monitor.",
+      "Señalar en qué lado se escucha el eco.",
+      "Comprobar si el problema aparece con una única placa o con todas."
+    ],
+    "nextStep": "Con el modelo identificado revisamos ajustes y funcionamiento de audio, sin elevar indiscriminadamente el volumen.",
+    "serviceId": "reparacion",
+    "topic": "audio",
+    "sourceIds": [
+      "bticino-classe100"
+    ]
+  },
+  {
+    "id": "auricular-contacto",
+    "title": "El sonido cambia al coger o mover el auricular",
+    "symptom": "audio",
+    "scope": "vivienda",
+    "summary": "Si la comunicación cambia durante el uso normal del auricular, conviene revisar ese terminal antes de proponer una sustitución de toda la comunidad. El cable flexible, el descolgado y los componentes de audio requieren comprobación; el síntoma no confirma por sí solo cuál falla.",
+    "checks": [
+      "Explicar si se pierde la escucha, el micrófono o toda la conversación.",
+      "Observar el estado exterior del cordón sin tirar de él.",
+      "Indicar si el auricular queda bien apoyado al colgar."
+    ],
+    "nextStep": "Facilita una foto del telefonillo y cuenta cuándo cambia el sonido, sin abrir su carcasa.",
+    "serviceId": "telefonillos",
+    "topic": "audio",
+    "sourceIds": [
+      "comelit-mini"
+    ]
+  },
+  {
+    "id": "pulsador-se-queda",
+    "title": "El pulsador queda hundido o provoca llamadas repetidas",
+    "symptom": "llamada",
+    "scope": "comunidad",
+    "summary": "Una tecla que no recupera su posición merece una revisión mecánica y funcional de la placa. También hay que comprobar si el aviso repetido corresponde al mismo pulsador o a otra orden del sistema. No conviene bloquear la tecla con objetos.",
+    "checks": [
+      "Identificar el botón y observar si vuelve a su posición habitual.",
+      "Preguntar si las llamadas llegan siempre a la misma vivienda.",
+      "Anotar si comenzó tras un golpe, limpieza o cambio de tarjetero."
+    ],
+    "nextStep": "Una foto exterior de la placa permite estudiar el recambio o la intervención necesaria.",
+    "serviceId": "reparacion",
+    "topic": "llamada",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "llamada-corta",
+    "title": "El aviso termina antes de poder atender",
+    "symptom": "llamada",
+    "scope": "vivienda",
+    "summary": "El tiempo de llamada está limitado en muchos sistemas. Si antes daba tiempo a contestar y ahora no, hay que distinguir ese límite de una cancelación, un segundo terminal que atiende o un corte real. Medir la duración ayuda más que describirlo como un fallo aleatorio.",
+    "checks": [
+      "Cronometrar aproximadamente cuánto dura el aviso sin contestar.",
+      "Comprobar si otro terminal o usuario de la app atiende la misma llamada.",
+      "Anotar si la placa vuelve a reposo o sigue indicando una comunicación."
+    ],
+    "nextStep": "Indica duración, modelo y si ocurre en todas las llamadas para revisar la secuencia.",
+    "serviceId": "reparacion",
+    "topic": "llamada",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "dos-viviendas-suenan",
+    "title": "Dos viviendas distintas reciben la misma llamada",
+    "symptom": "llamada",
+    "scope": "comunidad",
+    "summary": "Hay instalaciones con varios terminales para una sola vivienda, pero dos pisos independientes no deberían confundirse con ese uso. Se comprueba la correspondencia de pulsadores y direcciones, especialmente si el comportamiento apareció después de una sustitución.",
+    "checks": [
+      "Anotar qué botón se pulsa y qué dos viviendas reciben el aviso.",
+      "Repetir la prueba desde otra entrada si la hay.",
+      "Identificar los terminales cambiados recientemente."
+    ],
+    "nextStep": "La relación de pulsadores y destinos permite revisar la asignación sin alterar equipos de otros vecinos.",
+    "serviceId": "comunidades",
+    "topic": "llamada",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "segundo-monitor-sin-video",
+    "title": "Suenan los dos monitores, pero solo uno muestra vídeo",
+    "symptom": "imagen",
+    "scope": "vivienda",
+    "summary": "En ciertas instalaciones el monitor principal y los adicionales no encienden la imagen de la misma forma. Que un segundo equipo suene con la pantalla apagada puede depender de su configuración y del diseño del sistema. Se verifica el comportamiento previsto para esa referencia.",
+    "checks": [
+      "Indicar cuántos monitores hay dentro de la vivienda.",
+      "Comprobar si el segundo muestra imagen al atender con sus controles normales.",
+      "Señalar si siempre fue así o cambió después de una intervención."
+    ],
+    "nextStep": "Revisamos el papel de cada monitor y sus requisitos antes de dar la pantalla por averiada.",
+    "serviceId": "telefonillos",
+    "topic": "imagen",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "tono-ocupado",
+    "title": "La placa indica ocupado al intentar llamar",
+    "symptom": "llamada",
+    "scope": "comunidad",
+    "summary": "El aviso de ocupado puede ser normal mientras otra persona utiliza un canal compartido. Resulta distinto si permanece cuando nadie está atendiendo. La prueba debe hacerse dejando terminar las comunicaciones y observando qué acceso muestra la indicación.",
+    "checks": [
+      "Esperar a que concluya la llamada anterior y volver a probar una vez.",
+      "Anotar si afecta a una placa o a todas las entradas.",
+      "Preguntar si algún terminal mantiene una conversación o una cámara abierta."
+    ],
+    "nextStep": "Si el aviso continúa en reposo, describe la secuencia y las luces o el texto de la placa.",
+    "serviceId": "comunidades",
+    "topic": "llamada",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "autoencendido-no-disponible",
+    "title": "La cámara no se abre al consultarla desde el monitor o la app",
+    "symptom": "imagen",
+    "scope": "conectividad",
+    "summary": "El autoencendido puede estar limitado cuando el canal está ocupado o la función no está habilitada. Una llamada desde la calle y una consulta de cámara son pruebas diferentes. Conviene comprobar ambas sin modificar la configuración del edificio.",
+    "checks": [
+      "Leer el mensaje exacto y comprobar si hay una llamada en curso.",
+      "Probar la función habitual de cámara desde el terminal físico.",
+      "Indicar si se ve imagen cuando otra persona llama desde la placa."
+    ],
+    "nextStep": "Compara el resultado local y remoto para orientar la revisión del acceso a vídeo.",
+    "serviceId": "wifi",
+    "topic": "imagen",
+    "sourceIds": [
+      "fermax-ocupado"
+    ]
+  },
+  {
+    "id": "imagen-nocturna",
+    "title": "De día se ve bien y de noche no se distingue al visitante",
+    "symptom": "imagen",
+    "scope": "acceso",
+    "summary": "La comparación entre día y noche orienta hacia las condiciones de iluminación y la respuesta de la cámara. El equipo puede incorporar luz propia, pero su alcance y comportamiento dependen del modelo. La solución se valora mirando la posición real del visitante y de la placa.",
+    "checks": [
+      "Describir si la escena queda oscura, deslumbrada o pierde detalle.",
+      "Observar desde fuera si hay suciedad o algún objeto tapando cámara o iluminación.",
+      "Indicar si se han cambiado las luces próximas al acceso."
+    ],
+    "nextStep": "Con una imagen de la placa y el horario del fallo se puede preparar una comprobación adecuada.",
+    "serviceId": "mantenimiento",
+    "topic": "imagen",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "imagen-contraluz",
+    "title": "La cara aparece oscura frente a un fondo muy claro",
+    "symptom": "imagen",
+    "scope": "acceso",
+    "summary": "Una escena a contraluz no se corrige necesariamente cambiando el monitor. La orientación de la cámara, la luz de fondo y los ajustes disponibles condicionan lo que se ve. Se estudia la situación en el acceso antes de decidir una mejora.",
+    "checks": [
+      "Anotar a qué hora aparece el problema.",
+      "Comprobar si cambia cuando el visitante se coloca en su posición habitual.",
+      "Señalar focos, cristales o luz solar que entren de frente en la cámara."
+    ],
+    "nextStep": "Facilita una descripción del encuadre para valorar ubicación, iluminación y equipo.",
+    "serviceId": "instalacion",
+    "topic": "imagen",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "imagen-borrosa",
+    "title": "La imagen ha perdido nitidez o parece empañada",
+    "symptom": "imagen",
+    "scope": "acceso",
+    "summary": "Hay que distinguir una pantalla con poco detalle de una cámara cuya protección exterior está sucia, rayada o condensada. Si todos los vecinos ven la misma escena borrosa, ese dato ayuda a localizar la revisión. No demuestra por sí solo que deba cambiarse la cámara.",
+    "checks": [
+      "Comparar la imagen en otro monitor cuando sea posible.",
+      "Observar la ventana de cámara desde el exterior sin desmontarla.",
+      "Anotar si la pérdida de nitidez es continua o aparece en determinadas condiciones."
+    ],
+    "nextStep": "Evita productos abrasivos y prepara una foto del estado exterior para consultar el mantenimiento adecuado.",
+    "serviceId": "mantenimiento",
+    "topic": "imagen",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "imagen-bandas",
+    "title": "Aparecen bandas, saltos o deformaciones en el vídeo",
+    "symptom": "imagen",
+    "scope": "comunidad",
+    "summary": "Una imagen deformada requiere revisar cómo llega la señal y qué parte de la instalación comparte el defecto. Es útil diferenciar las bandas visibles en el propio monitor de las que aparecen únicamente al fotografiar su pantalla con un móvil.",
+    "checks": [
+      "Confirmar si el defecto se aprecia a simple vista en el monitor.",
+      "Identificar las viviendas y placas en las que ocurre.",
+      "Anotar si comenzó después de obras, un recambio o la incorporación de otro equipo."
+    ],
+    "nextStep": "Describe la distribución del fallo para comprobar señal, alimentación y compatibilidad.",
+    "serviceId": "reparacion",
+    "topic": "imagen",
+    "sourceIds": [
+      "fermax-prueba-local"
+    ]
+  },
+  {
+    "id": "camara-equivocada",
+    "title": "La imagen corresponde a otra entrada",
+    "symptom": "imagen",
+    "scope": "comunidad",
+    "summary": "En edificios con varios accesos puede existir selección de cámaras y asociación entre placa y apertura. Una identificación confusa exige comprobar nombres, direcciones y funcionamiento de cada entrada. Conviene resolverlo antes de utilizar una orden de apertura cuyo destino no esté claro.",
+    "checks": [
+      "Anotar desde qué puerta se realiza la llamada y cuál aparece en pantalla.",
+      "Comprobar si ocurre al recibir llamadas o solo al recorrer cámaras.",
+      "Señalar si se cambió una placa o se renombró un acceso."
+    ],
+    "nextStep": "Facilita la relación de entradas para revisar la correspondencia entre llamada, imagen y mando.",
+    "serviceId": "comunidades",
+    "topic": "imagen",
+    "sourceIds": [
+      "fermax-puertas"
+    ]
+  },
+  {
+    "id": "pantalla-tactil",
+    "title": "La pantalla se ilumina, pero no responde al tocar",
+    "symptom": "comodidad",
+    "scope": "vivienda",
+    "summary": "Algunos monitores bloquean la superficie táctil en reposo o requieren un botón previo para activarla. Si los controles siguen sin responder durante el uso previsto, interesa distinguir un bloqueo de interfaz de un problema del panel táctil.",
+    "checks": [
+      "Comprobar en el manual cómo se activa la pantalla.",
+      "Indicar si responden los botones físicos y si entra una llamada.",
+      "Observar si falla toda la superficie o una zona concreta."
+    ],
+    "nextStep": "Anota el modelo y cualquier mensaje visible; no hagas un restablecimiento de fábrica sin conocer sus efectos.",
+    "serviceId": "telefonillos",
+    "topic": "uso",
+    "sourceIds": [
+      "auta-onex"
+    ]
+  },
+  {
+    "id": "brillo-ajuste",
+    "title": "El menú se ve bien, pero la imagen de cámara está demasiado clara u oscura",
+    "symptom": "imagen",
+    "scope": "vivienda",
+    "summary": "La imagen de la cámara puede tener ajustes separados de la luminosidad del menú. Cuando solo un monitor muestra un aspecto distinto al de los demás, conviene revisar primero sus controles de usuario y comparar con la configuración habitual.",
+    "checks": [
+      "Distinguir si el problema afecta al menú, al vídeo o a ambos.",
+      "Consultar los ajustes de brillo, contraste y color disponibles en ese modelo.",
+      "Comparar el mismo acceso en otro terminal si se dispone de él."
+    ],
+    "nextStep": "Explica qué parte de la pantalla se ve mal para evitar sustituir una cámara sin comprobar los ajustes.",
+    "serviceId": "telefonillos",
+    "topic": "imagen",
+    "sourceIds": [
+      "bticino-classe100"
+    ]
+  },
+  {
+    "id": "memoria-no-guarda",
+    "title": "No quedan imágenes de las llamadas perdidas",
+    "symptom": "comodidad",
+    "scope": "vivienda",
+    "summary": "La captura de visitas es una función adicional que no incorporan todos los monitores. En los que la admiten, puede depender del modo de memoria, del almacenamiento y de cuándo se atiende la llamada. Se comprueba el funcionamiento previsto sin asumir que el equipo graba continuamente.",
+    "checks": [
+      "Confirmar que la referencia tiene memoria de visitas.",
+      "Revisar la indicación de memoria y los ajustes de usuario descritos en el manual.",
+      "Anotar si no guarda ninguna llamada o solo algunas."
+    ],
+    "nextStep": "Consulta con el modelo exacto y evita borrar o formatear la memoria para hacer una prueba.",
+    "serviceId": "mantenimiento",
+    "topic": "uso",
+    "sourceIds": [
+      "comelit-mini"
+    ]
+  },
+  {
+    "id": "fecha-grabaciones",
+    "title": "Las visitas guardadas muestran una hora incorrecta",
+    "symptom": "comodidad",
+    "scope": "vivienda",
+    "summary": "Una hora errónea puede hacer difícil identificar cuándo se recibió una visita aunque la llamada funcione. Se revisan fecha, zona horaria y sincronización disponibles en el modelo, especialmente si el desfase apareció tras un corte de suministro o un cambio de conexión.",
+    "checks": [
+      "Comparar la hora del monitor con la real.",
+      "Anotar si el desfase es fijo o si vuelve a cambiar después de corregirlo.",
+      "Comprobar el ajuste de fecha y hora desde el menú de usuario."
+    ],
+    "nextStep": "Facilita el modelo y el desfase observado; conserva las imágenes que necesites antes de cualquier intervención.",
+    "serviceId": "mantenimiento",
+    "topic": "uso",
+    "sourceIds": [
+      "comelit-mini",
+      "auta-onex"
+    ]
+  },
+  {
+    "id": "segunda-puerta-no-abre",
+    "title": "Funciona la entrada principal, pero no la segunda puerta",
+    "symptom": "apertura",
+    "scope": "acceso",
+    "summary": "La segunda apertura puede utilizar una salida o un accesorio diferente al de la entrada principal. Por eso, que una puerta funcione no confirma el estado de la otra. Se revisan el mando asignado, el elemento auxiliar y el mecanismo de ese acceso.",
+    "checks": [
+      "Identificar la puerta concreta y el botón utilizado.",
+      "Indicar si el mando responde desde otro monitor autorizado.",
+      "Explicar si esa segunda apertura funcionaba antes o se intenta usar por primera vez."
+    ],
+    "nextStep": "Comprobaremos qué función tiene realmente la tecla y qué equipo acciona la segunda puerta.",
+    "serviceId": "accesos",
+    "topic": "apertura",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "abre-desde-un-terminal",
+    "title": "La puerta abre desde un vecino, pero no desde tu terminal",
+    "symptom": "apertura",
+    "scope": "vivienda",
+    "summary": "Comparar mandos hacia la misma puerta ayuda a delimitar el problema. Si otro terminal consigue abrir, interesa revisar el botón, la función asignada y la comunicación de la vivienda afectada. Esa prueba no sustituye la comprobación del resto del sistema.",
+    "checks": [
+      "Comparar ambas viviendas con la misma puerta y en condiciones similares.",
+      "Indicar si el botón falla durante una llamada o también fuera de ella.",
+      "Anotar cualquier luz o señal que aparezca al pulsarlo."
+    ],
+    "nextStep": "Facilita la referencia del terminal para comprobar su orden de apertura y posibles condiciones de uso.",
+    "serviceId": "reparacion",
+    "topic": "apertura",
+    "sourceIds": [
+      "bticino-classe100"
+    ]
+  },
+  {
+    "id": "llavero-rechazado",
+    "title": "El lector no reconoce un llavero de acceso",
+    "symptom": "apertura",
+    "scope": "acceso",
+    "summary": "Un llavero rechazado puede necesitar revisión de su autorización o de su compatibilidad. Es distinto que falle una sola credencial a que no se acepte ninguna. El alta y la baja deben gestionarse por la persona autorizada para administrar el acceso.",
+    "checks": [
+      "Comparar con otro llavero autorizado sin intercambiar las credenciales entre usuarios.",
+      "Observar si el lector emite una indicación al acercarlo.",
+      "Indicar si el llavero es nuevo, estaba perdido o dejó de funcionar tras un cambio."
+    ],
+    "nextStep": "Identifica lector y credencial para revisar el acceso sin reiniciar ni borrar los usuarios registrados.",
+    "serviceId": "accesos",
+    "topic": "apertura",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "cierre-no-encaja",
+    "title": "La puerta llega al marco, pero no queda cerrada",
+    "symptom": "apertura",
+    "scope": "acceso",
+    "summary": "El cierre de la hoja y la orden de apertura son problemas distintos. Si la puerta no encaja al terminar el recorrido, se observa el ajuste del conjunto antes de culpar al telefonillo. También se comprueba si existe un desbloqueo o una función de acceso libre activada.",
+    "checks": [
+      "Explicar si la puerta roza, rebota o queda separada del marco.",
+      "Observar si permanece liberada aunque nadie pulse apertura.",
+      "Anotar si el comportamiento cambió después de ajustar la puerta o el cierrapuertas."
+    ],
+    "nextStep": "Solicita una revisión del cierre y evita mantenerlo abierto mediante cuñas o forzarlo para que encaje.",
+    "serviceId": "accesos",
+    "topic": "apertura",
+    "sourceIds": [
+      "fermax-abrepuertas"
+    ]
+  },
+  {
+    "id": "corte-tras-apertura",
+    "title": "La conversación termina justo después de abrir",
+    "symptom": "general",
+    "scope": "vivienda",
+    "summary": "El final de una conversación tras abrir puede ser una función configurada del sistema. También importa si se había aceptado la llamada o solo se estaba viendo una vista previa. Si el terminal se reinicia o pierde alimentación, la incidencia es diferente y debe describirse así.",
+    "checks": [
+      "Comprobar si la llamada estaba contestada antes de pulsar apertura.",
+      "Comparar lo que ocurre en el monitor y en la aplicación.",
+      "Observar si vuelve a reposo normalmente o muestra una secuencia de arranque."
+    ],
+    "nextStep": "Indica dónde atendías y qué aparece después de abrir para separar funcionamiento previsto y avería.",
+    "serviceId": "reparacion",
+    "topic": "sistema",
+    "sourceIds": [
+      "fermax-corte-apertura"
+    ]
+  },
+  {
+    "id": "reinicio-apertura",
+    "title": "El monitor se apaga y arranca al accionar la cerradura",
+    "symptom": "general",
+    "scope": "comunidad",
+    "summary": "Un reinicio completo al abrir no se describe igual que el cierre normal de una conversación. La coincidencia entre la orden y el arranque orienta una comprobación de alimentación, salida de apertura y elementos conectados. La causa requiere medidas y revisión por un técnico.",
+    "checks": [
+      "Observar si reaparece el logotipo o el menú de inicio.",
+      "Anotar si ocurre desde todos los terminales o solo desde uno.",
+      "Indicar si empezó tras cambiar el abrepuertas o añadir un accesorio."
+    ],
+    "nextStep": "Explica la secuencia exacta y no repitas la prueba continuamente si el equipo se reinicia.",
+    "serviceId": "reparacion",
+    "topic": "sistema",
+    "sourceIds": [
+      "fermax-prueba-local",
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "fallo-tras-cambio-terminal",
+    "title": "El sistema empezó a fallar después de cambiar un telefonillo",
+    "symptom": "general",
+    "scope": "comunidad",
+    "summary": "Un recambio debe coincidir con la tecnología y la configuración de la instalación. La misma marca o el mismo número de cables no bastan para confirmarlo. Si el fallo apareció tras sustituir un terminal, conviene conservar las referencias del equipo anterior y del nuevo.",
+    "checks": [
+      "Anotar las referencias de ambos terminales si se conocen.",
+      "Identificar qué funciones dejaron de responder y en qué viviendas.",
+      "Indicar quién realizó el cambio y cuándo empezó el problema."
+    ],
+    "nextStep": "Revisamos compatibilidad y configuración; no intercambies cables para probar equivalencias.",
+    "serviceId": "telefonillos",
+    "topic": "sistema",
+    "sourceIds": [
+      "bticino-classe100",
+      "auta-onex"
+    ]
+  },
+  {
+    "id": "leds-actualizacion",
+    "title": "Los indicadores parpadean y el monitor no responde durante un rato",
+    "symptom": "general",
+    "scope": "vivienda",
+    "summary": "Los indicadores pueden señalar estados de uso, configuración o actualización. En determinados modelos conectados una actualización interrumpe temporalmente la atención. Conviene identificar el patrón y consultar el manual antes de tratar cualquier parpadeo como una avería.",
+    "checks": [
+      "Anotar colores, ritmo de las luces y mensajes de pantalla.",
+      "Comprobar si aparece un aviso de actualización.",
+      "Registrar cuánto dura y si el funcionamiento vuelve por sí solo."
+    ],
+    "nextStep": "No interrumpas una actualización confirmada por el fabricante; si el estado persiste, consulta con la referencia del equipo.",
+    "serviceId": "mantenimiento",
+    "topic": "sistema",
+    "sourceIds": [
+      "fermax-actualizacion"
+    ]
+  },
+  {
+    "id": "solo-un-portal",
+    "title": "Desde un portal funciona y desde el otro no",
+    "symptom": "general",
+    "scope": "comunidad",
+    "summary": "Cuando una vivienda responde desde una entrada y falla desde otra, esa comparación aporta información sobre el recorrido del servicio. Se comprueba la placa afectada y cómo está integrada, separando llamada, audio, vídeo y apertura de cada acceso.",
+    "checks": [
+      "Hacer una relación de entradas y funciones que responden.",
+      "Confirmar si otros vecinos tienen el mismo resultado.",
+      "Indicar si la entrada afectada se añadió o modificó recientemente."
+    ],
+    "nextStep": "Envía la identificación de ambas placas para planificar una prueba por acceso.",
+    "serviceId": "comunidades",
+    "topic": "sistema",
+    "sourceIds": [
+      "golmar-soul"
+    ]
+  },
+  {
+    "id": "app-sin-audio",
+    "title": "En el móvil se ve al visitante, pero no se puede conversar",
+    "symptom": "wifi",
+    "scope": "conectividad",
+    "summary": "Ver vídeo no garantiza que se haya activado la conversación. Además del estado de la llamada, hay que comprobar el permiso de micrófono y si el sonido sale por un accesorio conectado al móvil. La comparación con el monitor permite separar app e instalación.",
+    "checks": [
+      "Confirmar que la llamada está aceptada y el micrófono no está silenciado.",
+      "Revisar el permiso de micrófono de la aplicación en el sistema del teléfono.",
+      "Observar si hay auriculares o un dispositivo Bluetooth recibiendo el sonido."
+    ],
+    "nextStep": "Indica la app, el modelo de móvil y en qué sentido falta la voz.",
+    "serviceId": "wifi",
+    "topic": "conectividad",
+    "sourceIds": [
+      "fermax-corte-apertura"
+    ]
+  },
+  {
+    "id": "app-usuario-perdido",
+    "title": "Un usuario pierde acceso al añadir otro móvil",
+    "symptom": "wifi",
+    "scope": "conectividad",
+    "summary": "Algunos sistemas distinguen entre asociar el equipo a una cuenta principal e invitar a otra persona. Repetir el emparejamiento como propietario puede afectar al acceso previo. La forma de compartir depende de la aplicación y debe hacerse con autorización del titular.",
+    "checks": [
+      "Revisar si el usuario recibió una invitación o realizó un emparejamiento nuevo.",
+      "Anotar el mensaje de desvinculación sin publicar datos de la cuenta.",
+      "Comprobar qué cuenta administra actualmente la vivienda."
+    ],
+    "nextStep": "Consulta el procedimiento de invitación del fabricante antes de volver a vincular todos los móviles.",
+    "serviceId": "wifi",
+    "topic": "conectividad",
+    "sourceIds": [
+      "fermax-usuarios"
+    ]
+  },
+  {
+    "id": "red-no-compatible",
+    "title": "El monitor encuentra la red, pero no termina de conectarse",
+    "symptom": "wifi",
+    "scope": "conectividad",
+    "summary": "Que el nombre del WiFi aparezca no confirma que la red cumpla los requisitos del monitor. Banda, autenticación y aislamiento de usuarios pueden influir. Las condiciones se comprueban para la referencia concreta, conservando una configuración segura de la red doméstica.",
+    "checks": [
+      "Anotar el mensaje o código del proceso de conexión.",
+      "Comprobar en el manual qué banda y seguridad admite el equipo.",
+      "Indicar si es una red de invitados, de empresa o administrada por otro proveedor."
+    ],
+    "nextStep": "Podemos revisar los requisitos junto al responsable de la red, sin pedir contraseñas en el formulario.",
+    "serviceId": "wifi",
+    "topic": "conectividad",
+    "sourceIds": [
+      "fermax-red"
+    ]
+  },
+  {
+    "id": "app-vista-previa",
+    "title": "El móvil muestra la visita, pero el aviso desaparece al poco tiempo",
+    "symptom": "wifi",
+    "scope": "conectividad",
+    "summary": "Una vista previa y una conversación aceptada pueden tener duraciones distintas. Si la imagen se cierra sin contestar, primero se comprueba la secuencia prevista en la app. Es diferente que el aviso llegue tarde y apenas deje tiempo para responder.",
+    "checks": [
+      "Observar si se pulsó el control de atender o solo se abrió la notificación.",
+      "Anotar cuánto tarda en llegar el aviso desde que se pulsa en la calle.",
+      "Comprobar si el resultado cambia con el móvil desbloqueado."
+    ],
+    "nextStep": "Describe el orden de acciones y la aplicación utilizada para revisar atención y notificaciones.",
+    "serviceId": "wifi",
+    "topic": "conectividad",
+    "sourceIds": [
+      "fermax-corte-apertura",
+      "fermax-notificaciones"
+    ]
   }
 ]

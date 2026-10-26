@@ -3,6 +3,22 @@
   "siteUrl": "",
   "phone": "",
   "whatsapp": "",
+  "contactAreas": [
+    {
+      "id": "centro",
+      "label": "Madrid, Guadalajara y Toledo",
+      "phone": "+34 614 78 99 45",
+      "whatsapp": "+34 614 78 99 45",
+      "provinceSlugs": ["madrid", "guadalajara", "toledo"]
+    },
+    {
+      "id": "norte",
+      "label": "Zona norte y Castilla y León",
+      "phone": "+34 670 042 626",
+      "whatsapp": "+34 670 042 626",
+      "provinceSlugs": ["asturias", "cantabria", "bizkaia", "gipuzkoa", "leon", "palencia", "alava", "navarra", "zamora", "valladolid", "burgos", "la-rioja", "salamanca", "avila", "segovia", "soria"]
+    }
+  ],
   "email": "",
   "legalName": "",
   "taxId": "",
