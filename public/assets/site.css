@@ -322,3 +322,22 @@ details.locality-sources a{overflow-wrap:anywhere}
 .district-directory svg{width:16px;height:16px;flex:none}
 .municipality-directory-title{font-size:1.45rem;margin:0 0 22px}
 @media(max-width:760px){.district-directory{padding:19px;margin-bottom:30px}.district-directory ul{grid-template-columns:repeat(2,minmax(0,1fr))}.district-directory a{font-size:.8rem;padding:10px}.district-directory h3,.municipality-directory-title{font-size:1.2rem}}
+
+/* Community equipment belongs to the service block, beside its explanation. */
+.community-feature{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:38px;margin-top:48px;padding-top:38px;border-top:1px solid var(--line);scroll-margin-top:110px}
+.community-copy h3{font-size:clamp(1.65rem,2.5vw,2.3rem);line-height:1.2;margin:0 0 20px;max-width:480px}
+.community-copy>p:not(.eyebrow),.community-copy li{font-size:.9rem;color:var(--muted);line-height:1.7}
+.community-copy ul{padding-left:19px;margin:20px 0}.community-copy li+li{margin-top:8px}
+.community-copy .text-link{margin-top:9px}
+.community-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-content:start;min-width:0}
+.community-panel{margin:0;min-width:0;background:var(--white);border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.community-panel-photo{display:flex;justify-content:center;align-items:center;height:300px;background:#fff;padding:18px}
+.community-panel-photo img{display:block;width:100%;height:100%;object-fit:contain}
+.community-panel--golmar-supra .community-panel-photo{padding:0;background:#e5e9e7}
+.community-panel--golmar-supra img{object-fit:cover;object-position:center}
+.community-panel figcaption{padding:17px 15px;border-top:1px solid var(--line)}
+.community-panel h4{font-size:1rem;line-height:1.35;margin:0 0 8px}
+.community-panel figcaption p{font-size:.75rem;line-height:1.55;color:var(--muted);margin:0}
+.community-credit{grid-column:1/-1;color:var(--muted);font-size:.68rem;line-height:1.6;margin:0}.community-credit a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.community-feature{grid-template-columns:1fr;gap:25px}.community-copy h3{max-width:650px}.community-panel-photo{height:320px}}
+@media(max-width:540px){.community-feature{gap:23px;margin-top:32px;padding-top:28px}.community-panels{gap:10px}.community-panel-photo{height:235px;padding:13px}.community-panel figcaption{padding:13px 10px}.community-panel h4{font-size:.85rem}.community-panel figcaption p{font-size:.71rem}.community-copy>p:not(.eyebrow),.community-copy li{font-size:.87rem}}
