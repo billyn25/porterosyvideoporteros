@@ -1,4 +1,5 @@
 import {localReferences} from './local-geography.mjs';
+import {townScenario} from './town-scenarios.mjs';
 import {escapeHtml as e,slugify,townPath,provincePath,servicePath,guidePath,choose,hash,esNumber,selectDiagnostics} from './utils.mjs';
 import {button,textLink,eyebrow,sectionHead,heroImage,brandStrip,serviceRows,brandCards,diagnosticsSection,finder,provinceCards,featuredTownCards,processSection,guideCards,faqSection,consultation,nearbySection,localitySection,whatsappButton,icon} from './components.mjs';
 
@@ -90,6 +91,7 @@ export function provincePage(ctx,province){
 
 export function townPage(ctx,town,nearby){
   const geographicReferences=localReferences(ctx,town);
+  const scenario=townScenario(town);
   const focus=ctx.localFocus[hash(town.code)%ctx.localFocus.length];
   const localBrands=choose(ctx.brands,`${town.code}:brands`,3);
   const heroBrand=localBrands[0];
@@ -110,6 +112,7 @@ export function townPage(ctx,town,nearby){
   const body=`<section class="hero local-hero"><div class="container hero-grid"><div>${eyebrow(`${town.name} · ${town.province}`)}<h1>Instalación y reparación de porteros automáticos y videoporteros en <em>${e(town.name)}${e(titleSuffix)}</em></h1><p class="lead">Reparación de telefonillos, cambio de monitores y renovación de placas para viviendas, comunidades y negocios en ${e(town.name)}. También estudiamos soluciones de vídeo y conexión al móvil.</p><div class="actions">${button('Consultar en '+town.name,'#consulta')}${textLink('Ver averías','#averias')}</div><div class="local-context"><span>Servicio en <strong>${e(town.name)}</strong></span><a href="${provincePath(town)}">Ver municipios de ${e(town.province)}</a></div>${geographicReferences.count?`<div class="local-jump">${textLink(geographicReferences.jumpLabel,'#barrios')}</div>`:''}</div>${heroImage(ctx,{product:true,brand:heroBrand,tag:`${heroBrand.name}: identifica el sistema antes de elegir.`,small:'Equipo de referencia',label:'AUDIO · VÍDEO · APERTURA'})}</div></section>`+
   localitySection(ctx,town)+
   section(`<div class="local-grid"><div>${eyebrow('Para orientar tu instalación')}<h2>${e(focus.heading)}</h2><p>${e(focus.intro)}</p>${focusSections.map(s=>`<section class="local-editorial"><h3>${e(s.title)}</h3><p>${e(s.text)}</p></section>`).join('')}<section class="local-editorial"><h3>${e(secondarySection.title)}</h3><p>${e(secondarySection.text)}</p></section></div><aside class="local-focus">${eyebrow(`Tu consulta en ${town.name}`)}<h3>Lo que conviene tener a mano.</h3><ul>${focus.checklist.map(item=>`<li>${e(item)}</li>`).join('')}</ul><p>Indica la localidad y si el trabajo afecta a tu vivienda, a la entrada de una casa o a toda la comunidad. Así se puede concretar la visita y su alcance.</p>${textLink(`Explorar ${firstService.shortTitle.toLowerCase()}`,servicePath(firstService))}</aside></div>`,'section--white')+
+  section(`${sectionHead('Caso orientativo para preparar la consulta',e(scenario.title), 'Ejemplo técnico para identificar necesidades, no una avería registrada ni un trabajo realizado en esta localidad.')}<div class="local-grid"><div><h3>${e(scenario.setting)}</h3><p>${e(scenario.intro)}</p><p>${e(scenario.detail)}</p></div><aside class="local-focus"><h3>Antes de consultar</h3><p>${e(scenario.tip)}</p>${textLink('Preparar consulta en '+town.name,'#consulta')}</aside></div>`,'section--white')+
   diagnosticsSection(ctx,diagnostics,{title:`¿Qué le ocurre a tu portero en ${town.name}?`,tag:'Describe el fallo',intro:'Estas comprobaciones ayudan a explicar la avería. Son casos orientativos: no describen incidencias registradas en el municipio.'})+
   section(`${sectionHead('Instalación, reparación y renovación',`Opciones para tu entrada<br>en ${e(town.name)}.`,`Para un piso, un portal completo, una casa o un negocio. Consulta también el catálogo de servicios para otras necesidades.`)}${serviceRows(serviceSelection)}<div class="service-footer"><span>La solución se confirma después de revisar el sistema.</span>${textLink('Ver los ocho servicios','/servicios/')}</div>`)+
   section(`${sectionHead('Equipos y compatibilidad',`Tres marcas para empezar<br>a comparar.`,`Ejemplos de equipos para explorar. Trabajamos también con ${ctx.brands.filter(b=>!localBrands.includes(b)).map(b=>b.name).join(', ')}.`)}${brandCards(localBrands,{className:'local-brands'})}${notes()}`,'section--sage')+
