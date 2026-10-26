@@ -310,3 +310,15 @@ details.locality-sources a{overflow-wrap:anywhere}
 /* Sin barra flotante que tape títulos y párrafos al desplazarse en móvil. */
 @media(max-width:760px){.mobile-cta{display:none!important}body{padding-bottom:0}}
 .brand-icon svg{display:block;width:100%;height:100%}
+
+/* The province directory distinguishes the capital districts from municipalities. */
+.district-directory{margin:0 0 40px;padding:26px;border:1px solid var(--line);border-radius:8px;background:var(--sage,#f1f3e9);scroll-margin-top:110px}
+.district-directory h3{font-size:1.45rem;line-height:1.3;margin:0 0 12px}
+.district-directory p{max-width:780px;color:var(--muted);font-size:.9rem;margin:0 0 22px}
+.district-directory ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;list-style:none;padding:0;margin:0}
+.district-directory li{min-width:0}
+.district-directory a{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:48px;height:100%;padding:11px 13px;border:1px solid var(--line);border-radius:5px;background:var(--white);font-size:.85rem;line-height:1.45;overflow-wrap:anywhere}
+.district-directory a:hover{color:var(--copper);border-color:var(--copper)}
+.district-directory svg{width:16px;height:16px;flex:none}
+.municipality-directory-title{font-size:1.45rem;margin:0 0 22px}
+@media(max-width:760px){.district-directory{padding:19px;margin-bottom:30px}.district-directory ul{grid-template-columns:repeat(2,minmax(0,1fr))}.district-directory a{font-size:.8rem;padding:10px}.district-directory h3,.municipality-directory-title{font-size:1.2rem}}
