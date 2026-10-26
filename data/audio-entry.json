@@ -1,0 +1,30 @@
+{
+  "name": "Portero automático de audio",
+  "brand": "Fermax",
+  "model": "Kit City VEO DUOX PLUS 1L · 49202",
+  "image": "/assets/audio-entry.webp",
+  "alt": "Portero automático Fermax de audio con placa Cityline y telefonillo VEO blanco con auricular, sin pantalla",
+  "width": 1100,
+  "height": 1100,
+  "sourceUrl": "https://fermax.com/spain/productos/videoportero-2-hilos/kits/kits-portero-unifamiliar-1-o-2-lineas/f49202-kit-audio-city-veo-duox-plus-1l/",
+  "sourceImageUrl": "https://fermax.com/.imaging/default/sl_products/f49202/imagen/49202KITAUDIOCITYVEODUOXPLUS1L.jpg",
+  "credit": "Fotografía de producto de Fermax. La marca y la imagen pertenecen a su titular. No representa una instalación realizada por este servicio.",
+  "verifiedAt": "2026-10-26",
+  "description": "Equipo de audio formado por placa exterior Cityline y telefonillo VEO con auricular. Permite atender la llamada, conversar y accionar el abrepuertas de una instalación compatible.",
+  "handset": {
+    "name": "Telefonillo de audio con auricular",
+    "brand": "Fermax",
+    "model": "VEO DUOX PLUS · 3444",
+    "image": "/assets/audio-handset.webp",
+    "alt": "Telefonillo Fermax VEO DUOX PLUS blanco con auricular y cable en espiral, sin pantalla",
+    "width": 439,
+    "height": 900,
+    "sourceUrl": "https://fermax.com/spain/productos/videoportero-2-hilos/kits/kits-portero-unifamiliar-1-o-2-lineas/f03444-telefono-veo-duox-plus/",
+    "sourceImageUrl": "https://fermax.com/.imaging/default/sl_products/f03444/imagen/3444TELEFONOVEODUOXPLUS.jpg",
+    "credit": "Fotografía de producto de Fermax. La marca y la imagen pertenecen a su titular. No representa una instalación realizada por este servicio.",
+    "verifiedAt": "2026-10-26",
+    "description": "Terminal de audio VEO DUOX PLUS con auricular y pulsador de apertura. La sustitución de un telefonillo requiere comprobar el sistema y la referencia compatibles.",
+    "bytes": 5724
+  },
+  "bytes": 38188
+}

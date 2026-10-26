@@ -11,6 +11,9 @@ Web de instalación y reparación de porteros automáticos y videoporteros, crea
 - [Municipios destacados en el index](docs/municipios-index-1793005907781.jpg).
 - [Nuevo pie con teléfonos, WhatsApp y mapa](docs/footer-cobertura-1793006025098.jpg).
 - [Inicio, municipios y mapa en móvil](docs/contacto-municipios-movil-1793006009958.jpg).
+- [Portero automático de audio en el inicio](docs/portero-audio-index-1793008163529.jpg).
+- [Barrios de Oviedo con fuente municipal](docs/barrios-municipales-oviedo-1793008193662.jpg).
+- [Fotos de audio y barrios en móvil](docs/audio-barrios-movil-1793008402413.jpg).
 - [Auditoría de variedad editorial y límites](docs/content-audit.md), con [muestra reproducible](docs/content-audit.json).
 
 ## Contenido incluido
@@ -26,9 +29,13 @@ Web de instalación y reparación de porteros automáticos y videoporteros, crea
 | Preguntas frecuentes disponibles | 48 |
 | Enfoques editoriales locales | 12 |
 | Páginas HTML generadas | 3.846 |
-| Municipios con referencias interiores verificadas | 1.600 |
-| Núcleos seleccionados del INE | 5.689 |
-| Distritos municipales documentados | 29 |
+| Municipios con referencias municipales verificadas | 44 |
+| Barrios documentados por sus ayuntamientos | 371 |
+| Distritos municipales | 6 |
+| Urbanizaciones y zonas residenciales | 9 |
+| Fuentes municipales de zonas | 56 |
+
+La portada incluye también una fotografía real del portero de audio Fermax City VEO DUOX PLUS 49202, con placa exterior y telefonillo con auricular. La página de telefonillos muestra el terminal de audio VEO 3444. Ambas imágenes proceden de las fichas oficiales y conservan crédito, referencia y texto alternativo.
 
 Las marcas son **Tegui, BTicino, Legrand, Golmar, Fermax, Comelit y Auta**. Los servicios cubren instalación/renovación, reparación, comunidades, telefonillos y monitores, WiFi/móvil, apertura y accesos, casas/negocios y mantenimiento.
 
@@ -59,7 +66,7 @@ npm run check
 
 **No utilizar `porteros.example` como dominio de producción.** Es exclusivamente un origen de prueba y no está guardado en la configuración del sitio.
 
-El validador comprueba la coherencia de versiones de recursos, el teléfono y provincia de las páginas locales, y todos los HTML, rutas municipales, enlaces internos y anclas, imágenes/fuentes/JS/CSS, unicidad de títulos/descripciones, canonical, JSON-LD y sitemaps. Las pruebas cubren asignación completa de teléfonos, rechazo de provincias sin contacto o duplicadas, selección estable de síntomas de distintos tipos, pertenencia municipal de los núcleos, normalización del origen, proximidad geográfica y escape del contenido.
+El validador comprueba la coherencia de versiones de recursos, el teléfono y provincia de las páginas locales, y todos los HTML, rutas municipales, enlaces internos y anclas, imágenes/fuentes/JS/CSS, unicidad de títulos/descripciones, canonical, JSON-LD y sitemaps. Las pruebas cubren asignación completa de teléfonos, rechazo de provincias sin contacto o duplicadas, selección estable de síntomas de distintos tipos, pertenencia y categoría de las zonas residenciales, identidad de sus fuentes municipales y exclusión de áreas industriales, normalización del origen, proximidad geográfica y escape del contenido.
 
 ## Desplegar en Netlify
 
@@ -135,9 +142,9 @@ scripts/pages.mjs             Composición de tipos de página
 scripts/utils.mjs             Rutas, selección, escape y proximidad
 scripts/check.mjs             Validación completa del resultado
 scripts/contact.mjs           Asignación de teléfonos por provincia
-scripts/import-localities.py   Importación reproducible del INE
 scripts/audit-content.py       Comparación antes/después con pares fijos
-data/localities.json           Núcleos y distritos con fuente identificada
+data/localities.json           Barrios, distritos y zonas con fuente municipal
+data/audio-entry.json          Fotografías oficiales de porteros de audio
 tests/contact.test.mjs         Enrutamiento y pertenencia geográfica
 public/assets/site.css        Diseño original y adaptación móvil
 public/assets/site.js         Menú, búsqueda, filtros y consulta
@@ -160,9 +167,9 @@ La selección editorial es **determinista**, basada en el código INE. No cambia
 
 El directorio `/averias/` permite buscar entre los 48 casos por palabra o por tipo. Cada municipio incorpora cuatro diagnósticos: uno relacionado con su enfoque y otros tres de tipos diferentes. Todo el catálogo sigue accesible, aunque un caso no aparezca en la selección local.
 
-En 1.600 páginas se añaden referencias interiores documentadas: 5.689 núcleos del Nomenclátor del INE 2025 y los 21 distritos de Madrid y ocho de Bilbao. Los nombres se presentan con su categoría correcta y un enlace a la fuente. Al elegir una referencia, se completa el municipio, la provincia y la zona en el formulario. Se omite el bloque si no hay referencias verificadas. No se infieren códigos postales. [Criterios, límites y reproducción](docs/localities-sources.md).
+En 44 páginas se muestran 386 referencias obtenidas de 56 fuentes municipales: 371 barrios, seis distritos y nueve urbanizaciones o zonas residenciales, con presencia en las 19 provincias. Se ha retirado por completo la selección anterior del Nomenclátor y su importador. Cada referencia conserva su categoría y fuente del ayuntamiento; al elegirla se completa municipio, provincia y zona en el formulario. Las sugerencias se vinculan al municipio y a su provincia, y la zona se limpia al cambiar de localidad. Donde no hay referencias municipales comprobadas se omite el bloque. No se infieren códigos postales. [Criterios, cobertura y fuentes](docs/localities-sources.md).
 
-La auditoría antes/después conserva exactamente los 240 pares originales y distingue el contenido completo del contenido sin la sección geográfica. Así puede comprobarse la reducción de repetición técnica sin atribuirla solamente a los nombres añadidos. [Informe y métricas](docs/content-audit.md).
+La auditoría histórica anterior a esta sustitución conserva exactamente los 240 pares originales y distingue el contenido completo del contenido sin la sección geográfica. Sus cifras documentan aquella revisión; no son una medición del catálogo municipal actual. [Informe histórico y métricas](docs/content-audit.md).
 
 Una medición de similitud textual es una herramienta interna, no un porcentaje que Google emplee ni una garantía de indexación. La estructura y parte del contenido se comparten entre municipios. La siguiente mejora editorial debe partir de información real: trabajos documentados, condiciones de servicio verificadas y preguntas de clientes; no de inventar reseñas, calles, oficinas o estadísticas.
 
@@ -173,10 +180,10 @@ Referencias SEO: [guía de Google](https://developers.google.com/search/docs/fun
 - Nombres y códigos: [INE, relación a 1 de enero de 2026](https://www.ine.es/daco/daco42/codmun/26codmun.xlsx).
 - Coordenadas: [IGN, Información Geográfica Destacada](https://www.ign.es/web/ign/portal/ane-datos-geograficos), revisión 20/10/2025. Atribución CC BY 4.0, ign.es, 2025. Las distancias sirven para seleccionar localidades próximas, no para prometer kilómetros por carretera.
 - La población del archivo IGN solo ordena localidades destacadas. No se muestra como cifra actual: la fuente no especifica el año censal de ese campo.
-- Fotos: fuentes oficiales registradas por imagen en `data/brands.json` y `data/hero.json`. Las marcas y fotografías pertenecen a sus respectivos titulares. No se atribuyen a obras propias ni implican servicio técnico oficial.
+- Fotos: fuentes oficiales registradas por imagen en `data/brands.json`, `data/hero.json` y `data/audio-entry.json`. Las marcas y fotografías pertenecen a sus respectivos titulares. No se atribuyen a obras propias ni implican servicio técnico oficial.
 - Manrope: fuente local con licencia SIL Open Font License incluida en `public/assets/fonts/OFL-Manrope.txt`.
 - [Fuentes del catálogo de averías](docs/diagnostic-sources.md): documentación oficial de fabricantes y criterios de redacción original.
-- [Núcleos y distritos](docs/localities-sources.md): INE 2025 y ayuntamientos de Madrid y Bilbao; selección, fechas y atribuciones conservadas.
+- [Barrios y zonas municipales](docs/localities-sources.md): 56 fuentes de ayuntamientos, con categoría, evidencia y fecha de consulta por referencia.
 - Las guías incorporan fuentes técnicas oficiales. WiFi no se equipara a ausencia de cables ni se supone compatibilidad entre equipos solo por tener dos hilos.
 
 ## Estado de entrega

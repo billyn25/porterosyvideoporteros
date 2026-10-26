@@ -98,21 +98,30 @@
     const output=form.querySelector('[data-consultation-output]');
     const copyButton=form.querySelector('[data-copy-query]');
     const province=form.querySelector('[name=provincia]');
+    const locality=form.querySelector('[name=localidad]');
+    const zone=form.querySelector('[name=zona]');
     const recipient=form.querySelector('[data-contact-recipient]');
     const submitLabel=form.querySelector('[data-submit-label]');
     let previousProvince=form.dataset.province || '';
+    let previousLocality=normalize(locality.value);
     const selectedProvince=()=>province?.selectedOptions[0];
     const whatsappNumber=()=>selectedProvince()?.dataset.whatsapp || (!province?form.dataset.whatsapp:'');
+    function updateLocality(clearZone=false){
+      const currentLocality=normalize(locality.value);
+      if(clearZone && currentLocality!==previousLocality)zone.value='';
+      previousLocality=currentLocality;
+      const originalMunicipality=normalize(form.dataset.municipality || '');
+      if(form.querySelector('#zonas-consulta') && selectedProvince()?.value===form.dataset.province && currentLocality===originalMunicipality)zone.setAttribute('list','zonas-consulta');
+      else zone.removeAttribute('list');
+    }
     function updateRecipient(clearLocation=false){
       const option=selectedProvince();
       if(clearLocation && previousProvince && previousProvince!==option?.value){
-        form.querySelector('[name=localidad]').value='';
-        form.querySelector('[name=zona]').value='';
+        locality.value='';
+        zone.value='';
       }
       previousProvince=option?.value || '';
-      const zone=form.querySelector('[name=zona]');
-      if(form.querySelector('#nucleos-consulta') && option?.value===form.dataset.province)zone.setAttribute('list','nucleos-consulta');
-      else zone.removeAttribute('list');
+      updateLocality();
       document.querySelectorAll('[data-routed-contact]').forEach(block=>{
         if(!option?.value)return;
         block.querySelector('.contact-area-label').textContent=option.dataset.contactLabel;
@@ -134,6 +143,7 @@
       output.hidden=true;status.textContent='';
     }
     province?.addEventListener('change',()=>updateRecipient(true));
+    locality.addEventListener('input',()=>updateLocality(true));
     function message(){
       const values=new FormData(form);
       return [
@@ -187,7 +197,9 @@
         const province=form.querySelector('[name=provincia]');
         province.value=link.dataset.localityProvince;
         province.dispatchEvent(new Event('change',{bubbles:true}));
-        form.querySelector('[name=localidad]').value=link.dataset.localityTown;
+        const locality=form.querySelector('[name=localidad]');
+        locality.value=link.dataset.localityTown;
+        locality.dispatchEvent(new Event('input',{bubbles:true}));
         input.value=link.dataset.localityChoice;
         setTimeout(()=>input.focus({preventScroll:true}),0);
       }

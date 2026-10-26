@@ -91,6 +91,7 @@ function srcsetUrls(value) {
 
 function parsePage(filename) {
   const html = fs.readFileSync(filename, 'utf8');
+  if(/nomencl[áa]tor|ine\.es\/nomen/i.test(html))issue('error','RETIRED_LOCAL_SOURCE','El HTML conserva referencias a la fuente local retirada.',filename);
   const record = { file: filename, route: routeFor(filename), title: '', description: '', ids: new Set(), links: [], resources: [], canonical: null, indexable: true };
   for(const name of ['site.css','site.js']){
     if(!html.includes(`/assets/${name}?v=${expectedAssetVersion}`))issue('error','MIXED_BUILD','La versión del HTML no coincide con los recursos del build.',filename);

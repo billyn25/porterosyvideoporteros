@@ -1,5 +1,7 @@
 # Auditoría comparable de contenido municipal
 
+> Informe histórico de la revisión anterior a `4c597f0`. La selección geográfica se sustituyó después por fuentes municipales; los valores «después» de este documento no describen el catálogo geográfico actual. Se conserva la medición y su muestra para trazabilidad, sin recalcularla ni presentarla como resultado del último cambio.
+
 Baseline: commit `930629245008d2b70fa1259abd87760e70938ae4`. Build actualizado: `2026-10-26T08:44:32.814Z`.
 
 3797 páginas municipales; **los mismos 240 pares y las mismas 447 páginas de muestra** en ambos builds. Las categorías de foco se fijan al baseline y no se redibujan según el resultado.

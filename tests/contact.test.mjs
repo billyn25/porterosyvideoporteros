@@ -42,17 +42,27 @@ test('a local diagnostic selection includes a relevant case and distinct symptom
 
 test('local geographic references belong to the exact municipality and retain their source identity',()=>{
   const data=read('localities');
-  assert.equal(Object.keys(data.municipalities).length,towns.length);
-  for(const town of towns){
-    const record=data.municipalities[town.code];assert.ok(record,town.code);
-    assert.ok(record.selectedNuclei.length<=8);
-    assert.equal(new Set(record.selectedNuclei.map(item=>item.code)).size,record.selectedNuclei.length);
-    for(const nucleus of record.selectedNuclei){
-      assert.equal(nucleus.code.slice(0,5),town.code);
-      assert.equal(nucleus.type,'nucleus');assert.ok(nucleus.sourceName);assert.equal(nucleus.sourceId,data.source.id);
+  assert.equal(data.schemaVersion,2);
+  const types=new Set(['neighborhood','district','residential-area','parish']);
+  for(const [code,record] of Object.entries(data.municipalities)){
+    const town=towns.find(item=>item.code===code);assert.ok(town,code);
+    assert.equal(record.name,town.name);assert.equal(record.provinceSlug,town.provinceSlug);
+    assert.ok(record.areas.length>0);
+    assert.equal(new Set(record.areas.map(item=>item.name.toLocaleLowerCase('es'))).size,record.areas.length);
+    for(const area of record.areas){
+      assert.ok(types.has(area.type),`${code}: ${area.type}`);
+      assert.ok(area.name.trim());
+      const source=data.sources[area.sourceId];assert.ok(source,area.sourceId);
+      assert.ok(source.municipalityCodes.includes(code),`${code}: fuente de otro municipio`);
+      assert.ok(source.publisher.startsWith('Ayuntamiento de '));
+      assert.equal(new URL(source.url).protocol,'https:');
+      assert.ok(source.evidence && source.retrievedAt);
+      assert.doesNotMatch(source.url,/ine\.es|nomencl/i);
+      assert.doesNotMatch(area.name,/pol[ií]gono|industrial|camping|aeropuerto|campo de golf/i);
     }
   }
-  assert.equal(data.municipalities['28079'].districts.length,21);
-  assert.equal(data.municipalities['48020'].districts.length,8);
-  assert.ok(data.municipalities['19130'].selectedNuclei.some(item=>item.name==='Iriépal'));
+  assert.equal(new Set(Object.values(data.municipalities).map(record=>record.provinceSlug)).size,19);
+  assert.ok(data.municipalities['33044'].areas.some(area=>area.name==='La Corredoria' && area.type==='neighborhood'));
+  assert.ok(data.municipalities['28079'].areas.some(area=>area.name==='Embajadores' && area.type==='neighborhood'));
+  assert.ok(data.municipalities['28092'].areas.every(area=>area.type==='district'));
 });

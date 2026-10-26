@@ -38,7 +38,7 @@ const counts=new Map();for(const town of towns)counts.set(town.name,(counts.get(
 const duplicateTownNames=new Set([...counts].filter(([,count])=>count>1).map(([name])=>name));
 const assets=['public/assets/site.css','public/assets/site.js'].map(p=>fs.readFileSync(path.join(root,p)));
 const assetVersion=createHash('sha256').update(Buffer.concat(assets)).digest('hex').slice(0,10);
-const ctx={config,baseUrl,indexable,towns,provinces,duplicateTownNames,assetVersion,year:new Date().getUTCFullYear(),brands:read('brands'),hero:read('hero'),services:read('services'),diagnostics:read('diagnostics'),faqs:read('faqs'),guides:read('guides'),localFocus:read('local-focus'),localities:read('localities')};
+const ctx={config,baseUrl,indexable,towns,provinces,duplicateTownNames,assetVersion,year:new Date().getUTCFullYear(),brands:read('brands'),hero:read('hero'),audio:read('audio-entry'),services:read('services'),diagnostics:read('diagnostics'),faqs:read('faqs'),guides:read('guides'),localFocus:read('local-focus'),localities:read('localities')};
 if(ctx.brands.length!==7 || provinces.length!==19)throw new Error('Cobertura de marcas/provincias incompleta.');
 
 fs.mkdirSync(out,{recursive:true});

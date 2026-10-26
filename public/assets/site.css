@@ -53,6 +53,28 @@ body[data-page="diagnostics"] .diagnostic-intro{align-self:start;position:sticky
 @media(max-width:760px){.locality-list{grid-template-columns:repeat(2,minmax(0,1fr))}.locality-list a{font-size:.79rem;padding:13px 12px}.locality-heading h2 br{display:none}body[data-page="diagnostics"] .diagnostic-intro{position:static}.diagnostic-filter{grid-template-columns:1fr}}
 @media(max-width:460px){.locality-list{grid-template-columns:1fr}.form-recipient{grid-column:1}.contact-detail{font-size:1.35rem}}
 
+/* Porteros de audio y referencias municipales. */
+.audio-feature{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:80px}
+.audio-photo{position:relative;padding:28px;background:#f0efe7;border:1px solid #d9ddcf;border-radius:3px}
+.audio-photo-label{display:inline-block;font-size:.66rem;font-weight:650;letter-spacing:.06em;color:var(--muted)}
+.audio-photo img{width:100%;height:370px;object-fit:contain;mix-blend-mode:multiply;margin:14px auto 22px}
+.audio-photo figcaption{border-top:1px solid #cdd3c5;padding-top:17px;font-size:.75rem;font-weight:650;line-height:1.5;color:var(--ink)}
+.audio-photo figcaption small{display:block;margin-top:4px;font-size:.65rem;font-weight:400;color:var(--muted)}
+.audio-copy h2{margin-bottom:26px}
+.audio-copy>p{font-size:.98rem;line-height:1.8;color:var(--muted);max-width:570px}
+.audio-functions{display:flex;flex-wrap:wrap;gap:12px 20px;margin:27px 0;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.7rem;font-weight:700;color:#426047}
+.audio-copy .actions{margin-top:28px;gap:22px}
+.audio-copy .button{font-size:.8rem;padding-inline:19px}
+.audio-copy .text-link{font-size:.8rem}
+.locality-sources{font-size:.74rem;color:var(--muted);line-height:1.65;margin-top:25px;max-width:900px}
+.locality-sources>p{font-weight:650;margin:0 0 6px}
+.locality-sources ul{list-style:none;padding:0;margin:0;display:grid;gap:5px}
+.locality-sources a{text-decoration:underline;text-underline-offset:3px}
+.locality-sources a:hover{color:var(--ink)}
+@media(max-width:1020px){.audio-feature{gap:40px}.audio-photo{padding:23px}.audio-photo img{height:330px}.audio-copy h2{font-size:2.6rem}.audio-functions{gap:10px 15px}}
+@media(max-width:760px){.audio-feature{grid-template-columns:1fr;gap:35px}.audio-copy{grid-row:1}.audio-copy h2{font-size:2.25rem}.audio-copy h2 br:last-of-type{display:none}.audio-copy>p{font-size:.94rem}.audio-copy .actions{gap:18px}.audio-photo{max-width:550px;width:100%;justify-self:center}.audio-photo img{height:330px}.audio-functions{margin:22px 0}.locality-sources{font-size:.7rem}}
+@media(max-width:420px){.audio-photo{padding:20px}.audio-photo img{height:280px}.audio-functions{font-size:.63rem;gap:10px}.audio-copy .button{font-size:.75rem}.audio-copy .text-link{font-size:.75rem}}
+
 /* Accesos municipales de la portada. */
 .coverage-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .coverage-province{display:flex;flex-direction:column;min-width:0;padding:25px 26px 19px;border:1px solid var(--line);border-top:3px solid #899e8a;border-radius:3px;background:#fffdf8}
