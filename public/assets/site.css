@@ -287,3 +287,22 @@ details.locality-sources a{overflow-wrap:anywhere}
   .coverage-more summary{font-size:.78rem}
   .coverage-index .coverage-all-towns{font-size:.72rem}
 }
+
+/* Portada móvil: adelantar la fotografía sin ocultar el contenido SEO. */
+@media(max-width:760px){
+  .home-hero{padding-top:18px;padding-bottom:30px}
+  .home-hero .hero-grid{gap:15px}
+  .home-hero .eyebrow{margin-bottom:12px}
+  .home-hero h1{font-size:clamp(1.8rem,6.8vw,3rem);line-height:1.1;margin-bottom:13px}
+  .home-hero .hero-service{font-size:.93rem;line-height:1.35;margin-bottom:5px}
+  .home-hero .lead{font-size:.91rem;line-height:1.5;margin-bottom:14px}
+  .home-hero .actions{gap:10px}
+  .home-hero .actions .button{min-height:44px}
+  .home-hero .hero-note{margin-top:8px;gap:12px}
+  .home-hero .hero-art,.home-hero .hero-image{height:340px}
+  .home-hero .hero-image{object-fit:cover;object-position:24% center}
+}
+@media(max-width:360px){
+  .home-hero h1{font-size:1.77rem}
+  .home-hero .hero-art,.home-hero .hero-image{height:300px}
+}
