@@ -1,0 +1,151 @@
+{
+  "owner": "D.C.G.",
+  "domain": "https://instalacionvideoporterourgente.com",
+  "updatedAt": "2026-10-26",
+  "contacts": [
+    {
+      "label": "Contacto general, zona norte y Castilla y León",
+      "phone": "670 042 626",
+      "href": "tel:+34670042626",
+      "whatsapp": "https://wa.me/34670042626"
+    },
+    {
+      "label": "Madrid, Guadalajara y Toledo",
+      "phone": "614 78 99 45",
+      "href": "tel:+34614789945",
+      "whatsapp": "https://wa.me/34614789945"
+    }
+  ],
+  "privacy": {
+    "title": "Política de privacidad",
+    "intro": "Información sobre tus consultas, el uso de WhatsApp y la navegación en instalacionvideoporterourgente.com.",
+    "sections": [
+      {
+        "heading": "Responsable y contacto",
+        "paragraphs": [
+          "D.C.G. es titular de instalacionvideoporterourgente.com y responsable del tratamiento de las consultas que recibe a través de los medios de contacto de esta web.",
+          "Puedes contactar con D.C.G. en el 670 042 626. Para consultas de servicio en Madrid, Guadalajara y Toledo, el teléfono es 614 78 99 45. Ambos números disponen de enlace a WhatsApp."
+        ],
+        "links": [
+          {"label": "Llamar al 670 042 626", "url": "tel:+34670042626"},
+          {"label": "WhatsApp de contacto general", "url": "https://wa.me/34670042626"},
+          {"label": "Llamar al 614 78 99 45", "url": "tel:+34614789945"}
+        ]
+      },
+      {
+        "heading": "Cómo funciona el preparador de consultas",
+        "paragraphs": [
+          "El formulario compone un mensaje en tu navegador con la provincia, el municipio, la zona que indiques, el servicio, el tipo de instalación, la marca y el detalle de la consulta. No crea una cuenta ni guarda ese contenido en una base de datos de esta web.",
+          "Al pulsar «Continuar en WhatsApp», el texto se incluye en un enlace dirigido a WhatsApp para preparar la conversación. Por tanto, el contenido se comunica a ese servicio al abrir el enlace. El mensaje no se entrega al destinatario hasta que confirmas su envío en WhatsApp.",
+          "Si eliges «Solo copiar», el texto se copia al portapapeles de tu dispositivo o se muestra para que lo copies. Esa acción no abre WhatsApp ni remite la consulta a D.C.G. También puedes llamar directamente a los teléfonos de atención."
+        ],
+        "links": [
+          {"label": "Cómo funcionan los enlaces de conversación de WhatsApp", "url": "https://faq.whatsapp.com/5913398998672934"}
+        ]
+      },
+      {
+        "heading": "Datos utilizados y finalidad",
+        "paragraphs": [
+          "Cuando contactas por teléfono o WhatsApp, pueden conocerse tu número de contacto, la identificación que decidas comunicar y la información que facilites sobre la instalación. Se utilizan para responder a tu solicitud, valorar el trabajo, preparar un presupuesto y gestionar el servicio que acuerdes.",
+          "Para orientar una consulta suelen bastar la localidad, el tipo de inmueble, la marca y el síntoma. Evita incluir nombres de vecinos, contraseñas, códigos de apertura o fotografías con datos personales innecesarios.",
+          "Al visitar la web, la infraestructura de alojamiento recibe datos técnicos necesarios para servir las páginas y proteger el servicio, como la dirección IP, el recurso solicitado y datos básicos del navegador. El buscador municipal filtra los nombres en tu dispositivo; no remite los términos de búsqueda a un buscador externo."
+        ]
+      },
+      {
+        "heading": "Base del tratamiento",
+        "paragraphs": [
+          "La atención de las solicitudes de servicio y presupuesto se basa en las medidas precontractuales que pides y, cuando se contrata un trabajo, en su ejecución. La gestión de las obligaciones aplicables al servicio y de las solicitudes de derechos se basa en el cumplimiento de obligaciones legales.",
+          "La información técnica necesaria para mantener la disponibilidad y seguridad de la web se trata por el interés legítimo en prestar y proteger el servicio. El formulario no realiza perfiles comerciales ni decisiones automatizadas sobre la contratación."
+        ]
+      },
+      {
+        "heading": "Proveedores y comunicaciones",
+        "paragraphs": [
+          "El alojamiento de la web se publica mediante Netlify, que puede tratar datos técnicos de conexión para prestar y proteger el alojamiento. Su acuerdo de tratamiento describe los proveedores que intervienen y las garantías de las transferencias internacionales, incluido el Marco de Privacidad de Datos UE-EE. UU. y, cuando corresponde, las cláusulas contractuales tipo.",
+          "WhatsApp es un servicio externo. En la región europea lo presta WhatsApp Ireland Limited y su uso está sujeto a su política de privacidad, que informa también de sus operaciones y transferencias internacionales. Los enlaces de esta web no cargan una conversación ni envían el texto preparado a WhatsApp antes de que los actives.",
+          "Los datos de una consulta son accesibles a quienes se encargan de atenderla y, cuando resulte necesario, a los proveedores que intervienen en la prestación acordada o a los organismos que deban recibirlos por obligación legal."
+        ],
+        "links": [
+          {"label": "Acuerdo de tratamiento de datos de Netlify", "url": "https://www.netlify.com/pdf/netlify-dpa.pdf"},
+          {"label": "Privacidad de WhatsApp para la región europea", "url": "https://www.whatsapp.com/legal/privacy-policy-eea"}
+        ]
+      },
+      {
+        "heading": "Conservación",
+        "paragraphs": [
+          "Las consultas recibidas se conservan mientras se gestiona la solicitud y, si se acuerda un trabajo, durante la relación de servicio. Después se mantiene únicamente la información necesaria para atender las obligaciones legales aplicables o la formulación, el ejercicio o la defensa de reclamaciones, durante los plazos que correspondan a cada caso.",
+          "El texto que preparas sin enviarlo no se incorpora a un registro de consultas de esta web. Las copias que guardes en tu dispositivo y las conversaciones que envíes mediante WhatsApp dependen también de las opciones de conservación de esos medios."
+        ]
+      },
+      {
+        "heading": "Tus derechos",
+        "paragraphs": [
+          "Puedes solicitar acceso a tus datos, su rectificación o supresión y, cuando proceda, la limitación, oposición o portabilidad. Para hacerlo, dirige tu solicitud a D.C.G. por los teléfonos de contacto; puedes utilizar WhatsApp para dejar constancia escrita, indicando el derecho que quieres ejercer y la consulta a la que se refiere.",
+          "Solo se solicitará la información necesaria para comprobar tu identidad y atender la petición. Si consideras que tus datos se han tratado indebidamente o no has obtenido una respuesta adecuada al ejercer tus derechos, puedes presentar una reclamación ante la Agencia Española de Protección de Datos."
+        ],
+        "links": [
+          {"label": "Modelos de la AEPD para ejercer tus derechos", "url": "https://www.aepd.es/derechos-y-deberes/modelos-y-formularios"},
+          {"label": "Información de la AEPD sobre consultas y reclamaciones", "url": "https://www.aepd.es/preguntas-frecuentes/1-tus-derechos/1-en-que-podemos-ayudarte/FAQ-0101-en-que-podemos-ayudarte-como-ciudadano"}
+        ]
+      },
+      {
+        "heading": "Cookies y servicios externos",
+        "paragraphs": [
+          "Esta web no incorpora herramientas de publicidad, píxeles de seguimiento ni cookies de analítica. El preparador de consultas no guarda tus campos en cookies ni en almacenamiento local del navegador.",
+          "Las fotografías y las tipografías se sirven con los archivos de la web. El mapa de provincias es una imagen, no un mapa externo incrustado. Al abrir voluntariamente enlaces de WhatsApp, fabricantes u otras entidades, pasas a sus servicios y a las condiciones de privacidad que publiquen."
+        ]
+      }
+    ]
+  },
+  "siteInfo": {
+    "title": "Información del sitio",
+    "intro": "Titularidad, medios de contacto y alcance de la información de instalacionvideoporterourgente.com.",
+    "sections": [
+      {
+        "heading": "Titularidad",
+        "paragraphs": [
+          "El sitio instalacionvideoporterourgente.com es propiedad de D.C.G. y presenta servicios de instalación y reparación de porteros automáticos y videoporteros.",
+          "Contacto general, zona norte y Castilla y León: 670 042 626. Madrid, Guadalajara y Toledo: 614 78 99 45. Puedes llamar o utilizar los enlaces de WhatsApp de la web."
+        ],
+        "links": [
+          {"label": "Llamar al 670 042 626", "url": "tel:+34670042626"},
+          {"label": "Llamar al 614 78 99 45", "url": "tel:+34614789945"},
+          {"label": "Política de privacidad", "url": "/privacidad/"}
+        ]
+      },
+      {
+        "heading": "Servicio y consultas",
+        "paragraphs": [
+          "Las páginas explican servicios, síntomas y opciones técnicas. La disponibilidad, el desplazamiento, el plazo de atención y el presupuesto se concretan al valorar la instalación. La compatibilidad se comprueba por sistema y referencia del equipo.",
+          "El preparador de consultas permite componer un mensaje y continuar en WhatsApp. No realiza pagos, reservas ni confirma visitas automáticamente."
+        ]
+      },
+      {
+        "heading": "Marcas, fotografías y enlaces",
+        "paragraphs": [
+          "Las marcas se citan para identificar los equipos y sistemas sobre los que se ofrece información. Las fotografías de producto pertenecen a sus respectivos titulares y se identifican en la página de fuentes y créditos. No se presentan como fotografías de trabajos ejecutados por D.C.G.",
+          "La referencia a una marca no atribuye la condición de servicio técnico oficial ni una representación comercial del fabricante. Los enlaces externos conducen a información y servicios gestionados por sus respectivos titulares."
+        ],
+        "links": [
+          {"label": "Fuentes y créditos de las fotografías", "url": "/fuentes/"}
+        ]
+      },
+      {
+        "heading": "Información local",
+        "paragraphs": [
+          "El directorio identifica municipios reales. Las selecciones de barrios, distritos y zonas residenciales muestran sus fuentes municipales. Los enlaces de proximidad orientan la búsqueda de localidades y no representan oficinas o domicilios comerciales en cada municipio.",
+          "Los ejemplos de averías y las respuestas técnicas son orientativos. No se presentan como trabajos realizados, opiniones de clientes ni incidencias comprobadas en cada localidad."
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {"id": "lssi-art10", "title": "Ley 34/2002, artículo 10: información general", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758#a10"},
+    {"id": "rgpd-art13", "title": "Reglamento (UE) 2016/679, información al interesado", "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807"},
+    {"id": "aepd-informacion", "title": "Guía de la AEPD para el cumplimiento del deber de informar", "url": "https://www.aepd.es/guias/guia-modelo-clausula-informativa.pdf"},
+    {"id": "aepd-derechos", "title": "AEPD: modelos y formularios de derechos", "url": "https://www.aepd.es/derechos-y-deberes/modelos-y-formularios"},
+    {"id": "whatsapp-enlaces", "title": "WhatsApp: enlaces con mensajes preparados", "url": "https://faq.whatsapp.com/5913398998672934"},
+    {"id": "whatsapp-privacidad", "title": "WhatsApp: privacidad en la región europea", "url": "https://www.whatsapp.com/legal/privacy-policy-eea"},
+    {"id": "netlify-tratamiento", "title": "Netlify: acuerdo de tratamiento de datos, 9 de junio de 2026", "url": "https://www.netlify.com/pdf/netlify-dpa.pdf"}
+  ]
+}

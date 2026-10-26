@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-26",
+  "origin": "https://instalacionvideoporterourgente.com",
+  "criterion": "Priorización editorial por jerarquía, cobertura declarada y referencias municipales disponibles. No representa volumen de búsqueda, posición, visitas ni cobertura operativa confirmada de forma independiente. No implica noindex del resto.",
+  "count": 50,
+  "pages": [
+    {
+      "path": "/",
+      "name": "Inicio",
+      "type": "home"
+    },
+    {
+      "path": "/servicios/instalacion-porteros-videoporteros/",
+      "name": "Instalación y renovación",
+      "type": "service"
+    },
+    {
+      "path": "/servicios/reparacion-porteros-videoporteros/",
+      "name": "Reparación de averías",
+      "type": "service"
+    },
+    {
+      "path": "/servicios/videoporteros-comunidades-vecinos/",
+      "name": "Comunidades de vecinos",
+      "type": "service"
+    },
+    {
+      "path": "/servicios/cambio-telefonillos-monitores/",
+      "name": "Telefonillos y monitores",
+      "type": "service"
+    },
+    {
+      "path": "/servicios/videoporteros-wifi-movil/",
+      "name": "WiFi y móvil",
+      "type": "service"
+    },
+    {
+      "path": "/servicios/abrepuertas-control-accesos/",
+      "name": "Apertura y accesos",
+      "type": "service"
+    },
+    {
+      "path": "/servicios/videoporteros-casas-chalets-negocios/",
+      "name": "Casas y negocios",
+      "type": "service"
+    },
+    {
+      "path": "/servicios/mantenimiento-porteros-comunidades/",
+      "name": "Mantenimiento",
+      "type": "service"
+    },
+    {
+      "path": "/porteros-videoporteros/asturias/",
+      "name": "Asturias",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/cantabria/",
+      "name": "Cantabria",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/bizkaia/",
+      "name": "Bizkaia",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/gipuzkoa/",
+      "name": "Gipuzkoa",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/leon/",
+      "name": "León",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/palencia/",
+      "name": "Palencia",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/alava/",
+      "name": "Álava",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/navarra/",
+      "name": "Navarra",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/zamora/",
+      "name": "Zamora",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/valladolid/",
+      "name": "Valladolid",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/burgos/",
+      "name": "Burgos",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/la-rioja/",
+      "name": "La Rioja",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/salamanca/",
+      "name": "Salamanca",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/avila/",
+      "name": "Ávila",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/segovia/",
+      "name": "Segovia",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/soria/",
+      "name": "Soria",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/toledo/",
+      "name": "Toledo",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/madrid/",
+      "name": "Madrid",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/guadalajara/",
+      "name": "Guadalajara",
+      "type": "province"
+    },
+    {
+      "path": "/porteros-videoporteros/asturias/gijon/",
+      "name": "Gijón",
+      "province": "Asturias",
+      "code": "33024",
+      "municipalAreas": 10,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/cantabria/santander/",
+      "name": "Santander",
+      "province": "Cantabria",
+      "code": "39075",
+      "municipalAreas": 7,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/bizkaia/bilbao/",
+      "name": "Bilbao",
+      "province": "Bizkaia",
+      "code": "48020",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/gipuzkoa/donostia-san-sebastian/",
+      "name": "Donostia/San Sebastián",
+      "province": "Gipuzkoa",
+      "code": "20069",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/leon/leon/",
+      "name": "León",
+      "province": "León",
+      "code": "24089",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/palencia/palencia/",
+      "name": "Palencia",
+      "province": "Palencia",
+      "code": "34120",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/alava/vitoria-gasteiz/",
+      "name": "Vitoria-Gasteiz",
+      "province": "Álava",
+      "code": "01059",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/navarra/pamplona-iruna/",
+      "name": "Pamplona/Iruña",
+      "province": "Navarra",
+      "code": "31201",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/zamora/zamora/",
+      "name": "Zamora",
+      "province": "Zamora",
+      "code": "49275",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/valladolid/valladolid/",
+      "name": "Valladolid",
+      "province": "Valladolid",
+      "code": "47186",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/burgos/burgos/",
+      "name": "Burgos",
+      "province": "Burgos",
+      "code": "09059",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/la-rioja/logrono/",
+      "name": "Logroño",
+      "province": "La Rioja",
+      "code": "26089",
+      "municipalAreas": 10,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/salamanca/salamanca/",
+      "name": "Salamanca",
+      "province": "Salamanca",
+      "code": "37274",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/avila/avila/",
+      "name": "Ávila",
+      "province": "Ávila",
+      "code": "05019",
+      "municipalAreas": 8,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/segovia/segovia/",
+      "name": "Segovia",
+      "province": "Segovia",
+      "code": "40194",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/soria/soria/",
+      "name": "Soria",
+      "province": "Soria",
+      "code": "42173",
+      "municipalAreas": 5,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/toledo/toledo/",
+      "name": "Toledo",
+      "province": "Toledo",
+      "code": "45168",
+      "municipalAreas": 10,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/madrid/madrid/",
+      "name": "Madrid",
+      "province": "Madrid",
+      "code": "28079",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/guadalajara/guadalajara/",
+      "name": "Guadalajara",
+      "province": "Guadalajara",
+      "code": "19130",
+      "municipalAreas": 10,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/asturias/oviedo/",
+      "name": "Oviedo",
+      "province": "Asturias",
+      "code": "33044",
+      "municipalAreas": 12,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/madrid/mostoles/",
+      "name": "Móstoles",
+      "province": "Madrid",
+      "code": "28092",
+      "municipalAreas": 6,
+      "type": "town"
+    },
+    {
+      "path": "/porteros-videoporteros/madrid/alcala-de-henares/",
+      "name": "Alcalá de Henares",
+      "province": "Madrid",
+      "code": "28005",
+      "municipalAreas": 12,
+      "type": "town"
+    }
+  ],
+  "counts": {
+    "home": 1,
+    "service": 8,
+    "province": 19,
+    "town": 22
+  },
+  "selectionBasis": [
+    "Jerarquía existente: inicio, ocho servicios y diecinueve directorios provinciales.",
+    "Municipios relevantes para organizar el directorio, todos con referencias municipales contrastadas en el repositorio.",
+    "Tres fichas adicionales de Asturias y Madrid con información municipal disponible.",
+    "Esta selección ordena el trabajo editorial; no establece prioridades de indexación ni acredita demanda, volumen de búsqueda o resultados comerciales."
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "checkedAt": "2026-10-26T10:18:31.546Z",
+  "origin": "https://instalacionvideoporterourgente.com",
+  "source": "Static generated build",
+  "durationMs": 8278,
+  "scope": {
+    "htmlPages": 3846,
+    "indexablePages": 3843,
+    "noindexPages": 3,
+    "sitemapFiles": 21,
+    "sitemapUrls": 3843
+  },
+  "limitations": [
+    "No verifica DNS, TLS, HTTP de producción, redirecciones servidas, Search Console ni indexación real.",
+    "Los bytes gzip son compresión local reproducible; no tráfico de red medido.",
+    "No mide Lighthouse, LCP, INP ni CLS de usuarios reales.",
+    "La unicidad de metadatos o de palabras no demuestra calidad editorial ni posicionamiento."
+  ],
+  "crawl": {
+    "internalEdges": 176415,
+    "brokenTargets": 0,
+    "indexableOrphans": 0,
+    "indexableUnreachable": 0,
+    "maxDepth": 2,
+    "depths": {
+      "0": 1,
+      "1": 138,
+      "2": 3704
+    }
+  },
+  "metadata": {
+    "titleLengths": {
+      "min": 41,
+      "median": 60,
+      "p95": 66,
+      "max": 72
+    },
+    "descriptionLengths": {
+      "min": 122,
+      "median": 139,
+      "p95": 151,
+      "max": 165
+    },
+    "titlesOver65": 312,
+    "titlesOver80": 0,
+    "descriptionsOver165": 0,
+    "duplicateTitles": [],
+    "duplicateDescriptions": [],
+    "duplicateH1s": []
+  },
+  "images": {
+    "references": 19090,
+    "lazy": 15277,
+    "highPriority": 3813,
+    "missingAlt": 0,
+    "missingDimensions": 0
+  },
+  "structuredData": {
+    "Organization": 3846,
+    "WebPage": 3841,
+    "BreadcrumbList": 3844,
+    "Article": 5,
+    "WebSite": 1,
+    "Service": 3824
+  },
+  "resources": {
+    "external": [],
+    "totalUnique": 17,
+    "assets": [
+      {
+        "url": "/assets/site.css",
+        "bytes": 51089,
+        "gzipBytes": 10892,
+        "sha256": "bdfaa7795c9c88f2e92871d19092510a7c3c621e38da2796cf8e102371cd3eb4"
+      },
+      {
+        "url": "/assets/audio-entry.webp",
+        "bytes": 38188,
+        "sha256": "bfab3d166f7caec25313016dca72b032c80c6fe54e0d4ec852e82420652cd5c0"
+      },
+      {
+        "url": "/assets/coverage-spain.svg",
+        "bytes": 35956,
+        "gzipBytes": 13055,
+        "sha256": "140ae8f174aebb97c82cd544472914fb90d8f9f61b84f1719fe844aeab0e3563"
+      },
+      {
+        "url": "/assets/hero.webp",
+        "bytes": 31388,
+        "sha256": "f55c541a5c56d4e8107765ea387317ead94e2cba8778a27926d0ca7b8fb370dc"
+      },
+      {
+        "url": "/assets/brands/golmar.webp",
+        "bytes": 31026,
+        "sha256": "c37638c6151e994d629dc25742a16ee9ced06ae3952e2936eaa1ccf6d419c42e"
+      },
+      {
+        "url": "/assets/brands/bticino.webp",
+        "bytes": 27362,
+        "sha256": "9d8f4dafdb07d5e99bf2d199f7600441cb5fdab9508e0cb176053e0aed9177fd"
+      },
+      {
+        "url": "/assets/fonts/manrope-latin.woff2",
+        "bytes": 24836,
+        "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+      },
+      {
+        "url": "/assets/brands/auta.webp",
+        "bytes": 24206,
+        "sha256": "9a32abfc81913a238aeffc3d4d1e18e519844a37b75e2ffebdd37f45c5fa247f"
+      },
+      {
+        "url": "/assets/brands/comelit.webp",
+        "bytes": 23232,
+        "sha256": "a1bd0b57e2fe30241c9cd06876c2be208e6c0ed97c96bf21760a8753c9be749a"
+      },
+      {
+        "url": "/assets/brands/legrand.webp",
+        "bytes": 22622,
+        "sha256": "801692103ed4405d1b753bf612bebed8caeb526216f414a40542bcb40237e602"
+      },
+      {
+        "url": "/assets/brands/fermax.webp",
+        "bytes": 20952,
+        "sha256": "a9cc488a23eec9958843ff7fffa1386c27ac9814cd6e178aded14d1fbb019b92"
+      },
+      {
+        "url": "/assets/brands/tegui.webp",
+        "bytes": 18058,
+        "sha256": "93381668e92907f0eccd7a14ab7e2cc346cb6d34cf29604710792172366ab95d"
+      },
+      {
+        "url": "/assets/site.js",
+        "bytes": 13002,
+        "gzipBytes": 3982,
+        "sha256": "868dc5a90cba775cd12cb0e2d498e1d43e08407777f1f0da6a580156d63d3bb2"
+      },
+      {
+        "url": "/assets/audio-handset.webp",
+        "bytes": 5724,
+        "sha256": "e3a4672d0c7d0157e02fd80d23616a12f6ff1425b0fcee1c7509653903eb5256"
+      },
+      {
+        "url": "/apple-touch-icon.png",
+        "bytes": 3308,
+        "sha256": "a210b0f663d860ae7a2dd82984bdcb063478ecf7545e63c10e21ed904dd67a95"
+      },
+      {
+        "url": "/favicon.png",
+        "bytes": 1499,
+        "sha256": "14aa459509bef30b182cfad6ca14eb76eef482378aea3f4551ecd61c285ac9ff"
+      },
+      {
+        "url": "/favicon.svg",
+        "bytes": 352,
+        "gzipBytes": 235,
+        "sha256": "a31bce77f12318ea8bc2b1085f105fa259ba9fed0e1a9dd73b63e1ff08c07ebe"
+      }
+    ],
+    "fontDisplaySwap": true,
+    "reducedMotion": true
+  },
+  "html": {
+    "bytes": {
+      "min": 23272,
+      "median": 43909,
+      "p95": 44329,
+      "max": 89655
+    },
+    "gzipBytes": {
+      "min": 5126,
+      "median": 9864,
+      "p95": 9993,
+      "max": 17171
+    },
+    "totalBytes": 169128299
+  },
+  "findings": [],
+  "errorCount": 0,
+  "warningCount": 0,
+  "success": true,
+  "sourceBaseCommit": "25ebca19d5dbd61d9509cf0121236e81b59542e7",
+  "buildValidation": {
+    "checkedAt": "2026-10-26T10:18:23.007Z",
+    "success": true,
+    "durationMs": 5578,
+    "stats": {
+      "htmlPages": 3846,
+      "indexablePages": 3843,
+      "noindexPages": 3,
+      "municipalityPages": 3797,
+      "provinces": 19,
+      "linksChecked": 319386,
+      "resourceReferencesChecked": 42167,
+      "jsonLdBlocks": 3846,
+      "sitemapFiles": 21,
+      "sitemapUrls": 3843
+    },
+    "errorCount": 0,
+    "warningCount": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "comparison": {
+    "baselineCheckedAt": "2026-10-26T10:04:10.739Z",
+    "note": "Baseline metadata and content only. Its temporary audit origin is not evidence about production domain responses.",
+    "duplicateH1Groups": {
+      "before": 13,
+      "after": 0
+    },
+    "titlesOver80": {
+      "before": 90,
+      "after": 0
+    },
+    "descriptionsOver165": {
+      "before": 87,
+      "after": 0
+    },
+    "htmlMedianBytes": {
+      "before": 44784,
+      "after": 43909
+    },
+    "htmlMedianGzipBytes": {
+      "before": 9792,
+      "after": 9864
+    }
+  },
+  "browserQa": {
+    "engine": "Cloud Chrome; CSS layout widths, not physical iOS devices",
+    "mobileWidths": [
+      320,
+      375,
+      414
+    ],
+    "horizontalOverflow": false,
+    "menuTargetPx": 44,
+    "stickyContactHeightPx": 48,
+    "formInputFontPx": 16,
+    "desktopWidth": 1348,
+    "menuOpenCloseEscape": true,
+    "townSearchOviedo": true,
+    "zoneAnchorOffsetPx": 112,
+    "contactRouting": {
+      "Madrid": "+34 614 78 99 45",
+      "Asturias": "+34 670 042 626"
+    },
+    "privacyOwner": "D.C.G.",
+    "privacyProvisionalCopy": false,
+    "messagesSent": false,
+    "screenshots": [
+      "seo-portada-movil-1793009794973.jpg",
+      "seo-portada-escritorio-1793009865498.jpg"
+    ]
+  }
+}

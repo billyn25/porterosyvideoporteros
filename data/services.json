@@ -4,6 +4,7 @@
     "slug": "instalacion-porteros-videoporteros",
     "title": "Instalación de porteros automáticos y videoporteros",
     "shortTitle": "Instalación y renovación",
+    "metaDescription": "Instalación de porteros automáticos y videoporteros en viviendas y comunidades. Revisión del cableado, equipos compatibles y pruebas de llamada y apertura.",
     "eyebrow": "Un acceso bien resuelto",
     "summary": "Diseñamos la instalación desde la placa de calle hasta cada vivienda. Elegimos audio o vídeo, revisamos el recorrido del cable y dejamos comprobadas la llamada, la conversación y la apertura.",
     "details": [
@@ -38,6 +39,7 @@
     "slug": "reparacion-porteros-videoporteros",
     "title": "Reparación de porteros automáticos y videoporteros",
     "shortTitle": "Reparación de averías",
+    "metaDescription": "Reparación de porteros automáticos y videoporteros: fallos de llamada, sonido, imagen o apertura. Diagnóstico en viviendas y comunidades. Atención 24 h.",
     "eyebrow": "Encontrar el origen",
     "summary": "Un telefonillo que no suena, una imagen que desaparece o una puerta que no abre pueden tener causas distintas. Localizamos si el fallo está en la vivienda, la placa, la alimentación o la línea común.",
     "details": [
@@ -72,6 +74,7 @@
     "slug": "videoporteros-comunidades-vecinos",
     "title": "Porteros y videoporteros para comunidades de vecinos",
     "shortTitle": "Comunidades de vecinos",
+    "metaDescription": "Instalación y renovación de porteros y videoporteros para comunidades. Placas, telefonillos y monitores compatibles, con visitas coordinadas por vivienda.",
     "eyebrow": "Coordinar todo el edificio",
     "summary": "Renovación de placas, telefonillos y monitores con una propuesta comprensible para la comunidad. Estudiamos las entradas, la distribución de viviendas y cómo organizar el acceso a cada piso.",
     "details": [
@@ -106,6 +109,7 @@
     "slug": "cambio-telefonillos-monitores",
     "title": "Cambio de telefonillos y monitores compatibles",
     "shortTitle": "Telefonillos y monitores",
+    "metaDescription": "Cambio de telefonillos y monitores de videoportero. Identificamos el sistema y comprobamos la compatibilidad antes de sustituir el terminal de tu vivienda.",
     "eyebrow": "Sustituir lo necesario",
     "summary": "Cambiamos terminales interiores después de identificar su tecnología. El aspecto, la marca o contar dos cables no bastan para elegir un recambio compatible.",
     "details": [
@@ -140,6 +144,7 @@
     "slug": "videoporteros-wifi-movil",
     "title": "Videoporteros WiFi y atención desde el móvil",
     "shortTitle": "WiFi y móvil",
+    "metaDescription": "Instalación de videoporteros WiFi para atender desde el móvil. Revisamos compatibilidad, cobertura, aplicación y funciones disponibles en tu sistema.",
     "eyebrow": "La llamada, donde la necesitas",
     "summary": "Estudiamos equipos que permiten atender visitas desde una aplicación. Comprobamos compatibilidad, cobertura de red y requisitos del fabricante antes de proponer la conexión.",
     "details": [
@@ -174,6 +179,7 @@
     "slug": "abrepuertas-control-accesos",
     "title": "Abrepuertas eléctricos y control de accesos",
     "shortTitle": "Apertura y accesos",
+    "metaDescription": "Reparación de abrepuertas eléctricos y control de accesos. Revisamos el mando y el cierre, e instalamos lectores o teclados compatibles con tu sistema.",
     "eyebrow": "Que la puerta responda",
     "summary": "Revisamos la orden eléctrica y el ajuste mecánico de la puerta. También estudiamos lectores de proximidad o teclados compatibles para gestionar el acceso de vecinos y usuarios.",
     "details": [
@@ -208,6 +214,7 @@
     "slug": "videoporteros-casas-chalets-negocios",
     "title": "Videoporteros para casas, chalets y negocios",
     "shortTitle": "Casas y negocios",
+    "metaDescription": "Instalación de videoporteros para casas, chalets y negocios. Estudiamos la entrada, el cableado, los monitores y las opciones de apertura y conexión móvil.",
     "eyebrow": "Una solución para cada entrada",
     "summary": "Kits y sistemas adaptados a una vivienda, una oficina o un local. Valoramos distancia hasta la entrada, ubicación de la placa, puestos interiores y uso de la apertura.",
     "details": [
@@ -242,6 +249,7 @@
     "slug": "mantenimiento-porteros-comunidades",
     "title": "Mantenimiento de porteros y videoporteros",
     "shortTitle": "Mantenimiento",
+    "metaDescription": "Mantenimiento de porteros automáticos y videoporteros. Revisión de placas, alimentación, terminales y apertura para detectar fallos y planificar reparaciones.",
     "eyebrow": "Conservar lo que funciona",
     "summary": "Revisión de la instalación y atención de incidencias con un alcance definido. Registramos los síntomas, comprobamos elementos comunes y valoramos recambios según la tecnología existente.",
     "details": [
