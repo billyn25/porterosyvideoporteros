@@ -1755,6 +1755,18 @@
       "municipalityCodes": [
         "48097"
       ]
+    },
+    "madrid-distritos-ayuntamiento": {
+      "id": "madrid-distritos-ayuntamiento",
+      "publisher": "Ayuntamiento de Madrid",
+      "title": "Distritos municipales de Madrid",
+      "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Distritos/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Relación oficial de los 21 distritos de Madrid; se distinguen de los barrios y municipios.",
+      "method": "municipal-official",
+      "municipalityCodes": [
+        "28079"
+      ]
     }
   },
   "stats": {
@@ -1848,528 +1860,6 @@
     }
   },
   "municipalities": {
-    "01002": {
-      "name": "Amurrio",
-      "provinceSlug": "alava",
-      "areas": [
-        {
-          "name": "Bañuetaibar",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        },
-        {
-          "name": "Goikolarra",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        },
-        {
-          "name": "Juan de Aranoa (Alkinar)",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        },
-        {
-          "name": "Landako",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        },
-        {
-          "name": "Larrabe",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        },
-        {
-          "name": "San José",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        },
-        {
-          "name": "San Roque",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        },
-        {
-          "name": "Aldaiturriaga",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        },
-        {
-          "name": "Ugarte",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        },
-        {
-          "name": "Lexarraga",
-          "type": "neighborhood",
-          "sourceId": "amurrio-asambleas-barrios"
-        }
-      ]
-    },
-    "01020": {
-      "name": "Kuartango",
-      "provinceSlug": "alava",
-      "areas": [
-        {
-          "name": "Zuhatzu Kuartango",
-          "type": "locality",
-          "sourceId": "kuartango-pueblos-municipal"
-        },
-        {
-          "name": "Anda",
-          "type": "locality",
-          "sourceId": "kuartango-pueblos-municipal"
-        },
-        {
-          "name": "Aprikano",
-          "type": "locality",
-          "sourceId": "kuartango-pueblos-municipal"
-        },
-        {
-          "name": "Etxabarri Kuartango",
-          "type": "locality",
-          "sourceId": "kuartango-pueblos-municipal"
-        },
-        {
-          "name": "Jokano",
-          "type": "locality",
-          "sourceId": "kuartango-pueblos-municipal"
-        },
-        {
-          "name": "Luna",
-          "type": "locality",
-          "sourceId": "kuartango-pueblos-municipal"
-        }
-      ]
-    },
-    "01027": {
-      "name": "Iruraiz-Gauna",
-      "provinceSlug": "alava",
-      "areas": [
-        {
-          "name": "Azilu",
-          "type": "locality",
-          "sourceId": "iruraiz-gauna-pueblos-municipal"
-        },
-        {
-          "name": "Alaitza",
-          "type": "locality",
-          "sourceId": "iruraiz-gauna-pueblos-municipal"
-        },
-        {
-          "name": "Arrieta",
-          "type": "locality",
-          "sourceId": "iruraiz-gauna-pueblos-municipal"
-        },
-        {
-          "name": "Erentxun",
-          "type": "locality",
-          "sourceId": "iruraiz-gauna-pueblos-municipal"
-        },
-        {
-          "name": "Gauna",
-          "type": "locality",
-          "sourceId": "iruraiz-gauna-pueblos-municipal"
-        },
-        {
-          "name": "Gazeo",
-          "type": "locality",
-          "sourceId": "iruraiz-gauna-pueblos-municipal"
-        }
-      ]
-    },
-    "01036": {
-      "name": "Laudio/Llodio",
-      "provinceSlug": "alava",
-      "areas": [
-        {
-          "name": "Ugarte",
-          "type": "neighborhood",
-          "sourceId": "llodio-barrios-municipales"
-        },
-        {
-          "name": "Gardea",
-          "type": "neighborhood",
-          "sourceId": "llodio-barrios-municipales"
-        },
-        {
-          "name": "Areta",
-          "type": "neighborhood",
-          "sourceId": "llodio-barrios-municipales"
-        },
-        {
-          "name": "Latiorro",
-          "type": "neighborhood",
-          "sourceId": "llodio-barrios-municipales"
-        },
-        {
-          "name": "Larrazabal-Landaluze",
-          "type": "neighborhood",
-          "sourceId": "llodio-barrios-municipales"
-        },
-        {
-          "name": "Larraño",
-          "type": "neighborhood",
-          "sourceId": "llodio-barrios-municipales"
-        },
-        {
-          "name": "Zona centro",
-          "type": "neighborhood",
-          "sourceId": "llodio-barrios-municipales"
-        }
-      ]
-    },
-    "01059": {
-      "name": "Vitoria-Gasteiz",
-      "provinceSlug": "alava",
-      "areas": [
-        {
-          "name": "Adurtza",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "Arana",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "Ariznabarra",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "Zaramaga",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "Ensanche",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "Casco Viejo",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "El Pilar",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "San Cristóbal",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "Judimendi",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "Sansomendi",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "Salburua",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        },
-        {
-          "name": "Zabalgana",
-          "type": "neighborhood",
-          "sourceId": "vitoria-barrios-vecinales"
-        }
-      ]
-    },
-    "01061": {
-      "name": "Zalduondo",
-      "provinceSlug": "alava",
-      "areas": [
-        {
-          "name": "Arbin",
-          "type": "neighborhood",
-          "sourceId": "zalduondo-arbin-ayuntamiento"
-        }
-      ]
-    },
-    "05019": {
-      "name": "Ávila",
-      "provinceSlug": "avila",
-      "areas": [
-        {
-          "name": "La Cacharra",
-          "type": "neighborhood",
-          "sourceId": "avila-edusi-barrios"
-        },
-        {
-          "name": "Estación",
-          "type": "neighborhood",
-          "sourceId": "avila-edusi-barrios"
-        },
-        {
-          "name": "San Antonio",
-          "type": "neighborhood",
-          "sourceId": "avila-edusi-barrios"
-        },
-        {
-          "name": "La Toledana",
-          "type": "neighborhood",
-          "sourceId": "avila-edusi-barrios"
-        },
-        {
-          "name": "San Nicolás",
-          "type": "neighborhood",
-          "sourceId": "avila-pleno-barrios"
-        },
-        {
-          "name": "Las Batallas",
-          "type": "neighborhood",
-          "sourceId": "avila-pleno-barrios"
-        },
-        {
-          "name": "Las Vacas",
-          "type": "neighborhood",
-          "sourceId": "avila-pleno-barrios"
-        },
-        {
-          "name": "Santiago",
-          "type": "neighborhood",
-          "sourceId": "avila-pleno-barrios"
-        }
-      ]
-    },
-    "09011": {
-      "name": "Alfoz de Bricia",
-      "provinceSlug": "burgos",
-      "areas": [
-        {
-          "name": "Barrio de Bricia",
-          "type": "locality",
-          "sourceId": "burgos-alfoz-bricia-localidades"
-        },
-        {
-          "name": "Bricia",
-          "type": "locality",
-          "sourceId": "burgos-alfoz-bricia-localidades"
-        },
-        {
-          "name": "Campino",
-          "type": "locality",
-          "sourceId": "burgos-alfoz-bricia-localidades"
-        },
-        {
-          "name": "Cilleruelo de Bricia",
-          "type": "locality",
-          "sourceId": "burgos-alfoz-bricia-localidades"
-        },
-        {
-          "name": "Montejo de Bricia",
-          "type": "locality",
-          "sourceId": "burgos-alfoz-bricia-localidades"
-        },
-        {
-          "name": "Presillas de Bricia",
-          "type": "locality",
-          "sourceId": "burgos-alfoz-bricia-localidades"
-        }
-      ]
-    },
-    "09018": {
-      "name": "Aranda de Duero",
-      "provinceSlug": "burgos",
-      "areas": [
-        {
-          "name": "La Calabaza",
-          "type": "neighborhood",
-          "sourceId": "aranda-barrios-participacion"
-        },
-        {
-          "name": "La Estación",
-          "type": "neighborhood",
-          "sourceId": "aranda-barrios-participacion"
-        },
-        {
-          "name": "Allendeduero",
-          "type": "neighborhood",
-          "sourceId": "aranda-barrios-participacion"
-        },
-        {
-          "name": "Tenerías",
-          "type": "neighborhood",
-          "sourceId": "aranda-barrios-participacion"
-        },
-        {
-          "name": "Zona Centro",
-          "type": "neighborhood",
-          "sourceId": "aranda-barrios-participacion"
-        },
-        {
-          "name": "Santa Catalina",
-          "type": "neighborhood",
-          "sourceId": "aranda-barrios-participacion"
-        },
-        {
-          "name": "Ferial-Bañuelos",
-          "type": "neighborhood",
-          "sourceId": "aranda-barrios-participacion"
-        },
-        {
-          "name": "Las Casitas",
-          "type": "neighborhood",
-          "sourceId": "aranda-barrios-participacion"
-        }
-      ]
-    },
-    "09059": {
-      "name": "Burgos",
-      "provinceSlug": "burgos",
-      "areas": [
-        {
-          "name": "Gamonal",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "Capiscol",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "Villímar",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "Centro Histórico",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "Los Vadillos",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "Río Vena",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "San Pedro de la Fuente",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "Fuentecillas",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "Huelgas - El Pilar",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "San Julián",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "El Crucero - San José",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        },
-        {
-          "name": "San Pedro y San Felices",
-          "type": "neighborhood",
-          "sourceId": "burgos-reglamento-distritos"
-        }
-      ]
-    },
-    "09190": {
-      "name": "Junta de Villalba de Losa",
-      "provinceSlug": "burgos",
-      "areas": [
-        {
-          "name": "Villalba de Losa",
-          "type": "locality",
-          "sourceId": "burgos-villalba-losa-localidades"
-        },
-        {
-          "name": "Mijala",
-          "type": "locality",
-          "sourceId": "burgos-villalba-losa-localidades"
-        },
-        {
-          "name": "Murita",
-          "type": "locality",
-          "sourceId": "burgos-villalba-losa-localidades"
-        },
-        {
-          "name": "Zaballa",
-          "type": "locality",
-          "sourceId": "burgos-villalba-losa-localidades"
-        }
-      ]
-    },
-    "09219": {
-      "name": "Miranda de Ebro",
-      "provinceSlug": "burgos",
-      "areas": [
-        {
-          "name": "Matillas",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        },
-        {
-          "name": "Callejonda",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        },
-        {
-          "name": "Anduva",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        },
-        {
-          "name": "San Juan del Monte",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        },
-        {
-          "name": "El Crucero",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        },
-        {
-          "name": "Casco Viejo",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        },
-        {
-          "name": "Bardauri",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        },
-        {
-          "name": "Californias",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        },
-        {
-          "name": "La Charca",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        },
-        {
-          "name": "Corrales",
-          "type": "neighborhood",
-          "sourceId": "miranda-unidad-barrios"
-        }
-      ]
-    },
     "19024": {
       "name": "Alovera",
       "provinceSlug": "guadalajara",
@@ -3410,6 +2900,111 @@
           "name": "Ensanche de Vallecas",
           "type": "neighborhood",
           "sourceId": "madrid-barrios-geoportal"
+        },
+        {
+          "name": "Centro",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Arganzuela",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Retiro",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Salamanca",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Chamartín",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Tetuán",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Chamberí",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Fuencarral-El Pardo",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Moncloa-Aravaca",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Latina",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Carabanchel",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Usera",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Puente de Vallecas",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Moratalaz",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Ciudad Lineal",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Hortaleza",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Villaverde",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Villa de Vallecas",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Vicálvaro",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "San Blas-Canillejas",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
+        },
+        {
+          "name": "Barajas",
+          "type": "district",
+          "sourceId": "madrid-distritos-ayuntamiento"
         }
       ]
     },
@@ -6455,6 +6050,528 @@
           "name": "San Frontis",
           "type": "neighborhood",
           "sourceId": "zamora-linea-barrios"
+        }
+      ]
+    },
+    "01002": {
+      "name": "Amurrio",
+      "provinceSlug": "alava",
+      "areas": [
+        {
+          "name": "Bañuetaibar",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        },
+        {
+          "name": "Goikolarra",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        },
+        {
+          "name": "Juan de Aranoa (Alkinar)",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        },
+        {
+          "name": "Landako",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        },
+        {
+          "name": "Larrabe",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        },
+        {
+          "name": "San José",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        },
+        {
+          "name": "San Roque",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        },
+        {
+          "name": "Aldaiturriaga",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        },
+        {
+          "name": "Ugarte",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        },
+        {
+          "name": "Lexarraga",
+          "type": "neighborhood",
+          "sourceId": "amurrio-asambleas-barrios"
+        }
+      ]
+    },
+    "01020": {
+      "name": "Kuartango",
+      "provinceSlug": "alava",
+      "areas": [
+        {
+          "name": "Zuhatzu Kuartango",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Anda",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Aprikano",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Etxabarri Kuartango",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Jokano",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Luna",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        }
+      ]
+    },
+    "01027": {
+      "name": "Iruraiz-Gauna",
+      "provinceSlug": "alava",
+      "areas": [
+        {
+          "name": "Azilu",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Alaitza",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Arrieta",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Erentxun",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Gauna",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Gazeo",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        }
+      ]
+    },
+    "01036": {
+      "name": "Laudio/Llodio",
+      "provinceSlug": "alava",
+      "areas": [
+        {
+          "name": "Ugarte",
+          "type": "neighborhood",
+          "sourceId": "llodio-barrios-municipales"
+        },
+        {
+          "name": "Gardea",
+          "type": "neighborhood",
+          "sourceId": "llodio-barrios-municipales"
+        },
+        {
+          "name": "Areta",
+          "type": "neighborhood",
+          "sourceId": "llodio-barrios-municipales"
+        },
+        {
+          "name": "Latiorro",
+          "type": "neighborhood",
+          "sourceId": "llodio-barrios-municipales"
+        },
+        {
+          "name": "Larrazabal-Landaluze",
+          "type": "neighborhood",
+          "sourceId": "llodio-barrios-municipales"
+        },
+        {
+          "name": "Larraño",
+          "type": "neighborhood",
+          "sourceId": "llodio-barrios-municipales"
+        },
+        {
+          "name": "Zona centro",
+          "type": "neighborhood",
+          "sourceId": "llodio-barrios-municipales"
+        }
+      ]
+    },
+    "01059": {
+      "name": "Vitoria-Gasteiz",
+      "provinceSlug": "alava",
+      "areas": [
+        {
+          "name": "Adurtza",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "Arana",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "Ariznabarra",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "Zaramaga",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "Ensanche",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "Casco Viejo",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "El Pilar",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "San Cristóbal",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "Judimendi",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "Sansomendi",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "Salburua",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        },
+        {
+          "name": "Zabalgana",
+          "type": "neighborhood",
+          "sourceId": "vitoria-barrios-vecinales"
+        }
+      ]
+    },
+    "01061": {
+      "name": "Zalduondo",
+      "provinceSlug": "alava",
+      "areas": [
+        {
+          "name": "Arbin",
+          "type": "neighborhood",
+          "sourceId": "zalduondo-arbin-ayuntamiento"
+        }
+      ]
+    },
+    "05019": {
+      "name": "Ávila",
+      "provinceSlug": "avila",
+      "areas": [
+        {
+          "name": "La Cacharra",
+          "type": "neighborhood",
+          "sourceId": "avila-edusi-barrios"
+        },
+        {
+          "name": "Estación",
+          "type": "neighborhood",
+          "sourceId": "avila-edusi-barrios"
+        },
+        {
+          "name": "San Antonio",
+          "type": "neighborhood",
+          "sourceId": "avila-edusi-barrios"
+        },
+        {
+          "name": "La Toledana",
+          "type": "neighborhood",
+          "sourceId": "avila-edusi-barrios"
+        },
+        {
+          "name": "San Nicolás",
+          "type": "neighborhood",
+          "sourceId": "avila-pleno-barrios"
+        },
+        {
+          "name": "Las Batallas",
+          "type": "neighborhood",
+          "sourceId": "avila-pleno-barrios"
+        },
+        {
+          "name": "Las Vacas",
+          "type": "neighborhood",
+          "sourceId": "avila-pleno-barrios"
+        },
+        {
+          "name": "Santiago",
+          "type": "neighborhood",
+          "sourceId": "avila-pleno-barrios"
+        }
+      ]
+    },
+    "09011": {
+      "name": "Alfoz de Bricia",
+      "provinceSlug": "burgos",
+      "areas": [
+        {
+          "name": "Barrio de Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Campino",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Cilleruelo de Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Montejo de Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Presillas de Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        }
+      ]
+    },
+    "09018": {
+      "name": "Aranda de Duero",
+      "provinceSlug": "burgos",
+      "areas": [
+        {
+          "name": "La Calabaza",
+          "type": "neighborhood",
+          "sourceId": "aranda-barrios-participacion"
+        },
+        {
+          "name": "La Estación",
+          "type": "neighborhood",
+          "sourceId": "aranda-barrios-participacion"
+        },
+        {
+          "name": "Allendeduero",
+          "type": "neighborhood",
+          "sourceId": "aranda-barrios-participacion"
+        },
+        {
+          "name": "Tenerías",
+          "type": "neighborhood",
+          "sourceId": "aranda-barrios-participacion"
+        },
+        {
+          "name": "Zona Centro",
+          "type": "neighborhood",
+          "sourceId": "aranda-barrios-participacion"
+        },
+        {
+          "name": "Santa Catalina",
+          "type": "neighborhood",
+          "sourceId": "aranda-barrios-participacion"
+        },
+        {
+          "name": "Ferial-Bañuelos",
+          "type": "neighborhood",
+          "sourceId": "aranda-barrios-participacion"
+        },
+        {
+          "name": "Las Casitas",
+          "type": "neighborhood",
+          "sourceId": "aranda-barrios-participacion"
+        }
+      ]
+    },
+    "09059": {
+      "name": "Burgos",
+      "provinceSlug": "burgos",
+      "areas": [
+        {
+          "name": "Gamonal",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "Capiscol",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "Villímar",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "Centro Histórico",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "Los Vadillos",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "Río Vena",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "San Pedro de la Fuente",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "Fuentecillas",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "Huelgas - El Pilar",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "San Julián",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "El Crucero - San José",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        },
+        {
+          "name": "San Pedro y San Felices",
+          "type": "neighborhood",
+          "sourceId": "burgos-reglamento-distritos"
+        }
+      ]
+    },
+    "09190": {
+      "name": "Junta de Villalba de Losa",
+      "provinceSlug": "burgos",
+      "areas": [
+        {
+          "name": "Villalba de Losa",
+          "type": "locality",
+          "sourceId": "burgos-villalba-losa-localidades"
+        },
+        {
+          "name": "Mijala",
+          "type": "locality",
+          "sourceId": "burgos-villalba-losa-localidades"
+        },
+        {
+          "name": "Murita",
+          "type": "locality",
+          "sourceId": "burgos-villalba-losa-localidades"
+        },
+        {
+          "name": "Zaballa",
+          "type": "locality",
+          "sourceId": "burgos-villalba-losa-localidades"
+        }
+      ]
+    },
+    "09219": {
+      "name": "Miranda de Ebro",
+      "provinceSlug": "burgos",
+      "areas": [
+        {
+          "name": "Matillas",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
+        },
+        {
+          "name": "Callejonda",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
+        },
+        {
+          "name": "Anduva",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
+        },
+        {
+          "name": "San Juan del Monte",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
+        },
+        {
+          "name": "El Crucero",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
+        },
+        {
+          "name": "Casco Viejo",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
+        },
+        {
+          "name": "Bardauri",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
+        },
+        {
+          "name": "Californias",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
+        },
+        {
+          "name": "La Charca",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
+        },
+        {
+          "name": "Corrales",
+          "type": "neighborhood",
+          "sourceId": "miranda-unidad-barrios"
         }
       ]
     }
