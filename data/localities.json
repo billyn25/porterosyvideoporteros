@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "reviewedAt": "2026-10-26",
-  "selection": "Selección manual de barrios, distritos y zonas residenciales documentados por los respectivos ayuntamientos. No es un inventario completo; cada referencia conserva categoría y fuente municipal. Se excluyen polígonos, campings, aeropuertos y áreas no residenciales.",
+  "selection": "Selección de barrios, distritos, zonas residenciales, parroquias, localidades y vías documentados por ayuntamientos, diputaciones y organismos autonómicos oficiales. Cada referencia conserva su categoría y su fuente; no es un inventario completo. No se convierten pueblos, plazas ni nombres de asociaciones en barrios. Se excluyen polígonos, campings, aeropuertos y referencias técnicas.",
   "sources": {
     "alcala-consejos-barrio": {
       "id": "alcala-consejos-barrio",
@@ -27,6 +27,18 @@
         "19024"
       ]
     },
+    "amieva-parroquias-y-pueblos": {
+      "id": "amieva-parroquias-y-pueblos",
+      "publisher": "Ayuntamiento de Amieva",
+      "title": "Parroquias",
+      "url": "https://www.amieva.es/parroquias",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La página municipal agrupa los núcleos del concejo por parroquias y enumera expresamente Sames, Precendi, Carbes, Cien, Cirieño y Pen. Se conservan como localidades, no como barrios. Texto verificado en el índice de búsqueda; la apertura directa devolvió 403.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "33003"
+      ]
+    },
     "amurrio-asambleas-barrios": {
       "id": "amurrio-asambleas-barrios",
       "publisher": "Ayuntamiento de Amurrio",
@@ -39,6 +51,18 @@
         "01002"
       ]
     },
+    "anievas-poblaciones": {
+      "id": "anievas-poblaciones",
+      "publisher": "Ayuntamiento de Anievas",
+      "title": "Poblaciones",
+      "url": "https://www.aytoanievas.org/municipio/poblaciones",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La página municipal enumera Calga, Cotillo, Barriopalacio y Villasuso como las cuatro localidades del valle. Se utilizan como localidades, sin inferir barrios a partir de sus nombres.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39003"
+      ]
+    },
     "aranda-barrios-participacion": {
       "id": "aranda-barrios-participacion",
       "publisher": "Ayuntamiento de Aranda de Duero",
@@ -49,6 +73,18 @@
       "method": "municipal-web",
       "municipalityCodes": [
         "09018"
+      ]
+    },
+    "areso-contacto-elgoyen-municipal": {
+      "id": "areso-contacto-elgoyen-municipal",
+      "publisher": "Ayuntamiento de Areso",
+      "title": "Contacto del Ayuntamiento de Areso",
+      "url": "https://areso.eus/es/contacto/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página municipal abierta el 26/10/2026. La dirección pública de contacto municipal está expresamente en Barrio Elgoyen, Areso (Navarra). Se toma solo el nombre del barrio; se excluyen número de portal, correo y teléfonos.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "31031"
       ]
     },
     "arnedo-barrios-2026": {
@@ -159,6 +195,81 @@
         "48020"
       ]
     },
+    "bizkaia-arratzu-ruta-bus13": {
+      "id": "bizkaia-arratzu-ruta-bus13",
+      "publisher": "Diputación Foral de Bizkaia",
+      "title": "Ruta BUS13 Arratzu: Loiola-Barrutia",
+      "url": "https://www.bizkaia.eus/es/web/rutas-del-colesterol/ruta/-/ficha/48",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Ficha oficial del itinerario, atribuida expresamente al municipio Arratzu. Los extremos se identifican como Barrio Loiola y Barrio Barrutia; la descripción menciona como barrios Gorozika y Zabala-Belendiz. Se conservan cuatro denominaciones, sin convertir el nombre de la ruta en calle. Contenido oficial indexado.",
+      "method": "official-web-index",
+      "municipalityCodes": [
+        "48914"
+      ]
+    },
+    "bizkaia-directorio-ayuntamientos-foral": {
+      "id": "bizkaia-directorio-ayuntamientos-foral",
+      "publisher": "Diputación Foral de Bizkaia",
+      "title": "Directorio de ayuntamientos de Bizkaia",
+      "url": "https://www.bizkaia.eus/documents/1135059/1352300/Directorio%2Bde%2BAyuntamientos.pdf/5fdbea43-825f-12bc-488e-6af9839e62a3",
+      "retrievedAt": "2026-10-26",
+      "evidence": "PDF oficial leído. Página 2: Arakaldo, Barrio Elexalde; Arrieta, Libao Auzoa (auzoa es la categoría barrio en la dirección). Página 5: Busturia, Barrio Axpe. Página 7: Fruiz, Aldai enparantza (plaza), se conserva el nombre original y se clasifica como street. Son referencias de las direcciones municipales, sin conservar números de portal, teléfonos ni datos de personas.",
+      "method": "official-pdf",
+      "municipalityCodes": [
+        "48005",
+        "48010",
+        "48021",
+        "48035"
+      ]
+    },
+    "bizkaia-ereno-ruta-bus03": {
+      "id": "bizkaia-ereno-ruta-bus03",
+      "publisher": "Diputación Foral de Bizkaia",
+      "title": "Ruta BUS03 Ereño: Elexalde-Gabika",
+      "url": "https://www.bizkaia.eus/es/web/rutas-del-colesterol/ruta/-/ficha/39",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Ficha oficial del itinerario, con municipio Ereño. Identifica los extremos como Barrio Elexalde y Barrio Gabika; la descripción incluye el barrio Akorda-Bollar. Se utilizan únicamente topónimos y categoría, no se afirma que la carretera sea una calle residencial. Contenido oficial indexado.",
+      "method": "official-web-index",
+      "municipalityCodes": [
+        "48033"
+      ]
+    },
+    "bizkaia-errigoiti-pgou-diagnostico": {
+      "id": "bizkaia-errigoiti-pgou-diagnostico",
+      "publisher": "Diputación Foral de Bizkaia",
+      "title": "Evaluación ambiental del PGOU de Errigoiti: diagnóstico territorial",
+      "url": "https://baliabideak.bizkaia.eus/impacto_ambiental/EAE/2020/EAE-20-01/Documento%20Inicial%20Estrategico.pdf",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Documento Inicial Estratégico, septiembre de 2019, página 7. La descripción del ámbito municipal enumera expresamente los barrios Atxika-Errekalde, Eleizalde-Olabarri, Metxika y Uria. Se mantienen las denominaciones conjuntas del documento; no se convierten en distritos ni se les asignan límites propios. Evidencia del PDF oficial indexada.",
+      "method": "official-pdf-index",
+      "municipalityCodes": [
+        "48079"
+      ]
+    },
+    "bizkaia-lezama-directorio": {
+      "id": "bizkaia-lezama-directorio",
+      "publisher": "Diputación Foral de Bizkaia",
+      "title": "Directorio de ayuntamientos: Lezama",
+      "url": "https://www.bizkaia.eus/documents/1135059/1352300/Directorio%2Bde%2BAyuntamientos.pdf/5fdbea43-825f-12bc-488e-6af9839e62a3",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página 11 del PDF oficial leído. La dirección del Ayuntamiento de Lezama identifica expresamente Barrio Aretxalde. Se conserva solo el nombre de barrio, sin números de portal ni teléfonos.",
+      "method": "official-pdf",
+      "municipalityCodes": [
+        "48081"
+      ]
+    },
+    "burgos-alfoz-bricia-localidades": {
+      "id": "burgos-alfoz-bricia-localidades",
+      "publisher": "Diputación Provincial de Burgos",
+      "title": "Municipio de Alfoz de Bricia",
+      "url": "https://www.cultura.burgos.es/provincia/municipio/alfoz-de-bricia",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La ficha provincial enumera las localidades del municipio. Se seleccionan Barrio de Bricia, Bricia, Campino, Cilleruelo de Bricia, Montejo de Bricia y Presillas de Bricia. Barrio de Bricia se mantiene como localidad: la palabra Barrio de su nombre no cambia su categoría. Contenido comprobado en el índice de búsqueda.",
+      "method": "provincial-web",
+      "municipalityCodes": [
+        "09011"
+      ]
+    },
     "burgos-reglamento-distritos": {
       "id": "burgos-reglamento-distritos",
       "publisher": "Ayuntamiento de Burgos",
@@ -169,6 +280,18 @@
       "method": "municipal-web",
       "municipalityCodes": [
         "09059"
+      ]
+    },
+    "burgos-villalba-losa-localidades": {
+      "id": "burgos-villalba-losa-localidades",
+      "publisher": "Diputación Provincial de Burgos",
+      "title": "Municipio de Junta de Villalba de Losa",
+      "url": "https://www.burgos.es/provincia/municipio/junta-de-villalba-de-losa",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La ficha provincial de Junta de Villalba de Losa enumera Villalba de Losa, Mijala, Murita y Zaballa entre las localidades del municipio. Se seleccionan esas cuatro referencias; no se transforman en barrios. Contenido comprobado en la versión indexada de la ficha oficial; la apertura directa agotó el tiempo de espera durante la revisión.",
+      "method": "provincial-web",
+      "municipalityCodes": [
+        "09190"
       ]
     },
     "calahorra-barrio-casco-antiguo": {
@@ -207,6 +330,222 @@
         "26036"
       ]
     },
+    "camaleno-pueblos": {
+      "id": "camaleno-pueblos",
+      "publisher": "Ayuntamiento de Camaleño",
+      "title": "Pueblos",
+      "url": "https://www.ayuntamientocamaleno.com/pueblos.htm",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El listado municipal de pueblos incluye las seis localidades seleccionadas: Camaleño, Espinama, Mogrovejo, Cosgaya, Pido y Turieno. No se reutilizan las cifras de población de la página.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39015"
+      ]
+    },
+    "campoo-yuso-nucleos": {
+      "id": "campoo-yuso-nucleos",
+      "publisher": "Ayuntamiento de Campoo de Yuso",
+      "title": "Campoo de Yuso: situación y descripción",
+      "url": "https://www.campoodeyuso.es/situacion-y-descripcion-campoo-de-yuso/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El Ayuntamiento enumera catorce núcleos de población del municipio. De esa relación proceden La Costana, Corconte, Lanchares, Monegro, Orzales y La Población.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39017"
+      ]
+    },
+    "cantur-lamason-localidades": {
+      "id": "cantur-lamason-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Lamasón — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/lamason/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección Localidades del municipio del portal oficial identifica Cires, Los Pumares, Río y Sobrelapeña. Se retienen esas grafías exactas. Verificación mediante contenido indexado de la fuente; el servidor devolvió 403 en la apertura directa.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39034"
+      ]
+    },
+    "cantur-luena-localidades": {
+      "id": "cantur-luena-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Luena — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/luena/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La relación Localidades del municipio del portal oficial contiene Bustasur, Carrascal de Cocejón, Carrascal de San Miguel, Cazpurrión, El Cocejón y Entrambasmestas. Verificación mediante contenido indexado de la fuente; el servidor devolvió 403 en la apertura directa.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39039"
+      ]
+    },
+    "cantur-pesaguero-localidades": {
+      "id": "cantur-pesaguero-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Pesaguero — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/pesaguero/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección Localidades del municipio incluye Pesaguero, Avellanedo, Barreda, Caloca, Lerones y Lomeña. Se verifica en el contenido indexado del portal oficial de Turismo de Cantabria; se usan nombres de localidades, sin cifras demográficas.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39050"
+      ]
+    },
+    "cantur-ribamontan-monte-localidades": {
+      "id": "cantur-ribamontan-monte-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Ribamontán al Monte — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/ribamontan-al-monte/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección Localidades del municipio del portal oficial enumera Anero, Cubas, Hoz de Anero, Las Pilas, Liermo y Omoño, además de otros dos núcleos. Se verifica mediante contenido indexado de la fuente.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39062"
+      ]
+    },
+    "cantur-rozas-valdearroyo-localidades": {
+      "id": "cantur-rozas-valdearroyo-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Las Rozas de Valdearroyo — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/las-rozas-de-valdearroyo/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección Localidades del municipio del portal oficial enumera Arroyo de las Rozas, Bustasur, La Aguilera, Las Rozas y Llano de las Rozas. Se verifica en contenido indexado y se conservan sus nombres completos para evitar confusiones con otros núcleos.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39065"
+      ]
+    },
+    "cantur-san-roque-riomiera-localidades": {
+      "id": "cantur-san-roque-riomiera-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "San Roque de Riomiera — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/san-roque-de-riomiera/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El portal oficial enumera tres localidades: La Concha de San Roque de Riomiera, La Pedrosa de San Roque de Riomiera y Merilla. Se verifica en el contenido indexado; se normaliza únicamente la mayúscula inicial de Concha.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39072"
+      ]
+    },
+    "cantur-saro-localidades": {
+      "id": "cantur-saro-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Saro — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/saro/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección Localidades del municipio del portal oficial identifica Llerana y Saro. Se verifica mediante contenido indexado y se mantiene una selección de dos, sin completar con nombres inferidos.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39081"
+      ]
+    },
+    "cantur-tresviso-localidad": {
+      "id": "cantur-tresviso-localidad",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Tresviso — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/tresviso/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección Localidades del municipio del portal oficial solo presenta Tresviso. Se conserva una única localidad; la fuente no justifica añadir barrios o calles al municipio. Verificado mediante contenido indexado.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39088"
+      ]
+    },
+    "cantur-valle-villaverde-localidades": {
+      "id": "cantur-valle-villaverde-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Valle de Villaverde — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/valle-de-villaverde/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El portal oficial enumera El Campo, La Altura, La Capitana, La Iglesia, La Matanza y Laiseca en Localidades del municipio. Se mantiene la clasificación de localidades publicada por esta fuente; no se presentan como barrios. Verificado mediante contenido indexado.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39101"
+      ]
+    },
+    "cantur-villaescusa-localidades": {
+      "id": "cantur-villaescusa-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Villaescusa — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/villaescusa/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección Localidades del municipio identifica La Concha de Villaescusa, Liaño, Obregón y Villanueva de Villaescusa. Se utilizan cuatro referencias verificadas en el contenido indexado del portal oficial, conservando los complementos del nombre para distinguirlas de lugares homónimos.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39099"
+      ]
+    },
+    "cantur-villafufre-localidades": {
+      "id": "cantur-villafufre-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Villafufre — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/villafufre/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El portal oficial enumera Escobedo de Villafufre, Penilla, Rasillo y Villafufre en Localidades del municipio. Se toman esas cuatro referencias verificadas en el contenido indexado. Se omite otra entrada con una grafía dudosa, sin corregirla por deducción.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39100"
+      ]
+    },
+    "cantur-voto-localidades": {
+      "id": "cantur-voto-localidades",
+      "publisher": "Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)",
+      "title": "Voto — Localidades del municipio",
+      "url": "https://turismodecantabria.com/municipios/voto/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección Localidades del municipio identifica Carasa, Llanez, Nates, Rada, San Bartolomé de los Montes y San Mamés de Aras. Se utilizan las seis referencias verificadas en el contenido indexado del portal oficial.",
+      "method": "regional-web",
+      "municipalityCodes": [
+        "39102"
+      ]
+    },
+    "caso-nucleos-parroquias": {
+      "id": "caso-nucleos-parroquias",
+      "publisher": "Ayuntamiento de Caso",
+      "title": "Núcleos y Parroquias",
+      "url": "https://www.ayto-caso.es/ast/nucleos-y-parroquias",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El listado municipal identifica El Campu, Tarna, Bezanes, Belerda, Orlé y Tanes como núcleos bajo sus parroquias. Se seleccionan localidades y se mantiene la grafía publicada. Contenido comprobado en el índice de búsqueda; apertura directa de la versión castellana con 403.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "33015"
+      ]
+    },
+    "corvera-toranzo-pueblos": {
+      "id": "corvera-toranzo-pueblos",
+      "publisher": "Ayuntamiento de Corvera de Toranzo",
+      "title": "Nuestros pueblos",
+      "url": "https://www.corveradetoranzo.com/view/02-Nuestros-pueblos-Corvera-de-Toranzo-Cantabria",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección municipal Nuestros pueblos identifica San Vicente de Toranzo, Ontaneda, Alceda, Borleña, Corvera y Castillo Pedroso entre sus núcleos. San Vicente de Toranzo se presenta como capital municipal.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39026"
+      ]
+    },
+    "coslada-poblacion-barrios-2025": {
+      "id": "coslada-poblacion-barrios-2025",
+      "publisher": "Ayuntamiento de Coslada",
+      "title": "Población de Coslada: población por barrios",
+      "url": "https://coslada.es/transparencia/2025/02/02/poblacion-de-coslada/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La tabla municipal POBLACIÓN POR BARRIOS identifica doce sectores urbanos. Se seleccionan ocho denominaciones explícitas, conservando Valleaguado Norte y Valleaguado Sur por separado y La Espinilla/Parque Blanco como denominación conjunta. Bº se desarrolla como Barrio. Verificado el contenido de la fuente oficial en el índice de búsqueda; la apertura directa devolvió 502 y la comprobación HTTPS devolvió 503, por lo que no se afirma haber recuperado una copia actual completa de la página. No se reutilizan las cifras de población ni se añaden límites administrativos.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "28049"
+      ]
+    },
+    "donamaria-nucleos-municipal-index": {
+      "id": "donamaria-nucleos-municipal-index",
+      "publisher": "Ayuntamiento de Donamaria",
+      "title": "Hasiera: núcleos de población de Donamaria",
+      "url": "https://www.donamaria.eus/inicio/page/8/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Resultado indexado de la página municipal consultado el 26/10/2026. El texto en euskera identifica los herri guneak que componen Donamaria: Askarraga, Artze, Gaztelu, Igurin eta Uxarrea. Se conservan como núcleos de población (locality), sin inferir que todos sean barrios. La apertura directa de esta página devolvió inaccesibilidad en la herramienta; no se atribuye acceso al documento completo ni se sustituyen por datos de terceros.",
+      "method": "municipal-web-index",
+      "municipalityCodes": [
+        "31081"
+      ]
+    },
     "donostia-barrios-municipales": {
       "id": "donostia-barrios-municipales",
       "publisher": "Ayuntamiento de Donostia / San Sebastián",
@@ -217,6 +556,56 @@
       "method": "municipal-web",
       "municipalityCodes": [
         "20069"
+      ]
+    },
+    "entrambasaguas-lugares": {
+      "id": "entrambasaguas-lugares",
+      "publisher": "Ayuntamiento de Entrambasaguas",
+      "title": "Patrimonio Cultural",
+      "url": "https://www.entrambasaguas.org/patrimonio-cultural",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El texto municipal identifica siete lugares que componen actualmente el municipio. Se seleccionan Entrambasaguas, El Bosque, Hornedo, Hoznayo, Navajeda y Santa Marina; no se deducen barrios de esos nombres.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39028"
+      ]
+    },
+    "gamiz-fika-pgou-barrios": {
+      "id": "gamiz-fika-pgou-barrios",
+      "publisher": "Ayuntamiento de Gamiz-Fika",
+      "title": "Avance del PGOU: barrios de Gamiz-Fika",
+      "url": "https://www.gamiz-fika.eus/es-ES/Ayuntamiento/Urbanismo/pgou_avance/01-I_MEMORIA_AVANCEv2_junio_.pdf",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Memoria de avance de 2024, apartado BARRIOS. Enumera los barrios principales Ergoien, Elexalde, Ibarra y Mendotza. Evidencia del PDF municipal indexada; se utiliza el diagnóstico de barrios existentes, no los desarrollos propuestos.",
+      "method": "municipal-pdf-index",
+      "municipalityCodes": [
+        "48038"
+      ]
+    },
+    "garai-pgou-2024-barrios": {
+      "id": "garai-pgou-2024-barrios",
+      "publisher": "Ayuntamiento de Garai",
+      "title": "Avance del PGOU de Garai, noviembre de 2024",
+      "url": "https://www.garai-udala.eus/es-ES/Ayuntamiento/urbanismo-medio-ambiente/Urbanismo/Avance/02-2324_av_garai_cas.pdf",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El diagnóstico territorial identifica expresamente Goierri y Momoitio como barrios y San Miguel como núcleo urbano. Se conserva San Miguel como locality para no convertir una denominación de núcleo en barrio. Evidencia del PDF municipal indexada; no se trasladan las cifras de población ni los sectores futuros.",
+      "method": "municipal-pdf-index",
+      "municipalityCodes": [
+        "48039"
+      ]
+    },
+    "geoeuskadi-gipuzkoa-nucleos-tipificados": {
+      "id": "geoeuskadi-gipuzkoa-nucleos-tipificados",
+      "publisher": "Gobierno Vasco — GeoEuskadi",
+      "title": "Callejero oficial: Belauntza, Elduain y Gaztelu; tipos geográficos de las direcciones",
+      "url": "https://www.geo.euskadi.eus/geoeuskadi/rest/services/DGSGIS/WFS_DGSGIS/MapServer/7/query?where=CAL_PROV%3D%2720%27+AND+%28CAL_MUNI+IN+%28%27021%27%2C%27031%27%2C%27907%27%29+OR+CAL_MUNI_DS_O+IN+%28%27Belauntza%27%2C%27Elduain%27%2C%27Gaztelu%27%29%29&outFields=CAL_PROV%2CCAL_MUNI%2CCAL_MUNI_DS_O%2CCAL_TVI_DS_C%2CCAL_TVI_DS_E%2CCAL_DS_O%2CCAL_DS_E&returnGeometry=false&returnDistinctValues=true&f=json",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Consulta de GeoEuskadi realizada el 26/10/2026 con nueve registros distintos y sin truncado. La concatenación CAL_PROV+CAL_MUNI coincide con 20021 Belauntza, 20031 Elduain y 20907 Gaztelu; CAL_MUNI_DS_O confirma los tres nombres municipales. CAL_TVI_DS_C y CAL_DS_O identifican Hiriburu (Belauntza) como Núcleo/Gunea, Elduain como Núcleo/Gunea y Gaztelu como Barrio/Auzoa. Se asigna locality a los dos núcleos y neighborhood al barrio. Se excluyen carretera y diseminados, y también Okobio y Beotibar: aun teniendo tipo Barrio/Auzoa en este API, la Diputación los clasifica como polígonos industriales de Belauntza (https://b5m.gipuzkoa.eus/web5000/es/directorio-geografico/poligono-industrial?city=021). No se inventan otras subdivisiones. Respuesta de evidencia conservada en geo-euskadi-final-three.json durante la revisión.",
+      "method": "official-api",
+      "municipalityCodes": [
+        "20021",
+        "20031",
+        "20907"
       ]
     },
     "getafe-asambleas-barrios-2025": {
@@ -255,6 +644,186 @@
         "33024"
       ]
     },
+    "gipuzkoa-b5m-abaltzisketa": {
+      "id": "gipuzkoa-b5m-abaltzisketa",
+      "publisher": "Diputación Foral de Gipuzkoa",
+      "title": "Callejero oficial de Abaltzisketa",
+      "url": "https://b5m.gipuzkoa.eus/web5000/es/directorio-geografico/municipio/abaltzisketa",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página oficial abierta y leída. Identifica expresamente Aranguren auzoa, Azaldegi-Estanga auzoa, Ipintza-Garmendi auzoa, Larraitz auzoa y Olano auzoa; auzoa se conserva como categoría barrio. San Joan plaza es una plaza, tipo street. El encabezado municipal es Abaltzisketa. Se excluye el núcleo genérico y no se usan edificios o montes.",
+      "method": "official-web",
+      "municipalityCodes": [
+        "20001"
+      ]
+    },
+    "gipuzkoa-b5m-albiztur": {
+      "id": "gipuzkoa-b5m-albiztur",
+      "publisher": "Diputación Foral de Gipuzkoa",
+      "title": "Barrios de Albiztur en el directorio geográfico foral",
+      "url": "https://b5m.gipuzkoa.eus/web5000/es/directorio-geografico/barrio?city=004",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página oficial abierta y leída, filtrada por Albiztur. Cada ficha seleccionada dice explícitamente barrio y municipio Albiztur: Aizkorriaundi, Aizkorritxiki, Ergoena, Olateaga, Santa Marina y Urreta. La clasificación procede de la ficha, no de interpretar bailara como si siempre significase barrio.",
+      "method": "official-web",
+      "municipalityCodes": [
+        "20004"
+      ]
+    },
+    "gipuzkoa-b5m-altzaga": {
+      "id": "gipuzkoa-b5m-altzaga",
+      "publisher": "Diputación Foral de Gipuzkoa",
+      "title": "Barrios de Altzaga en el directorio geográfico foral",
+      "url": "https://b5m.gipuzkoa.eus/web5000/es/directorio-geografico/barrio?city=087",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página oficial abierta y leída, municipio Altzaga. Abaliak y Sarasolak están rotulados como barrio; Altzagarate auzoak aparece en la misma categoría. El parámetro interno city=087 de la Diputación NO es el código INE: la correspondencia se verifica por el nombre Altzaga y se asigna al INE 20906. No se mezclan referencias de Erandio ni se utiliza Altzaga sakabanatua (diseminado).",
+      "method": "official-web",
+      "municipalityCodes": [
+        "20906"
+      ]
+    },
+    "gipuzkoa-b5m-ataun": {
+      "id": "gipuzkoa-b5m-ataun",
+      "publisher": "Diputación Foral de Gipuzkoa",
+      "title": "Callejero oficial de Ataun",
+      "url": "https://b5m.gipuzkoa.eus/web5000/es/directorio-geografico/municipio/ataun",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página oficial abierta y leída. Las seis referencias seleccionadas están tipificadas como auzoa: Aia, Arin, Arrondo, Astigarraga, Elbarrena y Ergoiena. Se conserva el municipio Ataun y se excluye expresamente Zubikoeta industrigunea; tampoco se convierten nombres con categoría aldea en barrios.",
+      "method": "official-web",
+      "municipalityCodes": [
+        "20015"
+      ]
+    },
+    "gipuzkoa-b5m-bidania-goiatz": {
+      "id": "gipuzkoa-b5m-bidania-goiatz",
+      "publisher": "Diputación Foral de Gipuzkoa",
+      "title": "Barrios de Bidania-Goiatz en el directorio geográfico foral",
+      "url": "https://b5m.gipuzkoa.eus/web5000/es/directorio-geografico/barrio?city=024",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página oficial abierta y leída. Las fichas muestran explícitamente categoría barrio y municipio Bidania-Goiatz para Bidania, Goiatz, Elbarren Bailara, Eliz Bailara, Elola Bailara y Erreka Bailara. Se conserva Bailara en los nombres y se usa la categoría declarada por la Diputación, sin deducirla solo de la traducción de valle.",
+      "method": "official-web",
+      "municipalityCodes": [
+        "20024"
+      ]
+    },
+    "gipuzkoa-b5m-errezil": {
+      "id": "gipuzkoa-b5m-errezil",
+      "publisher": "Diputación Foral de Gipuzkoa",
+      "title": "Callejero oficial de Errezil",
+      "url": "https://b5m.gipuzkoa.eus/web5000/es/directorio-geografico/municipio/errezil",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página oficial abierta y leída. Los seis nombres seleccionados figuran expresamente como auzoa (barrio): Artzalluz, Erdoizta, Ezama, Ibarbia, Letea y Santa Marina. Se excluye el rótulo genérico Errezilgo gunea y no se copian nombres de carreteras o edificios.",
+      "method": "official-web",
+      "municipalityCodes": [
+        "20066"
+      ]
+    },
+    "gipuzkoa-b5m-leaburu": {
+      "id": "gipuzkoa-b5m-leaburu",
+      "publisher": "Diputación Foral de Gipuzkoa",
+      "title": "Callejero oficial de Leaburu",
+      "url": "https://b5m.gipuzkoa.eus/web5000/es/directorio-geografico/municipio/leaburu",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página oficial abierta y leída. Identifica Leaburu auzoa y Txarama auzoa, ambos barrios. Se excluyen expresamente Apatta Belabieta industrialdea y Apatta Zelai industrialdea, las dos zonas industriales que también aparecen en la página.",
+      "method": "official-web",
+      "municipalityCodes": [
+        "20050"
+      ]
+    },
+    "gipuzkoa-b5m-zerain": {
+      "id": "gipuzkoa-b5m-zerain",
+      "publisher": "Diputación Foral de Gipuzkoa",
+      "title": "Callejero oficial de Zerain",
+      "url": "https://b5m.gipuzkoa.eus/web5000/es/directorio-geografico/municipio/zerain",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página oficial abierta y leída. Selección de seis referencias con categoría explícita auzoa: Aizpea, Barbari, Errekalde, Gorosmendi, Irukarate y Otatza. Se excluyen referencias sin categoría clara, agrupaciones taldea y el núcleo genérico Zerain gunea.",
+      "method": "official-web",
+      "municipalityCodes": [
+        "20026"
+      ]
+    },
+    "gipuzkoa-gaintza-directorio-facturacion": {
+      "id": "gipuzkoa-gaintza-directorio-facturacion",
+      "publisher": "Diputación Foral de Gipuzkoa",
+      "title": "Directorio de organismos: Ayuntamiento de Gaintza",
+      "url": "https://egoitza.gipuzkoa.eus/WAS/HACI/HFAPortalProveedorWEB/organismos.do?i=G&indice=",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El registro de facturación identifica el Ayuntamiento de Gaintza con código DIR3 L01200375 y dirección Herriko Plaza. Se utiliza solo la plaza, tipo street, sin código postal, teléfonos o datos personales. Contenido oficial indexado. Se excluye Gaintza barreiatua por ser una referencia genérica de diseminado.",
+      "method": "official-web-index",
+      "municipalityCodes": [
+        "20037"
+      ]
+    },
+    "gobierno-vasco-amoroto-barrios": {
+      "id": "gobierno-vasco-amoroto-barrios",
+      "publisher": "Gobierno Vasco",
+      "title": "Amoroto: información turística oficial",
+      "url": "https://www.euskadi.eus/contenidos/d_destinos_turisticos/0000005563_d2_rec_turismo/es_5563/5563-ficha2.html",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La descripción del municipio enumera expresamente cuatro barrios: Elexalde, Odiaga, Ugaran y Urrutia. Verificado en el contenido oficial indexado; apertura directa con error de decodificación Unicode. Se usa únicamente la relación geográfica, no sus datos demográficos.",
+      "method": "official-web-index",
+      "municipalityCodes": [
+        "48004"
+      ]
+    },
+    "gobierno-vasco-gatika-paisaje": {
+      "id": "gobierno-vasco-gatika-paisaje",
+      "publisher": "Gobierno Vasco",
+      "title": "Plan de Acción del Paisaje para la Vega del Río Butrón: Gatika",
+      "url": "https://www.euskadi.eus/contenidos/informacion/planes_accion_paisaje2/es_def/adjuntos/2016/PAP/9.B_PAP_GATIKA.pdf",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Documento del Ayuntamiento de Gatika alojado en el portal del Gobierno Vasco. El apartado 2.1 enumera los barrios que componen el municipio; se seleccionan Garai, Gorordo, Igartua, Libarona, Sertutxa y Ugarte. Se excluye la urbanización citada por separado. Evidencia del PDF oficial indexada.",
+      "method": "official-pdf-index",
+      "municipalityCodes": [
+        "48040"
+      ]
+    },
+    "gobierno-vasco-kortezubi-vial-2026": {
+      "id": "gobierno-vasco-kortezubi-vial-2026",
+      "publisher": "Gobierno Vasco",
+      "title": "Contratación de Kortezubi: conexión entre Idokiliz y Santa Ana",
+      "url": "https://www.contratacion.euskadi.eus/ac70cPublicidadWar/trazabilidad/723812?R01HNoPortal=true&idioma=es",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Expediente B907-2026-00002, publicado el 25 de junio de 2026, poder adjudicador Ayuntamiento de Kortezubi. El objeto identifica expresamente los barrios Idokiliz y Santa Ana. Se conserva esa clasificación y no se presenta el vial proyectado como una calle terminada. Contenido oficial indexado.",
+      "method": "official-web-index",
+      "municipalityCodes": [
+        "48907"
+      ]
+    },
+    "gobierno-vasco-larraul-plaza": {
+      "id": "gobierno-vasco-larraul-plaza",
+      "publisher": "Gobierno Vasco",
+      "title": "Registro de entidades locales: Larraul",
+      "url": "https://www.euskadi.eus/entidad-local/larraul/web01-a2tokiad/es/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La ficha oficial del municipio de Larraul, territorio Gipuzkoa, identifica San Esteban Plaza como dirección municipal. Se incorpora la plaza con categoría street y sin número de portal o código postal. Contenido oficial indexado; corroborado por el directorio oficial de bibliotecas de Euskadi.",
+      "method": "official-web-index",
+      "municipalityCodes": [
+        "20048"
+      ]
+    },
+    "gobierno-vasco-menaka-barrios-bopv": {
+      "id": "gobierno-vasco-menaka-barrios-bopv",
+      "publisher": "Gobierno Vasco",
+      "title": "BOPV 2025/5148: acera-bici en el término de Meñaka",
+      "url": "https://www.euskadi.eus/bopv2/datos/2025/12/2505148a.shtml",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La resolución oficial sitúa los barrios de Ametzaga y Meñakabarrena en Meñaka y distingue expresamente Larrauri y Atela, que pertenecen a Mungia y se excluyen. Se extraen solo los dos barrios del municipio; no se añade la carretera BI-4105 como calle residencial. Texto oficial indexado.",
+      "method": "official-web-index",
+      "municipalityCodes": [
+        "48064"
+      ]
+    },
+    "gobierno-vasco-mendexa-barrios": {
+      "id": "gobierno-vasco-mendexa-barrios",
+      "publisher": "Gobierno Vasco",
+      "title": "Turismo Euskadi: Mendexa",
+      "url": "https://turismo.euskadi.eus/es/localidades/mendexa/webtur00-content/es/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La ficha oficial distingue el núcleo de Zelaia de los barrios Iturreta, Leagi y Likona. Se seleccionan exclusivamente los tres barrios expresamente designados; se excluyen playa, marisma, caseríos y edificios. Contenido oficial indexado.",
+      "method": "official-web-index",
+      "municipalityCodes": [
+        "48063"
+      ]
+    },
     "guadalajara-plano-barrios": {
       "id": "guadalajara-plano-barrios",
       "publisher": "Ayuntamiento de Guadalajara",
@@ -266,6 +835,42 @@
       "sha256": "c396d8b67ff4c8781d04bcfbbce76ed1ab96250b7879ed0d97d3b9c9682135a2",
       "municipalityCodes": [
         "19130"
+      ]
+    },
+    "guriezo-nocina": {
+      "id": "guriezo-nocina",
+      "publisher": "Ayuntamiento de Guriezo",
+      "title": "Nuestro pueblo",
+      "url": "https://aytoguriezo.es/nuestra-historia/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El Ayuntamiento identifica expresamente Nocina como barrio en la descripción situada al inicio de la relación territorial. Solo se toma esta clasificación explícita; no se copian población, distancias ni coordenadas.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39030"
+      ]
+    },
+    "herrerias-nucleos": {
+      "id": "herrerias-nucleos",
+      "publisher": "Ayuntamiento de Herrerías",
+      "title": "Localización y Entorno",
+      "url": "https://aytoherrerias.es/municipio/descubre-el-municipio/localizacion-y-entorno/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La relación municipal de núcleos incluye Bielva, Cabanzón, Cades, Camijanes, Casamaría y Puente del Arrudo. Contenido verificado en la versión indexada del sitio oficial; la apertura directa agotó el tiempo de espera en la revisión.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39033"
+      ]
+    },
+    "ibarrangelu-situacion-barrios": {
+      "id": "ibarrangelu-situacion-barrios",
+      "publisher": "Ayuntamiento de Ibarrangelu",
+      "title": "Situación: barrios de Ibarrangelu",
+      "url": "https://www.ibarrangelu.eus/es-ES/Turismo/Situacion/Paginas/default.aspx",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página municipal abierta y leída. Enumera expresamente los barrios del término; se seleccionan Elexalde, Akorda, Arboliz, Gametxo, Antzora y Gendika. No se reutilizan nombres de playas, parques o municipios limítrofes.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "48048"
       ]
     },
     "illescas-barrio-ochando": {
@@ -304,6 +909,78 @@
         "20045"
       ]
     },
+    "iruraiz-gauna-pueblos-municipal": {
+      "id": "iruraiz-gauna-pueblos-municipal",
+      "publisher": "Ayuntamiento de Iruraiz-Gauna",
+      "title": "Nuestros pueblos y barrios: composición del municipio",
+      "url": "https://iruraiz-gauna.eus/es/municipio/nuestros-pueblos-y-barrios",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página municipal abierta el 26/10/2026. El texto llama pueblos y localidades a los once núcleos integrantes del municipio y distingue los pueblos actuales de los despoblados históricos. Selección de seis localidades actuales, incluyendo Azilu, que el texto identifica como capitalidad; no se etiquetan como barrios.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "01027"
+      ]
+    },
+    "isaba-bormapea-directorio-municipal": {
+      "id": "isaba-bormapea-directorio-municipal",
+      "publisher": "Ayuntamiento de Isaba/Izaba",
+      "title": "Directorio turístico municipal: Hotel SNÖ Isaba",
+      "url": "https://isaba.es/donde/hotel-sno-isaba/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Ficha del directorio municipal abierta el 26/10/2026. La dirección del establecimiento se tipifica expresamente como Barrio Bormapea, en Isaba. Se extrae solo el topónimo; no se presenta el hotel como barrio ni se copian datos de contacto, número de portal o texto promocional.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "31128"
+      ]
+    },
+    "isaba-izarjentea-localizacion": {
+      "id": "isaba-izarjentea-localizacion",
+      "publisher": "Ayuntamiento de Isaba/Izaba",
+      "title": "Localización y dirección del Ayuntamiento de Isaba",
+      "url": "https://isaba.es/localizacion/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página municipal abierta el 26/10/2026. Bajo Dirección del Ayuntamiento figura expresamente Barrio Izarjentea. Se toma el nombre y tipo geográfico; no se conserva el número de portal ni se usa el mapa de un tercero.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "31128"
+      ]
+    },
+    "karrantza-patrimonio-barrios": {
+      "id": "karrantza-patrimonio-barrios",
+      "publisher": "Ayuntamiento de Karrantza Harana/Valle de Carranza",
+      "title": "Patrimonio indiano de Karrantza",
+      "url": "https://www.karrantza.org/es-ES/Turistas/Patrimonio-Historia/Paginas/PatrimonioIndiano.aspx",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La descripción municipal identifica expresamente Concha y Ambasaguas como barrios. Se extraen únicamente los nombres territoriales, sin copiar descripciones de edificios ni convertir casas particulares en referencias geográficas. Contenido oficial indexado.",
+      "method": "municipal-web-index",
+      "municipalityCodes": [
+        "48022"
+      ]
+    },
+    "kuartango-pueblos-municipal": {
+      "id": "kuartango-pueblos-municipal",
+      "publisher": "Ayuntamiento de Kuartango",
+      "title": "Pueblos y concejos del municipio de Kuartango",
+      "url": "https://kuartango.eus/municipio/pueblos/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página municipal abierta el 26/10/2026. El apartado Pueblos presenta Anda, Aprikano, Etxabarri Kuartango, Jokano, Luna y Zuhatzu Kuartango; también aparecen en el filtro Concejos. Se conservan como localidades, sin convertirlos en barrios. Selección de seis referencias, no inventario completo. Zuhatzu se identifica como cabecera municipal.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "01020"
+      ]
+    },
+    "las-regueras-parroquias": {
+      "id": "las-regueras-parroquias",
+      "publisher": "Ayuntamiento de Las Regueras",
+      "title": "División Parroquial de Las Regueras",
+      "url": "https://www.lasregueras.es/parroquias",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La página municipal enumera las seis parroquias: Santullano, Soto, Valsera, Valduno, Trasmonte y Biedes, acompañadas de sus advocaciones. Son parroquias, no barrios. Texto comprobado en el índice de búsqueda; apertura directa con 403.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "33054"
+      ]
+    },
     "leganes-barrios-limpieza-2026": {
       "id": "leganes-barrios-limpieza-2026",
       "publisher": "Ayuntamiento de Leganés",
@@ -316,6 +993,18 @@
         "28074"
       ]
     },
+    "legaria-barrios-municipal": {
+      "id": "legaria-barrios-municipal",
+      "publisher": "Ayuntamiento de Legaria",
+      "title": "Legaria: los cuatro barrios del municipio",
+      "url": "https://www.legaria.es/portal/seccion.aspx?S=11",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página municipal abierta el 26/10/2026. Declara expresamente que Legaria consta de cuatro barrios y enumera San Martín, El Río, El Monte y La Rochapea con su situación dentro de la localidad. Se extraen exclusivamente los nombres y su categoría explícita.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "31148"
+      ]
+    },
     "leon-concejales-barrios": {
       "id": "leon-concejales-barrios",
       "publisher": "Ayuntamiento de León",
@@ -326,6 +1015,18 @@
       "method": "municipal-web",
       "municipalityCodes": [
         "24089"
+      ]
+    },
+    "liendo-barrios-fiestas": {
+      "id": "liendo-barrios-fiestas",
+      "publisher": "Ayuntamiento de Liendo",
+      "title": "Fiestas y Tradiciones",
+      "url": "https://aytoliendo.org/municipio/fiestas-y-tradiciones/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La agenda municipal de fiestas denomina explícitamente Bº o barrio a Hazas, Villaviad, Mollaneda, Noval, Sopeña e Iseca Vieja. Se conserva esa clasificación, sin usar el borrador de callejero.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39036"
       ]
     },
     "llodio-barrios-municipales": {
@@ -379,6 +1080,30 @@
         "28079"
       ]
     },
+    "maruri-jatabe-luminarias-barrios": {
+      "id": "maruri-jatabe-luminarias-barrios",
+      "publisher": "Ayuntamiento de Maruri-Jatabe",
+      "title": "Reposición de luminarias en los barrios Elortegi y Sakalde",
+      "url": "https://www.maruri-jatabe.eus/es-ES/Noticias/Paginas/20211104-ayuntamiento-maruri-jatabe-adjudicado-obras-reposicion-luminarias-autonomas-barrios-elortegi-sakalde.aspx",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Noticia municipal del 4 de noviembre de 2021. El título y el contenido identifican Elortegi y Sakalde como barrios. Contenido oficial indexado; la apertura directa agotó el tiempo de espera. No se presentan las obras de 2021 como un servicio o actuación actual.",
+      "method": "municipal-web-index",
+      "municipalityCodes": [
+        "48061"
+      ]
+    },
+    "mazcuerras-pueblos": {
+      "id": "mazcuerras-pueblos",
+      "publisher": "Ayuntamiento de Mazcuerras",
+      "title": "Historia del municipio",
+      "url": "https://www.aytomazcuerras.es/el-municipio/historia-del-municipio",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El Ayuntamiento presenta siete pueblos que conforman el municipio. De esa lista se seleccionan Mazcuerras, Villanueva de la Peña, Cos, Herrera de Ibio, Ibio y Riaño de Ibio. Mazcuerras y Luzmela no se duplican como lugares distintos.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39041"
+      ]
+    },
     "medina-policia-barrios": {
       "id": "medina-policia-barrios",
       "publisher": "Ayuntamiento de Medina del Campo, Policía Local",
@@ -413,6 +1138,54 @@
       "method": "municipal-web",
       "municipalityCodes": [
         "28092"
+      ]
+    },
+    "murueta-consultorio-kanpantxua": {
+      "id": "murueta-consultorio-kanpantxua",
+      "publisher": "Ayuntamiento de Murueta",
+      "title": "Salud: consultorio de Murueta",
+      "url": "https://www.murueta.eus/es-ES/Servicios/Salud/Paginas/default.aspx",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página municipal abierta y leída. La dirección del consultorio de Murueta identifica expresamente Barrio Kanpantxua. La misma página enlaza un hospital en Gernika-Lumo; sus direcciones se excluyen por pertenecer a otro municipio.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "48908"
+      ]
+    },
+    "murueta-larrabe-accesibilidad": {
+      "id": "murueta-larrabe-accesibilidad",
+      "publisher": "Ayuntamiento de Murueta",
+      "title": "Mejora de accesibilidad del barrio Larrabe",
+      "url": "https://www.murueta.eus/es-ES/Noticias/Paginas/20240719_Larrabe_auzoa_irisgarritasun_lanak.aspx",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Noticia municipal del 19 de julio de 2024. Describe trabajos en el acceso al barrio Larrabe, en la zona de Tomas Iturri. Se incorpora Larrabe como barrio, sin convertir Tomas Iturri en otro barrio. Contenido oficial indexado; apertura directa bloqueada por error de comprobación robots.",
+      "method": "municipal-web-index",
+      "municipalityCodes": [
+        "48908"
+      ]
+    },
+    "nabarniz-conectividad-barrios": {
+      "id": "nabarniz-conectividad-barrios",
+      "publisher": "Ayuntamiento de Nabarniz",
+      "title": "Movilidad entre los barrios Elexalde y Lekerika",
+      "url": "https://www.nabarniz.eus/es-ES/Noticias/Paginas/20230310-movilidad-sostenible-conectividad-barrios-elexalde-lekerika.aspx",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Noticia municipal del 10 de marzo de 2023. Su título y extracto identifican expresamente Elexalde y Lekerika como barrios de Nabarniz. Contenido oficial indexado; apertura directa con tiempo de espera agotado.",
+      "method": "municipal-web-index",
+      "municipalityCodes": [
+        "48909"
+      ]
+    },
+    "onis-localizacion-pueblos": {
+      "id": "onis-localizacion-pueblos",
+      "publisher": "Ayuntamiento de Onís",
+      "title": "Localización",
+      "url": "https://www.onis.es/en/localizacion",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La explicación municipal de la distribución del concejo cita Benia de Onís, Avín, Sirviella y Talavero en Santa Eulalia; Demués en Nuestra Señora del Buen Suceso, y La Robellada en San Antonio. Se seleccionan esos pueblos como localidades, sin convertirlos en barrios. Contenido comprobado en el índice de búsqueda.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "33043"
       ]
     },
     "oviedo-distritos-municipales": {
@@ -451,6 +1224,42 @@
         "31201"
       ]
     },
+    "penamellera-alta-alles-barrios": {
+      "id": "penamellera-alta-alles-barrios",
+      "publisher": "Ayuntamiento de Peñamellera Alta",
+      "title": "Pueblos - Alles",
+      "url": "https://www.aytopenamelleraalta.es/ast/alles",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La ficha municipal de Alles identifica expresamente sus barrios; la selección conserva Bellaces, Besnes, El Toju, El Pedrosu, La Aldea y La Cal. Todos se sitúan en Alles, dentro de Peñamellera Alta. Texto comprobado en el índice de búsqueda; apertura directa de la versión castellana con 403.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "33046"
+      ]
+    },
+    "polaciones-pueblos": {
+      "id": "polaciones-pueblos",
+      "publisher": "Ayuntamiento de Polaciones",
+      "title": "Pueblos de Polaciones",
+      "url": "https://www.ayuntamientopolaciones.es/municipio/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección municipal Pueblos de Polaciones dedica apartados a Lombraña, San Mamés, Belmonte, Uznayo, Puente Pumar y Cotillos. Son localidades; no se convierte la mención a iglesias parroquiales en divisiones administrativas.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39053"
+      ]
+    },
+    "polanco-barrios": {
+      "id": "polanco-barrios",
+      "publisher": "Ayuntamiento de Polanco",
+      "title": "Núcleos de Población",
+      "url": "https://www.aytopolanco.org/municipio/nucleos-de-poblacion/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El texto municipal identifica expresamente barrios y el núcleo al que pertenecen: Rolisas en Mar; Cantarranas en Rinconeda; La Alegría en Requejada; Cumbrales en Polanco; Dosal en Rumoroso; San Roque en Posadillo. Se selecciona uno de cada núcleo, sin reutilizar cifras de población ni urbanizaciones.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39054"
+      ]
+    },
     "ponferrada-alcaldias-barrios": {
       "id": "ponferrada-alcaldias-barrios",
       "publisher": "Ayuntamiento de Ponferrada",
@@ -463,6 +1272,18 @@
         "24115"
       ]
     },
+    "rionansa-localidades": {
+      "id": "rionansa-localidades",
+      "publisher": "Ayuntamiento de Rionansa",
+      "title": "Sobre Nosotros",
+      "url": "https://aytorionansa.com/rionansa/sobre-nosotros/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La presentación del Ayuntamiento indica que el municipio se compone de dieciséis localidades y las enumera. Se seleccionan Puentenansa, Cabrojo, Celis, Cosío, Rozadío y San Sebastián de Garabandal.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39063"
+      ]
+    },
     "salamanca-reglamento-barrios": {
       "id": "salamanca-reglamento-barrios",
       "publisher": "Ayuntamiento de Salamanca",
@@ -473,6 +1294,90 @@
       "method": "municipal-web",
       "municipalityCodes": [
         "37274"
+      ]
+    },
+    "san-felices-buelna-localidades": {
+      "id": "san-felices-buelna-localidades",
+      "publisher": "Ayuntamiento de San Felices de Buelna",
+      "title": "Localidades",
+      "url": "https://sanfelicesdebuelna.es/municipio/localidades/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección municipal Localidades presenta Rivero, Mata, Sovilla, Sopenilla, Jaín y Tarriba con enlaces individuales. Se utiliza la categoría de la relación municipal, sin transformar los núcleos en distritos.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39069"
+      ]
+    },
+    "san-fernando-asfaltado-2022": {
+      "id": "san-fernando-asfaltado-2022",
+      "publisher": "Ayuntamiento de San Fernando de Henares",
+      "title": "IV Plan Municipal de Asfaltado, la mayor inversión de los últimos tiempos",
+      "url": "https://www.ayto-sanfernando.com/iv-plan-municipal-de-asfaltado-la-mayor-inversion-de-los-ultimos-tiempos/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Noticia municipal del 17 de octubre de 2022. Relación explícita de vías del municipio; se seleccionan dieciséis calles, avenidas y un paseo, todas clasificadas como street. Solo se utiliza como evidencia de sus nombres, sin reproducir ni presentar como actuales los avisos de obras de 2022.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "28130"
+      ]
+    },
+    "san-fernando-barrio-otan-2022": {
+      "id": "san-fernando-barrio-otan-2022",
+      "publisher": "Ayuntamiento de San Fernando de Henares",
+      "title": "Proyecto de mejora del Barrio de la OTAN",
+      "url": "https://www.ayto-sanfernando.com/arranca-un-completo-proyecto-de-mejora-en-el-conocido-como-barrio-de-la-otan/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Noticia municipal del 17 de octubre de 2022. Identifica expresamente el Barrio de la OTAN y sitúa la actuación en calles como Santander y Pontevedra y en la avenida de la Coruña. El barrio conserva categoría neighborhood y las vías street.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "28130"
+      ]
+    },
+    "san-fernando-fuencasa-pleno2018": {
+      "id": "san-fernando-fuencasa-pleno2018",
+      "publisher": "Ayuntamiento de San Fernando de Henares",
+      "title": "Pleno de 15 de febrero de 2018: referencia al barrio de Fuencasa",
+      "url": "https://www.ayto-sanfernando.com/pleno-15-de-febrero-de-2018/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El punto 18 del orden del día publicado por el Ayuntamiento menciona expresamente el barrio de Fuencasa. Acredita el uso municipal de esta denominación; no establece límites, una división administrativa actual ni el estado actual de los servicios de limpieza.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "28130"
+      ]
+    },
+    "san-fernando-ondarreta-agenda2026": {
+      "id": "san-fernando-ondarreta-agenda2026",
+      "publisher": "Ayuntamiento de San Fernando de Henares",
+      "title": "Agenda municipal Vive Sanfer de septiembre de 2026",
+      "url": "https://www.ayto-sanfernando.com/la-agenda-cultural-y-de-ocio-vive-sanfer-arranca-septiembre-con-teatro-fiestas-de-barrio-propuestas-para-jovenes-exposiciones-y-actividades-para-todos-los-publicos/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Noticia municipal del 8 de septiembre de 2026. Sitúa las actividades en la plaza de Ondarreta. Solo se incorpora la plaza como street; no se convierte el lugar de celebración ni el nombre de la asociación organizadora en un barrio.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "28130"
+      ]
+    },
+    "san-fernando-parque-henares-linea822": {
+      "id": "san-fernando-parque-henares-linea822",
+      "publisher": "Ayuntamiento de San Fernando de Henares",
+      "title": "Mejora de la línea 822 y conexión del barrio de Parque Henares",
+      "url": "https://www.ayto-sanfernando.com/la-linea-de-autobus-822-mejora-su-itineratio-conectando-el-barrio-de-parque-henares-con-el-polideportivo-municipal-y-ampliando-servicio-a-los-fines-de-semana/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Noticia municipal del 20 de diciembre de 2021. El título y el cuerpo identifican directamente Parque Henares como barrio. No se deduce el barrio a partir de una asociación vecinal ni se reutiliza la información de transporte como horario vigente.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "28130"
+      ]
+    },
+    "san-fernando-parque-roma-coronas-jgl2025": {
+      "id": "san-fernando-parque-roma-coronas-jgl2025",
+      "publisher": "Ayuntamiento de San Fernando de Henares",
+      "title": "Acta de la Junta de Gobierno Local de 29 de octubre de 2025",
+      "url": "https://www.ayto-sanfernando.com/wp-content/uploads/2025/11/ACTA-sesion-extraordinaria-JGL-29-10-2025.pdf",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Páginas 12 y 15 de 21. El informe urbanístico transcrito en el acta identifica el Barrio Parque Roma-Coronas de San Fernando de Henares y distingue el Barrio del Jarama de Coslada. Se conserva la denominación conjunta Parque Roma-Coronas, sin inventar dos límites o dos distritos administrativos.",
+      "method": "municipal-pdf",
+      "municipalityCodes": [
+        "28130"
       ]
     },
     "santander-barrios-patrimonio": {
@@ -497,6 +1402,18 @@
       "method": "municipal-web",
       "municipalityCodes": [
         "39075"
+      ]
+    },
+    "santiurde-toranzo-pueblos": {
+      "id": "santiurde-toranzo-pueblos",
+      "publisher": "Ayuntamiento de Santiurde de Toranzo",
+      "title": "Nuestros pueblos",
+      "url": "https://www.ayto-santiurde.com/turismo/pueblos-valle-de-toranzo/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El índice municipal Nuestros pueblos dedica apartados a Acereda, Bárcena de Toranzo, Iruz, Pando, Penilla de Toranzo y San Martín de Toranzo, entre otros. Se identifican como localidades, no como barrios.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39078"
       ]
     },
     "segovia-ceas-centro": {
@@ -545,6 +1462,30 @@
       "method": "municipal-web",
       "municipalityCodes": [
         "45161"
+      ]
+    },
+    "soba-nucleos": {
+      "id": "soba-nucleos",
+      "publisher": "Ayuntamiento de Soba",
+      "title": "Presentación del municipio",
+      "url": "https://www.soba.es/el-municipio/demograf%C3%ADa",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La página municipal incluye una relación de Núcleos de Población. De ella se seleccionan Veguilla, Aja, Asón, Astrana, Cañedo y Herada. No se reproducen las cifras de habitantes, que pertenecen a una edición antigua de la página.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39083"
+      ]
+    },
+    "sobrescobio-localizacion-pueblos": {
+      "id": "sobrescobio-localizacion-pueblos",
+      "publisher": "Ayuntamiento de Sobrescobio",
+      "title": "Localización",
+      "url": "https://www.ayto-sobrescobio.es/localizacion",
+      "retrievedAt": "2026-10-26",
+      "evidence": "El Ayuntamiento presenta expresamente Rioseco, Soto de Agues, Ladines, Campiellos, Villamoréi y La Polina entre los pueblos y aldeas del concejo, separados de sus tres parroquias. Se conservan como localidades. Contenido comprobado en el índice de búsqueda; apertura directa con 403.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "33067"
       ]
     },
     "soria-agenda-barrios": {
@@ -623,6 +1564,30 @@
         "45168"
       ]
     },
+    "torrejon-cuida-barrios-2025": {
+      "id": "torrejon-cuida-barrios-2025",
+      "publisher": "Ayuntamiento de Torrejón de Ardoz",
+      "title": "Campaña Torrejón: Cuida sus Barrios",
+      "url": "https://www.ayto-torrejon.es/index.php/noticia/nota-de-prensa/en-marcha-la-campana-torrejon-cuida-sus-barrios-con-el-objetivo-de-mejorar-e",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Noticia municipal del 12 de febrero de 2025, abierta y leída. Su relación de barrios por zonas de actuación menciona Fronteras en la zona 1, Juncal y Veredillas en la zona 2 y Zarzuela en la zona 3. Los números de las zonas organizan una campaña de mantenimiento; no se convierten en distritos administrativos. Se excluyen del listado de barrios las carreteras, travesías y plazas que también aparecen en la relación general.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "28148"
+      ]
+    },
+    "torrejon-patios-barrios-2026": {
+      "id": "torrejon-patios-barrios-2026",
+      "publisher": "Ayuntamiento de Torrejón de Ardoz",
+      "title": "Patios Abiertos: distribución de centros por barrios",
+      "url": "https://www.ayto-torrejon.es/noticia/nota-de-prensa/diez-colegios-de-torrejon-de-ardoz-abren-sus-patios-por-las-tardes-para-0",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Noticia municipal del 7 de octubre de 2026, abierta y leída. Identifica expresamente los barrios que atienden los colegios participantes y menciona Mancha Amarilla, Soto Henares, Parque Cataluña y Torrenieve. Sus nombres también están recogidos en la campaña municipal Cuida sus Barrios de 2025. No se convierten los nombres de centros escolares en barrios ni se trasladan horarios del programa a la web de servicios.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "28148"
+      ]
+    },
     "torrelavega-barrios-servicios": {
       "id": "torrelavega-barrios-servicios",
       "publisher": "Ayuntamiento de Torrelavega",
@@ -635,6 +1600,18 @@
         "39087"
       ]
     },
+    "tudanca-nucleos": {
+      "id": "tudanca-nucleos",
+      "publisher": "Ayuntamiento de Tudanca",
+      "title": "Localización y Entorno",
+      "url": "https://aytotudanca.es/municipio/descubre-el-municipio/localizacion-y-entorno/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La descripción municipal enumera expresamente cuatro núcleos de población: La Lastra, Santotís, Sarceda y Tudanca. La verificación se realiza en el contenido indexado de la página oficial, cuya apertura muestra una pantalla de comprobación de solicitudes.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39089"
+      ]
+    },
     "tudela-barrios-accesibilidad": {
       "id": "tudela-barrios-accesibilidad",
       "publisher": "Ayuntamiento de Tudela",
@@ -645,6 +1622,66 @@
       "method": "municipal-web",
       "municipalityCodes": [
         "31232"
+      ]
+    },
+    "ubide-barrios-municipales": {
+      "id": "ubide-barrios-municipales",
+      "publisher": "Ayuntamiento de Ubide",
+      "title": "Barrios de Ubide",
+      "url": "https://www.ubide.eus/es-ES/para-disfrutar/Paginas/Barrios.aspx",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La página municipal declara expresamente que Ubide tiene dos barrios: Madalena y San Juan. Se conserva la forma Madalena utilizada por la página, sin sustituirla por Magdalena. Contenido oficial indexado; apertura directa con tiempo de espera agotado.",
+      "method": "municipal-web-index",
+      "municipalityCodes": [
+        "48088"
+      ]
+    },
+    "udias-guia-pueblos": {
+      "id": "udias-guia-pueblos",
+      "publisher": "Ayuntamiento de Udías",
+      "title": "Municipio de Udías — Guía de turismo",
+      "url": "https://ayuntamientoudias.com/wp-content/uploads/2023/02/GuiaTurismoWeb.pdf",
+      "retrievedAt": "2026-10-26",
+      "evidence": "En la página 2 del PDF municipal se enumeran los núcleos de población de Udías. Se seleccionan Pumalverde, Canales, Cobijón, La Hayuela, El Llano y La Virgen. La guía desarrolla después sus pueblos; no se extraen cifras demográficas antiguas.",
+      "method": "municipal-document",
+      "municipalityCodes": [
+        "39090"
+      ]
+    },
+    "uztarroz-zabalea-contacto": {
+      "id": "uztarroz-zabalea-contacto",
+      "publisher": "Ayuntamiento de Uztárroz/Uztarroze",
+      "title": "Web municipal y dirección de contacto",
+      "url": "https://uztarroz.es/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Portada municipal abierta el 26/10/2026. La dirección pública de la entidad se identifica expresamente como Barrio Zabalea, Uztárroz-Uztarroze. Se extrae solamente el barrio, sin portal, teléfono ni otros datos de contacto.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "31247"
+      ]
+    },
+    "valdaliga-ruta-pueblos": {
+      "id": "valdaliga-ruta-pueblos",
+      "publisher": "Ayuntamiento de Valdáliga",
+      "title": "Rutas — Ruta literaria",
+      "url": "https://www.aytovaldaliga.org/rutas.html",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La ruta municipal Por los pueblos de Valdáliga describe el recorrido por San Vicente del Monte, Treceño, Roiz, Caviedes, Lamadrid y El Tejo. Se utilizan esos pueblos como localidades, sin tomar los restaurantes, palacios o elementos naturales de la ruta como zonas. Verificado en contenido indexado; la apertura directa devolvió 502.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39091"
+      ]
+    },
+    "valdeprado-rio-pueblos": {
+      "id": "valdeprado-rio-pueblos",
+      "publisher": "Ayuntamiento de Valdeprado del Río",
+      "title": "Nuestros pueblos",
+      "url": "https://aytovaldepradodelrio.com/nuestros-pueblos/",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La sección municipal Nuestros pueblos dedica apartados a Arcera, Arroyal, Barruelo, Bustidoño, Reocín de los Molinos y Valdeprado del Río. La selección evita los despoblados mencionados en las rutas y conserva los nombres de los núcleos.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "39093"
       ]
     },
     "valladolid-plano-barrios": {
@@ -671,6 +1708,30 @@
         "01059"
       ]
     },
+    "yernes-tameza-nucleos": {
+      "id": "yernes-tameza-nucleos",
+      "publisher": "Ayuntamiento de Yernes y Tameza",
+      "title": "Parroquias de Yernes y Tameza",
+      "url": "https://www.yernesytameza.es/parroquias",
+      "retrievedAt": "2026-10-26",
+      "evidence": "La página municipal describe los núcleos de Villabre, Villaruiz y Fojó en la parroquia de Villabre, y Yernes y Vendillés en la de Yernes. Se conservan como localidades con las grafías de la fuente, sin deducir barrios. Texto comprobado en el índice de búsqueda; apertura directa con 403.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "33078"
+      ]
+    },
+    "zalduondo-arbin-ayuntamiento": {
+      "id": "zalduondo-arbin-ayuntamiento",
+      "publisher": "Ayuntamiento de Zalduondo",
+      "title": "Perfil del contratante y dirección del Ayuntamiento",
+      "url": "https://www.zalduondo.eus/perfil-del-contratante",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Página municipal abierta el 26/10/2026. El pie municipal identifica la dirección Arbin Auzoa en Zalduondo (Araba); auzoa es la categoría barrio. Se toma únicamente el nombre del barrio, sin número de portal ni datos personales.",
+      "method": "municipal-web",
+      "municipalityCodes": [
+        "01061"
+      ]
+    },
     "zamora-linea-barrios": {
       "id": "zamora-linea-barrios",
       "publisher": "Ayuntamiento de Zamora",
@@ -682,114 +1743,109 @@
       "municipalityCodes": [
         "49275"
       ]
+    },
+    "zaratamo-bizkaibus-barrios-2026": {
+      "id": "zaratamo-bizkaibus-barrios-2026",
+      "publisher": "Ayuntamiento de Zaratamo",
+      "title": "Alegaciones de Zaratamo sobre Bizkaibus, mayo de 2026",
+      "url": "https://www.zaratamo.eus/es-ES/Noticias/Documents/20260525-bizkaibus-alegazioak-cas.pdf",
+      "retrievedAt": "2026-10-26",
+      "evidence": "Documento municipal del 25 de mayo de 2026. Identifica directamente los tres barrios Arkotxa, Elexalde y Moiordin al describir la conexión interna del municipio. Se mantienen las grafías publicadas. Evidencia del PDF municipal indexada.",
+      "method": "municipal-pdf-index",
+      "municipalityCodes": [
+        "48097"
+      ]
     }
   },
   "stats": {
-    "municipalitiesWithLocalReferences": 44,
-    "areas": 386,
-    "neighborhoods": 371,
+    "municipalities": 130,
+    "references": 766,
+    "neighborhoods": 517,
     "districts": 6,
     "residentialAreas": 9,
-    "parishes": 0,
-    "sourceCount": 56,
+    "parishes": 6,
+    "localities": 204,
+    "streets": 24,
+    "sources": 145,
     "provinces": 19,
-    "coverageByProvince": [
-      {
-        "provinceSlug": "asturias",
-        "municipalities": 3,
-        "areas": 34
+    "byProvince": {
+      "alava": {
+        "municipalities": 6,
+        "references": 42
       },
-      {
-        "provinceSlug": "cantabria",
-        "municipalities": 2,
-        "areas": 11
+      "asturias": {
+        "municipalities": 10,
+        "references": 75
       },
-      {
-        "provinceSlug": "bizkaia",
-        "municipalities": 3,
-        "areas": 29
-      },
-      {
-        "provinceSlug": "gipuzkoa",
-        "municipalities": 2,
-        "areas": 24
-      },
-      {
-        "provinceSlug": "leon",
-        "municipalities": 2,
-        "areas": 18
-      },
-      {
-        "provinceSlug": "palencia",
+      "avila": {
         "municipalities": 1,
-        "areas": 12
+        "references": 8
       },
-      {
-        "provinceSlug": "alava",
-        "municipalities": 3,
-        "areas": 29
+      "bizkaia": {
+        "municipalities": 25,
+        "references": 88
       },
-      {
-        "provinceSlug": "navarra",
-        "municipalities": 2,
-        "areas": 16
-      },
-      {
-        "provinceSlug": "zamora",
-        "municipalities": 2,
-        "areas": 17
-      },
-      {
-        "provinceSlug": "valladolid",
-        "municipalities": 2,
-        "areas": 17
-      },
-      {
-        "provinceSlug": "burgos",
-        "municipalities": 3,
-        "areas": 30
-      },
-      {
-        "provinceSlug": "la-rioja",
-        "municipalities": 3,
-        "areas": 16
-      },
-      {
-        "provinceSlug": "salamanca",
-        "municipalities": 1,
-        "areas": 12
-      },
-      {
-        "provinceSlug": "avila",
-        "municipalities": 1,
-        "areas": 8
-      },
-      {
-        "provinceSlug": "segovia",
-        "municipalities": 1,
-        "areas": 12
-      },
-      {
-        "provinceSlug": "soria",
-        "municipalities": 1,
-        "areas": 5
-      },
-      {
-        "provinceSlug": "toledo",
-        "municipalities": 4,
-        "areas": 27
-      },
-      {
-        "provinceSlug": "madrid",
+      "burgos": {
         "municipalities": 5,
-        "areas": 50
+        "references": 40
       },
-      {
-        "provinceSlug": "guadalajara",
+      "cantabria": {
+        "municipalities": 33,
+        "references": 169
+      },
+      "gipuzkoa": {
+        "municipalities": 15,
+        "references": 70
+      },
+      "guadalajara": {
         "municipalities": 3,
-        "areas": 19
+        "references": 19
+      },
+      "la-rioja": {
+        "municipalities": 3,
+        "references": 16
+      },
+      "leon": {
+        "municipalities": 2,
+        "references": 18
+      },
+      "madrid": {
+        "municipalities": 8,
+        "references": 90
+      },
+      "navarra": {
+        "municipalities": 7,
+        "references": 29
+      },
+      "palencia": {
+        "municipalities": 1,
+        "references": 12
+      },
+      "salamanca": {
+        "municipalities": 1,
+        "references": 12
+      },
+      "segovia": {
+        "municipalities": 1,
+        "references": 12
+      },
+      "soria": {
+        "municipalities": 1,
+        "references": 5
+      },
+      "toledo": {
+        "municipalities": 4,
+        "references": 27
+      },
+      "valladolid": {
+        "municipalities": 2,
+        "references": 17
+      },
+      "zamora": {
+        "municipalities": 2,
+        "references": 17
       }
-    ]
+    }
   },
   "municipalities": {
     "01002": {
@@ -845,6 +1901,78 @@
           "name": "Lexarraga",
           "type": "neighborhood",
           "sourceId": "amurrio-asambleas-barrios"
+        }
+      ]
+    },
+    "01020": {
+      "name": "Kuartango",
+      "provinceSlug": "alava",
+      "areas": [
+        {
+          "name": "Zuhatzu Kuartango",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Anda",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Aprikano",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Etxabarri Kuartango",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Jokano",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        },
+        {
+          "name": "Luna",
+          "type": "locality",
+          "sourceId": "kuartango-pueblos-municipal"
+        }
+      ]
+    },
+    "01027": {
+      "name": "Iruraiz-Gauna",
+      "provinceSlug": "alava",
+      "areas": [
+        {
+          "name": "Azilu",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Alaitza",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Arrieta",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Erentxun",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Gauna",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
+        },
+        {
+          "name": "Gazeo",
+          "type": "locality",
+          "sourceId": "iruraiz-gauna-pueblos-municipal"
         }
       ]
     },
@@ -955,6 +2083,17 @@
         }
       ]
     },
+    "01061": {
+      "name": "Zalduondo",
+      "provinceSlug": "alava",
+      "areas": [
+        {
+          "name": "Arbin",
+          "type": "neighborhood",
+          "sourceId": "zalduondo-arbin-ayuntamiento"
+        }
+      ]
+    },
     "05019": {
       "name": "Ávila",
       "provinceSlug": "avila",
@@ -998,6 +2137,42 @@
           "name": "Santiago",
           "type": "neighborhood",
           "sourceId": "avila-pleno-barrios"
+        }
+      ]
+    },
+    "09011": {
+      "name": "Alfoz de Bricia",
+      "provinceSlug": "burgos",
+      "areas": [
+        {
+          "name": "Barrio de Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Campino",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Cilleruelo de Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Montejo de Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
+        },
+        {
+          "name": "Presillas de Bricia",
+          "type": "locality",
+          "sourceId": "burgos-alfoz-bricia-localidades"
         }
       ]
     },
@@ -1110,6 +2285,32 @@
           "name": "San Pedro y San Felices",
           "type": "neighborhood",
           "sourceId": "burgos-reglamento-distritos"
+        }
+      ]
+    },
+    "09190": {
+      "name": "Junta de Villalba de Losa",
+      "provinceSlug": "burgos",
+      "areas": [
+        {
+          "name": "Villalba de Losa",
+          "type": "locality",
+          "sourceId": "burgos-villalba-losa-localidades"
+        },
+        {
+          "name": "Mijala",
+          "type": "locality",
+          "sourceId": "burgos-villalba-losa-localidades"
+        },
+        {
+          "name": "Murita",
+          "type": "locality",
+          "sourceId": "burgos-villalba-losa-localidades"
+        },
+        {
+          "name": "Zaballa",
+          "type": "locality",
+          "sourceId": "burgos-villalba-losa-localidades"
         }
       ]
     },
@@ -1282,6 +2483,219 @@
         }
       ]
     },
+    "20001": {
+      "name": "Abaltzisketa",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Aranguren",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-abaltzisketa"
+        },
+        {
+          "name": "Azaldegi-Estanga",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-abaltzisketa"
+        },
+        {
+          "name": "Ipintza-Garmendi",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-abaltzisketa"
+        },
+        {
+          "name": "Larraitz",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-abaltzisketa"
+        },
+        {
+          "name": "Olano",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-abaltzisketa"
+        },
+        {
+          "name": "San Joan plaza",
+          "type": "street",
+          "sourceId": "gipuzkoa-b5m-abaltzisketa"
+        }
+      ]
+    },
+    "20004": {
+      "name": "Albiztur",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Aizkorriaundi",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-albiztur"
+        },
+        {
+          "name": "Aizkorritxiki",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-albiztur"
+        },
+        {
+          "name": "Ergoena",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-albiztur"
+        },
+        {
+          "name": "Olateaga",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-albiztur"
+        },
+        {
+          "name": "Santa Marina",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-albiztur"
+        },
+        {
+          "name": "Urreta",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-albiztur"
+        }
+      ]
+    },
+    "20015": {
+      "name": "Ataun",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Aia",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-ataun"
+        },
+        {
+          "name": "Arin",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-ataun"
+        },
+        {
+          "name": "Arrondo",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-ataun"
+        },
+        {
+          "name": "Astigarraga",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-ataun"
+        },
+        {
+          "name": "Elbarrena",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-ataun"
+        },
+        {
+          "name": "Ergoiena",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-ataun"
+        }
+      ]
+    },
+    "20021": {
+      "name": "Belauntza",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Hiriburu",
+          "type": "locality",
+          "sourceId": "geoeuskadi-gipuzkoa-nucleos-tipificados"
+        }
+      ]
+    },
+    "20024": {
+      "name": "Bidania-Goiatz",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Bidania",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-bidania-goiatz"
+        },
+        {
+          "name": "Goiatz",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-bidania-goiatz"
+        },
+        {
+          "name": "Elbarren Bailara",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-bidania-goiatz"
+        },
+        {
+          "name": "Eliz Bailara",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-bidania-goiatz"
+        },
+        {
+          "name": "Elola Bailara",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-bidania-goiatz"
+        },
+        {
+          "name": "Erreka Bailara",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-bidania-goiatz"
+        }
+      ]
+    },
+    "20026": {
+      "name": "Zerain",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Aizpea",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-zerain"
+        },
+        {
+          "name": "Barbari",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-zerain"
+        },
+        {
+          "name": "Errekalde",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-zerain"
+        },
+        {
+          "name": "Gorosmendi",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-zerain"
+        },
+        {
+          "name": "Irukarate",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-zerain"
+        },
+        {
+          "name": "Otatza",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-zerain"
+        }
+      ]
+    },
+    "20031": {
+      "name": "Elduain",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Elduain",
+          "type": "locality",
+          "sourceId": "geoeuskadi-gipuzkoa-nucleos-tipificados"
+        }
+      ]
+    },
+    "20037": {
+      "name": "Gaintza",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Herriko Plaza",
+          "type": "street",
+          "sourceId": "gipuzkoa-gaintza-directorio-facturacion"
+        }
+      ]
+    },
     "20045": {
       "name": "Irun",
       "provinceSlug": "gipuzkoa",
@@ -1348,6 +2762,69 @@
         }
       ]
     },
+    "20048": {
+      "name": "Larraul",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "San Esteban Plaza",
+          "type": "street",
+          "sourceId": "gobierno-vasco-larraul-plaza"
+        }
+      ]
+    },
+    "20050": {
+      "name": "Leaburu",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Leaburu",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-leaburu"
+        },
+        {
+          "name": "Txarama",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-leaburu"
+        }
+      ]
+    },
+    "20066": {
+      "name": "Errezil",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Artzalluz",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-errezil"
+        },
+        {
+          "name": "Erdoizta",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-errezil"
+        },
+        {
+          "name": "Ezama",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-errezil"
+        },
+        {
+          "name": "Ibarbia",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-errezil"
+        },
+        {
+          "name": "Letea",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-errezil"
+        },
+        {
+          "name": "Santa Marina",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-errezil"
+        }
+      ]
+    },
     "20069": {
       "name": "Donostia/San Sebastián",
       "provinceSlug": "gipuzkoa",
@@ -1411,6 +2888,38 @@
           "name": "Loiola",
           "type": "neighborhood",
           "sourceId": "donostia-barrios-municipales"
+        }
+      ]
+    },
+    "20906": {
+      "name": "Altzaga",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Abaliak",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-altzaga"
+        },
+        {
+          "name": "Altzagarate",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-altzaga"
+        },
+        {
+          "name": "Sarasolak",
+          "type": "neighborhood",
+          "sourceId": "gipuzkoa-b5m-altzaga"
+        }
+      ]
+    },
+    "20907": {
+      "name": "Gaztelu",
+      "provinceSlug": "gipuzkoa",
+      "areas": [
+        {
+          "name": "Gaztelu",
+          "type": "neighborhood",
+          "sourceId": "geoeuskadi-gipuzkoa-nucleos-tipificados"
         }
       ]
     },
@@ -1680,6 +3189,52 @@
         }
       ]
     },
+    "28049": {
+      "name": "Coslada",
+      "provinceSlug": "madrid",
+      "areas": [
+        {
+          "name": "Casco",
+          "type": "neighborhood",
+          "sourceId": "coslada-poblacion-barrios-2025"
+        },
+        {
+          "name": "Barrio del Puerto",
+          "type": "neighborhood",
+          "sourceId": "coslada-poblacion-barrios-2025"
+        },
+        {
+          "name": "Valleaguado Norte",
+          "type": "neighborhood",
+          "sourceId": "coslada-poblacion-barrios-2025"
+        },
+        {
+          "name": "Valleaguado Sur",
+          "type": "neighborhood",
+          "sourceId": "coslada-poblacion-barrios-2025"
+        },
+        {
+          "name": "Ciudad 70",
+          "type": "neighborhood",
+          "sourceId": "coslada-poblacion-barrios-2025"
+        },
+        {
+          "name": "La Espinilla / Parque Blanco",
+          "type": "neighborhood",
+          "sourceId": "coslada-poblacion-barrios-2025"
+        },
+        {
+          "name": "La Cañada",
+          "type": "neighborhood",
+          "sourceId": "coslada-poblacion-barrios-2025"
+        },
+        {
+          "name": "Barrio de la Estación",
+          "type": "neighborhood",
+          "sourceId": "coslada-poblacion-barrios-2025"
+        }
+      ]
+    },
     "28065": {
       "name": "Getafe",
       "provinceSlug": "madrid",
@@ -1894,6 +3449,262 @@
         }
       ]
     },
+    "28130": {
+      "name": "San Fernando de Henares",
+      "provinceSlug": "madrid",
+      "areas": [
+        {
+          "name": "Parque Henares",
+          "type": "neighborhood",
+          "sourceId": "san-fernando-parque-henares-linea822"
+        },
+        {
+          "name": "Barrio de la OTAN",
+          "type": "neighborhood",
+          "sourceId": "san-fernando-barrio-otan-2022"
+        },
+        {
+          "name": "Fuencasa",
+          "type": "neighborhood",
+          "sourceId": "san-fernando-fuencasa-pleno2018"
+        },
+        {
+          "name": "Parque Roma-Coronas",
+          "type": "neighborhood",
+          "sourceId": "san-fernando-parque-roma-coronas-jgl2025"
+        },
+        {
+          "name": "Calle Gabriel Celaya",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle Federico García Lorca",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle Labor",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Avenida de San Sebastián",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle Zumárraga",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle Vergara",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Avenida de Éibar",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle Álava",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Paseo de Tolosa",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle Vitoria",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Avenida de Somorrostro",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle de la Era",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle de la Huerta Chica",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle Molino",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Avenida de Madrid",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle Nazario Calonge",
+          "type": "street",
+          "sourceId": "san-fernando-asfaltado-2022"
+        },
+        {
+          "name": "Calle Santander",
+          "type": "street",
+          "sourceId": "san-fernando-barrio-otan-2022"
+        },
+        {
+          "name": "Calle Pontevedra",
+          "type": "street",
+          "sourceId": "san-fernando-barrio-otan-2022"
+        },
+        {
+          "name": "Avenida de la Coruña",
+          "type": "street",
+          "sourceId": "san-fernando-barrio-otan-2022"
+        },
+        {
+          "name": "Plaza de Ondarreta",
+          "type": "street",
+          "sourceId": "san-fernando-ondarreta-agenda2026"
+        }
+      ]
+    },
+    "28148": {
+      "name": "Torrejón de Ardoz",
+      "provinceSlug": "madrid",
+      "areas": [
+        {
+          "name": "Fronteras",
+          "type": "neighborhood",
+          "sourceId": "torrejon-cuida-barrios-2025"
+        },
+        {
+          "name": "Juncal",
+          "type": "neighborhood",
+          "sourceId": "torrejon-cuida-barrios-2025"
+        },
+        {
+          "name": "Veredillas",
+          "type": "neighborhood",
+          "sourceId": "torrejon-cuida-barrios-2025"
+        },
+        {
+          "name": "Zarzuela",
+          "type": "neighborhood",
+          "sourceId": "torrejon-cuida-barrios-2025"
+        },
+        {
+          "name": "Mancha Amarilla",
+          "type": "neighborhood",
+          "sourceId": "torrejon-patios-barrios-2026"
+        },
+        {
+          "name": "Soto Henares",
+          "type": "neighborhood",
+          "sourceId": "torrejon-patios-barrios-2026"
+        },
+        {
+          "name": "Parque Cataluña",
+          "type": "neighborhood",
+          "sourceId": "torrejon-patios-barrios-2026"
+        },
+        {
+          "name": "Torrenieve",
+          "type": "neighborhood",
+          "sourceId": "torrejon-patios-barrios-2026"
+        }
+      ]
+    },
+    "31031": {
+      "name": "Areso",
+      "provinceSlug": "navarra",
+      "areas": [
+        {
+          "name": "Elgoyen",
+          "type": "neighborhood",
+          "sourceId": "areso-contacto-elgoyen-municipal"
+        }
+      ]
+    },
+    "31081": {
+      "name": "Donamaria",
+      "provinceSlug": "navarra",
+      "areas": [
+        {
+          "name": "Askarraga",
+          "type": "locality",
+          "sourceId": "donamaria-nucleos-municipal-index"
+        },
+        {
+          "name": "Artze",
+          "type": "locality",
+          "sourceId": "donamaria-nucleos-municipal-index"
+        },
+        {
+          "name": "Gaztelu",
+          "type": "locality",
+          "sourceId": "donamaria-nucleos-municipal-index"
+        },
+        {
+          "name": "Igurin",
+          "type": "locality",
+          "sourceId": "donamaria-nucleos-municipal-index"
+        },
+        {
+          "name": "Uxarrea",
+          "type": "locality",
+          "sourceId": "donamaria-nucleos-municipal-index"
+        }
+      ]
+    },
+    "31128": {
+      "name": "Isaba/Izaba",
+      "provinceSlug": "navarra",
+      "areas": [
+        {
+          "name": "Izarjentea",
+          "type": "neighborhood",
+          "sourceId": "isaba-izarjentea-localizacion"
+        },
+        {
+          "name": "Bormapea",
+          "type": "neighborhood",
+          "sourceId": "isaba-bormapea-directorio-municipal"
+        }
+      ]
+    },
+    "31148": {
+      "name": "Legaria",
+      "provinceSlug": "navarra",
+      "areas": [
+        {
+          "name": "San Martín",
+          "type": "neighborhood",
+          "sourceId": "legaria-barrios-municipal"
+        },
+        {
+          "name": "El Río",
+          "type": "neighborhood",
+          "sourceId": "legaria-barrios-municipal"
+        },
+        {
+          "name": "El Monte",
+          "type": "neighborhood",
+          "sourceId": "legaria-barrios-municipal"
+        },
+        {
+          "name": "La Rochapea",
+          "type": "neighborhood",
+          "sourceId": "legaria-barrios-municipal"
+        }
+      ]
+    },
     "31201": {
       "name": "Pamplona/Iruña",
       "provinceSlug": "navarra",
@@ -1986,6 +3797,53 @@
         }
       ]
     },
+    "31247": {
+      "name": "Uztárroz/Uztarroze",
+      "provinceSlug": "navarra",
+      "areas": [
+        {
+          "name": "Zabalea",
+          "type": "neighborhood",
+          "sourceId": "uztarroz-zabalea-contacto"
+        }
+      ]
+    },
+    "33003": {
+      "name": "Amieva",
+      "provinceSlug": "asturias",
+      "areas": [
+        {
+          "name": "Sames",
+          "type": "locality",
+          "sourceId": "amieva-parroquias-y-pueblos"
+        },
+        {
+          "name": "Precendi",
+          "type": "locality",
+          "sourceId": "amieva-parroquias-y-pueblos"
+        },
+        {
+          "name": "Carbes",
+          "type": "locality",
+          "sourceId": "amieva-parroquias-y-pueblos"
+        },
+        {
+          "name": "Cien",
+          "type": "locality",
+          "sourceId": "amieva-parroquias-y-pueblos"
+        },
+        {
+          "name": "Cirieño",
+          "type": "locality",
+          "sourceId": "amieva-parroquias-y-pueblos"
+        },
+        {
+          "name": "Pen",
+          "type": "locality",
+          "sourceId": "amieva-parroquias-y-pueblos"
+        }
+      ]
+    },
     "33004": {
       "name": "Avilés",
       "provinceSlug": "asturias",
@@ -2052,6 +3910,42 @@
         }
       ]
     },
+    "33015": {
+      "name": "Caso",
+      "provinceSlug": "asturias",
+      "areas": [
+        {
+          "name": "El Campu",
+          "type": "locality",
+          "sourceId": "caso-nucleos-parroquias"
+        },
+        {
+          "name": "Tarna",
+          "type": "locality",
+          "sourceId": "caso-nucleos-parroquias"
+        },
+        {
+          "name": "Bezanes",
+          "type": "locality",
+          "sourceId": "caso-nucleos-parroquias"
+        },
+        {
+          "name": "Belerda",
+          "type": "locality",
+          "sourceId": "caso-nucleos-parroquias"
+        },
+        {
+          "name": "Orlé",
+          "type": "locality",
+          "sourceId": "caso-nucleos-parroquias"
+        },
+        {
+          "name": "Tanes",
+          "type": "locality",
+          "sourceId": "caso-nucleos-parroquias"
+        }
+      ]
+    },
     "33024": {
       "name": "Gijón",
       "provinceSlug": "asturias",
@@ -2105,6 +3999,42 @@
           "name": "Roces",
           "type": "neighborhood",
           "sourceId": "gijon-callejero-barrios"
+        }
+      ]
+    },
+    "33043": {
+      "name": "Onís",
+      "provinceSlug": "asturias",
+      "areas": [
+        {
+          "name": "Benia de Onís",
+          "type": "locality",
+          "sourceId": "onis-localizacion-pueblos"
+        },
+        {
+          "name": "Avín",
+          "type": "locality",
+          "sourceId": "onis-localizacion-pueblos"
+        },
+        {
+          "name": "Sirviella",
+          "type": "locality",
+          "sourceId": "onis-localizacion-pueblos"
+        },
+        {
+          "name": "Talavero",
+          "type": "locality",
+          "sourceId": "onis-localizacion-pueblos"
+        },
+        {
+          "name": "Demués",
+          "type": "locality",
+          "sourceId": "onis-localizacion-pueblos"
+        },
+        {
+          "name": "La Robellada",
+          "type": "locality",
+          "sourceId": "onis-localizacion-pueblos"
         }
       ]
     },
@@ -2171,6 +4101,145 @@
           "name": "Ventanielles",
           "type": "neighborhood",
           "sourceId": "oviedo-distritos-municipales"
+        }
+      ]
+    },
+    "33046": {
+      "name": "Peñamellera Alta",
+      "provinceSlug": "asturias",
+      "areas": [
+        {
+          "name": "Bellaces",
+          "type": "neighborhood",
+          "sourceId": "penamellera-alta-alles-barrios"
+        },
+        {
+          "name": "Besnes",
+          "type": "neighborhood",
+          "sourceId": "penamellera-alta-alles-barrios"
+        },
+        {
+          "name": "El Toju",
+          "type": "neighborhood",
+          "sourceId": "penamellera-alta-alles-barrios"
+        },
+        {
+          "name": "El Pedrosu",
+          "type": "neighborhood",
+          "sourceId": "penamellera-alta-alles-barrios"
+        },
+        {
+          "name": "La Aldea",
+          "type": "neighborhood",
+          "sourceId": "penamellera-alta-alles-barrios"
+        },
+        {
+          "name": "La Cal",
+          "type": "neighborhood",
+          "sourceId": "penamellera-alta-alles-barrios"
+        }
+      ]
+    },
+    "33054": {
+      "name": "Las Regueras",
+      "provinceSlug": "asturias",
+      "areas": [
+        {
+          "name": "Santullano",
+          "type": "parish",
+          "sourceId": "las-regueras-parroquias"
+        },
+        {
+          "name": "Soto",
+          "type": "parish",
+          "sourceId": "las-regueras-parroquias"
+        },
+        {
+          "name": "Valsera",
+          "type": "parish",
+          "sourceId": "las-regueras-parroquias"
+        },
+        {
+          "name": "Valduno",
+          "type": "parish",
+          "sourceId": "las-regueras-parroquias"
+        },
+        {
+          "name": "Trasmonte",
+          "type": "parish",
+          "sourceId": "las-regueras-parroquias"
+        },
+        {
+          "name": "Biedes",
+          "type": "parish",
+          "sourceId": "las-regueras-parroquias"
+        }
+      ]
+    },
+    "33067": {
+      "name": "Sobrescobio",
+      "provinceSlug": "asturias",
+      "areas": [
+        {
+          "name": "Rioseco",
+          "type": "locality",
+          "sourceId": "sobrescobio-localizacion-pueblos"
+        },
+        {
+          "name": "Soto de Agues",
+          "type": "locality",
+          "sourceId": "sobrescobio-localizacion-pueblos"
+        },
+        {
+          "name": "Ladines",
+          "type": "locality",
+          "sourceId": "sobrescobio-localizacion-pueblos"
+        },
+        {
+          "name": "Campiellos",
+          "type": "locality",
+          "sourceId": "sobrescobio-localizacion-pueblos"
+        },
+        {
+          "name": "Villamoréi",
+          "type": "locality",
+          "sourceId": "sobrescobio-localizacion-pueblos"
+        },
+        {
+          "name": "La Polina",
+          "type": "locality",
+          "sourceId": "sobrescobio-localizacion-pueblos"
+        }
+      ]
+    },
+    "33078": {
+      "name": "Yernes y Tameza",
+      "provinceSlug": "asturias",
+      "areas": [
+        {
+          "name": "Villabre",
+          "type": "locality",
+          "sourceId": "yernes-tameza-nucleos"
+        },
+        {
+          "name": "Villaruiz",
+          "type": "locality",
+          "sourceId": "yernes-tameza-nucleos"
+        },
+        {
+          "name": "Fojó",
+          "type": "locality",
+          "sourceId": "yernes-tameza-nucleos"
+        },
+        {
+          "name": "Yernes",
+          "type": "locality",
+          "sourceId": "yernes-tameza-nucleos"
+        },
+        {
+          "name": "Vendillés",
+          "type": "locality",
+          "sourceId": "yernes-tameza-nucleos"
         }
       ]
     },
@@ -2306,6 +4375,625 @@
         }
       ]
     },
+    "39003": {
+      "name": "Anievas",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Calga",
+          "type": "locality",
+          "sourceId": "anievas-poblaciones"
+        },
+        {
+          "name": "Cotillo",
+          "type": "locality",
+          "sourceId": "anievas-poblaciones"
+        },
+        {
+          "name": "Barriopalacio",
+          "type": "locality",
+          "sourceId": "anievas-poblaciones"
+        },
+        {
+          "name": "Villasuso",
+          "type": "locality",
+          "sourceId": "anievas-poblaciones"
+        }
+      ]
+    },
+    "39015": {
+      "name": "Camaleño",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Camaleño",
+          "type": "locality",
+          "sourceId": "camaleno-pueblos"
+        },
+        {
+          "name": "Espinama",
+          "type": "locality",
+          "sourceId": "camaleno-pueblos"
+        },
+        {
+          "name": "Mogrovejo",
+          "type": "locality",
+          "sourceId": "camaleno-pueblos"
+        },
+        {
+          "name": "Cosgaya",
+          "type": "locality",
+          "sourceId": "camaleno-pueblos"
+        },
+        {
+          "name": "Pido",
+          "type": "locality",
+          "sourceId": "camaleno-pueblos"
+        },
+        {
+          "name": "Turieno",
+          "type": "locality",
+          "sourceId": "camaleno-pueblos"
+        }
+      ]
+    },
+    "39017": {
+      "name": "Campoo de Yuso",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "La Costana",
+          "type": "locality",
+          "sourceId": "campoo-yuso-nucleos"
+        },
+        {
+          "name": "Corconte",
+          "type": "locality",
+          "sourceId": "campoo-yuso-nucleos"
+        },
+        {
+          "name": "Lanchares",
+          "type": "locality",
+          "sourceId": "campoo-yuso-nucleos"
+        },
+        {
+          "name": "Monegro",
+          "type": "locality",
+          "sourceId": "campoo-yuso-nucleos"
+        },
+        {
+          "name": "Orzales",
+          "type": "locality",
+          "sourceId": "campoo-yuso-nucleos"
+        },
+        {
+          "name": "La Población",
+          "type": "locality",
+          "sourceId": "campoo-yuso-nucleos"
+        }
+      ]
+    },
+    "39026": {
+      "name": "Corvera de Toranzo",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "San Vicente de Toranzo",
+          "type": "locality",
+          "sourceId": "corvera-toranzo-pueblos"
+        },
+        {
+          "name": "Ontaneda",
+          "type": "locality",
+          "sourceId": "corvera-toranzo-pueblos"
+        },
+        {
+          "name": "Alceda",
+          "type": "locality",
+          "sourceId": "corvera-toranzo-pueblos"
+        },
+        {
+          "name": "Borleña",
+          "type": "locality",
+          "sourceId": "corvera-toranzo-pueblos"
+        },
+        {
+          "name": "Corvera",
+          "type": "locality",
+          "sourceId": "corvera-toranzo-pueblos"
+        },
+        {
+          "name": "Castillo Pedroso",
+          "type": "locality",
+          "sourceId": "corvera-toranzo-pueblos"
+        }
+      ]
+    },
+    "39028": {
+      "name": "Entrambasaguas",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Entrambasaguas",
+          "type": "locality",
+          "sourceId": "entrambasaguas-lugares"
+        },
+        {
+          "name": "El Bosque",
+          "type": "locality",
+          "sourceId": "entrambasaguas-lugares"
+        },
+        {
+          "name": "Hornedo",
+          "type": "locality",
+          "sourceId": "entrambasaguas-lugares"
+        },
+        {
+          "name": "Hoznayo",
+          "type": "locality",
+          "sourceId": "entrambasaguas-lugares"
+        },
+        {
+          "name": "Navajeda",
+          "type": "locality",
+          "sourceId": "entrambasaguas-lugares"
+        },
+        {
+          "name": "Santa Marina",
+          "type": "locality",
+          "sourceId": "entrambasaguas-lugares"
+        }
+      ]
+    },
+    "39030": {
+      "name": "Guriezo",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Nocina",
+          "type": "neighborhood",
+          "sourceId": "guriezo-nocina"
+        }
+      ]
+    },
+    "39033": {
+      "name": "Herrerías",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Bielva",
+          "type": "locality",
+          "sourceId": "herrerias-nucleos"
+        },
+        {
+          "name": "Cabanzón",
+          "type": "locality",
+          "sourceId": "herrerias-nucleos"
+        },
+        {
+          "name": "Cades",
+          "type": "locality",
+          "sourceId": "herrerias-nucleos"
+        },
+        {
+          "name": "Camijanes",
+          "type": "locality",
+          "sourceId": "herrerias-nucleos"
+        },
+        {
+          "name": "Casamaría",
+          "type": "locality",
+          "sourceId": "herrerias-nucleos"
+        },
+        {
+          "name": "Puente del Arrudo",
+          "type": "locality",
+          "sourceId": "herrerias-nucleos"
+        }
+      ]
+    },
+    "39034": {
+      "name": "Lamasón",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Cires",
+          "type": "locality",
+          "sourceId": "cantur-lamason-localidades"
+        },
+        {
+          "name": "Los Pumares",
+          "type": "locality",
+          "sourceId": "cantur-lamason-localidades"
+        },
+        {
+          "name": "Río",
+          "type": "locality",
+          "sourceId": "cantur-lamason-localidades"
+        },
+        {
+          "name": "Sobrelapeña",
+          "type": "locality",
+          "sourceId": "cantur-lamason-localidades"
+        }
+      ]
+    },
+    "39036": {
+      "name": "Liendo",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Hazas",
+          "type": "neighborhood",
+          "sourceId": "liendo-barrios-fiestas"
+        },
+        {
+          "name": "Villaviad",
+          "type": "neighborhood",
+          "sourceId": "liendo-barrios-fiestas"
+        },
+        {
+          "name": "Mollaneda",
+          "type": "neighborhood",
+          "sourceId": "liendo-barrios-fiestas"
+        },
+        {
+          "name": "Noval",
+          "type": "neighborhood",
+          "sourceId": "liendo-barrios-fiestas"
+        },
+        {
+          "name": "Sopeña",
+          "type": "neighborhood",
+          "sourceId": "liendo-barrios-fiestas"
+        },
+        {
+          "name": "Iseca Vieja",
+          "type": "neighborhood",
+          "sourceId": "liendo-barrios-fiestas"
+        }
+      ]
+    },
+    "39039": {
+      "name": "Luena",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Bustasur",
+          "type": "locality",
+          "sourceId": "cantur-luena-localidades"
+        },
+        {
+          "name": "Carrascal de Cocejón",
+          "type": "locality",
+          "sourceId": "cantur-luena-localidades"
+        },
+        {
+          "name": "Carrascal de San Miguel",
+          "type": "locality",
+          "sourceId": "cantur-luena-localidades"
+        },
+        {
+          "name": "Cazpurrión",
+          "type": "locality",
+          "sourceId": "cantur-luena-localidades"
+        },
+        {
+          "name": "El Cocejón",
+          "type": "locality",
+          "sourceId": "cantur-luena-localidades"
+        },
+        {
+          "name": "Entrambasmestas",
+          "type": "locality",
+          "sourceId": "cantur-luena-localidades"
+        }
+      ]
+    },
+    "39041": {
+      "name": "Mazcuerras",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Mazcuerras",
+          "type": "locality",
+          "sourceId": "mazcuerras-pueblos"
+        },
+        {
+          "name": "Villanueva de la Peña",
+          "type": "locality",
+          "sourceId": "mazcuerras-pueblos"
+        },
+        {
+          "name": "Cos",
+          "type": "locality",
+          "sourceId": "mazcuerras-pueblos"
+        },
+        {
+          "name": "Herrera de Ibio",
+          "type": "locality",
+          "sourceId": "mazcuerras-pueblos"
+        },
+        {
+          "name": "Ibio",
+          "type": "locality",
+          "sourceId": "mazcuerras-pueblos"
+        },
+        {
+          "name": "Riaño de Ibio",
+          "type": "locality",
+          "sourceId": "mazcuerras-pueblos"
+        }
+      ]
+    },
+    "39050": {
+      "name": "Pesaguero",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Pesaguero",
+          "type": "locality",
+          "sourceId": "cantur-pesaguero-localidades"
+        },
+        {
+          "name": "Avellanedo",
+          "type": "locality",
+          "sourceId": "cantur-pesaguero-localidades"
+        },
+        {
+          "name": "Barreda",
+          "type": "locality",
+          "sourceId": "cantur-pesaguero-localidades"
+        },
+        {
+          "name": "Caloca",
+          "type": "locality",
+          "sourceId": "cantur-pesaguero-localidades"
+        },
+        {
+          "name": "Lerones",
+          "type": "locality",
+          "sourceId": "cantur-pesaguero-localidades"
+        },
+        {
+          "name": "Lomeña",
+          "type": "locality",
+          "sourceId": "cantur-pesaguero-localidades"
+        }
+      ]
+    },
+    "39053": {
+      "name": "Polaciones",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Lombraña",
+          "type": "locality",
+          "sourceId": "polaciones-pueblos"
+        },
+        {
+          "name": "San Mamés",
+          "type": "locality",
+          "sourceId": "polaciones-pueblos"
+        },
+        {
+          "name": "Belmonte",
+          "type": "locality",
+          "sourceId": "polaciones-pueblos"
+        },
+        {
+          "name": "Uznayo",
+          "type": "locality",
+          "sourceId": "polaciones-pueblos"
+        },
+        {
+          "name": "Puente Pumar",
+          "type": "locality",
+          "sourceId": "polaciones-pueblos"
+        },
+        {
+          "name": "Cotillos",
+          "type": "locality",
+          "sourceId": "polaciones-pueblos"
+        }
+      ]
+    },
+    "39054": {
+      "name": "Polanco",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Rolisas",
+          "type": "neighborhood",
+          "sourceId": "polanco-barrios"
+        },
+        {
+          "name": "Cantarranas",
+          "type": "neighborhood",
+          "sourceId": "polanco-barrios"
+        },
+        {
+          "name": "La Alegría",
+          "type": "neighborhood",
+          "sourceId": "polanco-barrios"
+        },
+        {
+          "name": "Cumbrales",
+          "type": "neighborhood",
+          "sourceId": "polanco-barrios"
+        },
+        {
+          "name": "Dosal",
+          "type": "neighborhood",
+          "sourceId": "polanco-barrios"
+        },
+        {
+          "name": "San Roque",
+          "type": "neighborhood",
+          "sourceId": "polanco-barrios"
+        }
+      ]
+    },
+    "39062": {
+      "name": "Ribamontán al Monte",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Anero",
+          "type": "locality",
+          "sourceId": "cantur-ribamontan-monte-localidades"
+        },
+        {
+          "name": "Cubas",
+          "type": "locality",
+          "sourceId": "cantur-ribamontan-monte-localidades"
+        },
+        {
+          "name": "Hoz de Anero",
+          "type": "locality",
+          "sourceId": "cantur-ribamontan-monte-localidades"
+        },
+        {
+          "name": "Las Pilas",
+          "type": "locality",
+          "sourceId": "cantur-ribamontan-monte-localidades"
+        },
+        {
+          "name": "Liermo",
+          "type": "locality",
+          "sourceId": "cantur-ribamontan-monte-localidades"
+        },
+        {
+          "name": "Omoño",
+          "type": "locality",
+          "sourceId": "cantur-ribamontan-monte-localidades"
+        }
+      ]
+    },
+    "39063": {
+      "name": "Rionansa",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Puentenansa",
+          "type": "locality",
+          "sourceId": "rionansa-localidades"
+        },
+        {
+          "name": "Cabrojo",
+          "type": "locality",
+          "sourceId": "rionansa-localidades"
+        },
+        {
+          "name": "Celis",
+          "type": "locality",
+          "sourceId": "rionansa-localidades"
+        },
+        {
+          "name": "Cosío",
+          "type": "locality",
+          "sourceId": "rionansa-localidades"
+        },
+        {
+          "name": "Rozadío",
+          "type": "locality",
+          "sourceId": "rionansa-localidades"
+        },
+        {
+          "name": "San Sebastián de Garabandal",
+          "type": "locality",
+          "sourceId": "rionansa-localidades"
+        }
+      ]
+    },
+    "39065": {
+      "name": "Las Rozas de Valdearroyo",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Arroyo de las Rozas",
+          "type": "locality",
+          "sourceId": "cantur-rozas-valdearroyo-localidades"
+        },
+        {
+          "name": "Bustasur",
+          "type": "locality",
+          "sourceId": "cantur-rozas-valdearroyo-localidades"
+        },
+        {
+          "name": "La Aguilera",
+          "type": "locality",
+          "sourceId": "cantur-rozas-valdearroyo-localidades"
+        },
+        {
+          "name": "Las Rozas",
+          "type": "locality",
+          "sourceId": "cantur-rozas-valdearroyo-localidades"
+        },
+        {
+          "name": "Llano de las Rozas",
+          "type": "locality",
+          "sourceId": "cantur-rozas-valdearroyo-localidades"
+        }
+      ]
+    },
+    "39069": {
+      "name": "San Felices de Buelna",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Rivero",
+          "type": "locality",
+          "sourceId": "san-felices-buelna-localidades"
+        },
+        {
+          "name": "Mata",
+          "type": "locality",
+          "sourceId": "san-felices-buelna-localidades"
+        },
+        {
+          "name": "Sovilla",
+          "type": "locality",
+          "sourceId": "san-felices-buelna-localidades"
+        },
+        {
+          "name": "Sopenilla",
+          "type": "locality",
+          "sourceId": "san-felices-buelna-localidades"
+        },
+        {
+          "name": "Jaín",
+          "type": "locality",
+          "sourceId": "san-felices-buelna-localidades"
+        },
+        {
+          "name": "Tarriba",
+          "type": "locality",
+          "sourceId": "san-felices-buelna-localidades"
+        }
+      ]
+    },
+    "39072": {
+      "name": "San Roque de Riomiera",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "La Concha de San Roque de Riomiera",
+          "type": "locality",
+          "sourceId": "cantur-san-roque-riomiera-localidades"
+        },
+        {
+          "name": "La Pedrosa de San Roque de Riomiera",
+          "type": "locality",
+          "sourceId": "cantur-san-roque-riomiera-localidades"
+        },
+        {
+          "name": "Merilla",
+          "type": "locality",
+          "sourceId": "cantur-san-roque-riomiera-localidades"
+        }
+      ]
+    },
     "39075": {
       "name": "Santander",
       "provinceSlug": "cantabria",
@@ -2347,6 +5035,94 @@
         }
       ]
     },
+    "39078": {
+      "name": "Santiurde de Toranzo",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Acereda",
+          "type": "locality",
+          "sourceId": "santiurde-toranzo-pueblos"
+        },
+        {
+          "name": "Bárcena de Toranzo",
+          "type": "locality",
+          "sourceId": "santiurde-toranzo-pueblos"
+        },
+        {
+          "name": "Iruz",
+          "type": "locality",
+          "sourceId": "santiurde-toranzo-pueblos"
+        },
+        {
+          "name": "Pando",
+          "type": "locality",
+          "sourceId": "santiurde-toranzo-pueblos"
+        },
+        {
+          "name": "Penilla de Toranzo",
+          "type": "locality",
+          "sourceId": "santiurde-toranzo-pueblos"
+        },
+        {
+          "name": "San Martín de Toranzo",
+          "type": "locality",
+          "sourceId": "santiurde-toranzo-pueblos"
+        }
+      ]
+    },
+    "39081": {
+      "name": "Saro",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Llerana",
+          "type": "locality",
+          "sourceId": "cantur-saro-localidades"
+        },
+        {
+          "name": "Saro",
+          "type": "locality",
+          "sourceId": "cantur-saro-localidades"
+        }
+      ]
+    },
+    "39083": {
+      "name": "Soba",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Veguilla",
+          "type": "locality",
+          "sourceId": "soba-nucleos"
+        },
+        {
+          "name": "Aja",
+          "type": "locality",
+          "sourceId": "soba-nucleos"
+        },
+        {
+          "name": "Asón",
+          "type": "locality",
+          "sourceId": "soba-nucleos"
+        },
+        {
+          "name": "Astrana",
+          "type": "locality",
+          "sourceId": "soba-nucleos"
+        },
+        {
+          "name": "Cañedo",
+          "type": "locality",
+          "sourceId": "soba-nucleos"
+        },
+        {
+          "name": "Herada",
+          "type": "locality",
+          "sourceId": "soba-nucleos"
+        }
+      ]
+    },
     "39087": {
       "name": "Torrelavega",
       "provinceSlug": "cantabria",
@@ -2370,6 +5146,275 @@
           "name": "Barrio Covadonga",
           "type": "neighborhood",
           "sourceId": "torrelavega-barrios-servicios"
+        }
+      ]
+    },
+    "39088": {
+      "name": "Tresviso",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Tresviso",
+          "type": "locality",
+          "sourceId": "cantur-tresviso-localidad"
+        }
+      ]
+    },
+    "39089": {
+      "name": "Tudanca",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "La Lastra",
+          "type": "locality",
+          "sourceId": "tudanca-nucleos"
+        },
+        {
+          "name": "Santotís",
+          "type": "locality",
+          "sourceId": "tudanca-nucleos"
+        },
+        {
+          "name": "Sarceda",
+          "type": "locality",
+          "sourceId": "tudanca-nucleos"
+        },
+        {
+          "name": "Tudanca",
+          "type": "locality",
+          "sourceId": "tudanca-nucleos"
+        }
+      ]
+    },
+    "39090": {
+      "name": "Udías",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Pumalverde",
+          "type": "locality",
+          "sourceId": "udias-guia-pueblos"
+        },
+        {
+          "name": "Canales",
+          "type": "locality",
+          "sourceId": "udias-guia-pueblos"
+        },
+        {
+          "name": "Cobijón",
+          "type": "locality",
+          "sourceId": "udias-guia-pueblos"
+        },
+        {
+          "name": "La Hayuela",
+          "type": "locality",
+          "sourceId": "udias-guia-pueblos"
+        },
+        {
+          "name": "El Llano",
+          "type": "locality",
+          "sourceId": "udias-guia-pueblos"
+        },
+        {
+          "name": "La Virgen",
+          "type": "locality",
+          "sourceId": "udias-guia-pueblos"
+        }
+      ]
+    },
+    "39091": {
+      "name": "Valdáliga",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "San Vicente del Monte",
+          "type": "locality",
+          "sourceId": "valdaliga-ruta-pueblos"
+        },
+        {
+          "name": "Treceño",
+          "type": "locality",
+          "sourceId": "valdaliga-ruta-pueblos"
+        },
+        {
+          "name": "Roiz",
+          "type": "locality",
+          "sourceId": "valdaliga-ruta-pueblos"
+        },
+        {
+          "name": "Caviedes",
+          "type": "locality",
+          "sourceId": "valdaliga-ruta-pueblos"
+        },
+        {
+          "name": "Lamadrid",
+          "type": "locality",
+          "sourceId": "valdaliga-ruta-pueblos"
+        },
+        {
+          "name": "El Tejo",
+          "type": "locality",
+          "sourceId": "valdaliga-ruta-pueblos"
+        }
+      ]
+    },
+    "39093": {
+      "name": "Valdeprado del Río",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Arcera",
+          "type": "locality",
+          "sourceId": "valdeprado-rio-pueblos"
+        },
+        {
+          "name": "Arroyal",
+          "type": "locality",
+          "sourceId": "valdeprado-rio-pueblos"
+        },
+        {
+          "name": "Barruelo",
+          "type": "locality",
+          "sourceId": "valdeprado-rio-pueblos"
+        },
+        {
+          "name": "Bustidoño",
+          "type": "locality",
+          "sourceId": "valdeprado-rio-pueblos"
+        },
+        {
+          "name": "Reocín de los Molinos",
+          "type": "locality",
+          "sourceId": "valdeprado-rio-pueblos"
+        },
+        {
+          "name": "Valdeprado del Río",
+          "type": "locality",
+          "sourceId": "valdeprado-rio-pueblos"
+        }
+      ]
+    },
+    "39099": {
+      "name": "Villaescusa",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "La Concha de Villaescusa",
+          "type": "locality",
+          "sourceId": "cantur-villaescusa-localidades"
+        },
+        {
+          "name": "Liaño",
+          "type": "locality",
+          "sourceId": "cantur-villaescusa-localidades"
+        },
+        {
+          "name": "Obregón",
+          "type": "locality",
+          "sourceId": "cantur-villaescusa-localidades"
+        },
+        {
+          "name": "Villanueva de Villaescusa",
+          "type": "locality",
+          "sourceId": "cantur-villaescusa-localidades"
+        }
+      ]
+    },
+    "39100": {
+      "name": "Villafufre",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Escobedo de Villafufre",
+          "type": "locality",
+          "sourceId": "cantur-villafufre-localidades"
+        },
+        {
+          "name": "Penilla",
+          "type": "locality",
+          "sourceId": "cantur-villafufre-localidades"
+        },
+        {
+          "name": "Rasillo",
+          "type": "locality",
+          "sourceId": "cantur-villafufre-localidades"
+        },
+        {
+          "name": "Villafufre",
+          "type": "locality",
+          "sourceId": "cantur-villafufre-localidades"
+        }
+      ]
+    },
+    "39101": {
+      "name": "Valle de Villaverde",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "El Campo",
+          "type": "locality",
+          "sourceId": "cantur-valle-villaverde-localidades"
+        },
+        {
+          "name": "La Altura",
+          "type": "locality",
+          "sourceId": "cantur-valle-villaverde-localidades"
+        },
+        {
+          "name": "La Capitana",
+          "type": "locality",
+          "sourceId": "cantur-valle-villaverde-localidades"
+        },
+        {
+          "name": "La Iglesia",
+          "type": "locality",
+          "sourceId": "cantur-valle-villaverde-localidades"
+        },
+        {
+          "name": "La Matanza",
+          "type": "locality",
+          "sourceId": "cantur-valle-villaverde-localidades"
+        },
+        {
+          "name": "Laiseca",
+          "type": "locality",
+          "sourceId": "cantur-valle-villaverde-localidades"
+        }
+      ]
+    },
+    "39102": {
+      "name": "Voto",
+      "provinceSlug": "cantabria",
+      "areas": [
+        {
+          "name": "Carasa",
+          "type": "locality",
+          "sourceId": "cantur-voto-localidades"
+        },
+        {
+          "name": "Llanez",
+          "type": "locality",
+          "sourceId": "cantur-voto-localidades"
+        },
+        {
+          "name": "Nates",
+          "type": "locality",
+          "sourceId": "cantur-voto-localidades"
+        },
+        {
+          "name": "Rada",
+          "type": "locality",
+          "sourceId": "cantur-voto-localidades"
+        },
+        {
+          "name": "San Bartolomé de los Montes",
+          "type": "locality",
+          "sourceId": "cantur-voto-localidades"
+        },
+        {
+          "name": "San Mamés de Aras",
+          "type": "locality",
+          "sourceId": "cantur-voto-localidades"
         }
       ]
     },
@@ -2726,6 +5771,54 @@
         }
       ]
     },
+    "48004": {
+      "name": "Amoroto",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Elexalde",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-amoroto-barrios"
+        },
+        {
+          "name": "Odiaga",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-amoroto-barrios"
+        },
+        {
+          "name": "Ugaran",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-amoroto-barrios"
+        },
+        {
+          "name": "Urrutia",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-amoroto-barrios"
+        }
+      ]
+    },
+    "48005": {
+      "name": "Arakaldo",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Elexalde",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-directorio-ayuntamientos-foral"
+        }
+      ]
+    },
+    "48010": {
+      "name": "Arrieta",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Libao",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-directorio-ayuntamientos-foral"
+        }
+      ]
+    },
     "48013": {
       "name": "Barakaldo",
       "provinceSlug": "bizkaia",
@@ -2858,6 +5951,148 @@
         }
       ]
     },
+    "48021": {
+      "name": "Busturia",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Axpe",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-directorio-ayuntamientos-foral"
+        }
+      ]
+    },
+    "48022": {
+      "name": "Karrantza Harana/Valle de Carranza",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Concha",
+          "type": "neighborhood",
+          "sourceId": "karrantza-patrimonio-barrios"
+        },
+        {
+          "name": "Ambasaguas",
+          "type": "neighborhood",
+          "sourceId": "karrantza-patrimonio-barrios"
+        }
+      ]
+    },
+    "48033": {
+      "name": "Ereño",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Elexalde",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-ereno-ruta-bus03"
+        },
+        {
+          "name": "Gabika",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-ereno-ruta-bus03"
+        },
+        {
+          "name": "Akorda-Bollar",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-ereno-ruta-bus03"
+        }
+      ]
+    },
+    "48035": {
+      "name": "Fruiz",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Aldai enparantza",
+          "type": "street",
+          "sourceId": "bizkaia-directorio-ayuntamientos-foral"
+        }
+      ]
+    },
+    "48038": {
+      "name": "Gamiz-Fika",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Ergoien",
+          "type": "neighborhood",
+          "sourceId": "gamiz-fika-pgou-barrios"
+        },
+        {
+          "name": "Elexalde",
+          "type": "neighborhood",
+          "sourceId": "gamiz-fika-pgou-barrios"
+        },
+        {
+          "name": "Ibarra",
+          "type": "neighborhood",
+          "sourceId": "gamiz-fika-pgou-barrios"
+        },
+        {
+          "name": "Mendotza",
+          "type": "neighborhood",
+          "sourceId": "gamiz-fika-pgou-barrios"
+        }
+      ]
+    },
+    "48039": {
+      "name": "Garai",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Goierri",
+          "type": "neighborhood",
+          "sourceId": "garai-pgou-2024-barrios"
+        },
+        {
+          "name": "Momoitio",
+          "type": "neighborhood",
+          "sourceId": "garai-pgou-2024-barrios"
+        },
+        {
+          "name": "San Miguel",
+          "type": "locality",
+          "sourceId": "garai-pgou-2024-barrios"
+        }
+      ]
+    },
+    "48040": {
+      "name": "Gatika",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Garai",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-gatika-paisaje"
+        },
+        {
+          "name": "Gorordo",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-gatika-paisaje"
+        },
+        {
+          "name": "Igartua",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-gatika-paisaje"
+        },
+        {
+          "name": "Libarona",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-gatika-paisaje"
+        },
+        {
+          "name": "Sertutxa",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-gatika-paisaje"
+        },
+        {
+          "name": "Ugarte",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-gatika-paisaje"
+        }
+      ]
+    },
     "48044": {
       "name": "Getxo",
       "provinceSlug": "bizkaia",
@@ -2886,6 +6121,243 @@
           "name": "Andra Mari",
           "type": "neighborhood",
           "sourceId": "getxo-barrios-oficiales"
+        }
+      ]
+    },
+    "48048": {
+      "name": "Ibarrangelu",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Elexalde",
+          "type": "neighborhood",
+          "sourceId": "ibarrangelu-situacion-barrios"
+        },
+        {
+          "name": "Akorda",
+          "type": "neighborhood",
+          "sourceId": "ibarrangelu-situacion-barrios"
+        },
+        {
+          "name": "Arboliz",
+          "type": "neighborhood",
+          "sourceId": "ibarrangelu-situacion-barrios"
+        },
+        {
+          "name": "Gametxo",
+          "type": "neighborhood",
+          "sourceId": "ibarrangelu-situacion-barrios"
+        },
+        {
+          "name": "Antzora",
+          "type": "neighborhood",
+          "sourceId": "ibarrangelu-situacion-barrios"
+        },
+        {
+          "name": "Gendika",
+          "type": "neighborhood",
+          "sourceId": "ibarrangelu-situacion-barrios"
+        }
+      ]
+    },
+    "48061": {
+      "name": "Maruri-Jatabe",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Elortegi",
+          "type": "neighborhood",
+          "sourceId": "maruri-jatabe-luminarias-barrios"
+        },
+        {
+          "name": "Sakalde",
+          "type": "neighborhood",
+          "sourceId": "maruri-jatabe-luminarias-barrios"
+        }
+      ]
+    },
+    "48063": {
+      "name": "Mendexa",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Iturreta",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-mendexa-barrios"
+        },
+        {
+          "name": "Leagi",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-mendexa-barrios"
+        },
+        {
+          "name": "Likona",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-mendexa-barrios"
+        }
+      ]
+    },
+    "48064": {
+      "name": "Meñaka",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Ametzaga",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-menaka-barrios-bopv"
+        },
+        {
+          "name": "Meñakabarrena",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-menaka-barrios-bopv"
+        }
+      ]
+    },
+    "48079": {
+      "name": "Errigoiti",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Atxika-Errekalde",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-errigoiti-pgou-diagnostico"
+        },
+        {
+          "name": "Eleizalde-Olabarri",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-errigoiti-pgou-diagnostico"
+        },
+        {
+          "name": "Metxika",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-errigoiti-pgou-diagnostico"
+        },
+        {
+          "name": "Uria",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-errigoiti-pgou-diagnostico"
+        }
+      ]
+    },
+    "48081": {
+      "name": "Lezama",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Aretxalde",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-lezama-directorio"
+        }
+      ]
+    },
+    "48088": {
+      "name": "Ubide",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Madalena",
+          "type": "neighborhood",
+          "sourceId": "ubide-barrios-municipales"
+        },
+        {
+          "name": "San Juan",
+          "type": "neighborhood",
+          "sourceId": "ubide-barrios-municipales"
+        }
+      ]
+    },
+    "48097": {
+      "name": "Zaratamo",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Arkotxa",
+          "type": "neighborhood",
+          "sourceId": "zaratamo-bizkaibus-barrios-2026"
+        },
+        {
+          "name": "Elexalde",
+          "type": "neighborhood",
+          "sourceId": "zaratamo-bizkaibus-barrios-2026"
+        },
+        {
+          "name": "Moiordin",
+          "type": "neighborhood",
+          "sourceId": "zaratamo-bizkaibus-barrios-2026"
+        }
+      ]
+    },
+    "48907": {
+      "name": "Kortezubi",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Idokiliz",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-kortezubi-vial-2026"
+        },
+        {
+          "name": "Santa Ana",
+          "type": "neighborhood",
+          "sourceId": "gobierno-vasco-kortezubi-vial-2026"
+        }
+      ]
+    },
+    "48908": {
+      "name": "Murueta",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Larrabe",
+          "type": "neighborhood",
+          "sourceId": "murueta-larrabe-accesibilidad"
+        },
+        {
+          "name": "Kanpantxua",
+          "type": "neighborhood",
+          "sourceId": "murueta-consultorio-kanpantxua"
+        }
+      ]
+    },
+    "48909": {
+      "name": "Nabarniz",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Elexalde",
+          "type": "neighborhood",
+          "sourceId": "nabarniz-conectividad-barrios"
+        },
+        {
+          "name": "Lekerika",
+          "type": "neighborhood",
+          "sourceId": "nabarniz-conectividad-barrios"
+        }
+      ]
+    },
+    "48914": {
+      "name": "Arratzu",
+      "provinceSlug": "bizkaia",
+      "areas": [
+        {
+          "name": "Loiola",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-arratzu-ruta-bus13"
+        },
+        {
+          "name": "Barrutia",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-arratzu-ruta-bus13"
+        },
+        {
+          "name": "Gorozika",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-arratzu-ruta-bus13"
+        },
+        {
+          "name": "Zabala-Belendiz",
+          "type": "neighborhood",
+          "sourceId": "bizkaia-arratzu-ruta-bus13"
         }
       ]
     },

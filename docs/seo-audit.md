@@ -1,5 +1,7 @@
 # Auditoría SEO y revisión de la portada móvil
 
+> Esta auditoría conserva la revisión anterior a la ampliación de barrios y calles. Los resultados posteriores, la cobertura de los 3.797 municipios y la comprobación SEO del nuevo build están en [Ampliación geográfica](geographic-expansion.md).
+
 **Proyecto:** Porteros y Videoporteros. **Dominio elegido:** `https://instalacionvideoporterourgente.com`. **Titular facilitado:** D.C.G.
 
 **Fecha:** 26 de octubre de 2026. El rastreo final del build terminó a las 10:18 UTC. La comparación parte del commit `25ebca19d5dbd61d9509cf0121236e81b59542e7`; el resultado corresponde al código de la revisión que contiene este informe.

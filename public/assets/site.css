@@ -175,6 +175,27 @@ html{scroll-padding-top:145px}
 .hero-service{display:block;font-size:1.12rem;line-height:1.5;letter-spacing:-.015em;font-weight:550;margin-bottom:10px;color:var(--ink)}
 .home-hero .hero-note{gap:22px}
 .home-hero .hero-note a{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:4px;min-height:44px}
+.local-jump{margin-top:22px}
+.local-jump .text-link{min-height:44px;align-items:center;color:var(--copper);font-size:.85rem}
+.locality-group-heading{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:16px}
+.locality-group-heading h3{margin:0;font-size:1.1rem}
+.locality-group-heading>span{font-size:.72rem;color:var(--muted);white-space:nowrap}
+.locality-list a>span{min-width:0;overflow-wrap:anywhere}
+.locality-more{margin-top:16px}
+.locality-more>summary{display:flex;align-items:center;gap:12px;list-style:none;min-height:48px;width:fit-content;padding:10px 0;font-size:.82rem;font-weight:750;cursor:pointer;color:var(--ink)}
+.locality-more>summary::-webkit-details-marker{display:none}
+.locality-more>summary>.arrow{transform:rotate(90deg);transition:transform .2s}
+.locality-more[open]>summary>.arrow{transform:rotate(-90deg)}
+.locality-more[open]>.locality-list{margin-top:12px}
+.locality-more-count{display:inline-flex;align-items:center;justify-content:center;min-width:27px;min-height:27px;padding:2px 6px;background:var(--paper);border:1px solid #bcc9ba;border-radius:50%;font-size:.7rem}
+.locality-bottom{display:flex;justify-content:space-between;align-items:center;gap:30px;border-top:1px solid #bcc9ba;margin-top:30px;padding-top:23px}
+.locality-bottom .locality-note{margin:0;max-width:700px}
+.locality-bottom>.text-link{flex-shrink:0;min-height:44px;font-size:.78rem}
+details.locality-sources{padding-top:12px;margin-top:20px;border-top:1px solid #bcc9ba;max-width:none}
+details.locality-sources>summary{min-height:44px;padding:10px 0;cursor:pointer;font-weight:650;overflow-wrap:anywhere}
+details.locality-sources ul{padding:8px 0 0;max-width:900px}
+details.locality-sources a{overflow-wrap:anywhere}
+@media(max-width:760px){.local-jump{margin-top:14px}.locality-bottom{display:block}.locality-bottom>.text-link{margin-top:14px}.locality-group-heading{gap:12px}.locality-more>summary{font-size:.78rem;width:100%}.locality-more>summary>span:first-child{flex:1}}
 .home-hero .hero-note a:hover{color:var(--copper)}
 .menu-toggle{color:var(--ink);appearance:none;-webkit-appearance:none;flex-shrink:0}
 .legal-page>section+section{margin-top:36px}
@@ -213,4 +234,56 @@ html{scroll-padding-top:145px}
   .home-hero .actions .text-link{font-size:.71rem;gap:6px}
   .home-hero .hero-note{font-size:.64rem;gap:13px}
   .home-hero .hero-art,.home-hero .hero-image{height:245px}
+}
+
+/* Directorio de portada: accesos por provincia y municipios desplegables. */
+.coverage-index{min-width:0}
+.coverage-jump{padding:18px 20px 14px;margin-bottom:24px;border:1px solid #d2d9cc;border-radius:8px;background:#edf0e6}
+.coverage-jump-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:9px}
+.coverage-jump-heading p{font-size:.77rem;font-weight:750}
+.coverage-jump-heading>span{font-size:.65rem;color:var(--muted);white-space:nowrap}
+.coverage-jump-links{display:flex;flex-wrap:wrap;gap:5px 7px;min-width:0;padding-block:3px 5px}
+.coverage-jump-links a{display:inline-flex;align-items:center;justify-content:center;flex:none;min-height:44px;padding:9px 13px;border:1px solid transparent;border-radius:5px;font-size:.76rem;line-height:1.35;font-weight:650;background:#fffdf8;color:var(--ink);white-space:nowrap}
+.coverage-jump-links a:hover{border-color:#9eaf99;background:#fff}
+.coverage-jump-links .coverage-jump-madrid{background:var(--ink);color:var(--paper)}
+.coverage-jump-links .coverage-jump-madrid:hover{background:var(--copper);border-color:var(--copper)}
+.coverage-index .coverage-directory{align-items:start}
+.coverage-index .coverage-province{padding:21px 21px 12px;border-radius:8px;scroll-margin-top:18px}
+.coverage-index .coverage-province:target{border-color:var(--copper);box-shadow:0 0 0 3px #a84e2c14}
+.coverage-index .coverage-province:focus-visible{outline:3px solid var(--copper);outline-offset:4px}
+.coverage-province-heading{margin-bottom:15px}
+.coverage-index .coverage-province h3{margin:0;font-size:1.14rem}
+.coverage-index .coverage-province h3>a{min-height:44px}
+.coverage-province-heading>p{font-size:.67rem;color:var(--muted);margin-top:1px;line-height:1.5}
+.coverage-index .coverage-town-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:0}
+.coverage-index .coverage-town-links li{display:block;min-width:0}
+.coverage-index .coverage-town-links li:before{display:none}
+.coverage-index .coverage-town-links a{display:flex;align-items:center;min-height:44px;height:100%;padding:9px 10px;border:1px solid #e5e7de;border-radius:5px;background:#f6f7f1;font-size:.78rem;line-height:1.5;text-decoration:none;overflow-wrap:anywhere}
+.coverage-index .coverage-town-links a:hover{border-color:#c2cbb9;background:#eef1e5;color:var(--copper);text-decoration:underline;text-underline-offset:3px}
+.coverage-more{margin-top:12px;border-top:1px solid var(--line)}
+.coverage-more summary{display:flex;align-items:center;gap:9px;min-height:44px;padding:10px 2px;font-size:.73rem;line-height:1.4;font-weight:700;list-style:none;cursor:pointer}
+.coverage-more summary::-webkit-details-marker{display:none}
+.coverage-more summary::marker{content:''}
+.coverage-more summary:hover{color:var(--copper)}
+.coverage-more-count{display:inline-flex;align-items:center;justify-content:center;min-width:23px;height:23px;padding-inline:5px;border-radius:50%;background:#e8ecdf;color:#42513e;font-size:.65rem;font-weight:700}
+.coverage-more-symbol{position:relative;width:16px;height:16px;margin-left:auto;flex:none;color:var(--copper)}
+.coverage-more-symbol:before,.coverage-more-symbol:after{content:'';position:absolute;left:2px;top:7px;width:12px;height:2px;background:currentColor;border-radius:1px}
+.coverage-more-symbol:after{transform:rotate(90deg)}
+.coverage-more[open] .coverage-more-symbol:after{display:none}
+.coverage-index .coverage-town-links--more{margin:2px 0 14px}
+.coverage-index .coverage-all-towns{min-height:44px;padding-top:10px;padding-bottom:10px;margin-top:8px;font-size:.68rem}
+@media(max-width:760px){
+  .coverage-jump{padding:15px 14px 7px;margin-bottom:18px}
+  .coverage-jump-heading{margin-bottom:6px}
+  .coverage-jump-links{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:thin;scrollbar-color:#a3b19b transparent;padding:5px 4px 12px;gap:7px}
+  .coverage-jump-links a{font-size:.77rem;padding-inline:13px}
+  .coverage-index .coverage-province{padding:18px 17px 10px}
+  .coverage-index .coverage-town-links a{font-size:.8rem}
+}
+@media(max-width:540px){
+  .coverage-index .coverage-province h3{font-size:1.15rem}
+  .coverage-index .coverage-town-links{gap:8px}
+  .coverage-index .coverage-town-links a{padding:10px;font-size:.82rem}
+  .coverage-more summary{font-size:.78rem}
+  .coverage-index .coverage-all-towns{font-size:.72rem}
 }

@@ -1,5 +1,7 @@
 # Auditoría de contenido y plan editorial SEO
 
+> Esta auditoría conserva la revisión anterior a la ampliación de barrios y calles. Los resultados posteriores, la cobertura de los 3.797 municipios y la comprobación SEO del nuevo build están en [Ampliación geográfica](geographic-expansion.md).
+
 **Fecha:** 26 de octubre de 2026. **Dominio de referencia:** `instalacionvideoporterourgente.com`.
 
 Este documento evalúa la utilidad del contenido, su diferenciación local, la arquitectura editorial y las prioridades de mejora. Complementa la auditoría técnica y la revisión móvil. No mide posiciones en Google ni sustituye los datos de Search Console.

@@ -1,0 +1,657 @@
+{
+  "auditedAt": "2026-10-26T11:23:44.784Z",
+  "source": {
+    "id": "ine-callejero-2026-07",
+    "publisher": "Instituto Nacional de Estadística (INE), Oficina del Censo Electoral",
+    "title": "Callejero del Censo Electoral: ficheros de vías y tramos de vía, julio de 2026",
+    "url": "https://www.ine.es/dyngs/DAB/es/index.htm?cid=1390",
+    "downloadUrl": "https://www.ine.es/prodyser/callejero/caj_esp/caj_esp_072026.zip",
+    "schemaUrl": "https://www.ine.es/prodyser/callejero/Dis_nuevo.xlsx",
+    "typesUrl": "https://www.ine.es/prodyser/callejero/TiposVia.csv",
+    "referenceDate": "2026-06-30",
+    "edition": "Julio de 2026",
+    "retrievedAt": "2026-10-26",
+    "sha256": "b2e4522a8870558f7300a44b4575ec32b45d2c19f60b8324dd5c951609a3cac6",
+    "schemaSha256": "10d831b76d5a6334e4cb759a7a0df526386ac088b533e90127513609f3690ee2",
+    "typesSha256": "c116aa068a0ddb8cb9348a2ff67de4b821dcacc0a06f936deb3c5cfc7af38c49",
+    "encoding": "iso-8859-1",
+    "membersRead": {
+      "VIAS": "caj_esp_072026/VIAS.D260630.G260702",
+      "TRAM": "caj_esp_072026/TRAM.D260630.G260702"
+    }
+  },
+  "summary": {
+    "municipalities": 3797,
+    "municipalitiesWithReferences": 3797,
+    "municipalitiesWithStreetSelection": 3718,
+    "municipalitiesWithLocalAreaSelection": 127,
+    "displayedStreets": 52100,
+    "displayedAreas": 742,
+    "displayedReferences": 52842,
+    "homepageMunicipalityLinks": 192,
+    "incompleteMunicipalities": 0
+  },
+  "byProvince": {
+    "asturias": {
+      "name": "Asturias",
+      "municipalities": 78,
+      "withReferences": 78,
+      "withStreets": 71,
+      "withAreas": 10,
+      "references": 981
+    },
+    "cantabria": {
+      "name": "Cantabria",
+      "municipalities": 102,
+      "withReferences": 102,
+      "withStreets": 71,
+      "withAreas": 33,
+      "references": 1018
+    },
+    "bizkaia": {
+      "name": "Bizkaia",
+      "municipalities": 113,
+      "withReferences": 113,
+      "withStreets": 92,
+      "withAreas": 24,
+      "references": 1114
+    },
+    "gipuzkoa": {
+      "name": "Gipuzkoa",
+      "municipalities": 88,
+      "withReferences": 88,
+      "withStreets": 78,
+      "withAreas": 13,
+      "references": 934
+    },
+    "leon": {
+      "name": "León",
+      "municipalities": 211,
+      "withReferences": 211,
+      "withStreets": 211,
+      "withAreas": 2,
+      "references": 3309
+    },
+    "palencia": {
+      "name": "Palencia",
+      "municipalities": 191,
+      "withReferences": 191,
+      "withStreets": 191,
+      "withAreas": 1,
+      "references": 2492
+    },
+    "alava": {
+      "name": "Álava",
+      "municipalities": 51,
+      "withReferences": 51,
+      "withStreets": 48,
+      "withAreas": 6,
+      "references": 780
+    },
+    "navarra": {
+      "name": "Navarra",
+      "municipalities": 272,
+      "withReferences": 272,
+      "withStreets": 267,
+      "withAreas": 7,
+      "references": 3343
+    },
+    "zamora": {
+      "name": "Zamora",
+      "municipalities": 248,
+      "withReferences": 248,
+      "withStreets": 248,
+      "withAreas": 2,
+      "references": 3801
+    },
+    "valladolid": {
+      "name": "Valladolid",
+      "municipalities": 225,
+      "withReferences": 225,
+      "withStreets": 225,
+      "withAreas": 2,
+      "references": 3364
+    },
+    "burgos": {
+      "name": "Burgos",
+      "municipalities": 371,
+      "withReferences": 371,
+      "withStreets": 369,
+      "withAreas": 5,
+      "references": 4914
+    },
+    "la-rioja": {
+      "name": "La Rioja",
+      "municipalities": 174,
+      "withReferences": 174,
+      "withStreets": 174,
+      "withAreas": 3,
+      "references": 2386
+    },
+    "salamanca": {
+      "name": "Salamanca",
+      "municipalities": 362,
+      "withReferences": 362,
+      "withStreets": 362,
+      "withAreas": 1,
+      "references": 5356
+    },
+    "avila": {
+      "name": "Ávila",
+      "municipalities": 248,
+      "withReferences": 248,
+      "withStreets": 248,
+      "withAreas": 1,
+      "references": 3617
+    },
+    "segovia": {
+      "name": "Segovia",
+      "municipalities": 209,
+      "withReferences": 209,
+      "withStreets": 209,
+      "withAreas": 1,
+      "references": 3183
+    },
+    "soria": {
+      "name": "Soria",
+      "municipalities": 183,
+      "withReferences": 183,
+      "withStreets": 183,
+      "withAreas": 1,
+      "references": 2207
+    },
+    "toledo": {
+      "name": "Toledo",
+      "municipalities": 204,
+      "withReferences": 204,
+      "withStreets": 204,
+      "withAreas": 4,
+      "references": 3275
+    },
+    "madrid": {
+      "name": "Madrid",
+      "municipalities": 179,
+      "withReferences": 179,
+      "withStreets": 179,
+      "withAreas": 8,
+      "references": 2926
+    },
+    "guadalajara": {
+      "name": "Guadalajara",
+      "municipalities": 288,
+      "withReferences": 288,
+      "withStreets": 288,
+      "withAreas": 3,
+      "references": 3842
+    }
+  },
+  "byType": {
+    "street": 52100,
+    "locality": 204,
+    "neighborhood": 517,
+    "parish": 6,
+    "residential-area": 9,
+    "district": 6
+  },
+  "missing": [],
+  "errors": [],
+  "success": true,
+  "sourceBaseCommit": "11d990b8ee4ac176b85942c84b285c8bfaeed09e",
+  "storedStreetStats": {
+    "municipalities": 3797,
+    "municipalitiesWithStreets": 3714,
+    "municipalitiesWithoutStreets": 83,
+    "availableStreetCount": 194452,
+    "selectedStreetCount": 52084,
+    "selectedWithTramCount": 50399,
+    "selectedWithPostalCodesCount": 50399,
+    "byProvince": {
+      "alava": {
+        "municipalities": 51,
+        "withStreets": 48,
+        "withoutStreets": 3,
+        "selectedStreetCount": 738
+      },
+      "avila": {
+        "municipalities": 248,
+        "withStreets": 248,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3610
+      },
+      "burgos": {
+        "municipalities": 371,
+        "withStreets": 369,
+        "withoutStreets": 2,
+        "selectedStreetCount": 4874
+      },
+      "guadalajara": {
+        "municipalities": 288,
+        "withStreets": 288,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3823
+      },
+      "gipuzkoa": {
+        "municipalities": 88,
+        "withStreets": 75,
+        "withoutStreets": 13,
+        "selectedStreetCount": 864
+      },
+      "leon": {
+        "municipalities": 211,
+        "withStreets": 211,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3291
+      },
+      "la-rioja": {
+        "municipalities": 174,
+        "withStreets": 174,
+        "withoutStreets": 0,
+        "selectedStreetCount": 2371
+      },
+      "madrid": {
+        "municipalities": 179,
+        "withStreets": 179,
+        "withoutStreets": 0,
+        "selectedStreetCount": 2839
+      },
+      "navarra": {
+        "municipalities": 272,
+        "withStreets": 267,
+        "withoutStreets": 5,
+        "selectedStreetCount": 3314
+      },
+      "asturias": {
+        "municipalities": 78,
+        "withStreets": 71,
+        "withoutStreets": 7,
+        "selectedStreetCount": 906
+      },
+      "palencia": {
+        "municipalities": 191,
+        "withStreets": 191,
+        "withoutStreets": 0,
+        "selectedStreetCount": 2481
+      },
+      "salamanca": {
+        "municipalities": 362,
+        "withStreets": 362,
+        "withoutStreets": 0,
+        "selectedStreetCount": 5344
+      },
+      "cantabria": {
+        "municipalities": 102,
+        "withStreets": 71,
+        "withoutStreets": 31,
+        "selectedStreetCount": 849
+      },
+      "segovia": {
+        "municipalities": 209,
+        "withStreets": 209,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3171
+      },
+      "soria": {
+        "municipalities": 183,
+        "withStreets": 183,
+        "withoutStreets": 0,
+        "selectedStreetCount": 2204
+      },
+      "toledo": {
+        "municipalities": 204,
+        "withStreets": 204,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3248
+      },
+      "valladolid": {
+        "municipalities": 225,
+        "withStreets": 225,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3347
+      },
+      "bizkaia": {
+        "municipalities": 113,
+        "withStreets": 91,
+        "withoutStreets": 22,
+        "selectedStreetCount": 1026
+      },
+      "zamora": {
+        "municipalities": 248,
+        "withStreets": 248,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3784
+      }
+    },
+    "sourceRecordCounts": {
+      "VIAS": 907378,
+      "TRAM": 1533323
+    },
+    "excludedRecordCounts": {
+      "unsupported-type": 58536,
+      "industrial-or-non-street-reference": 580,
+      "technical-code-name": 66,
+      "empty-or-control-name": 181
+    }
+  },
+  "manualSourceStats": {
+    "municipalities": 130,
+    "references": 766,
+    "neighborhoods": 517,
+    "districts": 6,
+    "residentialAreas": 9,
+    "parishes": 6,
+    "localities": 204,
+    "streets": 24,
+    "sources": 145,
+    "provinces": 19,
+    "byProvince": {
+      "alava": {
+        "municipalities": 6,
+        "references": 42
+      },
+      "asturias": {
+        "municipalities": 10,
+        "references": 75
+      },
+      "avila": {
+        "municipalities": 1,
+        "references": 8
+      },
+      "bizkaia": {
+        "municipalities": 25,
+        "references": 88
+      },
+      "burgos": {
+        "municipalities": 5,
+        "references": 40
+      },
+      "cantabria": {
+        "municipalities": 33,
+        "references": 169
+      },
+      "gipuzkoa": {
+        "municipalities": 15,
+        "references": 70
+      },
+      "guadalajara": {
+        "municipalities": 3,
+        "references": 19
+      },
+      "la-rioja": {
+        "municipalities": 3,
+        "references": 16
+      },
+      "leon": {
+        "municipalities": 2,
+        "references": 18
+      },
+      "madrid": {
+        "municipalities": 8,
+        "references": 90
+      },
+      "navarra": {
+        "municipalities": 7,
+        "references": 29
+      },
+      "palencia": {
+        "municipalities": 1,
+        "references": 12
+      },
+      "salamanca": {
+        "municipalities": 1,
+        "references": 12
+      },
+      "segovia": {
+        "municipalities": 1,
+        "references": 12
+      },
+      "soria": {
+        "municipalities": 1,
+        "references": 5
+      },
+      "toledo": {
+        "municipalities": 4,
+        "references": 27
+      },
+      "valladolid": {
+        "municipalities": 2,
+        "references": 17
+      },
+      "zamora": {
+        "municipalities": 2,
+        "references": 17
+      }
+    }
+  },
+  "validation": {
+    "checkedAt": "2026-10-26T11:23:34.728Z",
+    "success": true,
+    "durationMs": 6591,
+    "stats": {
+      "htmlPages": 3846,
+      "indexablePages": 3843,
+      "noindexPages": 3,
+      "municipalityPages": 3797,
+      "provinces": 19,
+      "linksChecked": 383450,
+      "resourceReferencesChecked": 42167,
+      "jsonLdBlocks": 3846,
+      "sitemapFiles": 21,
+      "sitemapUrls": 3843
+    },
+    "errorCount": 0,
+    "warningCount": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "seo": {
+    "checkedAt": "2026-10-26T11:23:44.348Z",
+    "origin": "https://instalacionvideoporterourgente.com",
+    "source": "Static generated build",
+    "durationMs": 9348,
+    "scope": {
+      "htmlPages": 3846,
+      "indexablePages": 3843,
+      "noindexPages": 3,
+      "sitemapFiles": 21,
+      "sitemapUrls": 3843
+    },
+    "limitations": [
+      "No verifica DNS, TLS, HTTP de producción, redirecciones servidas, Search Console ni indexación real.",
+      "Los bytes gzip son compresión local reproducible; no tráfico de red medido.",
+      "No mide Lighthouse, LCP, INP ni CLS de usuarios reales.",
+      "La unicidad de metadatos o de palabras no demuestra calidad editorial ni posicionamiento."
+    ],
+    "crawl": {
+      "internalEdges": 176512,
+      "brokenTargets": 0,
+      "indexableOrphans": 0,
+      "indexableUnreachable": 0,
+      "maxDepth": 2,
+      "depths": {
+        "0": 1,
+        "1": 235,
+        "2": 3607
+      }
+    },
+    "metadata": {
+      "titleLengths": {
+        "min": 41,
+        "median": 60,
+        "p95": 66,
+        "max": 72
+      },
+      "descriptionLengths": {
+        "min": 122,
+        "median": 139,
+        "p95": 151,
+        "max": 165
+      },
+      "titlesOver65": 312,
+      "titlesOver80": 0,
+      "descriptionsOver165": 0,
+      "duplicateTitles": [],
+      "duplicateDescriptions": [],
+      "duplicateH1s": []
+    },
+    "images": {
+      "references": 19090,
+      "lazy": 15277,
+      "highPriority": 3813,
+      "missingAlt": 0,
+      "missingDimensions": 0
+    },
+    "structuredData": {
+      "Organization": 3846,
+      "WebPage": 3841,
+      "BreadcrumbList": 3844,
+      "Article": 5,
+      "WebSite": 1,
+      "Service": 3824
+    },
+    "html": {
+      "bytes": {
+        "min": 23273,
+        "median": 52519,
+        "p95": 53272,
+        "max": 91699
+      },
+      "gzipBytes": {
+        "min": 5128,
+        "median": 11134,
+        "p95": 11293,
+        "max": 17171
+      },
+      "totalBytes": 198955295
+    },
+    "findings": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "success": true
+  },
+  "browserQa": {
+    "checkedAt": "2026-10-26T11:25:59.224Z",
+    "method": "Responsive CSS in same-origin browser frames; 15 px desktop scrollbars reduce content widths.",
+    "home": [
+      {
+        "requestedWidth": 320,
+        "documentWidth": 305,
+        "expandedMadrid": true,
+        "headerPhone": "tel:+34670042626",
+        "minLinkHeight": 44,
+        "overflow": false,
+        "townLinks": 192,
+        "width": 305
+      },
+      {
+        "requestedWidth": 375,
+        "documentWidth": 360,
+        "expandedMadrid": true,
+        "headerPhone": "tel:+34670042626",
+        "minLinkHeight": 44,
+        "overflow": false,
+        "townLinks": 192,
+        "width": 360
+      },
+      {
+        "requestedWidth": 414,
+        "documentWidth": 399,
+        "expandedMadrid": true,
+        "headerPhone": "tel:+34670042626",
+        "minLinkHeight": 44,
+        "overflow": false,
+        "townLinks": 192,
+        "width": 399
+      }
+    ],
+    "local": [
+      {
+        "requestedWidth": 320,
+        "documentWidth": 305,
+        "headerPhone": "tel:+34614789945",
+        "heading": "Barrios y calles de San Fernando de Henares.",
+        "minReferenceHeight": 55,
+        "overflow": false,
+        "references": 37,
+        "width": 305
+      },
+      {
+        "requestedWidth": 375,
+        "documentWidth": 360,
+        "headerPhone": "tel:+34614789945",
+        "heading": "Barrios y calles de San Fernando de Henares.",
+        "minReferenceHeight": 55,
+        "overflow": false,
+        "references": 37,
+        "width": 360
+      },
+      {
+        "requestedWidth": 414,
+        "documentWidth": 399,
+        "headerPhone": "tel:+34614789945",
+        "heading": "Barrios y calles de San Fernando de Henares.",
+        "minReferenceHeight": 55,
+        "overflow": false,
+        "references": 37,
+        "width": 399
+      }
+    ],
+    "expanded": [
+      {
+        "requestedWidth": 320,
+        "documentWidth": 305,
+        "expanded": true,
+        "overflow": false,
+        "visibleReferences": 37,
+        "width": 305
+      },
+      {
+        "requestedWidth": 375,
+        "documentWidth": 360,
+        "expanded": true,
+        "overflow": false,
+        "visibleReferences": 37,
+        "width": 360
+      },
+      {
+        "requestedWidth": 414,
+        "documentWidth": 399,
+        "expanded": true,
+        "overflow": false,
+        "visibleReferences": 37,
+        "width": 399
+      }
+    ],
+    "form": {
+      "municipio": "San Fernando de Henares",
+      "provincia": "madrid",
+      "whatsapp": "34614789945",
+      "zona": "Calle Gabriel Celaya"
+    },
+    "finalBuildLayout": [
+      {
+        "requestedWidth": 320,
+        "documentWidth": 305,
+        "headingsFit": true,
+        "overflow": false,
+        "streetHeading": "Calles, avenidas, plazas y paseos",
+        "width": 305
+      },
+      {
+        "requestedWidth": 375,
+        "documentWidth": 360,
+        "headingsFit": true,
+        "overflow": false,
+        "streetHeading": "Calles, avenidas, plazas y paseos",
+        "width": 360
+      },
+      {
+        "requestedWidth": 414,
+        "documentWidth": 399,
+        "headingsFit": true,
+        "overflow": false,
+        "streetHeading": "Calles, avenidas, plazas y paseos",
+        "width": 399
+      }
+    ]
+  }
+}

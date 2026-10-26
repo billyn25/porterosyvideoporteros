@@ -36,6 +36,19 @@ const duplicateTownNames=new Set([...counts].filter(([,count])=>count>1).map(([n
 const assets=['public/assets/site.css','public/assets/site.js'].map(p=>fs.readFileSync(path.join(root,p)));
 const assetVersion=createHash('sha256').update(Buffer.concat(assets)).digest('hex').slice(0,10);
 const ctx={config,baseUrl,indexable,towns,provinces,duplicateTownNames,assetVersion,year:new Date().getUTCFullYear(),brands:read('brands'),hero:read('hero'),audio:read('audio-entry'),legal:read('legal'),services:read('services'),diagnostics:read('diagnostics'),faqs:read('faqs'),guides:read('guides'),localFocus:read('local-focus'),localities:read('localities')};
+ctx.streets=read('streets');
+ctx.streetMunicipalities={};
+for(const province of provinces){
+  const file=ctx.streets.files[province.slug];
+  if(file!==`streets/${province.slug}.json`)throw new Error(`Falta el callejero provincial: ${province.name}`);
+  const data=JSON.parse(fs.readFileSync(path.join(root,'data',file),'utf8'));
+  if(data.provinceSlug!==province.slug)throw new Error(`Callejero de otra provincia: ${file}`);
+  for(const [code,record] of Object.entries(data.municipalities)){
+    const town=province.towns.find(item=>item.code===code);
+    if(!town || town.name!==record.name)throw new Error(`Callejero de otro municipio: ${code}`);
+    ctx.streetMunicipalities[code]=record;
+  }
+}
 if(ctx.legal.owner!==config.legalName || ctx.legal.domain!==config.siteUrl)throw new Error('La titularidad y el dominio deben coincidir en site.json y legal.json.');
 if(ctx.brands.length!==7 || provinces.length!==19)throw new Error('Cobertura de marcas/provincias incompleta.');
 

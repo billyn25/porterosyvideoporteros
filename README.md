@@ -12,6 +12,8 @@ El dominio comercial configurado es **https://instalacionvideoporterourgente.com
 - [Auditoría SEO técnica, móvil y comprobaciones de publicación](docs/seo-audit.md).
 - [Auditoría editorial actual del catálogo municipal](docs/seo-content-audit.md).
 - [Selección de 50 páginas para priorizar la revisión editorial](docs/seo-priority-50.json).
+- [Ampliación geográfica: calles oficiales y cobertura rural](docs/geographic-expansion.md).
+- [Fuentes y catálogo de barrios, parroquias y localidades](docs/localities-sources.md).
 
 Las siguientes capturas e informes conservan revisiones anteriores del proyecto:
 
@@ -39,11 +41,18 @@ Las siguientes capturas e informes conservan revisiones anteriores del proyecto:
 | Preguntas frecuentes disponibles | 48 |
 | Enfoques editoriales locales | 12 |
 | Páginas HTML generadas | 3.846 |
-| Municipios con referencias municipales verificadas | 44 |
-| Barrios documentados por sus ayuntamientos | 371 |
+| Municipios con referencias locales de fuentes oficiales | 3.797 |
+| Municipios con selección manual documentada | 130 |
+| Referencias de la selección manual | 766 |
+| Barrios documentados | 517 |
 | Distritos municipales | 6 |
 | Urbanizaciones y zonas residenciales | 9 |
-| Fuentes municipales de zonas | 56 |
+| Parroquias | 6 |
+| Localidades y pueblos | 204 |
+| Vías de la selección manual | 24 |
+| Fuentes oficiales de la selección manual | 145 |
+| Municipios con vías importadas del callejero electoral | 3.714 |
+| Vías seleccionadas del callejero electoral | 52.084 |
 
 La portada incluye también una fotografía real del portero de audio Fermax City VEO DUOX PLUS 49202, con placa exterior y telefonillo con auricular. La página de telefonillos muestra el terminal de audio VEO 3444. Ambas imágenes proceden de las fichas oficiales y conservan crédito, referencia y texto alternativo.
 
@@ -53,7 +62,9 @@ Las marcas son **Tegui, BTicino, Legrand, Golmar, Fermax, Comelit y Auta**. Los 
 
 Asturias (78), Cantabria (102), Bizkaia (113), Gipuzkoa (88), León (211), Palencia (191), Álava (51), Navarra (272), Zamora (248), Valladolid (225), Burgos (371), La Rioja (174), Salamanca (362), Ávila (248), Segovia (209), Soria (183), Toledo (204), Madrid (179) y Guadalajara (288).
 
-La portada muestra **95 municipios destacados**, cinco por provincia, con enlaces HTML directos a sus páginas de servicio y acceso a cada directorio provincial completo. La selección utiliza la población del conjunto de datos municipal existente; se presenta como una selección de localidades, sin afirmar un ranking demográfico actualizado. El buscador sigue dando acceso a los 3.797 municipios.
+La portada enlaza **192 municipios**: diez por provincia y, en Madrid, también San Fernando de Henares y Coslada. La tarjeta de Madrid reúne 12 e incluye Torrejón de Ardoz. Cada tarjeta muestra seis enlaces y agrupa el resto en un desplegable nativo «Más municipios»: **114 enlaces visibles inicialmente y 78 en los desplegables**. Todos están presentes en el HTML y funcionan sin JavaScript. Un navegador de provincias permite llegar directamente a cada tarjeta, con Madrid al principio de ese navegador; cada tarjeta enlaza además el directorio provincial completo.
+
+La selección de diez utiliza la población del conjunto de datos municipal existente y añade las dos incorporaciones expresas de Madrid. No se presenta como un ranking demográfico actualizado ni como una estimación de demanda. El buscador sigue dando acceso a los 3.797 municipios.
 
 ## Ejecutar y verificar
 
@@ -64,9 +75,10 @@ npm run build
 npm run check
 npm test
 npm run audit:seo
+npm run audit:geography
 ```
 
-`dist/` contiene la web generada y se excluye de Git. `qa/` contiene informes locales de build, validación y auditoría, también excluidos de Git. `npm run audit:seo` analiza el `dist/` existente contra el dominio comercial y guarda el resultado en `qa/seo-audit.json`; no vuelve a generar la web.
+`dist/` contiene la web generada y se excluye de Git. `qa/` contiene informes locales de build, validación y auditoría, también excluidos de Git. `npm run audit:seo` analiza el `dist/` existente contra el dominio comercial y guarda el resultado en `qa/seo-audit.json`. `npm run audit:geography` contrasta las referencias de los 3.797 municipios y los 192 enlaces de portada con ese mismo build, y guarda `qa/geography-audit.json`. Ninguno de los dos auditores vuelve a generar la web; tras cambiar datos o plantillas, primero se debe reconstruir `dist/`.
 
 El build utiliza el dominio HTTPS de `data/site.json`, también en local. Solo permite páginas indexables cuando el origen coincide con ese dominio y el contexto no es una vista previa. Para generar una copia de revisión con `noindex`:
 
@@ -77,7 +89,7 @@ npm run check
 
 Después de revisar una copia, ejecutar de nuevo `npm run build` sin ese contexto antes de auditar el resultado de producción. En Netlify, un build con `CONTEXT=production` falla si el origen configurado no coincide con el dominio comercial HTTPS. Los orígenes de prueba y los contextos de vista previa no se tratan como producción.
 
-El validador comprueba la coherencia de versiones de recursos, el teléfono y provincia de las páginas locales, y todos los HTML, rutas municipales, enlaces internos y anclas, imágenes/fuentes/JS/CSS, unicidad de títulos/descripciones, canonical, JSON-LD y sitemaps. Las pruebas cubren asignación completa de teléfonos, rechazo de provincias sin contacto o duplicadas, selección estable de síntomas de distintos tipos, pertenencia y categoría de las zonas residenciales, identidad de sus fuentes municipales y exclusión de áreas industriales, normalización del origen, proximidad geográfica y escape del contenido.
+El validador comprueba la coherencia de versiones de recursos, el teléfono y provincia de las páginas locales, y todos los HTML, rutas municipales, enlaces internos y anclas, imágenes/fuentes/JS/CSS, unicidad de títulos/descripciones, canonical, JSON-LD y sitemaps. Las pruebas cubren asignación completa de teléfonos, rechazo de provincias sin contacto o duplicadas, selección estable de síntomas de distintos tipos, pertenencia y categoría de las referencias locales, identidad de sus fuentes oficiales y exclusión de referencias industriales, normalización del origen, proximidad geográfica y escape del contenido.
 
 El auditor SEO añade el grafo de enlaces desde la portada, páginas huérfanas y profundidad de navegación, reglas de `robots.txt`, cobertura de sitemaps, coherencia del dominio, encabezados de indexación, títulos/H1/descripciones duplicados y atributos de imágenes. También informa de tamaños locales y compresión estimada. Estas comprobaciones no miden Core Web Vitals de usuarios reales ni confirman el rastreo, la indexación o el posicionamiento en Google.
 
@@ -168,11 +180,18 @@ scripts/pages.mjs             Composición de tipos de página
 scripts/utils.mjs             Rutas, selección, escape y proximidad
 scripts/check.mjs             Validación completa del resultado
 scripts/audit-seo.mjs          Auditoría estática de SEO y grafo de enlaces
+scripts/audit-geography.mjs    Cobertura local y enlaces municipales en el HTML
+scripts/import-streets.py      Importación oficial VIAS/TRAM, edición julio de 2026
+scripts/local-geography.mjs    Combinación de referencias conservando categorías
+scripts/featured-towns.mjs     Selección estable de municipios de portada
 scripts/contact.mjs           Asignación de teléfonos por provincia
 scripts/audit-content.py       Comparación antes/después con pares fijos
-data/localities.json           Barrios, distritos y zonas con fuente municipal
+data/localities.json           Selección manual de zonas, localidades y vías oficiales
+data/streets.json              Fuente, filtros, fechas y estadísticas del callejero
+data/streets/*.json            Selección de vías por provincia y código municipal
 data/audio-entry.json          Fotografías oficiales de porteros de audio
 tests/contact.test.mjs         Enrutamiento y pertenencia geográfica
+tests/geography.test.mjs       Datos, selección de vías y combinación de fuentes
 tests/site-policy.test.mjs     Producción, vistas previas y origen comercial
 tests/seo.test.mjs             Reglas de robots y detección de regresiones SEO
 public/assets/site.css        Diseño original y adaptación móvil
@@ -198,7 +217,11 @@ La selección editorial es **determinista**, basada en el código INE. No cambia
 
 El directorio `/averias/` permite buscar entre los 48 casos por palabra o por tipo. Cada municipio incorpora cuatro diagnósticos: uno relacionado con su enfoque y otros tres de tipos diferentes. Todo el catálogo sigue accesible, aunque un caso no aparezca en la selección local.
 
-En 44 páginas se muestran 386 referencias obtenidas de 56 fuentes municipales: 371 barrios, seis distritos y nueve urbanizaciones o zonas residenciales, con presencia en las 19 provincias. Se ha retirado por completo la selección anterior del Nomenclátor y su importador. Cada referencia conserva su categoría y fuente del ayuntamiento; al elegirla se completa municipio, provincia y zona en el formulario. Las sugerencias se vinculan al municipio y a su provincia, y la zona se limpia al cambiar de localidad. Donde no hay referencias municipales comprobadas se omite el bloque. No se infieren códigos postales. [Criterios, cobertura y fuentes](docs/localities-sources.md).
+Las **3.797 páginas municipales tienen referencias de ubicación documentadas**. Se combinan dos conjuntos: una selección manual de **766 referencias en 130 municipios**, respaldada por **145 fuentes oficiales**, y **52.084 vías seleccionadas del Callejero del Censo Electoral en 3.714 municipios**. Después de combinar las vías manuales y eliminar etiquetas repetidas, el resultado preparado para las páginas es de **52.842 referencias: 52.100 vías y 742 áreas**. Son referencias para localizar la consulta, sin afirmar que exista una sede o un trabajo realizado en cada lugar.
+
+La selección manual distingue **517 barrios, seis distritos, nueve zonas residenciales, seis parroquias, 204 localidades y 24 vías**. En municipios rurales sin calles de los tipos admitidos se utilizan nombres documentados por ayuntamientos, diputaciones u organismos autonómicos, manteniendo su categoría: una parroquia o un pueblo no se convierte en barrio. Los títulos del bloque se adaptan a lo que contiene: barrios, localidades, parroquias, zonas o calles y plazas. Cada referencia conserva su fuente; al elegirla se completa municipio, provincia y zona en el formulario. Las sugerencias se vinculan al municipio y a su provincia, y la zona se limpia al cambiar de localidad.
+
+La colección anterior del Nomenclátor y su importador se retiraron. El nuevo callejero procede de los ficheros **VIAS y TRAM de la Oficina del Censo Electoral del INE**, una fuente distinta. Los códigos postales conservados proceden de los tramos de vía; no se infiere un código único para todo un municipio o una calle. [Criterios y 130 municipios con selección manual](docs/localities-sources.md) · [Ampliación geográfica y comprobaciones](docs/geographic-expansion.md).
 
 La auditoría histórica anterior a esta sustitución conserva exactamente los 240 pares originales y distingue el contenido completo del contenido sin la sección geográfica. Sus cifras documentan aquella revisión; no son una medición del catálogo municipal actual. [Informe histórico y métricas](docs/content-audit.md).
 
@@ -208,6 +231,24 @@ La [auditoría editorial actual](docs/seo-content-audit.md) revisa esa limitaci�
 
 Referencias SEO: [guía de Google](https://developers.google.com/search/docs/fundamentals/seo-starter-guide), [contenido útil](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [políticas sobre contenido a escala](https://developers.google.com/search/docs/essentials/spam-policies).
 
+## Mantener el callejero oficial
+
+El importador `scripts/import-streets.py` usa Python 3 y su biblioteca estándar. La edición está fijada en **julio de 2026**, con datos referidos al **30 de junio de 2026**. Descarga o reutiliza el ZIP oficial, su diseño de registro y el diccionario de tipos; conserva sus SHA-256 y las fechas en `data/streets.json`. El build ordinario consume los JSON versionados y no necesita acceso al INE.
+
+```bash
+python scripts/import-streets.py
+```
+
+Para reutilizar una descarga concreta y obtener un informe adicional:
+
+```bash
+python scripts/import-streets.py --input /tmp/porteros-callejero-202607/caj_esp_072026.zip --report /tmp/porteros-streets-import.json
+```
+
+`--cache-dir`, `--schema` y `--types` permiten indicar los archivos auxiliares; `--refresh` vuelve a descargar la misma edición fijada. Una edición nueva requiere revisar la fecha, el diseño de registro y el diccionario antes de modificar las constantes del importador. La importación actualiza `data/streets.json` y los 19 archivos provinciales de `data/streets/`; después se revisa el diff y se ejecutan build, pruebas y auditorías.
+
+Solo se leen **VIAS** y **TRAM**. La unión se hace mediante los códigos de provincia, municipio y vía, conservando los nombres y tipos originales. Se seleccionan hasta 16 calles, avenidas, plazas o paseos por municipio con una regla determinista; los tipos equivalentes proceden del diccionario oficial. No se importan UP, PSEU ni SECC, ni los nombres de entidades de población contenidos en TRAM. Se excluyen denominaciones industriales, campings y referencias técnicas. La presencia de una vía no acredita uso residencial, centralidad ni demanda comercial. Los 83 municipios sin vías admisibles permanecen documentados como excepciones del importador y se completan mediante las fuentes locales revisadas.
+
 ## Fuentes y derechos
 
 - Nombres y códigos: [INE, relación a 1 de enero de 2026](https://www.ine.es/daco/daco42/codmun/26codmun.xlsx).
@@ -216,7 +257,8 @@ Referencias SEO: [guía de Google](https://developers.google.com/search/docs/fun
 - Fotos: fuentes oficiales registradas por imagen en `data/brands.json`, `data/hero.json` y `data/audio-entry.json`. Las marcas y fotografías pertenecen a sus respectivos titulares. No se atribuyen a obras propias ni implican servicio técnico oficial.
 - Manrope: fuente local con licencia SIL Open Font License incluida en `public/assets/fonts/OFL-Manrope.txt`.
 - [Fuentes del catálogo de averías](docs/diagnostic-sources.md): documentación oficial de fabricantes y criterios de redacción original.
-- [Barrios y zonas municipales](docs/localities-sources.md): 56 fuentes de ayuntamientos, con categoría, evidencia y fecha de consulta por referencia.
+- [Barrios, parroquias, localidades y vías revisadas](docs/localities-sources.md): 145 fuentes de ayuntamientos, diputaciones y organismos autonómicos oficiales, con categoría, evidencia y fecha de consulta por referencia.
+- [Callejero del Censo Electoral del INE](https://www.ine.es/dyngs/DAB/es/index.htm?cid=1390), edición julio de 2026: [ZIP nacional](https://www.ine.es/prodyser/callejero/caj_esp/caj_esp_072026.zip), [diseño de los registros](https://www.ine.es/prodyser/callejero/Dis_nuevo.xlsx) y [diccionario de tipos de vía](https://www.ine.es/prodyser/callejero/TiposVia.csv). Procedencia, huellas y filtros en `data/streets.json`.
 - Las guías incorporan fuentes técnicas oficiales. WiFi no se equipara a ausencia de cables ni se supone compatibilidad entre equipos solo por tener dos hilos.
 
 ## Estado de entrega

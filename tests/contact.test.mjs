@@ -42,8 +42,9 @@ test('a local diagnostic selection includes a relevant case and distinct symptom
 
 test('local geographic references belong to the exact municipality and retain their source identity',()=>{
   const data=read('localities');
-  assert.equal(data.schemaVersion,2);
-  const types=new Set(['neighborhood','district','residential-area','parish']);
+  assert.equal(data.schemaVersion,3);
+  const types=new Set(['neighborhood','district','residential-area','parish','locality','street']);
+  const regionalPublishers=new Set(['Diputación Provincial de Burgos','Diputación Foral de Bizkaia','Diputación Foral de Gipuzkoa','Gobierno Vasco','Gobierno Vasco — GeoEuskadi','Sociedad Regional Cántabra de Promoción Turística, S.A. (CANTUR)']);
   for(const [code,record] of Object.entries(data.municipalities)){
     const town=towns.find(item=>item.code===code);assert.ok(town,code);
     assert.equal(record.name,town.name);assert.equal(record.provinceSlug,town.provinceSlug);
@@ -54,7 +55,7 @@ test('local geographic references belong to the exact municipality and retain th
       assert.ok(area.name.trim());
       const source=data.sources[area.sourceId];assert.ok(source,area.sourceId);
       assert.ok(source.municipalityCodes.includes(code),`${code}: fuente de otro municipio`);
-      assert.ok(source.publisher.startsWith('Ayuntamiento de '));
+      assert.ok(source.publisher.startsWith('Ayuntamiento de ') || regionalPublishers.has(source.publisher),source.publisher);
       assert.equal(new URL(source.url).protocol,'https:');
       assert.ok(source.evidence && source.retrievedAt);
       assert.doesNotMatch(source.url,/ine\.es|nomencl/i);

@@ -1,0 +1,1002 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "ine-callejero-2026-07",
+    "publisher": "Instituto Nacional de Estadística (INE), Oficina del Censo Electoral",
+    "title": "Callejero del Censo Electoral: ficheros de vías y tramos de vía, julio de 2026",
+    "url": "https://www.ine.es/dyngs/DAB/es/index.htm?cid=1390",
+    "downloadUrl": "https://www.ine.es/prodyser/callejero/caj_esp/caj_esp_072026.zip",
+    "schemaUrl": "https://www.ine.es/prodyser/callejero/Dis_nuevo.xlsx",
+    "typesUrl": "https://www.ine.es/prodyser/callejero/TiposVia.csv",
+    "referenceDate": "2026-06-30",
+    "edition": "Julio de 2026",
+    "retrievedAt": "2026-10-26",
+    "sha256": "b2e4522a8870558f7300a44b4575ec32b45d2c19f60b8324dd5c951609a3cac6",
+    "schemaSha256": "10d831b76d5a6334e4cb759a7a0df526386ac088b533e90127513609f3690ee2",
+    "typesSha256": "c116aa068a0ddb8cb9348a2ff67de4b821dcacc0a06f936deb3c5cfc7af38c49",
+    "encoding": "iso-8859-1",
+    "membersRead": {
+      "VIAS": "caj_esp_072026/VIAS.D260630.G260702",
+      "TRAM": "caj_esp_072026/TRAM.D260630.G260702"
+    }
+  },
+  "selection": {
+    "maxPerMunicipality": 16,
+    "label": "Calles, avenidas, plazas y paseos",
+    "acceptedSourceTypes": {
+      "AV": "Avenida",
+      "AVDA": "Avenida",
+      "AVGDA": "Avenida",
+      "C": "Calle",
+      "C/": "Calle",
+      "CALLE": "Calle",
+      "CARRE": "Calle",
+      "EPTZA": "Plaza",
+      "ETDEA": "Avenida",
+      "HIRIB": "Avenida",
+      "IBILB": "Paseo",
+      "KALE": "Calle",
+      "KALEA": "Calle",
+      "KARRI": "Calle",
+      "PASEA": "Paseo",
+      "PASEO": "Paseo",
+      "PG": "Paseo",
+      "PL": "Plaza",
+      "PLAZA": "Plaza",
+      "PLAÇA": "Plaza",
+      "PLZ": "Plaza",
+      "RUA": "Calle"
+    },
+    "method": "Selección determinista por presencia en TRAM; coincidencia de la denominación completa con Mayor, Real, Iglesia, Ayuntamiento o Constitución, retirando solo partículas reconocidas y admitiendo variantes bilingües separadas por barra; número de tramos y numeración documentada; desempate por nombre y código. No es un ranking comercial ni una medición de centralidad, viviendas o demanda.",
+    "municipalIdentity": "CPRO + CMUN; CVIA es una clave propia de ese municipio. Los registros se unen por código, nunca por parecido de nombres.",
+    "namePresentation": "Se normalizan espacios y mayúsculas; los tipos equivalentes se presentan en español. Las partículas finales DE LOS, DE LAS, DE LA, DE EL, DEL, LOS, LAS, DE, EL y LA se anteponen solo si están entre paréntesis, separadas por coma o detrás de un nombre de una sola palabra. Se mantienen los demás paréntesis y los sufijos ambiguos de nombres compuestos. No se añaden tildes, se traducen ni reconstruyen nombres propios ni se fusionan códigos de vías distintos. sourceName y sourceType conservan la denominación original.",
+    "duplicateLabels": "Se muestra una sola entrada por tipo equivalente y nombre; conserva el código y los datos de la vía elegida, sin mezclar los de otros códigos.",
+    "excluded": "Tipos ajenos a las cuatro familias admitidas; nombres de polígonos, áreas industriales o logísticas, aeropuertos, campings y referencias técnicas. No se importan UP, PSEU ni SECC ni se convierten calles en barrios.",
+    "postalCodes": "Códigos postales presentes en los registros TRAM de cada código de vía. Una vía puede tener varios; la selección no asigna un código postal único a toda la calle ni al municipio.",
+    "scope": "Referencias de ubicación de un callejero oficial; no acreditan uso residencial, oficinas, trabajos realizados o disponibilidad inmediata del servicio.",
+    "emptyMunicipalities": "Conservan un registro con streets vacío y un motivo en stats.exceptions; no se inventan vías para completar la cobertura."
+  },
+  "files": {
+    "alava": "streets/alava.json",
+    "asturias": "streets/asturias.json",
+    "avila": "streets/avila.json",
+    "bizkaia": "streets/bizkaia.json",
+    "burgos": "streets/burgos.json",
+    "cantabria": "streets/cantabria.json",
+    "gipuzkoa": "streets/gipuzkoa.json",
+    "guadalajara": "streets/guadalajara.json",
+    "la-rioja": "streets/la-rioja.json",
+    "leon": "streets/leon.json",
+    "madrid": "streets/madrid.json",
+    "navarra": "streets/navarra.json",
+    "palencia": "streets/palencia.json",
+    "salamanca": "streets/salamanca.json",
+    "segovia": "streets/segovia.json",
+    "soria": "streets/soria.json",
+    "toledo": "streets/toledo.json",
+    "valladolid": "streets/valladolid.json",
+    "zamora": "streets/zamora.json"
+  },
+  "stats": {
+    "municipalities": 3797,
+    "municipalitiesWithStreets": 3714,
+    "municipalitiesWithoutStreets": 83,
+    "availableStreetCount": 194452,
+    "selectedStreetCount": 52084,
+    "selectedWithTramCount": 50399,
+    "selectedWithPostalCodesCount": 50399,
+    "byProvince": {
+      "alava": {
+        "municipalities": 51,
+        "withStreets": 48,
+        "withoutStreets": 3,
+        "selectedStreetCount": 738
+      },
+      "avila": {
+        "municipalities": 248,
+        "withStreets": 248,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3610
+      },
+      "burgos": {
+        "municipalities": 371,
+        "withStreets": 369,
+        "withoutStreets": 2,
+        "selectedStreetCount": 4874
+      },
+      "guadalajara": {
+        "municipalities": 288,
+        "withStreets": 288,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3823
+      },
+      "gipuzkoa": {
+        "municipalities": 88,
+        "withStreets": 75,
+        "withoutStreets": 13,
+        "selectedStreetCount": 864
+      },
+      "leon": {
+        "municipalities": 211,
+        "withStreets": 211,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3291
+      },
+      "la-rioja": {
+        "municipalities": 174,
+        "withStreets": 174,
+        "withoutStreets": 0,
+        "selectedStreetCount": 2371
+      },
+      "madrid": {
+        "municipalities": 179,
+        "withStreets": 179,
+        "withoutStreets": 0,
+        "selectedStreetCount": 2839
+      },
+      "navarra": {
+        "municipalities": 272,
+        "withStreets": 267,
+        "withoutStreets": 5,
+        "selectedStreetCount": 3314
+      },
+      "asturias": {
+        "municipalities": 78,
+        "withStreets": 71,
+        "withoutStreets": 7,
+        "selectedStreetCount": 906
+      },
+      "palencia": {
+        "municipalities": 191,
+        "withStreets": 191,
+        "withoutStreets": 0,
+        "selectedStreetCount": 2481
+      },
+      "salamanca": {
+        "municipalities": 362,
+        "withStreets": 362,
+        "withoutStreets": 0,
+        "selectedStreetCount": 5344
+      },
+      "cantabria": {
+        "municipalities": 102,
+        "withStreets": 71,
+        "withoutStreets": 31,
+        "selectedStreetCount": 849
+      },
+      "segovia": {
+        "municipalities": 209,
+        "withStreets": 209,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3171
+      },
+      "soria": {
+        "municipalities": 183,
+        "withStreets": 183,
+        "withoutStreets": 0,
+        "selectedStreetCount": 2204
+      },
+      "toledo": {
+        "municipalities": 204,
+        "withStreets": 204,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3248
+      },
+      "valladolid": {
+        "municipalities": 225,
+        "withStreets": 225,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3347
+      },
+      "bizkaia": {
+        "municipalities": 113,
+        "withStreets": 91,
+        "withoutStreets": 22,
+        "selectedStreetCount": 1026
+      },
+      "zamora": {
+        "municipalities": 248,
+        "withStreets": 248,
+        "withoutStreets": 0,
+        "selectedStreetCount": 3784
+      }
+    },
+    "exceptions": [
+      {
+        "code": "01020",
+        "name": "Kuartango",
+        "provinceSlug": "alava",
+        "reason": "no-vias-records",
+        "sourceTypes": {}
+      },
+      {
+        "code": "01027",
+        "name": "Iruraiz-Gauna",
+        "provinceSlug": "alava",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4
+        }
+      },
+      {
+        "code": "01061",
+        "name": "Zalduondo",
+        "provinceSlug": "alava",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 13,
+          "CMNO": 1,
+          "CSRIO": 1
+        }
+      },
+      {
+        "code": "09011",
+        "name": "Alfoz de Bricia",
+        "provinceSlug": "burgos",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "LUGAR": 14
+        }
+      },
+      {
+        "code": "09190",
+        "name": "Junta de Villalba de Losa",
+        "provinceSlug": "burgos",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "LUGAR": 5
+        }
+      },
+      {
+        "code": "20001",
+        "name": "Abaltzisketa",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 12
+        }
+      },
+      {
+        "code": "20004",
+        "name": "Albiztur",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BAIL": 6,
+          "GUNEA": 1
+        }
+      },
+      {
+        "code": "20015",
+        "name": "Ataun",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "ALD": 7,
+          "AUZOA": 8
+        }
+      },
+      {
+        "code": "20021",
+        "name": "Belauntza",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 3,
+          "ERREP": 1
+        }
+      },
+      {
+        "code": "20024",
+        "name": "Bidania-Goiatz",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 1,
+          "BAIL": 5,
+          "ETXAD": 1,
+          "GUNEA": 2
+        }
+      },
+      {
+        "code": "20026",
+        "name": "Zerain",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 10,
+          "TALDE": 1
+        }
+      },
+      {
+        "code": "20031",
+        "name": "Elduain",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 2
+        }
+      },
+      {
+        "code": "20037",
+        "name": "Gaintza",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 1
+        }
+      },
+      {
+        "code": "20048",
+        "name": "Larraul",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 2
+        }
+      },
+      {
+        "code": "20050",
+        "name": "Leaburu",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 2
+        }
+      },
+      {
+        "code": "20066",
+        "name": "Errezil",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 6,
+          "GUNEA": 1
+        }
+      },
+      {
+        "code": "20906",
+        "name": "Altzaga",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "ALD": 1,
+          "AUZOA": 1,
+          "BIDEA": 1
+        }
+      },
+      {
+        "code": "20907",
+        "name": "Gaztelu",
+        "provinceSlug": "gipuzkoa",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZOA": 2
+        }
+      },
+      {
+        "code": "31031",
+        "name": "Areso",
+        "provinceSlug": "navarra",
+        "reason": "names-excluded-by-selection",
+        "sourceTypes": {
+          "BARRO": 11,
+          "CALLE": 1,
+          "POLIG": 1
+        }
+      },
+      {
+        "code": "31081",
+        "name": "Donamaria",
+        "provinceSlug": "navarra",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "AUZO": 5,
+          "LEKU": 1,
+          "TOKI": 1
+        }
+      },
+      {
+        "code": "31128",
+        "name": "Isaba/Izaba",
+        "provinceSlug": "navarra",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 6,
+          "LUGAR": 2
+        }
+      },
+      {
+        "code": "31148",
+        "name": "Legaria",
+        "provinceSlug": "navarra",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4
+        }
+      },
+      {
+        "code": "31247",
+        "name": "Uztárroz/Uztarroze",
+        "provinceSlug": "navarra",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4
+        }
+      },
+      {
+        "code": "33003",
+        "name": "Amieva",
+        "provinceSlug": "asturias",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "LUGAR": 8
+        }
+      },
+      {
+        "code": "33015",
+        "name": "Caso",
+        "provinceSlug": "asturias",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "CTRA": 1,
+          "LUGAR": 44
+        }
+      },
+      {
+        "code": "33043",
+        "name": "Onís",
+        "provinceSlug": "asturias",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 72,
+          "LUGAR": 3
+        }
+      },
+      {
+        "code": "33046",
+        "name": "Peñamellera Alta",
+        "provinceSlug": "asturias",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 41,
+          "LUGAR": 15
+        }
+      },
+      {
+        "code": "33054",
+        "name": "Las Regueras",
+        "provinceSlug": "asturias",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 1,
+          "LUGAR": 49
+        }
+      },
+      {
+        "code": "33067",
+        "name": "Sobrescobio",
+        "provinceSlug": "asturias",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "CTRA": 1,
+          "LUGAR": 76
+        }
+      },
+      {
+        "code": "33078",
+        "name": "Yernes y Tameza",
+        "provinceSlug": "asturias",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 24
+        }
+      },
+      {
+        "code": "39003",
+        "name": "Anievas",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4
+        }
+      },
+      {
+        "code": "39015",
+        "name": "Camaleño",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 33
+        }
+      },
+      {
+        "code": "39017",
+        "name": "Campoo de Yuso",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 14
+        }
+      },
+      {
+        "code": "39026",
+        "name": "Corvera de Toranzo",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 11
+        }
+      },
+      {
+        "code": "39028",
+        "name": "Entrambasaguas",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 74
+        }
+      },
+      {
+        "code": "39030",
+        "name": "Guriezo",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 24,
+          "URB": 54
+        }
+      },
+      {
+        "code": "39033",
+        "name": "Herrerías",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 11
+        }
+      },
+      {
+        "code": "39034",
+        "name": "Lamasón",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 8
+        }
+      },
+      {
+        "code": "39036",
+        "name": "Liendo",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 13
+        }
+      },
+      {
+        "code": "39039",
+        "name": "Luena",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 30
+        }
+      },
+      {
+        "code": "39041",
+        "name": "Mazcuerras",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 7
+        }
+      },
+      {
+        "code": "39050",
+        "name": "Pesaguero",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 13
+        }
+      },
+      {
+        "code": "39053",
+        "name": "Polaciones",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 12
+        }
+      },
+      {
+        "code": "39054",
+        "name": "Polanco",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 50,
+          "CTRA": 2,
+          "POLIG": 2,
+          "URB": 1
+        }
+      },
+      {
+        "code": "39062",
+        "name": "Ribamontán al Monte",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 72,
+          "LUGAR": 7,
+          "PRAJE": 2
+        }
+      },
+      {
+        "code": "39063",
+        "name": "Rionansa",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 17,
+          "LUGAR": 1
+        }
+      },
+      {
+        "code": "39065",
+        "name": "Las Rozas de Valdearroyo",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 9
+        }
+      },
+      {
+        "code": "39069",
+        "name": "San Felices de Buelna",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 10
+        }
+      },
+      {
+        "code": "39072",
+        "name": "San Roque de Riomiera",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 3,
+          "LUGAR": 3
+        }
+      },
+      {
+        "code": "39078",
+        "name": "Santiurde de Toranzo",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 9
+        }
+      },
+      {
+        "code": "39081",
+        "name": "Saro",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 15
+        }
+      },
+      {
+        "code": "39083",
+        "name": "Soba",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 216,
+          "LUGAR": 167,
+          "URB": 1
+        }
+      },
+      {
+        "code": "39088",
+        "name": "Tresviso",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 1
+        }
+      },
+      {
+        "code": "39089",
+        "name": "Tudanca",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4,
+          "LUGAR": 1
+        }
+      },
+      {
+        "code": "39090",
+        "name": "Udías",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 9,
+          "LUGAR": 9,
+          "URB": 14
+        }
+      },
+      {
+        "code": "39091",
+        "name": "Valdáliga",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 47
+        }
+      },
+      {
+        "code": "39093",
+        "name": "Valdeprado del Río",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 17
+        }
+      },
+      {
+        "code": "39099",
+        "name": "Villaescusa",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 51
+        }
+      },
+      {
+        "code": "39100",
+        "name": "Villafufre",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 13,
+          "URB": 1
+        }
+      },
+      {
+        "code": "39101",
+        "name": "Valle de Villaverde",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 31
+        }
+      },
+      {
+        "code": "39102",
+        "name": "Voto",
+        "provinceSlug": "cantabria",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 13,
+          "LUGAR": 3
+        }
+      },
+      {
+        "code": "48004",
+        "name": "Amoroto",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4
+        }
+      },
+      {
+        "code": "48005",
+        "name": "Arakaldo",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 11,
+          "PRAJE": 1
+        }
+      },
+      {
+        "code": "48010",
+        "name": "Arrieta",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 22
+        }
+      },
+      {
+        "code": "48021",
+        "name": "Busturia",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 5
+        }
+      },
+      {
+        "code": "48022",
+        "name": "Karrantza Harana/Valle de Carranza",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 47
+        }
+      },
+      {
+        "code": "48033",
+        "name": "Ereño",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4
+        }
+      },
+      {
+        "code": "48035",
+        "name": "Fruiz",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 9
+        }
+      },
+      {
+        "code": "48038",
+        "name": "Gamiz-Fika",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4
+        }
+      },
+      {
+        "code": "48039",
+        "name": "Garai",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 3
+        }
+      },
+      {
+        "code": "48040",
+        "name": "Gatika",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 9,
+          "URB": 1
+        }
+      },
+      {
+        "code": "48048",
+        "name": "Ibarrangelu",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 12
+        }
+      },
+      {
+        "code": "48061",
+        "name": "Maruri-Jatabe",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 12
+        }
+      },
+      {
+        "code": "48063",
+        "name": "Mendexa",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4
+        }
+      },
+      {
+        "code": "48064",
+        "name": "Meñaka",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 4
+        }
+      },
+      {
+        "code": "48079",
+        "name": "Errigoiti",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 20
+        }
+      },
+      {
+        "code": "48081",
+        "name": "Lezama",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 3
+        }
+      },
+      {
+        "code": "48088",
+        "name": "Ubide",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 2
+        }
+      },
+      {
+        "code": "48097",
+        "name": "Zaratamo",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 17,
+          "GRUP": 2
+        }
+      },
+      {
+        "code": "48907",
+        "name": "Kortezubi",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 8
+        }
+      },
+      {
+        "code": "48908",
+        "name": "Murueta",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 3
+        }
+      },
+      {
+        "code": "48909",
+        "name": "Nabarniz",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 6
+        }
+      },
+      {
+        "code": "48914",
+        "name": "Arratzu",
+        "provinceSlug": "bizkaia",
+        "reason": "no-eligible-types",
+        "sourceTypes": {
+          "BARRO": 9
+        }
+      }
+    ],
+    "sourceRecordCounts": {
+      "VIAS": 907378,
+      "TRAM": 1533323
+    },
+    "excludedRecordCounts": {
+      "unsupported-type": 58536,
+      "industrial-or-non-street-reference": 580,
+      "technical-code-name": 66,
+      "empty-or-control-name": 181
+    }
+  }
+}
