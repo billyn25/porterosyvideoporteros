@@ -91,32 +91,37 @@ export function provincePage(ctx,province){
 
 export function townPage(ctx,town,nearby){
   const geographicReferences=localReferences(ctx,town);
-  const scenario=townScenario(town);
   const focus=ctx.localFocus[hash(town.code)%ctx.localFocus.length];
-  const localBrands=choose(ctx.brands,`${town.code}:brands`,3);
+  const scenario=townScenario(town,focus.id);
+  const preferredBrands=ctx.brands.filter(b=>focus.brandIds.includes(b.id));
+  const localBrands=[...choose(preferredBrands,`${town.code}:brands`,2),...choose(ctx.brands.filter(b=>!focus.brandIds.includes(b.id)),`${town.code}:other-brand`,1)];
   const heroBrand=localBrands[0];
+  const audioFocus=['telefonillo-individual','averias-audio','uso-accesible'].includes(focus.id);
+  const heroPhoto=audioFocus?ctx.audio.handset:heroBrand;
   const firstService=ctx.services.find(s=>s.id===focus.serviceIds[0]);
-  const additionalServices=choose(ctx.services.filter(s=>s.id!==firstService.id),`${town.code}:services`,3);
+  const relatedServices=byIds(ctx.services,focus.serviceIds.slice(1));
+  const additionalServices=[...relatedServices,...choose(ctx.services.filter(s=>!focus.serviceIds.includes(s.id)),`${town.code}:services`,3-relatedServices.length)];
   const serviceSelection=[firstService,...additionalServices];
   const diagnostics=selectDiagnostics(ctx.diagnostics,focus.diagnosticIds,`${town.code}:diagnostics`,4);
-  const faqs=choose(ctx.faqs.filter(f=>focus.faqIds.includes(f.id)||f.tags.some(tag=>serviceSelection.some(s=>s.id===tag))),`${town.code}:faq`,4);
+  const priorityFaqs=choose(byIds(ctx.faqs,focus.faqIds),`${town.code}:priority-faq`,2);
+  const faqs=[...priorityFaqs,...choose(ctx.faqs.filter(f=>!priorityFaqs.includes(f)&&(focus.faqIds.includes(f.id)||f.tags.some(tag=>focus.serviceIds.includes(tag)))),`${town.code}:faq`,2)];
   const focusSections=choose(focus.sections.map((s,i)=>({...s,id:`${focus.id}-${i}`})),town.code,2);
-  const secondary=choose(ctx.localFocus.filter(f=>f.id!==focus.id && f.serviceIds[0]!==focus.serviceIds[0]),`${town.code}:secondary`,1)[0];
-  const secondarySection=choose(secondary.sections.map((s,i)=>({...s,id:`${secondary.id}-${i}`})),`${town.code}:extra`,1)[0];
   const titleSuffix=ctx.duplicateTownNames.has(town.name)?` (${town.province})`:'';
   const titleBase=`Porteros y videoporteros en ${town.name}${titleSuffix}`;
   const seoTitle=titleBase.length+28<=68?`${titleBase} | Instalación y reparación`:titleBase;
   const location=town.name===town.province?town.name:`${town.name}, ${town.province}`;
   const descriptionBase=`Instalación y reparación de porteros automáticos y videoporteros en ${location}.`;
   const seoDescription=descriptionBase.length<116?`${descriptionBase} Telefonillos, comunidades y WiFi. Atención 24 h.`:`${descriptionBase} Atención 24 h.`;
-  const body=`<section class="hero local-hero"><div class="container hero-grid"><div>${eyebrow(`${town.name} · ${town.province}`)}<h1>Instalación y reparación de porteros automáticos y videoporteros en <em>${e(town.name)}${e(titleSuffix)}</em></h1><p class="lead">Reparación de telefonillos, cambio de monitores y renovación de placas para viviendas, comunidades y negocios en ${e(town.name)}. También estudiamos soluciones de vídeo y conexión al móvil.</p><div class="actions">${button('Consultar en '+town.name,'#consulta')}${textLink('Ver averías','#averias')}</div><div class="local-context"><span>Servicio en <strong>${e(town.name)}</strong></span><a href="${provincePath(town)}">Ver municipios de ${e(town.province)}</a></div>${geographicReferences.count?`<div class="local-jump">${textLink(geographicReferences.jumpLabel,'#barrios')}</div>`:''}</div>${heroImage(ctx,{product:true,brand:heroBrand,tag:`${heroBrand.name}: identifica el sistema antes de elegir.`,small:'Equipo de referencia',label:'AUDIO · VÍDEO · APERTURA'})}</div></section>`+
-  localitySection(ctx,town)+
-  section(`<div class="local-grid"><div>${eyebrow('Para orientar tu instalación')}<h2>${e(focus.heading)}</h2><p>${e(focus.intro)}</p>${focusSections.map(s=>`<section class="local-editorial"><h3>${e(s.title)}</h3><p>${e(s.text)}</p></section>`).join('')}<section class="local-editorial"><h3>${e(secondarySection.title)}</h3><p>${e(secondarySection.text)}</p></section></div><aside class="local-focus">${eyebrow(`Tu consulta en ${town.name}`)}<h3>Lo que conviene tener a mano.</h3><ul>${focus.checklist.map(item=>`<li>${e(item)}</li>`).join('')}</ul><p>Indica la localidad y si el trabajo afecta a tu vivienda, a la entrada de una casa o a toda la comunidad. Así se puede concretar la visita y su alcance.</p>${textLink(`Explorar ${firstService.shortTitle.toLowerCase()}`,servicePath(firstService))}</aside></div>`,'section--white')+
-  section(`${sectionHead('Caso orientativo para preparar la consulta',e(scenario.title), 'Ejemplo técnico para identificar necesidades, no una avería registrada ni un trabajo realizado en esta localidad.')}<div class="local-grid"><div><h3>${e(scenario.setting)}</h3><p>${e(scenario.intro)}</p><p>${e(scenario.detail)}</p></div><aside class="local-focus"><h3>Antes de consultar</h3><p>${e(scenario.tip)}</p>${textLink('Preparar consulta en '+town.name,'#consulta')}</aside></div>`,'section--white')+
-  diagnosticsSection(ctx,diagnostics,{title:`¿Qué le ocurre a tu portero en ${town.name}?`,tag:'Describe el fallo',intro:'Estas comprobaciones ayudan a explicar la avería. Son casos orientativos: no describen incidencias registradas en el municipio.'})+
-  section(`${sectionHead('Instalación, reparación y renovación',`Opciones para tu entrada<br>en ${e(town.name)}.`,`Para un piso, un portal completo, una casa o un negocio. Consulta también el catálogo de servicios para otras necesidades.`)}${serviceRows(serviceSelection)}<div class="service-footer"><span>La solución se confirma después de revisar el sistema.</span>${textLink('Ver los ocho servicios','/servicios/')}</div>`)+
-  section(`${sectionHead('Equipos y compatibilidad',`Tres marcas para empezar<br>a comparar.`,`Ejemplos de equipos para explorar. Trabajamos también con ${ctx.brands.filter(b=>!localBrands.includes(b)).map(b=>b.name).join(', ')}.`)}${brandCards(localBrands,{className:'local-brands'})}${notes()}`,'section--sage')+
+  const hero=`<section class="hero local-hero"><div class="container hero-grid"><div>${eyebrow(`${town.name} · ${town.province}`)}<h1>Instalación y reparación de porteros automáticos y videoporteros en <em>${e(town.name)}${e(titleSuffix)}</em></h1><p class="lead">Reparación de telefonillos, cambio de monitores y renovación de placas para viviendas, comunidades y negocios en ${e(town.name)}. También estudiamos soluciones de vídeo y conexión al móvil.</p><div class="actions">${button('Consultar en '+town.name,'#consulta')}${textLink('Ver averías','#averias')}</div><div class="local-context"><span>Servicio en <strong>${e(town.name)}</strong></span><a href="${provincePath(town)}">Ver municipios de ${e(town.province)}</a></div>${geographicReferences.count?`<div class="local-jump">${textLink(geographicReferences.jumpLabel,'#barrios')}</div>`:''}</div>${heroImage(ctx,{product:true,brand:heroPhoto,tag:audioFocus?'Telefonillo de audio: comprueba el sistema antes de sustituirlo.':`${heroBrand.name}: identifica el sistema antes de elegir.`,small:'Equipo de referencia',label:'AUDIO · VÍDEO · APERTURA'})}</div></section>`;
+  const orientation=section(`<div class="local-grid"><div>${eyebrow('Para orientar tu instalación')}<h2>${e(focus.heading)}</h2><p>${e(focus.intro)}</p>${focusSections.map(s=>`<section class="local-editorial"><h3>${e(s.title)}</h3><p>${e(s.text)}</p></section>`).join('')}</div><aside class="local-focus">${eyebrow(`Tu consulta en ${town.name}`)}<h3>Lo que conviene tener a mano.</h3><ul>${focus.checklist.map(item=>`<li>${e(item)}</li>`).join('')}</ul><h3>${e(scenario.title)}</h3><p>${e(scenario.intro)}</p><p>${e(scenario.detail)}</p><p class="brand-note">Ejemplo orientativo para preparar la consulta; no describe un trabajo realizado en ${e(town.name)}.</p>${textLink(`Explorar ${firstService.shortTitle.toLowerCase()}`,servicePath(firstService))}</aside></div>`,'section--white');
+  const diagnosis=diagnosticsSection(ctx,diagnostics,{title:`¿Qué le ocurre a tu portero en ${town.name}?`,tag:'Describe el fallo',intro:'Estas comprobaciones ayudan a explicar la avería. Son casos orientativos: no describen incidencias registradas en el municipio.'});
+  const solutions=section(`${sectionHead('Instalación, reparación y renovación',`Opciones para tu entrada<br>en ${e(town.name)}.`,`Para un piso, un portal completo, una casa o un negocio. Consulta también el catálogo de servicios para otras necesidades.`)}${serviceRows(serviceSelection)}<div class="service-footer"><span>La solución se confirma después de revisar el sistema.</span>${textLink('Ver los ocho servicios','/servicios/')}</div>`);
+  const equipment=section(`${sectionHead('Equipos y compatibilidad',`Tres marcas para empezar<br>a comparar.`,`Ejemplos de equipos para explorar. Trabajamos también con ${ctx.brands.filter(b=>!localBrands.includes(b)).map(b=>b.name).join(', ')}.`)}${brandCards(localBrands,{className:'local-brands',technical:true})}${notes()}`,'section--sage');
+  // Two editorial routes: diagnose a fault, or plan a replacement. Geography stays beside contact.
+  const repairFirst=['averias-audio','averias-imagen','averias-apertura','reparar-o-renovar'].includes(focus.id);
+  const body=hero+(repairFirst?diagnosis+orientation+solutions+equipment:orientation+solutions+equipment+diagnosis)+
   faqSection(faqs,{title:`Preguntas antes de instalar o reparar en ${town.name}.`})+
+  localitySection(ctx,town)+
   consultation(ctx,{town})+
   nearbySection(town,nearby);
   return meta(townPath(town),seoTitle,seoDescription,body,{kind:'town',active:'zonas',provinceSlug:town.provinceSlug,area:`${town.name}, ${town.province}`,breadcrumbs:[{label:'Zonas',href:'/zonas/'},{label:town.province,href:provincePath(town)},{label:town.name}],faqs,focusId:focus.id,selection:{brands:localBrands.map(x=>x.id),diagnostics:diagnostics.map(x=>x.id),faqs:faqs.map(x=>x.id),services:serviceSelection.map(x=>x.id)}});

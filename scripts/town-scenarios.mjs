@@ -34,10 +34,27 @@ const preparations=[
  'Si quieres renovar, señala las funciones que necesitas conservar.'
 ];
 const hashCode=value=>{let h=2166136261;for(const ch of String(value)){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0};
-export function townScenario(town){
+// Pair complete scenarios with the editorial focus, rather than combining unrelated cases and settings.
+const focusScenarios={
+ 'renovar-comunidad-antigua':[[4,6],[5,6]],
+ 'telefonillo-individual':[[7,0],[0,0]],
+ 'entrada-chalet':[[5,2],[9,2]],
+ 'dos-portales':[[8,4],[10,4]],
+ 'uso-accesible':[[7,0],[0,5]],
+ 'abrir-con-movil':[[6,0],[6,5]],
+ 'negocio-recepcion':[[6,3],[9,3]],
+ 'mantenimiento-con-registro':[[11,1],[9,1]],
+ 'averias-audio':[[2,0],[2,1]],
+ 'averias-imagen':[[3,0],[3,5]],
+ 'averias-apertura':[[1,7],[9,1]],
+ 'reparar-o-renovar':[[4,6],[7,0]]
+};
+export function townScenario(town,focusId){
  const seed=hashCode(town.code+':scenario:v1');
- const scenario=contexts[seed%contexts.length];
- const setting=settings[Math.floor(seed/contexts.length)%settings.length];
+ const pairs=focusScenarios[focusId];
+ const pair=pairs?.[seed%pairs.length];
+ const scenario=contexts[pair?pair[0]:seed%contexts.length];
+ const setting=settings[pair?pair[1]:Math.floor(seed/contexts.length)%settings.length];
  const tip=preparations[Math.floor(seed/(contexts.length*settings.length))%preparations.length];
  return {title:scenario[0],intro:scenario[1],setting:setting[0],detail:setting[1],tip};
 }
