@@ -1,0 +1,146 @@
+[
+  {
+    "id": "tegui",
+    "name": "Tegui",
+    "group": "Grupo Legrand",
+    "series": "Serie 8 · Classe 100 · Sfera New",
+    "summary": "Telefonillos, monitores y placas modulares para reparar una vivienda o renovar el acceso de una comunidad. Revisamos el sistema instalado antes de elegir el recambio.",
+    "image": "/assets/brands/tegui.webp",
+    "alt": "Monitor Tegui Classe 100V16B blanco con pantalla a color",
+    "sourceUrl": "https://www.tegui.es/videoporteros/puestos-internos/manos-libres-classe-100",
+    "sourceImageUrl": "https://assets.legrand.com/pim/PHOTOS-WEB/TG-374511-WEB-F.jpg",
+    "technicalNotes": [
+      "El monitor mostrado es Classe 100V16B, referencia 374511: pantalla de 5 pulgadas y manos libres; esta versión no incorpora Wi-Fi.",
+      "La familia incluye versiones con funciones diferentes. La conexión Wi-Fi está disponible solo en referencias concretas.",
+      "Tegui es una marca del Grupo Legrand. Compartir grupo no garantiza compatibilidad entre referencias o sistemas."
+    ],
+    "width": 900,
+    "height": 900,
+    "bytes": 18058,
+    "credit": "Fotografía de producto del fabricante; marcas de sus respectivos titulares.",
+    "verifiedAt": "2026-10-26"
+  },
+  {
+    "id": "bticino",
+    "name": "BTicino",
+    "group": "Grupo Legrand",
+    "series": "Classe 300EOS · Linea 3000",
+    "summary": "Videoporteros conectados y placas para viviendas y edificios. Configuramos las funciones del monitor y, cuando el equipo lo permite, la recepción de llamadas en el móvil.",
+    "image": "/assets/brands/bticino.webp",
+    "alt": "Kit BTicino Classe 300EOS negro con placa Linea 3000 y llaveros de proximidad",
+    "sourceUrl": "https://www.bticino.com/products/bt-363926",
+    "sourceImageUrl": "https://assets.legrand.com/pim/PHOTOS-WEB/BT-363926-WEB-F.jpg",
+    "technicalNotes": [
+      "El kit 363926 combina monitor Classe 300EOS y placa Linea 3000 en acabado negro.",
+      "Instalación de dos hilos y conexión Wi-Fi; el acceso remoto depende de conexión a internet, configuración y aplicación compatible.",
+      "BTicino forma parte del Grupo Legrand. La compatibilidad se comprueba por sistema y referencia."
+    ],
+    "width": 769,
+    "height": 900,
+    "bytes": 27362,
+    "credit": "Fotografía de producto del fabricante; marcas de sus respectivos titulares.",
+    "verifiedAt": "2026-10-26"
+  },
+  {
+    "id": "legrand",
+    "name": "Legrand",
+    "group": "Grupo Legrand",
+    "series": "Easykit Wi-Fi with Netatmo",
+    "summary": "Soluciones de videoportero para viviendas, con monitor interior y opciones de gestión desde el teléfono. Comprobamos la red Wi-Fi y la compatibilidad de la familia Easykit.",
+    "image": "/assets/brands/legrand.webp",
+    "alt": "Monitor blanco Legrand Easykit Wi-Fi with Netatmo de 7 pulgadas",
+    "sourceUrl": "https://diy.legrand.es/videoporteros-y-timbres/easykit-wifi-with-netatmo/",
+    "sourceImageUrl": "https://assets.legrand.com/pim/PHOTOS-WEB/LG-365220-WEB-F.jpg",
+    "technicalNotes": [
+      "La familia Easykit Wi-Fi with Netatmo permite funciones remotas mediante Home + Security.",
+      "La FAQ del fabricante distingue Easykit del sistema de dos hilos BTicino/Legrand: no son intercambiables por compartir número de hilos.",
+      "La conectividad Wi-Fi no elimina la necesidad de alimentación ni el cableado propio de la instalación."
+    ],
+    "width": 900,
+    "height": 900,
+    "bytes": 22622,
+    "credit": "Fotografía de producto del fabricante; marcas de sus respectivos titulares.",
+    "verifiedAt": "2026-10-26"
+  },
+  {
+    "id": "golmar",
+    "name": "Golmar",
+    "series": "Soul · ART · G2+",
+    "summary": "Placas de calle, monitores y soluciones para pequeños edificios y viviendas. Localizamos fallos de llamada, audio, imagen y apertura y valoramos opciones de desvío al móvil.",
+    "image": "/assets/brands/golmar.webp",
+    "alt": "Kit Golmar Soul con monitor ART 7W, placa de calle y llaveros",
+    "sourceUrl": "https://www.golmar.es/products/s5110-art-7w",
+    "sourceImageUrl": "https://www.golmar.es/media-resize/6fc805a2ce997bf702a6dab5a17bf335/12205118.jpg",
+    "technicalNotes": [
+      "El kit S5110/ART 7W incluye placa Soul, monitor ART 7W de 7 pulgadas con Wi-Fi y fuente de alimentación.",
+      "El sistema utiliza tecnología de dos hilos G2+; el desvío de llamadas requiere conectividad y configuración.",
+      "Para ampliar o sustituir equipos se comprueban la generación del sistema y su aplicación compatible."
+    ],
+    "width": 1000,
+    "height": 574,
+    "bytes": 31026,
+    "credit": "Fotografía de producto del fabricante; marcas de sus respectivos titulares.",
+    "verifiedAt": "2026-10-26"
+  },
+  {
+    "id": "fermax",
+    "name": "Fermax",
+    "series": "DUOX PLUS · VEO-XS · Cityline",
+    "summary": "Reparación y renovación de porteros y videoporteros para comunidades y viviendas. Estudiamos el bus, la placa y los terminales para conservar los componentes que resulten compatibles.",
+    "image": "/assets/brands/fermax.webp",
+    "alt": "Kit Fermax Cityline con monitor VEO-XS Wi-Fi DUOX PLUS",
+    "sourceUrl": "https://fermax.com/intl-en/products/2-wire-door-entry-system/monitors/monitor-veo-xs-wifi",
+    "sourceImageUrl": "https://fermax.com/.imaging/default/sl_products/f94511/imagen/94511KITVIDEOCITYVEOXSWIFIDUOXPLUS1L.jpg",
+    "technicalNotes": [
+      "El kit mostrado 94511 combina placa Cityline y monitor VEO-XS Wi-Fi de 4,3 pulgadas.",
+      "DUOX PLUS utiliza dos hilos no polarizados; no implica compatibilidad con otros buses de dos hilos.",
+      "Los modelos VEO-XS Wi-Fi permiten desvío de llamada al móvil según configuración y conectividad."
+    ],
+    "width": 1000,
+    "height": 546,
+    "bytes": 20952,
+    "credit": "Fotografía de producto del fabricante; marcas de sus respectivos titulares.",
+    "verifiedAt": "2026-10-26"
+  },
+  {
+    "id": "comelit",
+    "name": "Comelit",
+    "series": "Quadra · Chronos · Simplebus 2",
+    "summary": "Accesos con placas Quadra y monitores para viviendas y comunidades. Revisamos la tecnología Simplebus y las opciones conectadas antes de renovar un terminal o la instalación completa.",
+    "image": "/assets/brands/comelit.webp",
+    "alt": "Placa exterior Comelit Quadra instalada junto a la entrada de una vivienda",
+    "sourceUrl": "https://pro.comelitgroup.com/es-es/producto/cr7451v",
+    "sourceImageUrl": "https://staticpro.comelitgroup.com/storage/2026/07/55199/2g31000740.pdf",
+    "sourcePage": 8,
+    "technicalNotes": [
+      "El kit CR7451V combina placa Quadra y monitor Chronos Wi-Fi de 5 pulgadas en sistema Simplebus 2.",
+      "Las ampliaciones y recambios se dimensionan según la documentación de cada sistema; no se presupone compatibilidad con ViP u otras generaciones.",
+      "La placa de calle y el monitor interior se eligen como parte de un sistema compatible, según el número de viviendas y accesos."
+    ],
+    "width": 438,
+    "height": 477,
+    "bytes": 23232,
+    "credit": "Fotografía de producto del fabricante; marcas de sus respectivos titulares.",
+    "verifiedAt": "2026-10-26"
+  },
+  {
+    "id": "auta",
+    "name": "Auta",
+    "series": "ONEX · NEOS · Xenia",
+    "summary": "Diagnóstico de telefonillos, monitores, placas y apertura de puerta. Identificamos la tecnología Auta existente para seleccionar el terminal y los accesorios adecuados.",
+    "image": "/assets/brands/auta.webp",
+    "alt": "Monitor Auta ONEX Wi-Fi con pantalla a color",
+    "sourceUrl": "https://auta.es/producto/monitor-onex-wi-fi/",
+    "sourceImageUrl": "https://auta.es/wp-content/uploads/Monitor-ONEX-Wi-Fi.png",
+    "technicalNotes": [
+      "ONEX Wi-Fi se ofrece en referencias distintas para Visualtech, coaxial, sin coaxial, dos hilos y Plug & Play.",
+      "Esas variantes son referencias diferentes; un mismo aspecto exterior no confirma compatibilidad.",
+      "El acceso remoto requiere la variante correcta, configuración de la aplicación y conexión a internet."
+    ],
+    "width": 900,
+    "height": 900,
+    "bytes": 24206,
+    "credit": "Fotografía de producto del fabricante; marcas de sus respectivos titulares.",
+    "verifiedAt": "2026-10-26"
+  }
+]

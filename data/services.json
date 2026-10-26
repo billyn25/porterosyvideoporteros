@@ -1,0 +1,274 @@
+[
+  {
+    "id": "instalacion",
+    "slug": "instalacion-porteros-videoporteros",
+    "title": "Instalación de porteros automáticos y videoporteros",
+    "shortTitle": "Instalación y renovación",
+    "eyebrow": "Un acceso bien resuelto",
+    "summary": "Diseñamos la instalación desde la placa de calle hasta cada vivienda. Elegimos audio o vídeo, revisamos el recorrido del cable y dejamos comprobadas la llamada, la conversación y la apertura.",
+    "details": [
+      {
+        "title": "Primero, la instalación",
+        "text": "El número de viviendas, las entradas y el estado del cableado determinan el sistema. Un equipo de dos hilos puede facilitar una renovación, pero reutilizar los conductores exige comprobar sección, longitud, aislamiento y distribución."
+      },
+      {
+        "title": "Placa y terminales que encajan",
+        "text": "Valoramos el hueco de la placa, la posición de la cámara y el uso del monitor. Auricular, manos libres o pantalla conectada se eligen dentro de una tecnología compatible."
+      },
+      {
+        "title": "Entrega con pruebas",
+        "text": "Probamos cada llamada, el sonido en ambos sentidos, la imagen y el abrepuertas. Si hay conexión al móvil, revisamos también el emparejamiento y explicamos su uso."
+      }
+    ],
+    "checks": [
+      "Número de viviendas y accesos",
+      "Tecnología y referencias existentes",
+      "Canalizaciones, cableado y alimentación",
+      "Preferencias de pantalla y conectividad"
+    ],
+    "faqIds": [
+      "cambiar-video",
+      "reutilizar-cable",
+      "presupuesto-comunidad",
+      "sin-internet"
+    ]
+  },
+  {
+    "id": "reparacion",
+    "slug": "reparacion-porteros-videoporteros",
+    "title": "Reparación de porteros automáticos y videoporteros",
+    "shortTitle": "Reparación de averías",
+    "eyebrow": "Encontrar el origen",
+    "summary": "Un telefonillo que no suena, una imagen que desaparece o una puerta que no abre pueden tener causas distintas. Localizamos si el fallo está en la vivienda, la placa, la alimentación o la línea común.",
+    "details": [
+      {
+        "title": "Avería individual o compartida",
+        "text": "Preguntamos qué funciones fallan y a cuántas viviendas afecta. Esa comparación permite orientar la revisión sin sustituir de entrada toda la instalación."
+      },
+      {
+        "title": "Audio, imagen y llamada",
+        "text": "Revisamos pulsadores, terminales, conexiones y configuración según el síntoma. Un fallo intermitente se documenta con sus circunstancias para poder reproducirlo."
+      },
+      {
+        "title": "Reparar o renovar con criterio",
+        "text": "La elección depende del daño, la disponibilidad de recambio compatible y el estado del conjunto. Explicamos qué componente se propone cambiar y qué queda conservado."
+      }
+    ],
+    "checks": [
+      "Qué función falla y desde cuándo",
+      "Si afecta a otros vecinos",
+      "Marca y referencia del equipo",
+      "Cambios recientes u obras próximas"
+    ],
+    "faqIds": [
+      "fallo-individual",
+      "no-suena",
+      "no-imagen",
+      "reparar-cambiar"
+    ]
+  },
+  {
+    "id": "comunidades",
+    "slug": "videoporteros-comunidades-vecinos",
+    "title": "Porteros y videoporteros para comunidades de vecinos",
+    "shortTitle": "Comunidades de vecinos",
+    "eyebrow": "Coordinar todo el edificio",
+    "summary": "Renovación de placas, telefonillos y monitores con una propuesta comprensible para la comunidad. Estudiamos las entradas, la distribución de viviendas y cómo organizar el acceso a cada piso.",
+    "details": [
+      {
+        "title": "Una propuesta por partidas",
+        "text": "Separamos equipos comunes, terminales de vivienda, cableado y trabajos adicionales. Así se puede comparar una reparación puntual con una renovación del sistema."
+      },
+      {
+        "title": "Opciones para cada vecino",
+        "text": "Dentro de las posibilidades del sistema, estudiamos terminales de audio, monitores y versiones conectadas. La mezcla de equipos requiere confirmar compatibilidad y capacidad de alimentación."
+      },
+      {
+        "title": "Puesta en servicio ordenada",
+        "text": "Preparamos la relación de pulsadores y viviendas, coordinamos las visitas y comprobamos la programación. El administrador recibe una descripción del alcance realizado."
+      }
+    ],
+    "checks": [
+      "Relación de viviendas y locales",
+      "Portales y accesos secundarios",
+      "Estado de placa y alimentación",
+      "Persona que coordina las visitas"
+    ],
+    "faqIds": [
+      "presupuesto-comunidad",
+      "mezclar-terminales",
+      "varios-portales",
+      "placa-sola"
+    ]
+  },
+  {
+    "id": "telefonillos",
+    "slug": "cambio-telefonillos-monitores",
+    "title": "Cambio de telefonillos y monitores compatibles",
+    "shortTitle": "Telefonillos y monitores",
+    "eyebrow": "Sustituir lo necesario",
+    "summary": "Cambiamos terminales interiores después de identificar su tecnología. El aspecto, la marca o contar dos cables no bastan para elegir un recambio compatible.",
+    "details": [
+      {
+        "title": "Identificar antes de comprar",
+        "text": "Comprobamos modelo, sistema de llamada y referencia de la instalación. En equipos convencionales consultamos las equivalencias; en sistemas digitales verificamos la familia y la programación."
+      },
+      {
+        "title": "Mejorar el uso diario",
+        "text": "Valoramos un auricular más cómodo, manos libres, controles visibles o una pantalla mayor. Las funciones concretas dependen del terminal admitido por el sistema."
+      },
+      {
+        "title": "Conservar la instalación común",
+        "text": "Si el sistema y su estado lo permiten, puede bastar con sustituir el equipo de la vivienda. Cuando existe un fallo común, cambiar el telefonillo por sí solo no lo resuelve."
+      }
+    ],
+    "checks": [
+      "Foto frontal del terminal",
+      "Marca y modelo legibles",
+      "Síntoma o mejora deseada",
+      "Funcionamiento del resto de viviendas"
+    ],
+    "faqIds": [
+      "telefonillo-universal",
+      "dos-hilos-compatible",
+      "solo-monitor",
+      "marcas"
+    ]
+  },
+  {
+    "id": "wifi",
+    "slug": "videoporteros-wifi-movil",
+    "title": "Videoporteros WiFi y atención desde el móvil",
+    "shortTitle": "WiFi y móvil",
+    "eyebrow": "La llamada, donde la necesitas",
+    "summary": "Estudiamos equipos que permiten atender visitas desde una aplicación. Comprobamos compatibilidad, cobertura de red y requisitos del fabricante antes de proponer la conexión.",
+    "details": [
+      {
+        "title": "WiFi no equivale a sin cables",
+        "text": "En muchos sistemas el monitor conserva el bus de comunicación y su alimentación. La conexión WiFi añade la comunicación con la red para las funciones remotas."
+      },
+      {
+        "title": "El móvil forma parte de la prueba",
+        "text": "Revisamos la aplicación, la cuenta, los permisos de notificación y la conexión del terminal. La disponibilidad remota depende también de Internet y del servicio del fabricante."
+      },
+      {
+        "title": "Actualizar sin cambiarlo todo",
+        "text": "Algunas instalaciones admiten un monitor conectado o una pasarela específica. La solución se decide con la referencia exacta y el esquema existente, no únicamente por la marca."
+      }
+    ],
+    "checks": [
+      "Sistema actual y modelo de terminal",
+      "Cobertura de red junto al equipo",
+      "Funciones deseadas desde el móvil",
+      "Usuarios que necesitan acceso"
+    ],
+    "faqIds": [
+      "wifi-cables",
+      "wifi-requisitos",
+      "sin-internet",
+      "cambio-router"
+    ]
+  },
+  {
+    "id": "accesos",
+    "slug": "abrepuertas-control-accesos",
+    "title": "Abrepuertas eléctricos y control de accesos",
+    "shortTitle": "Apertura y accesos",
+    "eyebrow": "Que la puerta responda",
+    "summary": "Revisamos la orden eléctrica y el ajuste mecánico de la puerta. También estudiamos lectores de proximidad o teclados compatibles para gestionar el acceso de vecinos y usuarios.",
+    "details": [
+      {
+        "title": "El cierre también importa",
+        "text": "Cuando se escucha el abrepuertas pero la hoja no libera, comprobamos alineación, presión y mecanismo. Si no actúa, se revisan mando, tensión y conexiones."
+      },
+      {
+        "title": "Llaveros y códigos",
+        "text": "Un lector o teclado puede facilitar la entrada sin utilizar la llave. Definimos altas, bajas y gestión de usuarios para que el sistema pueda mantenerse con orden."
+      },
+      {
+        "title": "Más de una entrada",
+        "text": "Estudiamos la apertura de un segundo acceso y los elementos necesarios. Una función auxiliar del monitor no garantiza por sí sola que pueda accionar cualquier puerta."
+      }
+    ],
+    "checks": [
+      "Tipo de puerta y cerradura",
+      "Síntoma de la apertura",
+      "Entradas que se quieren controlar",
+      "Gestión de llaveros o códigos"
+    ],
+    "faqIds": [
+      "no-abre",
+      "llaveros",
+      "segunda-puerta",
+      "mantenimiento-incluye"
+    ]
+  },
+  {
+    "id": "viviendas",
+    "slug": "videoporteros-casas-chalets-negocios",
+    "title": "Videoporteros para casas, chalets y negocios",
+    "shortTitle": "Casas y negocios",
+    "eyebrow": "Una solución para cada entrada",
+    "summary": "Kits y sistemas adaptados a una vivienda, una oficina o un local. Valoramos distancia hasta la entrada, ubicación de la placa, puestos interiores y uso de la apertura.",
+    "details": [
+      {
+        "title": "Entrada exterior y recorrido",
+        "text": "Medimos el recorrido entre placa, alimentación y vivienda. La distancia y el tipo de cable condicionan el diseño, aunque el kit se anuncie para una sola vivienda."
+      },
+      {
+        "title": "Ver y atender con comodidad",
+        "text": "Ubicamos el monitor donde resulte útil y estudiamos un segundo terminal si el sistema lo admite. En la placa revisamos encuadre, contraluz y montaje adecuado al lugar."
+      },
+      {
+        "title": "Necesidades de un negocio",
+        "text": "Un despacho puede necesitar atender desde varias zonas o diferenciar sus accesos. Definimos esas funciones antes de elegir el equipo y evitamos aperturas automáticas no solicitadas."
+      }
+    ],
+    "checks": [
+      "Distancia a la puerta exterior",
+      "Puntos donde se atenderá la llamada",
+      "Exposición y ubicación de la placa",
+      "Necesidad de móvil o segundo monitor"
+    ],
+    "faqIds": [
+      "kit-chalet",
+      "segundo-monitor",
+      "reutilizar-cable",
+      "segunda-puerta"
+    ]
+  },
+  {
+    "id": "mantenimiento",
+    "slug": "mantenimiento-porteros-comunidades",
+    "title": "Mantenimiento de porteros y videoporteros",
+    "shortTitle": "Mantenimiento",
+    "eyebrow": "Conservar lo que funciona",
+    "summary": "Revisión de la instalación y atención de incidencias con un alcance definido. Registramos los síntomas, comprobamos elementos comunes y valoramos recambios según la tecnología existente.",
+    "details": [
+      {
+        "title": "Revisión del conjunto",
+        "text": "Comprobamos placa, llamada, audio, imagen y apertura, además de los puntos de conexión accesibles. Los trabajos necesarios se distinguen de las mejoras opcionales."
+      },
+      {
+        "title": "Seguir las averías intermitentes",
+        "text": "Anotar qué viviendas fallan, en qué función y bajo qué circunstancias ayuda a no confundir incidencias distintas. Contrastamos esas observaciones con pruebas en la instalación."
+      },
+      {
+        "title": "Un alcance claro",
+        "text": "Antes de contratar se concreta qué revisiones y desplazamientos comprende el servicio y cómo se tratan los materiales. La existencia de mantenimiento no implica que cualquier pieza esté incluida."
+      }
+    ],
+    "checks": [
+      "Inventario de equipos y referencias",
+      "Incidencias repetidas",
+      "Historial de sustituciones",
+      "Alcance y condiciones del servicio"
+    ],
+    "faqIds": [
+      "mantenimiento-incluye",
+      "reparar-cambiar",
+      "fallo-individual",
+      "presupuesto-comunidad"
+    ]
+  }
+]

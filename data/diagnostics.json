@@ -1,0 +1,226 @@
+[
+  {
+    "id": "no-suena",
+    "title": "El telefonillo no suena",
+    "symptom": "no-suena",
+    "scope": "vivienda",
+    "summary": "Si la conversación y la apertura funcionan pero no se oye la llamada, conviene distinguir un ajuste del terminal de un fallo en el pulsador o en el circuito de llamada.",
+    "checks": [
+      "Comprobar el volumen y el modo silencio desde los controles habituales.",
+      "Probar una llamada desde la placa y anotar si aparece alguna indicación.",
+      "Preguntar si el problema afecta también a otra vivienda."
+    ],
+    "nextStep": "Indica si no suena nunca o solo a veces y si las demás funciones responden.",
+    "serviceId": "reparacion"
+  },
+  {
+    "id": "audio-un-sentido",
+    "title": "Se oye desde un lado, pero desde el otro no",
+    "symptom": "audio",
+    "scope": "vivienda",
+    "summary": "Un fallo en una dirección de la conversación no identifica por sí solo la pieza averiada. La comparación entre viviendas ayuda a separar terminal, línea y módulo de audio exterior.",
+    "checks": [
+      "Anotar quién no oye: la persona de la calle o la de la vivienda.",
+      "Probar con el auricular bien descolgado o con el audio activado.",
+      "Comparar el resultado con otro vecino si es posible."
+    ],
+    "nextStep": "Describe el sentido del fallo para orientar la comprobación de micrófono, altavoz y conexiones.",
+    "serviceId": "reparacion"
+  },
+  {
+    "id": "ruido-audio",
+    "title": "Se escucha un zumbido o un pitido",
+    "symptom": "audio",
+    "scope": "comunidad",
+    "summary": "El ruido puede aparecer en una sola vivienda o en toda la instalación. Se revisan el equipo afectado, las conexiones y el ajuste de audio antes de atribuirlo a una causa concreta.",
+    "checks": [
+      "Indicar si el ruido existe durante toda la conversación o al pulsar apertura.",
+      "Comprobar si aparece en varias viviendas.",
+      "Anotar si comenzó después de sustituir un terminal."
+    ],
+    "nextStep": "Una prueba comparativa permite decidir qué parte de la instalación revisar primero.",
+    "serviceId": "reparacion"
+  },
+  {
+    "id": "sin-imagen",
+    "title": "Hay llamada y sonido, pero no imagen",
+    "symptom": "imagen",
+    "scope": "vivienda",
+    "summary": "Puede fallar el monitor, la señal de vídeo o un elemento compartido. Que el audio funcione ayuda a describir el síntoma, pero no descarta una incidencia de alimentación o de configuración.",
+    "checks": [
+      "Comprobar si la pantalla se enciende o permanece apagada.",
+      "Probar el autoencendido solo si el modelo dispone de esa función.",
+      "Averiguar si otro monitor del edificio muestra imagen."
+    ],
+    "nextStep": "Envía el modelo y explica si la pantalla está negra, iluminada o muestra un mensaje.",
+    "serviceId": "reparacion"
+  },
+  {
+    "id": "imagen-intermitente",
+    "title": "La imagen se corta o se reinicia",
+    "symptom": "imagen",
+    "scope": "comunidad",
+    "summary": "La intermitencia requiere observar cuándo ocurre: al llamar, durante la conversación o al abrir. Esa secuencia orienta la revisión de conexiones, distribución y alimentación.",
+    "checks": [
+      "Anotar qué acción coincide con el corte.",
+      "Indicar si ocurre en una planta, en varias o solo en tu monitor.",
+      "Registrar si el equipo vuelve a su pantalla inicial."
+    ],
+    "nextStep": "Describe una secuencia que permita reproducir el fallo sin desmontar los equipos.",
+    "serviceId": "mantenimiento"
+  },
+  {
+    "id": "puerta-no-abre",
+    "title": "Se oye al visitante, pero la puerta no abre",
+    "symptom": "apertura",
+    "scope": "acceso",
+    "summary": "La conversación y la apertura siguen recorridos funcionales distintos. Revisamos tanto la orden eléctrica como la respuesta del abrepuertas y el ajuste del cierre.",
+    "checks": [
+      "Escuchar si el abrepuertas actúa al pulsar.",
+      "Comprobar si ocurre desde todos los terminales.",
+      "Indicar si la puerta roza o necesita empujarse para cerrar."
+    ],
+    "nextStep": "Especifica si hay sonido en la cerradura y evita forzar el mecanismo.",
+    "serviceId": "accesos"
+  },
+  {
+    "id": "abre-sin-orden",
+    "title": "La puerta queda liberada sin pedirlo",
+    "symptom": "apertura",
+    "scope": "acceso",
+    "summary": "Una puerta que no retiene puede tener un problema mecánico, una función de apertura activada o una orden eléctrica permanente. Es necesario identificar qué ocurre en el propio acceso.",
+    "checks": [
+      "Indicar si la hoja cierra y encaja normalmente.",
+      "Anotar si el comportamiento es continuo o aparece tras una llamada.",
+      "Comprobar únicamente los modos de uso visibles del terminal."
+    ],
+    "nextStep": "Solicita revisión del acceso y explica si el cierre vuelve a retener en algún momento.",
+    "serviceId": "accesos"
+  },
+  {
+    "id": "todos-sin-servicio",
+    "title": "Ningún vecino puede usar el portero",
+    "symptom": "general",
+    "scope": "comunidad",
+    "summary": "Cuando no responde ninguna vivienda, la revisión se centra inicialmente en elementos compartidos, como placa, alimentación y línea general, sin descartar otras causas.",
+    "checks": [
+      "Confirmar el alcance con más de una vivienda.",
+      "Observar si la placa conserva iluminación o señales habituales.",
+      "Anotar si coincide con un corte eléctrico o trabajos en el edificio."
+    ],
+    "nextStep": "Coordina el aviso con la persona responsable de la comunidad para facilitar el acceso a los equipos comunes.",
+    "serviceId": "comunidades"
+  },
+  {
+    "id": "varias-viviendas",
+    "title": "Fallan varias viviendas de la misma zona",
+    "symptom": "general",
+    "scope": "comunidad",
+    "summary": "La distribución del fallo puede ser más útil que su frecuencia. Identificar qué pisos responden y cuáles no ayuda a revisar derivaciones, tramos y equipos compartidos.",
+    "checks": [
+      "Preparar una relación de las viviendas afectadas.",
+      "Anotar si todas fallan en llamada, audio, vídeo o apertura.",
+      "Indicar si hubo una sustitución reciente de terminal."
+    ],
+    "nextStep": "Traslada la relación de viviendas y funciones afectadas sin manipular la línea comunitaria.",
+    "serviceId": "mantenimiento"
+  },
+  {
+    "id": "llamada-equivocada",
+    "title": "Al pulsar, suena en otra vivienda",
+    "symptom": "llamada",
+    "scope": "comunidad",
+    "summary": "El origen puede estar en la relación entre pulsadores y viviendas o en la programación del sistema. Cambiar el terminal sin revisar esa correspondencia puede mantener el problema.",
+    "checks": [
+      "Anotar el pulsador utilizado y la vivienda que recibe la llamada.",
+      "Repetir la comprobación en otro pulsador.",
+      "Indicar si el problema comenzó después de una intervención."
+    ],
+    "nextStep": "Prepara la correspondencia observada para revisar identificación, conexiones o direcciones según el sistema.",
+    "serviceId": "comunidades"
+  },
+  {
+    "id": "wifi-offline",
+    "title": "El monitor aparece desconectado en la aplicación",
+    "symptom": "wifi",
+    "scope": "conectividad",
+    "summary": "Si el videoportero funciona dentro de casa, el problema puede limitarse a la conexión remota. Se revisan red, emparejamiento y estado de la cuenta según las instrucciones del fabricante.",
+    "checks": [
+      "Comprobar si el monitor recibe llamadas localmente.",
+      "Verificar que otros dispositivos tengan Internet en esa red.",
+      "Anotar si cambió el router, el nombre de red o la contraseña."
+    ],
+    "nextStep": "Indica modelo, aplicación y mensaje mostrado; no compartas contraseñas en el formulario.",
+    "serviceId": "wifi"
+  },
+  {
+    "id": "app-sin-aviso",
+    "title": "La llamada llega al monitor, pero no al móvil",
+    "symptom": "wifi",
+    "scope": "conectividad",
+    "summary": "La conexión puede estar activa y, aun así, fallar las notificaciones. Conviene comprobar permisos, ajustes de ahorro de batería y asociación del usuario antes de modificar la instalación.",
+    "checks": [
+      "Revisar permisos de notificación de la aplicación.",
+      "Anotar si ocurre con el móvil bloqueado o también abierto.",
+      "Comprobar si otro usuario autorizado recibe la llamada."
+    ],
+    "nextStep": "Facilita el nombre de la app y el sistema del móvil para seguir las comprobaciones apropiadas.",
+    "serviceId": "wifi"
+  },
+  {
+    "id": "cambio-router",
+    "title": "Dejó de funcionar en el móvil tras cambiar el router",
+    "symptom": "wifi",
+    "scope": "conectividad",
+    "summary": "El monitor puede conservar los datos de la red anterior. La banda y los ajustes admitidos varían según modelo, por lo que conviene seguir el proceso específico de reconexión.",
+    "checks": [
+      "Comprobar si cambió el nombre o la clave de la red.",
+      "Consultar en el manual qué banda WiFi admite el equipo.",
+      "Confirmar que el videoportero continúa funcionando en el monitor."
+    ],
+    "nextStep": "Podemos revisar la reconexión y probar la recepción remota con el equipo identificado.",
+    "serviceId": "wifi"
+  },
+  {
+    "id": "pulsador-falla",
+    "title": "Un pulsador de la placa responde a veces",
+    "symptom": "llamada",
+    "scope": "comunidad",
+    "summary": "Un pulsador intermitente merece una prueba específica. Revisamos su respuesta, el módulo y la identificación de la vivienda, sin dar por hecho que deba sustituirse toda la placa.",
+    "checks": [
+      "Identificar exactamente qué pulsador falla.",
+      "Anotar si el resto responde con normalidad.",
+      "Indicar si requiere varias pulsaciones o no responde nunca."
+    ],
+    "nextStep": "La referencia de la placa permite valorar recambio, reparación o adaptación.",
+    "serviceId": "reparacion"
+  },
+  {
+    "id": "placa-humedad",
+    "title": "El fallo coincide con lluvia o humedad",
+    "symptom": "exterior",
+    "scope": "comunidad",
+    "summary": "La coincidencia ayuda a orientar la visita, aunque no demuestra el origen. Se revisan montaje, entrada de cables, protección del conjunto y posibles deterioros visibles.",
+    "checks": [
+      "Anotar cuándo aparece y cuándo desaparece el fallo.",
+      "Observar desde fuera si hay condensación o daños visibles.",
+      "Indicar qué funciones y viviendas quedan afectadas."
+    ],
+    "nextStep": "No abras la placa; describe el comportamiento para revisar el equipo y su montaje.",
+    "serviceId": "mantenimiento"
+  },
+  {
+    "id": "llamada-insuficiente",
+    "title": "Cuesta escuchar o atender la llamada",
+    "symptom": "comodidad",
+    "scope": "vivienda",
+    "summary": "Puede ser necesario ajustar el uso o valorar un terminal y accesorios adecuados. Las opciones de repetición de llamada, manos libres o ayuda auditiva dependen del sistema.",
+    "checks": [
+      "Revisar el volumen disponible en el equipo.",
+      "Indicar desde qué zona de la vivienda resulta difícil oírlo.",
+      "Explicar si se busca otro punto de atención o una señal visual."
+    ],
+    "nextStep": "Estudiamos una mejora compatible con la instalación y con la necesidad concreta de la persona.",
+    "serviceId": "telefonillos"
+  }
+]

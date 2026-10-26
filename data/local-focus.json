@@ -1,0 +1,530 @@
+[
+  {
+    "id": "renovar-comunidad-antigua",
+    "serviceIds": [
+      "comunidades",
+      "instalacion",
+      "telefonillos"
+    ],
+    "heading": "Renovar un portero antiguo con una propuesta para todo el edificio",
+    "intro": "Cuando la instalación acumula terminales distintos o varios componentes envejecidos, la decisión afecta al conjunto. Conviene preparar una propuesta que permita a la comunidad entender qué conserva, qué cambia y cómo se organiza el trabajo.",
+    "sections": [
+      {
+        "title": "Poner nombre a cada elemento",
+        "text": "El punto de partida es un inventario: placa exterior, alimentación, distribución y terminales. Una marca visible no identifica necesariamente todas las piezas. Revisar las referencias y las intervenciones anteriores permite reconocer una instalación homogénea o una combinación de adaptaciones. También aclara si el problema actual es puntual o forma parte de un deterioro más amplio."
+      },
+      {
+        "title": "Comparar opciones con el mismo alcance",
+        "text": "Una alternativa puede mantener el audio y otra incorporar vídeo. Para compararlas, ambas deben explicar el tratamiento del cableado, el acabado alrededor de la placa y los equipos de cada vivienda. Si se ofrecen monitores conectados como opción, hay que comprobar su encaje técnico y separar su coste del material común."
+      },
+      {
+        "title": "Planificar el acceso a las viviendas",
+        "text": "La coordinación es parte del resultado. Hace falta una relación correcta de pulsadores, una persona de contacto y un procedimiento para los pisos que no puedan abrir en la fecha prevista. Al finalizar se comprueba cada llamada y se entrega información suficiente para identificar los equipos y utilizar sus funciones habituales."
+      }
+    ],
+    "checklist": [
+      "Número de viviendas, locales y accesos.",
+      "Fotos y referencias de los equipos existentes.",
+      "Preferencias de audio, vídeo y conexión al móvil."
+    ],
+    "faqIds": [
+      "presupuesto-comunidad",
+      "reutilizar-cable",
+      "mezclar-terminales",
+      "cambiar-video"
+    ],
+    "diagnosticIds": [
+      "todos-sin-servicio",
+      "varias-viviendas",
+      "pulsador-falla"
+    ],
+    "brandIds": [
+      "tegui",
+      "fermax"
+    ]
+  },
+  {
+    "id": "telefonillo-individual",
+    "serviceIds": [
+      "telefonillos",
+      "reparacion"
+    ],
+    "heading": "Cambiar el telefonillo de una vivienda sin perder compatibilidad",
+    "intro": "Un auricular roto, un pulsador desgastado o una reforma pueden motivar la sustitución del terminal interior. La primera pregunta es si la instalación común funciona y qué equipo admite realmente.",
+    "sections": [
+      {
+        "title": "Diferenciar avería y preferencia",
+        "text": "No es lo mismo cambiar un aparato que funciona por otro más cómodo que sustituirlo porque no recibe llamadas. En el segundo caso interesa comparar con otro vecino y comprobar las demás funciones. Si existe un fallo común, el nuevo terminal puede presentar exactamente el mismo síntoma y la compra no resolverá la necesidad."
+      },
+      {
+        "title": "Elegir por referencia y sistema",
+        "text": "La forma de la carcasa no permite decidir el recambio. Se contrasta la referencia con la tecnología instalada, el tipo de llamada y la documentación de compatibilidad. También se revisan el soporte de pared y la configuración necesaria. Un terminal denominado universal tiene un ámbito de uso concreto; no cubre todos los buses digitales."
+      },
+      {
+        "title": "Definir la mejora que se busca",
+        "text": "Puede interesar un auricular fácil de colocar, botones más reconocibles o atención manos libres. Si se pretende incorporar pantalla o WiFi, la instalación debe admitir esa función. Explicar el uso deseado permite proponer una alternativa compatible y valorar el acabado de la pared, además de realizar las pruebas de llamada, conversación y apertura."
+      }
+    ],
+    "checklist": [
+      "Foto frontal y referencia visible del terminal.",
+      "Funciones que fallan y funciones que sí responden.",
+      "Mejora concreta que se desea conseguir."
+    ],
+    "faqIds": [
+      "telefonillo-universal",
+      "dos-hilos-compatible",
+      "solo-monitor",
+      "marcas"
+    ],
+    "diagnosticIds": [
+      "no-suena",
+      "audio-un-sentido",
+      "llamada-insuficiente"
+    ],
+    "brandIds": [
+      "auta",
+      "tegui"
+    ]
+  },
+  {
+    "id": "entrada-chalet",
+    "serviceIds": [
+      "viviendas",
+      "instalacion",
+      "accesos"
+    ],
+    "heading": "Elegir el videoportero para una casa con entrada exterior",
+    "intro": "En una casa unifamiliar importa tanto el recorrido hasta la puerta como el monitor. Una entrada en un muro, un portón y dos plantas interiores plantean decisiones diferentes a las de un piso.",
+    "sections": [
+      {
+        "title": "Dibujar el recorrido real",
+        "text": "Antes de elegir el kit se identifica dónde estarán placa, alimentación y terminales. La distancia de cable no siempre coincide con la separación en línea recta: puede recorrer el jardín, un garaje y varias plantas. Se revisan las canalizaciones disponibles y los límites del sistema para evitar escoger un conjunto que no cubra la instalación."
+      },
+      {
+        "title": "Resolver la posición de la placa",
+        "text": "Conviene estudiar el punto desde el que llamará una persona, el encuadre y la luz que recibirá la cámara. También el tipo de montaje y la protección adecuada al emplazamiento. Una pantalla de mayor tamaño no corrige una placa mal situada. El hueco, la fijación y el paso de cables forman parte de la propuesta."
+      },
+      {
+        "title": "Separar comunicación y apertura",
+        "text": "Si se desea controlar una puerta peatonal y otro acceso, se estudia cada mecanismo y el accesorio necesario. También se decide desde qué habitaciones se atenderá la llamada y si interesa el móvil. Estas funciones deben quedar definidas desde el principio, junto con la configuración y la comprobación de cada punto de uso."
+      }
+    ],
+    "checklist": [
+      "Recorrido aproximado y canalización disponible.",
+      "Tipo de puerta, portón y mecanismo de cierre.",
+      "Habitaciones o plantas donde se atenderá."
+    ],
+    "faqIds": [
+      "kit-chalet",
+      "segundo-monitor",
+      "segunda-puerta",
+      "wifi-cables"
+    ],
+    "diagnosticIds": [
+      "puerta-no-abre",
+      "sin-imagen",
+      "llamada-insuficiente"
+    ],
+    "brandIds": [
+      "golmar",
+      "bticino"
+    ]
+  },
+  {
+    "id": "dos-portales",
+    "serviceIds": [
+      "comunidades",
+      "accesos",
+      "instalacion"
+    ],
+    "heading": "Organizar las llamadas y la apertura cuando hay varios accesos",
+    "intro": "Dos portales, una entrada peatonal y un acceso secundario requieren una definición clara. La instalación debe relacionar correctamente las llamadas, las viviendas y la puerta que se pretende abrir.",
+    "sections": [
+      {
+        "title": "Crear una relación de entradas y viviendas",
+        "text": "Primero se identifica qué placa debe llamar a qué viviendas y cómo se distinguen los accesos. No todos los vecinos tienen necesariamente el mismo recorrido. Una relación escrita permite comprobar la programación y evita que una etiqueta correcta esconda una llamada dirigida al terminal equivocado. El número de entradas se contrasta con la capacidad del sistema."
+      },
+      {
+        "title": "Comprobar lo que comparte el edificio",
+        "text": "Se revisan distancias, alimentación y distribución entre portales antes de proponer placas o monitores. Ampliar una instalación puede requerir elementos adicionales aunque los equipos nuevos sean de la misma marca. Conviene identificar qué materiales se conservan y qué parte del conjunto necesita adaptación para mantener una comunicación y apertura coherentes."
+      },
+      {
+        "title": "Probar cada recorrido de uso",
+        "text": "La entrega se comprueba por situaciones: llamada desde el primer portal, llamada desde el segundo y apertura del acceso correspondiente. Si existe un lector o teclado, se revisa aparte cómo se autorizan usuarios. Esta prueba ordenada permite detectar una configuración cruzada y deja claro para el usuario qué función realiza cada pulsador."
+      }
+    ],
+    "checklist": [
+      "Entradas existentes y accesos que se quieren añadir.",
+      "Viviendas que debe atender cada placa.",
+      "Puertas y funciones de apertura previstas."
+    ],
+    "faqIds": [
+      "varios-portales",
+      "segunda-puerta",
+      "llaveros",
+      "presupuesto-comunidad"
+    ],
+    "diagnosticIds": [
+      "llamada-equivocada",
+      "varias-viviendas",
+      "puerta-no-abre"
+    ],
+    "brandIds": [
+      "comelit",
+      "fermax"
+    ]
+  },
+  {
+    "id": "uso-accesible",
+    "serviceIds": [
+      "telefonillos",
+      "viviendas",
+      "instalacion"
+    ],
+    "heading": "Adaptar el portero a la forma de ver, oír y atender de cada persona",
+    "intro": "La comodidad no depende únicamente del tamaño de pantalla. Conviene hablar de tareas concretas: escuchar la llamada desde otra habitación, localizar el botón de apertura o conversar sin sujetar un auricular.",
+    "sections": [
+      {
+        "title": "Identificar dónde aparece la dificultad",
+        "text": "Una llamada puede resultar insuficiente en volumen, pasar desapercibida en otra planta o ser difícil de distinguir de otros avisos. Antes de elegir accesorios se describe la situación y se revisan los ajustes del equipo. Esta información permite separar una avería de una necesidad de uso y evitar una sustitución que mantenga el mismo problema."
+      },
+      {
+        "title": "Valorar funciones que realmente ayuden",
+        "text": "Según la tecnología y la referencia, se pueden estudiar manos libres, controles más visibles, repetición de llamada o ayudas auditivas compatibles. No todas las pantallas grandes ofrecen las mismas opciones. Es necesario confirmar cada función en el modelo y, si se prevé un accesorio, comprobar cómo se integra y qué necesita la instalación."
+      },
+      {
+        "title": "Pensar en ubicación y aprendizaje",
+        "text": "El terminal debe poder utilizarse desde el punto previsto y sin maniobras innecesarias. Se valora la ubicación, el recorrido hasta él y la claridad de los controles habituales. La explicación final se centra en llamar, responder y abrir. Si se añade una aplicación, debe resultar útil para esa persona y mantenerse como una opción comprensible."
+      }
+    ],
+    "checklist": [
+      "Tarea que resulta difícil en el uso diario.",
+      "Lugar desde el que se necesita oír o atender.",
+      "Preferencia por auricular, manos libres o ayuda específica."
+    ],
+    "faqIds": [
+      "segundo-monitor",
+      "solo-monitor",
+      "mezclar-terminales",
+      "wifi-requisitos"
+    ],
+    "diagnosticIds": [
+      "llamada-insuficiente",
+      "no-suena",
+      "audio-un-sentido"
+    ],
+    "brandIds": [
+      "fermax",
+      "bticino"
+    ]
+  },
+  {
+    "id": "abrir-con-movil",
+    "serviceIds": [
+      "wifi",
+      "telefonillos",
+      "accesos"
+    ],
+    "heading": "Preparar el videoportero para atender y abrir desde el móvil",
+    "intro": "La función remota debe elegirse a partir de la instalación y del uso esperado. Recibir una visita estando fuera, compartir acceso con otra persona o consultar una llamada exige un equipo compatible y una configuración cuidada.",
+    "sections": [
+      {
+        "title": "Confirmar cómo se conecta el sistema",
+        "text": "Algunas soluciones incorporan WiFi en el monitor; otras utilizan una pasarela o conectividad prevista en el edificio. Se identifica el modelo antes de prometer una actualización solo del terminal. También se comprueba la conexión disponible donde estará el equipo. La etiqueta WiFi no elimina el cableado y la alimentación que requiere el portero."
+      },
+      {
+        "title": "Configurar para la persona que lo utilizará",
+        "text": "La cuenta y los usuarios deben quedar bajo el control de quienes usarán el servicio. Se revisan la aplicación admitida, el emparejamiento y los permisos de notificación del teléfono. La prueba debe incluir el móvil bloqueado y el comportamiento habitual de recepción de llamadas, según las funciones previstas por el fabricante."
+      },
+      {
+        "title": "Dejar claro qué ocurre si cambia la red",
+        "text": "Es útil explicar cómo reconocer una desconexión y qué datos conservar sobre el equipo. Si se cambia el router o su contraseña, puede ser necesario reconectar el terminal. La llamada local y el servicio remoto se comprueban por separado. Así se distingue un problema de Internet de una avería en la placa o en la línea comunitaria."
+      }
+    ],
+    "checklist": [
+      "Modelo de monitor y tecnología de la instalación.",
+      "Conexión disponible y ubicación del router.",
+      "Usuarios autorizados y funciones remotas necesarias."
+    ],
+    "faqIds": [
+      "wifi-requisitos",
+      "wifi-cables",
+      "sin-internet",
+      "cambio-router"
+    ],
+    "diagnosticIds": [
+      "wifi-offline",
+      "app-sin-aviso",
+      "cambio-router"
+    ],
+    "brandIds": [
+      "golmar",
+      "fermax"
+    ]
+  },
+  {
+    "id": "negocio-recepcion",
+    "serviceIds": [
+      "viviendas",
+      "accesos",
+      "wifi"
+    ],
+    "heading": "Atender la entrada de un despacho, local o pequeña recepción",
+    "intro": "En un negocio la persona que atiende no siempre permanece junto a la puerta. La solución debe encajar con las zonas de trabajo, el acceso de visitantes y la forma de organizar la apertura.",
+    "sections": [
+      {
+        "title": "Observar cómo llega una visita",
+        "text": "Conviene decidir dónde se recibirá la llamada durante la actividad habitual: mostrador, despacho, almacén u otra planta. Si hay varios puestos, se estudia la respuesta y el reparto de terminales que admite el sistema. Una segunda pantalla debe resolver una necesidad concreta y no crear confusión sobre quién atiende o abre."
+      },
+      {
+        "title": "Separar visitantes y usuarios habituales",
+        "text": "El personal puede necesitar un acceso diferente al de clientes o proveedores. Un lector de proximidad o un teclado se estudia junto con la puerta y el sistema de apertura. Debe quedar claro quién administra los usuarios y cómo se retira un permiso que ya no se necesita. La gestión diaria importa tanto como instalar el dispositivo."
+      },
+      {
+        "title": "Comprobar el servicio en condiciones reales",
+        "text": "Se prueban conversación y avisos desde las zonas de trabajo previstas. Si se utiliza el móvil, se revisan conectividad y notificaciones; si hay más de una entrada, se identifica cuál llama. No se activa una apertura automática por defecto. Las funciones elegidas se explican a la persona responsable y se documenta el equipo instalado."
+      }
+    ],
+    "checklist": [
+      "Puestos desde los que se necesita atender.",
+      "Accesos de visitantes, personal y proveedores.",
+      "Persona responsable de usuarios y configuración."
+    ],
+    "faqIds": [
+      "segundo-monitor",
+      "llaveros",
+      "segunda-puerta",
+      "wifi-requisitos"
+    ],
+    "diagnosticIds": [
+      "llamada-insuficiente",
+      "puerta-no-abre",
+      "app-sin-aviso"
+    ],
+    "brandIds": [
+      "comelit",
+      "golmar"
+    ]
+  },
+  {
+    "id": "mantenimiento-con-registro",
+    "serviceIds": [
+      "mantenimiento",
+      "comunidades",
+      "reparacion"
+    ],
+    "heading": "Dar seguimiento a las incidencias antes de que se mezclen",
+    "intro": "Cuando los avisos llegan en días distintos y desde varias viviendas, es fácil tratar problemas diferentes como una sola avería. Un registro sencillo ayuda a comprobar qué sucede y qué intervención ha cambiado el comportamiento.",
+    "sections": [
+      {
+        "title": "Anotar hechos comparables",
+        "text": "En cada aviso interesa registrar vivienda, función afectada, fecha aproximada y si el problema es continuo o intermitente. Si alguien dice que no funciona, conviene concretar llamada, sonido, imagen o apertura. Una fotografía del equipo y su referencia completan la información. No hace falta recopilar contraseñas ni datos ajenos al funcionamiento de la instalación."
+      },
+      {
+        "title": "Relacionar revisión y resultado",
+        "text": "Después de una intervención se deja indicado qué se comprobó, qué pieza se sustituyó y qué pruebas se realizaron. Ese seguimiento permite distinguir una recaída del mismo síntoma de una incidencia nueva. También ayuda a identificar adaptaciones o terminales incorporados con posterioridad que deben considerarse en una revisión del conjunto."
+      },
+      {
+        "title": "Acordar el alcance del mantenimiento",
+        "text": "La propuesta debe explicar revisiones, forma de comunicar incidencias, desplazamientos previstos y tratamiento de materiales. Un contrato no implica por sí mismo que toda sustitución esté incluida. Separar reparación necesaria, conservación y mejora opcional facilita las decisiones de la comunidad y evita renovar equipos sin explicar qué problema se pretende resolver."
+      }
+    ],
+    "checklist": [
+      "Relación de equipos y referencias conocidas.",
+      "Registro de síntomas por vivienda y función.",
+      "Alcance de revisiones, materiales y asistencia."
+    ],
+    "faqIds": [
+      "mantenimiento-incluye",
+      "fallo-individual",
+      "reparar-cambiar",
+      "presupuesto-comunidad"
+    ],
+    "diagnosticIds": [
+      "imagen-intermitente",
+      "placa-humedad",
+      "varias-viviendas",
+      "pulsador-falla"
+    ],
+    "brandIds": [
+      "auta",
+      "legrand"
+    ]
+  },
+  {
+    "id": "averias-audio",
+    "serviceIds": [
+      "reparacion",
+      "telefonillos",
+      "mantenimiento"
+    ],
+    "heading": "Localizar por qué no se entiende la conversación del portero",
+    "intro": "Un sonido bajo, un zumbido y una conversación que solo se oye en un sentido son síntomas diferentes. Describirlos con precisión permite orientar la revisión y evita atribuir todos los fallos al auricular.",
+    "sections": [
+      {
+        "title": "Identificar quién deja de oír",
+        "text": "La primera comparación es sencilla: ¿la persona de la calle oye a la vivienda?, ¿la vivienda oye a quien llama? Se anota también si el fallo aparece al empezar o después de unos segundos. Si el equipo es manos libres, se comprueba su uso habitual según el manual. Esa secuencia ayuda a reproducir el problema durante la visita."
+      },
+      {
+        "title": "Comparar sin cambiar ajustes comunes",
+        "text": "Preguntar a otra vivienda permite saber si el síntoma se repite. Un ruido compartido puede orientar la revisión hacia elementos comunes, mientras que una sola vivienda requiere comprobar su terminal y recorrido. No conviene modificar volúmenes internos de la placa ni conexiones comunitarias por prueba: se puede alterar el comportamiento para otros usuarios."
+      },
+      {
+        "title": "Revisar antes de comprar un terminal",
+        "text": "La inspección se guía por el síntoma y por las referencias de la instalación. Se comprueban conexiones, equipos y configuración según corresponda, y después se propone la reparación. Si hay que sustituir una pieza, se verifica su compatibilidad. La prueba final repite la conversación en ambos sentidos y comprueba también llamada y apertura."
+      }
+    ],
+    "checklist": [
+      "Sentido en el que no se escucha.",
+      "Ruido, volumen bajo o interrupción observada.",
+      "Coincidencia del síntoma con otras viviendas."
+    ],
+    "faqIds": [
+      "fallo-individual",
+      "reparar-cambiar",
+      "telefonillo-universal",
+      "no-suena"
+    ],
+    "diagnosticIds": [
+      "audio-un-sentido",
+      "ruido-audio",
+      "varias-viviendas"
+    ],
+    "brandIds": [
+      "tegui",
+      "auta"
+    ]
+  },
+  {
+    "id": "averias-imagen",
+    "serviceIds": [
+      "reparacion",
+      "comunidades",
+      "viviendas"
+    ],
+    "heading": "Distinguir una avería de vídeo de una imagen mal encuadrada",
+    "intro": "Una pantalla negra, una imagen que se corta y un visitante que apenas se distingue requieren comprobaciones distintas. La descripción de lo que muestra el monitor es el primer dato útil para orientar la revisión.",
+    "sections": [
+      {
+        "title": "Observar qué hace la pantalla",
+        "text": "Conviene indicar si no enciende, si se ilumina sin vídeo o si muestra una imagen con cortes. También si responde al menú y si la conversación sigue funcionando. En modelos con autoencendido, se puede comparar esa función con una llamada normal. No todos los terminales ofrecen la misma prueba ni interpretan sus avisos de la misma forma."
+      },
+      {
+        "title": "Situar el fallo en la instalación",
+        "text": "Si otro vecino ve la imagen correctamente, se revisa la parte que corresponde a la vivienda afectada. Si la pérdida se repite en varios monitores o solo desde una placa, esa información ayuda a delimitar la comprobación. Los cortes al abrir o al iniciar la conversación deben anotarse porque permiten reproducir una secuencia concreta."
+      },
+      {
+        "title": "Valorar encuadre y luz cuando sí hay vídeo",
+        "text": "Una imagen presente pero poco útil puede estar relacionada con la posición de la placa, el contraluz o su estado exterior. Cambiar únicamente la pantalla no corrige esas condiciones. Se estudia el montaje antes de proponer una cámara o placa nueva. La entrega se comprueba viendo a una persona situada donde normalmente se realiza la llamada."
+      }
+    ],
+    "checklist": [
+      "Estado de la pantalla y respuesta del menú.",
+      "Resultado en otras viviendas o desde otras placas.",
+      "Momento y condiciones en que aparece el problema."
+    ],
+    "faqIds": [
+      "no-imagen",
+      "fallo-individual",
+      "placa-sola",
+      "reparar-cambiar"
+    ],
+    "diagnosticIds": [
+      "sin-imagen",
+      "imagen-intermitente",
+      "placa-humedad"
+    ],
+    "brandIds": [
+      "bticino",
+      "comelit"
+    ]
+  },
+  {
+    "id": "averias-apertura",
+    "serviceIds": [
+      "accesos",
+      "reparacion",
+      "mantenimiento"
+    ],
+    "heading": "Resolver una puerta que no libera o no vuelve a cerrar",
+    "intro": "El botón del monitor y el mecanismo de la puerta forman parte de la misma experiencia, pero no son el mismo elemento. Hay que comprobar la orden y el comportamiento del cierre para elegir la intervención adecuada.",
+    "sections": [
+      {
+        "title": "Escuchar y observar el acceso",
+        "text": "Si al pulsar se oye actuar el abrepuertas pero la hoja no libera, se revisan ajuste, presión y funcionamiento mecánico. Si no se aprecia respuesta, se comprueba el recorrido de la orden y la alimentación correspondiente. La observación del usuario orienta, pero no permite identificar la pieza averiada sin realizar pruebas en el acceso."
+      },
+      {
+        "title": "Comparar desde distintos puntos",
+        "text": "Interesa saber si falla desde todos los terminales, desde una sola vivienda o únicamente con un lector. También si la puerta queda liberada después de abrir o si el problema aparece al cambiar de acceso. Esa comparación separa situaciones que pueden parecer idénticas desde dentro de casa y evita sustituir el cierre sin comprobar el mando."
+      },
+      {
+        "title": "Definir cómo debe funcionar al terminar",
+        "text": "La reparación se verifica abriendo y cerrando varias veces en condiciones normales, sin forzar la hoja. Cuando se incorpora teclado o lector, se comprueban las autorizaciones previstas y su administración. Si existe una segunda puerta, cada función queda identificada. El objetivo incluye que el mecanismo vuelva a retener como corresponde, además de responder a la apertura."
+      }
+    ],
+    "checklist": [
+      "Sonido o respuesta al pulsar apertura.",
+      "Estado mecánico y ajuste de la puerta.",
+      "Terminales o lectores desde los que falla."
+    ],
+    "faqIds": [
+      "no-abre",
+      "llaveros",
+      "segunda-puerta",
+      "mantenimiento-incluye"
+    ],
+    "diagnosticIds": [
+      "puerta-no-abre",
+      "abre-sin-orden",
+      "llamada-equivocada"
+    ],
+    "brandIds": [
+      "fermax",
+      "golmar"
+    ]
+  },
+  {
+    "id": "reparar-o-renovar",
+    "serviceIds": [
+      "reparacion",
+      "instalacion",
+      "comunidades"
+    ],
+    "heading": "Decidir entre reparar una pieza y renovar la instalación",
+    "intro": "La decisión no depende solo de la edad del portero. Conviene comparar el fallo comprobado, el estado del conjunto y las funciones que realmente se necesitan, con propuestas que expliquen sus diferencias.",
+    "sections": [
+      {
+        "title": "Pedir una explicación del componente afectado",
+        "text": "Una reparación tiene sentido cuando resuelve un fallo localizado y existe un recambio adecuado. La propuesta debe indicar qué se ha comprobado y qué se sustituiría. Si aún no se conoce la causa, comprar varias piezas por descarte puede aumentar el coste sin resolver el problema. El diagnóstico y la mejora estética se valoran como necesidades diferentes."
+      },
+      {
+        "title": "Valorar el resto de la instalación",
+        "text": "Una placa reparable puede convivir con cableado deteriorado o terminales difíciles de mantener; también puede funcionar bien un conjunto antiguo con una sola pieza dañada. Revisar el sistema evita decidir por apariencia. La disponibilidad de material compatible y las adaptaciones necesarias se contrastan antes de prometer que una sustitución parcial prolongará su uso."
+      },
+      {
+        "title": "Comparar resultados además de importes",
+        "text": "Para una renovación se define qué incluye: placa, alimentación, cableado, terminales y pruebas. Para la reparación se indica qué problema resuelve y qué elementos quedan conservados. Si se quieren vídeo, móvil o nuevos accesos, se añade ese objetivo a la comparación. Así la comunidad puede elegir con una relación clara entre trabajo, resultado y condiciones."
+      }
+    ],
+    "checklist": [
+      "Diagnóstico y pieza o tramo afectado.",
+      "Estado y compatibilidad del material restante.",
+      "Funciones nuevas que sí se necesitan."
+    ],
+    "faqIds": [
+      "reparar-cambiar",
+      "placa-sola",
+      "reutilizar-cable",
+      "presupuesto-comunidad"
+    ],
+    "diagnosticIds": [
+      "pulsador-falla",
+      "todos-sin-servicio",
+      "varias-viviendas"
+    ],
+    "brandIds": [
+      "legrand",
+      "tegui"
+    ]
+  }
+]

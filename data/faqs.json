@@ -1,0 +1,225 @@
+[
+  {
+    "id": "cambiar-video",
+    "q": "¿Se puede cambiar un portero automático por un videoportero?",
+    "a": "En muchas instalaciones se puede plantear la renovación, pero requiere comprobar placa, alimentación, distribución y cableado. No basta con colocar una pantalla donde había un telefonillo: los elementos deben formar un sistema de vídeo compatible.",
+    "tags": [
+      "instalacion",
+      "comunidades"
+    ]
+  },
+  {
+    "id": "reutilizar-cable",
+    "q": "¿Podéis aprovechar los cables que ya hay?",
+    "a": "Lo estudiamos durante la revisión. Importan el tipo y la sección del cable, su estado, la distancia y cómo se reparten las derivaciones. Los sistemas de dos hilos pueden facilitar una renovación, pero no convierten cualquier cableado antiguo en válido.",
+    "tags": [
+      "instalacion",
+      "viviendas",
+      "comunidades"
+    ]
+  },
+  {
+    "id": "sin-internet",
+    "q": "¿El videoportero necesita Internet para funcionar?",
+    "a": "Muchos sistemas cableados permiten llamar, hablar, ver y abrir localmente sin Internet. Las funciones desde el móvil sí necesitan la conectividad prevista por el fabricante. El comportamiento concreto depende del equipo y del diseño de la instalación.",
+    "tags": [
+      "wifi",
+      "instalacion"
+    ]
+  },
+  {
+    "id": "fallo-individual",
+    "q": "¿Cómo sé si la avería es de mi vivienda o de la comunidad?",
+    "a": "Compara qué ocurre en tu terminal con otra vivienda: llamada, sonido, imagen y apertura. Si varias fallan de la misma forma, puede haber un elemento compartido afectado. Esa comparación orienta la revisión, pero la confirmación exige comprobar la instalación.",
+    "tags": [
+      "reparacion",
+      "comunidades",
+      "mantenimiento"
+    ]
+  },
+  {
+    "id": "no-suena",
+    "q": "¿Por qué no suena el telefonillo si sí puedo abrir?",
+    "a": "Son funciones distintas. Puede existir un ajuste de volumen o silencio, un problema de llamada o un fallo en un equipo. Comprueba los controles habituales y explica si el pulsador de calle responde; no es necesario desmontar el telefonillo para preparar el aviso.",
+    "tags": [
+      "reparacion",
+      "telefonillos"
+    ]
+  },
+  {
+    "id": "no-imagen",
+    "q": "¿Por qué se oye al visitante pero no aparece imagen?",
+    "a": "Hay que distinguir una pantalla que no enciende de otra que se ilumina sin mostrar vídeo. También interesa saber si los vecinos ven la imagen. Con esos datos se orienta la revisión del monitor, la señal de vídeo, la alimentación y los elementos comunes.",
+    "tags": [
+      "reparacion",
+      "comunidades"
+    ]
+  },
+  {
+    "id": "reparar-cambiar",
+    "q": "¿Cuándo conviene reparar y cuándo sustituir?",
+    "a": "Depende del origen de la avería, del recambio compatible disponible y del estado del conjunto. Si el fallo está localizado, puede bastar una reparación. Si hay varios elementos deteriorados o una tecnología difícil de mantener, conviene comparar una renovación por partidas.",
+    "tags": [
+      "reparacion",
+      "telefonillos",
+      "mantenimiento"
+    ]
+  },
+  {
+    "id": "presupuesto-comunidad",
+    "q": "¿Qué necesitáis para presupuestar una comunidad?",
+    "a": "Localidad, número de viviendas y locales, portales o entradas, fotos de placa y terminal, y una descripción de la necesidad. Después se comprueban los equipos comunes y el cableado. La propuesta debe separar materiales, instalación, configuración y trabajos adicionales.",
+    "tags": [
+      "comunidades",
+      "instalacion",
+      "mantenimiento"
+    ]
+  },
+  {
+    "id": "mezclar-terminales",
+    "q": "¿Puede un vecino tener telefonillo y otro monitor?",
+    "a": "Algunos sistemas permiten combinar terminales de audio y vídeo; otros plantean restricciones. Hay que verificar la tecnología, las referencias y la alimentación del conjunto. No es una compatibilidad que se pueda garantizar para cualquier edificio.",
+    "tags": [
+      "comunidades",
+      "telefonillos"
+    ]
+  },
+  {
+    "id": "varios-portales",
+    "q": "¿Se pueden gestionar varios portales o entradas?",
+    "a": "Sí, existen sistemas preparados para varios accesos. El número admitido, las distancias, los distribuidores y la identificación de cada entrada dependen de la solución elegida. Estudiamos el edificio antes de seleccionar la placa y los terminales.",
+    "tags": [
+      "comunidades",
+      "accesos"
+    ]
+  },
+  {
+    "id": "placa-sola",
+    "q": "¿Se puede cambiar solo la placa de calle?",
+    "a": "A veces es posible conservar los terminales y sustituir la placa o alguno de sus módulos. Primero se comprueba la tecnología, el estado de la instalación y las referencias compatibles. También se revisa si la nueva placa necesita adaptar el hueco existente.",
+    "tags": [
+      "comunidades",
+      "reparacion"
+    ]
+  },
+  {
+    "id": "telefonillo-universal",
+    "q": "¿Un telefonillo universal sirve para cualquier portero?",
+    "a": "No. La palabra universal suele referirse a determinadas instalaciones convencionales y a equivalencias concretas. No garantiza compatibilidad con buses digitales, cualquier tipo de llamada o todos los equipos de una marca. La referencia y el esquema son esenciales.",
+    "tags": [
+      "telefonillos",
+      "reparacion"
+    ]
+  },
+  {
+    "id": "dos-hilos-compatible",
+    "q": "¿Todos los videoporteros de dos hilos son compatibles?",
+    "a": "No. Dos hilos describe parte del cableado, pero distintas familias utilizan tecnologías y configuraciones propias. Un monitor debe estar admitido para el sistema de placa, alimentador y distribución existente. Contar conductores no sustituye esa comprobación.",
+    "tags": [
+      "telefonillos",
+      "instalacion",
+      "wifi"
+    ]
+  },
+  {
+    "id": "solo-monitor",
+    "q": "¿Puedo cambiar solo el monitor de mi casa?",
+    "a": "Puede ser suficiente cuando la instalación común funciona y el nuevo monitor es compatible. Revisamos referencia, soporte, configuración y necesidades de alimentación. Si se busca añadir WiFi, se confirma además que la instalación admite esa mejora.",
+    "tags": [
+      "telefonillos",
+      "wifi"
+    ]
+  },
+  {
+    "id": "wifi-cables",
+    "q": "¿Un videoportero WiFi funciona sin cables?",
+    "a": "No necesariamente. En numerosos equipos, el cable mantiene la comunicación con la placa y la alimentación; el WiFi sirve para conectar las funciones remotas. Hay que revisar el esquema del modelo, no interpretar WiFi como una instalación completamente inalámbrica.",
+    "tags": [
+      "wifi",
+      "instalacion",
+      "viviendas"
+    ]
+  },
+  {
+    "id": "wifi-requisitos",
+    "q": "¿Qué necesito para recibir llamadas en el móvil?",
+    "a": "Un equipo o accesorio compatible, la conexión que exige el fabricante, una aplicación admitida y su configuración. También importan la cobertura junto al monitor y los permisos del móvil. La banda WiFi y las condiciones del servicio varían según modelo.",
+    "tags": [
+      "wifi"
+    ]
+  },
+  {
+    "id": "cambio-router",
+    "q": "¿Qué pasa si cambio el router o la contraseña del WiFi?",
+    "a": "Puede ser necesario volver a conectar el equipo a la red siguiendo su manual. Conviene comprobar antes si la llamada local funciona, qué banda admite el terminal y si se conserva la cuenta de la aplicación. No compartas claves en formularios públicos.",
+    "tags": [
+      "wifi",
+      "mantenimiento"
+    ]
+  },
+  {
+    "id": "no-abre",
+    "q": "¿Por qué el portero se oye bien pero no abre la puerta?",
+    "a": "La causa puede estar en el mando eléctrico, el abrepuertas o el ajuste mecánico del cierre. Saber si se oye actuar la cerradura y si ocurre desde todas las viviendas ayuda a orientar la revisión. Evita forzar la puerta o cambiar piezas sin comprobarlo.",
+    "tags": [
+      "accesos",
+      "reparacion"
+    ]
+  },
+  {
+    "id": "llaveros",
+    "q": "¿Podéis añadir apertura con llavero o teclado?",
+    "a": "Estudiamos lectores de proximidad y teclados adecuados al acceso y a la instalación. La propuesta debe indicar cómo se autorizan y eliminan usuarios y qué elementos se necesitan. Un lector no se añade de forma indistinta a cualquier sistema.",
+    "tags": [
+      "accesos",
+      "comunidades"
+    ]
+  },
+  {
+    "id": "segunda-puerta",
+    "q": "¿Se puede abrir una segunda puerta desde el monitor?",
+    "a": "Algunos equipos lo permiten mediante una salida auxiliar o un accesorio específico. Hay que revisar compatibilidad, alimentación y el tipo de mecanismo que se quiere accionar. La tecla adicional del monitor no garantiza por sí sola esa función.",
+    "tags": [
+      "accesos",
+      "viviendas"
+    ]
+  },
+  {
+    "id": "kit-chalet",
+    "q": "¿Sirve cualquier kit para una casa con puerta en la parcela?",
+    "a": "No se debe elegir solo por el número de viviendas. Hay que revisar la distancia hasta la placa, el cable disponible, la alimentación, la ubicación exterior y la cerradura. El kit y sus posibles accesorios deben cubrir el recorrido real.",
+    "tags": [
+      "viviendas",
+      "instalacion"
+    ]
+  },
+  {
+    "id": "segundo-monitor",
+    "q": "¿Puedo tener un segundo monitor en otra planta?",
+    "a": "Depende del sistema y de los terminales que admita por vivienda. Puede requerir cableado, configuración o alimentación adicional. Antes de instalarlo se decide si debe sonar junto al principal y qué funciones se necesitan en cada punto.",
+    "tags": [
+      "viviendas",
+      "telefonillos"
+    ]
+  },
+  {
+    "id": "mantenimiento-incluye",
+    "q": "¿Qué incluye el mantenimiento del portero automático?",
+    "a": "El alcance se define en la propuesta: revisiones, atención de incidencias, desplazamientos y tratamiento de materiales. No damos por incluidos todos los recambios ni cualquier intervención. Conviene distinguir mantenimiento, reparación puntual y mejoras del sistema.",
+    "tags": [
+      "mantenimiento",
+      "comunidades",
+      "accesos"
+    ]
+  },
+  {
+    "id": "marcas",
+    "q": "¿Con qué marcas de porteros y videoporteros trabajáis?",
+    "a": "Estudiamos instalaciones Tegui, BTicino, Legrand, Golmar, Fermax, Comelit y Auta. La solución depende de la referencia y de la tecnología instalada, no solo de la marca. Las menciones identifican equipos; no implican ser servicio técnico oficial del fabricante.",
+    "tags": [
+      "telefonillos",
+      "reparacion",
+      "instalacion"
+    ]
+  }
+]

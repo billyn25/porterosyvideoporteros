@@ -1,0 +1,8 @@
+dist/
+node_modules/
+.openai/
+.netlify/
+.env
+.env.*
+!/.env.example
+qa/

@@ -1,0 +1,14 @@
+{
+  "name": "porteros-y-videoporteros",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Servicios de porteros y videoporteros con un directorio municipal verificable.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:production": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

@@ -1,0 +1,167 @@
+{
+  "generatedAt": "2026-10-26",
+  "coverage": "Todos los municipios INE 2026 de las 19 provincias solicitadas. No equivale al conjunto de núcleos, parroquias, barrios o entidades menores.",
+  "totalMunicipalities": 3797,
+  "provinceCount": 19,
+  "counts": [
+    {
+      "code": "33",
+      "name": "Asturias",
+      "slug": "asturias",
+      "municipalities": 78
+    },
+    {
+      "code": "39",
+      "name": "Cantabria",
+      "slug": "cantabria",
+      "municipalities": 102
+    },
+    {
+      "code": "48",
+      "name": "Bizkaia",
+      "slug": "bizkaia",
+      "municipalities": 113
+    },
+    {
+      "code": "20",
+      "name": "Gipuzkoa",
+      "slug": "gipuzkoa",
+      "municipalities": 88
+    },
+    {
+      "code": "24",
+      "name": "León",
+      "slug": "leon",
+      "municipalities": 211
+    },
+    {
+      "code": "34",
+      "name": "Palencia",
+      "slug": "palencia",
+      "municipalities": 191
+    },
+    {
+      "code": "01",
+      "name": "Álava",
+      "slug": "alava",
+      "municipalities": 51
+    },
+    {
+      "code": "31",
+      "name": "Navarra",
+      "slug": "navarra",
+      "municipalities": 272
+    },
+    {
+      "code": "49",
+      "name": "Zamora",
+      "slug": "zamora",
+      "municipalities": 248
+    },
+    {
+      "code": "47",
+      "name": "Valladolid",
+      "slug": "valladolid",
+      "municipalities": 225
+    },
+    {
+      "code": "09",
+      "name": "Burgos",
+      "slug": "burgos",
+      "municipalities": 371
+    },
+    {
+      "code": "26",
+      "name": "La Rioja",
+      "slug": "la-rioja",
+      "municipalities": 174
+    },
+    {
+      "code": "37",
+      "name": "Salamanca",
+      "slug": "salamanca",
+      "municipalities": 362
+    },
+    {
+      "code": "05",
+      "name": "Ávila",
+      "slug": "avila",
+      "municipalities": 248
+    },
+    {
+      "code": "40",
+      "name": "Segovia",
+      "slug": "segovia",
+      "municipalities": 209
+    },
+    {
+      "code": "42",
+      "name": "Soria",
+      "slug": "soria",
+      "municipalities": 183
+    },
+    {
+      "code": "45",
+      "name": "Toledo",
+      "slug": "toledo",
+      "municipalities": 204
+    },
+    {
+      "code": "28",
+      "name": "Madrid",
+      "slug": "madrid",
+      "municipalities": 179
+    },
+    {
+      "code": "19",
+      "name": "Guadalajara",
+      "slug": "guadalajara",
+      "municipalities": 288
+    }
+  ],
+  "sources": [
+    {
+      "publisher": "Instituto Nacional de Estadística (INE)",
+      "title": "Relación de municipios y sus códigos por provincias, 1 de enero de 2026",
+      "referenceDate": "2026-01-01",
+      "publishedAt": "2026-02-04",
+      "url": "https://www.ine.es/daco/daco42/codmun/26codmun.xlsx",
+      "sourcePage": "https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177031&idp=1254734710990",
+      "fields": [
+        "code",
+        "name",
+        "provinceCode"
+      ],
+      "licenseUrl": "https://www.ine.es/aviso_legal",
+      "sha256": "b4bea7c3cc1b295a73f7fa3ca68b2ef25c3a59833bd91ea5315ae25dcc1ca741"
+    },
+    {
+      "publisher": "Instituto Geográfico Nacional (IGN)",
+      "title": "Información Geográfica Destacada: Municipios",
+      "revision": "2025-10-20",
+      "url": "https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS.xlsx",
+      "sourcePage": "https://www.ign.es/web/ign/portal/ane-datos-geograficos",
+      "fields": [
+        "lat",
+        "lon",
+        "population",
+        "areaKm2"
+      ],
+      "license": "CC BY 4.0, ign.es, 2025",
+      "coordinateMeaning": "Localización aproximada del municipio extraída del enlace Ver en mapa. No representa un domicilio, límites administrativos, una ruta o distancias de carretera.",
+      "sha256": "69c5eccb29e19582e81249201d5cfcb43f5097361428e1f0a1a7996478afd4bb",
+      "populationNote": "La edición IGN está revisada el 20/10/2025, pero no identifica en este libro el año censal de la población. Usar population para ordenación/editorial; no presentarla como población de 2025/2026 ni como dato actual."
+    }
+  ],
+  "transformations": [
+    "Código de 5 dígitos CPRO + CMUN, conservando ceros iniciales.",
+    "Artículos pospuestos al final del nombre por el INE colocados delante para lectura natural (por ejemplo Casar, El → El Casar).",
+    "Se conservan las denominaciones bilingües oficiales y sus acentos; los slugs son minúsculos, sin tildes y separados con guiones.",
+    "La provincia se muestra como Álava y La Rioja para ajustarse al ámbito solicitado; código oficial conservado.",
+    "Coordenadas redondeadas a seis decimales y cruzadas por código INE.",
+    "Aliases únicamente de las partes de denominaciones oficiales bilingües separadas por barra, más Vitoria y Gasteiz de la denominación Vitoria-Gasteiz. No se infieren alias a partir de todos los guiones.",
+    "Población y superficie del IGN conservadas para ordenación y clasificación editorial, con sourceEdition de la edición documental, no del año censal."
+  ],
+  "coordinatesMatched": 3797,
+  "missingCoordinates": []
+}

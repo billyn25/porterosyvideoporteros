@@ -1,0 +1,287 @@
+[
+  {
+    "id": "compatibilidad-telefonillo",
+    "slug": "como-elegir-telefonillo-compatible",
+    "title": "Cómo elegir un telefonillo compatible sin comprar a ciegas",
+    "summary": "El aspecto y el número de cables no bastan. Una identificación correcta evita sustituir un terminal por otro que no puede funcionar en la instalación.",
+    "sections": [
+      {
+        "title": "Empieza por la referencia, no por la carcasa",
+        "paragraphs": [
+          "Dos telefonillos parecidos pueden pertenecer a sistemas distintos. La marca sirve como primer dato, pero necesitamos conocer la referencia del terminal y, cuando sea posible, la tecnología de la placa. Una fotografía frontal y el modelo visible suelen ser un buen punto de partida. No hace falta desmontar el equipo para realizar una primera consulta.",
+          "También interesa explicar por qué se quiere cambiar: rotura del auricular, llamada que no se oye, reforma de la vivienda o deseo de instalar una pantalla. Cada objetivo plantea una comprobación diferente. Un aparato nuevo no resolverá un fallo situado en la placa común."
+        ]
+      },
+      {
+        "title": "Convencional y digital requieren comprobaciones diferentes",
+        "paragraphs": [
+          "En algunas instalaciones convencionales existen terminales de sustitución con tablas de equivalencias. Esas tablas relacionan conexiones y tipos de llamada concretos; no convierten el aparato en un recambio válido para cualquier sistema. Tegui publica documentación específica para estas equivalencias.",
+          "En un bus digital, el terminal debe pertenecer a una familia admitida y quedar configurado para su vivienda. Como ejemplo, Comelit indica en el manual del monitor Mini Simplebus2 los sistemas en los que puede utilizarse. La compatibilidad se comprueba en la documentación del equipo, aunque ambos aparatos utilicen dos conductores."
+        ]
+      },
+      {
+        "title": "Qué debe confirmar la sustitución",
+        "paragraphs": [
+          "Antes de cerrar la elección, conviene revisar la referencia, la conexión de pared, la alimentación y la programación necesaria. Si el nuevo terminal incorpora funciones adicionales, hay que comprobar que la instalación puede ofrecerlas. Una tecla auxiliar o una pantalla mayor no garantizan acceso a una segunda puerta ni comunicación con el móvil.",
+          "El soporte también forma parte del trabajo. Un cambio puede dejar marcas en la pared o necesitar una base distinta; incluirlo en la propuesta evita descubrirlo cuando el equipo ya está comprado."
+        ],
+        "bullets": [
+          "Modelo actual y tecnología compatible.",
+          "Tipo de llamada y funciones necesarias.",
+          "Base, soporte o conector que requiere el recambio.",
+          "Configuración y prueba final en la vivienda."
+        ]
+      },
+      {
+        "title": "Si quieres pasar de telefonillo a pantalla",
+        "paragraphs": [
+          "Una pantalla necesita una instalación que transporte vídeo y una placa que pueda proporcionarlo. En ciertos sistemas puede coexistir audio y vídeo; en otros, la renovación afecta a varios elementos comunes. La decisión no se toma solo desde el equipo interior.",
+          "La consulta más útil reúne fotos de la placa y del terminal, localidad, número aproximado de viviendas y la mejora buscada. Con esos datos se puede orientar una comprobación y evitar una compra incompatible. Tras la sustitución se prueban llamada, conversación y apertura; si es un monitor, también la imagen."
+        ]
+      }
+    ],
+    "relatedServices": [
+      "telefonillos",
+      "reparacion",
+      "instalacion"
+    ],
+    "sourceUrls": [
+      "https://www.tegui.es/pdf/manuales-tecnicos/serie-300-400-500-portero/manual-tecnico-portero-tablas-tegui.pdf",
+      "https://staticpro.comelitgroup.com/storage/2021/02/26754/mt-minihf-es.pdf",
+      "https://www.bticino.com/sites/default/files/2024-03/WIRING%20DIAGRAMS.pdf"
+    ]
+  },
+  {
+    "id": "cambiar-portero-videoportero",
+    "slug": "cambiar-portero-automatico-por-videoportero",
+    "title": "Cambiar un portero automático por videoportero: qué revisar",
+    "summary": "La renovación empieza en el conjunto del edificio. El cableado, las placas y la elección de terminales deben estudiarse antes de prometer una instalación sin obras.",
+    "sections": [
+      {
+        "title": "Define qué se quiere mejorar",
+        "paragraphs": [
+          "Ver quién llama es una necesidad diferente a atender desde el móvil o renovar una placa deteriorada. Conviene ordenar las prioridades: audio y vídeo, facilidad de uso, varios accesos, conexión remota o terminales adicionales. La propuesta debe responder a esas necesidades y evitar funciones que nadie utilizará.",
+          "En una comunidad interesa saber cuántas viviendas y locales existen, si hay más de una entrada y qué equipos quiere cada usuario. Esa relación ayuda a dimensionar el conjunto y a preparar una intervención coordinada. No basta con contar los monitores que aparecen en una oferta."
+        ]
+      },
+      {
+        "title": "Dos hilos puede facilitar la renovación",
+        "paragraphs": [
+          "Hay sistemas diseñados para transportar las funciones de portero y videoportero por un bus de dos hilos. BTicino muestra soluciones de sustitución que aprovechan conductores existentes. Eso demuestra una posibilidad técnica, no una garantía para cualquier edificio.",
+          "En la instalación concreta se revisan estado, sección, longitud, empalmes y distribución del cable. Un tramo deteriorado puede necesitar sustitución, y una red con varias derivaciones puede exigir elementos específicos. El ahorro de obra debe confirmarse después de esa revisión, no deducirse del nombre comercial del sistema."
+        ]
+      },
+      {
+        "title": "La placa y la alimentación también cuentan",
+        "paragraphs": [
+          "El cambio incluye estudiar cámara, pulsadores, placa y fuente de alimentación, además de los terminales. En la entrada se valora el hueco disponible, la fijación y el encuadre. Una cámara situada frente a una luz intensa puede dificultar reconocer al visitante, incluso con un monitor nuevo.",
+          "También se comprueba el número de equipos y sus necesidades de alimentación. Las opciones conectadas pueden tener requisitos propios. Los esquemas de BTicino, por ejemplo, distinguen condiciones de alimentación y conexión según la configuración; no se deben trasladar automáticamente a otra marca."
+        ]
+      },
+      {
+        "title": "Cómo organizarlo con los vecinos",
+        "paragraphs": [
+          "La preparación debe incluir una persona de contacto, la identificación de cada pulsador y el acceso a las viviendas. Conviene explicar qué trabajos corresponden a los elementos comunes y cuáles se realizan dentro de cada piso. Las alternativas de monitor se comparan por compatibilidad y uso, además de por tamaño."
+        ],
+        "bullets": [
+          "Equipos comunes y terminales por separado.",
+          "Tramos de cable que se conservan y que se sustituyen.",
+          "Adaptación del hueco de la placa y acabado previsto.",
+          "Configuración, comprobación y explicación de uso."
+        ]
+      },
+      {
+        "title": "Qué se comprueba al finalizar",
+        "paragraphs": [
+          "La entrega debe permitir llamar a la vivienda correcta, conversar en ambos sentidos, ver una imagen útil y abrir la puerta prevista. Si se ha contratado atención desde el móvil, se comprueba por separado. Esta lista convierte la renovación en un resultado verificable y ayuda a detectar incidencias antes de dar el trabajo por terminado."
+        ]
+      }
+    ],
+    "relatedServices": [
+      "instalacion",
+      "comunidades",
+      "wifi"
+    ],
+    "sourceUrls": [
+      "https://www.bticino.com/products/video-door-entry-systems/professional-video-door-entry-kits/design-and-installation",
+      "https://www.bticino.com/sites/default/files/2024-03/WIRING%20DIAGRAMS.pdf",
+      "https://www.fermax.com/spain/productos/videoporteros/placas/placa-cityline/f94511-kit-video-city-veo-xs-wifi-duox-plus-1l/"
+    ]
+  },
+  {
+    "id": "averia-vivienda-comunidad",
+    "slug": "averia-portero-vivienda-o-comunidad",
+    "title": "¿Falla tu telefonillo o la instalación de la comunidad?",
+    "summary": "Comparar funciones y viviendas ayuda a preparar un aviso útil. No hace falta desmontar el equipo para reunir los datos que orientan la revisión.",
+    "sections": [
+      {
+        "title": "Describe una función, no solo que no funciona",
+        "paragraphs": [
+          "Un portero reúne llamada, conversación y apertura; el videoportero añade imagen y, en algunos modelos, conexión remota. Separar esas funciones evita un aviso demasiado genérico. Puede fallar la llamada mientras la apertura responde, o desaparecer la imagen aunque se siga oyendo a la visita.",
+          "Anota qué haces y qué ocurre. Por ejemplo: al pulsar en la calle, la pantalla se enciende pero no suena; al contestar, se oye a la visita. Esta descripción es más útil que suponer directamente que se ha estropeado el monitor."
+        ]
+      },
+      {
+        "title": "Compara con otra vivienda",
+        "paragraphs": [
+          "Si es posible, pregunta a un vecino si presenta el mismo síntoma. Cuando varias viviendas fallan de forma parecida, resulta razonable revisar elementos compartidos. Si solo falla una, la comprobación puede empezar por su terminal y su derivación. Son orientaciones, no un diagnóstico definitivo.",
+          "Importa la distribución: toda una planta, varias viviendas sin un patrón claro o únicamente un acceso exterior. Preparar esa relación permite aprovechar mejor la visita. Si ha habido una sustitución reciente, una obra o un corte eléctrico, comunícalo como antecedente, sin dar por hecho que sea la causa."
+        ]
+      },
+      {
+        "title": "Comprobaciones que puedes hacer sin abrir nada",
+        "paragraphs": [
+          "Revisa únicamente controles de uso normal: volumen, modo silencio y activación del audio. Algunos monitores incorporan una función de no molestar; Fermax documenta esta opción en equipos de la gama VEO. Consulta el manual de tu referencia antes de cambiar ajustes que no conozcas.",
+          "Observa si la pantalla se ilumina, si la placa conserva sus señales habituales y si se escucha actuar el abrepuertas. No hace falta manipular fuentes de alimentación, bornes ni conexiones comunes. Un cable mal conectado puede afectar a otros vecinos y dificultar la localización de la avería."
+        ],
+        "bullets": [
+          "Qué función falla.",
+          "A cuántas viviendas afecta.",
+          "Desde cuándo y con qué frecuencia.",
+          "Qué cambio ocurrió antes, si lo hubo."
+        ]
+      },
+      {
+        "title": "Separa la aplicación de la instalación local",
+        "paragraphs": [
+          "Si la llamada llega al monitor pero no al móvil, comprueba primero la parte remota: Internet, conexión del equipo y notificaciones. Los fabricantes establecen requisitos de terminal y aplicación. Fermax, por ejemplo, diferencia la conexión de monitores WiFi y otras soluciones conectadas del edificio.",
+          "Indica la aplicación y el mensaje que aparece. No es necesario enviar contraseñas ni códigos de acceso. Un problema de cuenta o de red no demuestra que la placa comunitaria esté averiada."
+        ]
+      },
+      {
+        "title": "Qué facilita la revisión",
+        "paragraphs": [
+          "Una foto del frontal del equipo, su referencia visible y las observaciones anteriores permiten preparar la intervención. En un edificio, coordina el acceso a las zonas comunes con la persona responsable. El objetivo es comprobar el componente afectado y decidir la reparación a partir de pruebas, no cambiar terminales por descarte."
+        ]
+      }
+    ],
+    "relatedServices": [
+      "reparacion",
+      "mantenimiento",
+      "comunidades"
+    ],
+    "sourceUrls": [
+      "https://fermax.com/spain/productos/videoportero-2-hilos/monitores/monitor-veo-wifi/f09446-monitor-veo-wifi-4-3-duox-plus",
+      "https://soporte.fermax.com/portal/es/kb/articles/que-requisitos-son-necesarios-para-usar-el-desvio-de-llamada",
+      "https://staticpro.comelitgroup.com/storage/2021/02/26754/mt-minihf-es.pdf"
+    ]
+  },
+  {
+    "id": "wifi-dos-hilos-ip",
+    "slug": "videoportero-wifi-dos-hilos-ip-diferencias",
+    "title": "Videoportero WiFi, de dos hilos o IP: qué significa cada cosa",
+    "summary": "Estas palabras describen aspectos distintos del sistema. Entenderlas ayuda a elegir conectividad y cableado sin esperar funciones que el equipo no ofrece.",
+    "sections": [
+      {
+        "title": "Dos hilos describe una forma de conectar",
+        "paragraphs": [
+          "Un sistema de dos hilos utiliza un bus para enlazar equipos compatibles. Según la tecnología, ese cableado transporta alimentación y comunicación de audio y vídeo. Fermax DUOX PLUS, Golmar G2+ o Comelit Simplebus2 son ejemplos de familias con sus propias condiciones de instalación.",
+          "Que dos equipos utilicen dos conductores no los convierte en intercambiables. Antes de cambiar un monitor se revisa la familia, la referencia y el esquema admitido. También hay límites de distancia, topología y número de equipos que deben comprobarse en la documentación correspondiente."
+        ]
+      },
+      {
+        "title": "WiFi añade una conexión a la red",
+        "paragraphs": [
+          "En muchos videoporteros, el monitor sigue unido por cable a la instalación y utiliza WiFi para las funciones remotas. El término no significa que desaparezcan la alimentación, la placa cableada o los trabajos de instalación. Golmar, por ejemplo, ofrece monitores G2+ de dos hilos con WiFi integrado.",
+          "La atención desde el móvil suele requerir una aplicación, una cuenta y conexión a Internet. También importan la cobertura y los permisos de notificación. La banda admitida debe comprobarse en el modelo: no conviene asumir que cualquier red WiFi será válida."
+        ]
+      },
+      {
+        "title": "IP es una arquitectura de comunicación",
+        "paragraphs": [
+          "Una instalación IP utiliza una red de datos para la comunicación prevista por el sistema. No significa necesariamente que todos sus equipos sean inalámbricos ni que cualquier monitor de red pueda conectarse. El diseño puede incluir cableado de red, equipos de alimentación y configuraciones propias.",
+          "El catálogo de Comelit distingue soluciones Simplebus y ViP, e incluye interfaces para determinados diseños híbridos. Son soluciones que se estudian como conjunto. Elegir IP por el nombre, sin valorar el edificio y su mantenimiento, no garantiza una ventaja práctica."
+        ]
+      },
+      {
+        "title": "Qué sucede cuando falla Internet",
+        "paragraphs": [
+          "Conviene preguntar por separado qué funciones quedan disponibles dentro de casa y cuáles dependen de la conexión remota. En una instalación cableada con monitor, la llamada local puede seguir funcionando aunque no llegue al teléfono. La respuesta exacta debe verificarse en la solución seleccionada.",
+          "La configuración inicial debería incluir una prueba en el monitor y otra desde el móvil. Es útil dejar identificado el usuario responsable y explicar cómo revisar la conexión si se cambia el router. Las condiciones de los servicios del fabricante también pueden variar."
+        ]
+      },
+      {
+        "title": "Decide a partir de tu uso",
+        "paragraphs": [
+          "Para un piso con un sistema compatible quizá interese sustituir solo el monitor. Una comunidad con varios accesos puede necesitar otra estructura. En una vivienda unifamiliar, la distancia al portón y la canalización pueden condicionar la elección más que el tamaño de pantalla."
+        ],
+        "bullets": [
+          "¿Solo quieres ver y abrir desde casa?",
+          "¿Necesitas recibir la llamada estando fuera?",
+          "¿Hay una instalación que conviene conservar?",
+          "¿Quién gestionará los usuarios y la conexión?"
+        ]
+      }
+    ],
+    "relatedServices": [
+      "wifi",
+      "instalacion",
+      "viviendas"
+    ],
+    "sourceUrls": [
+      "https://www.golmar.es/products/art-7w-g2-plus",
+      "https://www.fermax.com/.doc-download?lang=es&slug=970166eh-monitor-veo-wifi-y-dda-duox-plus-es&type=handbook",
+      "https://staticpro.comelitgroup.com/storage/2025/05/49592/2g31000700.pdf",
+      "https://www.bticino.com/sites/default/files/2024-03/WIRING%20DIAGRAMS.pdf"
+    ]
+  },
+  {
+    "id": "presupuesto-comunidad",
+    "slug": "presupuesto-videoportero-comunidad",
+    "title": "Qué debe explicar un presupuesto de videoportero para una comunidad",
+    "summary": "Comparar solo el precio por monitor deja fuera parte del trabajo. Una propuesta útil permite saber qué se instala, qué se conserva y cómo se comprobará el resultado.",
+    "sections": [
+      {
+        "title": "Define el mismo punto de partida",
+        "paragraphs": [
+          "Dos propuestas no son comparables si una sustituye la instalación completa y otra conserva placa y alimentación. Antes de pedir alternativas, reúne número de viviendas y locales, entradas, equipos actuales y problemas que se quieren resolver. Si se busca WiFi o un segundo monitor, debe quedar indicado.",
+          "Las fotos ayudan a preparar la visita, pero no sustituyen la revisión del cableado y de los elementos comunes. Una oferta basada únicamente en el número de vecinos puede dejar sin aclarar adaptaciones, derivaciones o trabajos de acabado."
+        ]
+      },
+      {
+        "title": "Separa las partidas principales",
+        "paragraphs": [
+          "La comunidad debe poder identificar placa exterior, equipos de alimentación y distribución, terminales de vivienda, cableado y mano de obra. Las referencias concretas permiten consultar qué prestaciones incluye cada equipo y evitan confundir modelos de apariencia parecida.",
+          "BTicino y otros fabricantes proporcionan herramientas y guías para diseñar la instalación según sus características. Esa selección técnica es la que determina los elementos necesarios; no conviene considerar todos los accesorios como opcionales sin revisar el esquema."
+        ],
+        "bullets": [
+          "Material común y terminales interiores.",
+          "Cableado conservado, sustituido o añadido.",
+          "Adaptaciones de placa y acabados previstos.",
+          "Configuración, pruebas y explicación de uso."
+        ]
+      },
+      {
+        "title": "Distingue la base de las mejoras",
+        "paragraphs": [
+          "Una propuesta puede incluir un monitor estándar y ofrecer otra pantalla o conectividad como alternativa. Debe explicar qué cambia para cada vecino y si la opción necesita elementos adicionales. También conviene concretar el tratamiento de las viviendas a las que no se pueda acceder en la fecha prevista.",
+          "Si hay varios portales, llaveros de proximidad o un segundo acceso, esas funciones requieren su propio alcance. Pregunta cómo se gestionarán usuarios y permisos y quién conservará la documentación de la instalación. Una lista clara evita decisiones improvisadas durante el montaje."
+        ]
+      },
+      {
+        "title": "Acordar la puesta en servicio",
+        "paragraphs": [
+          "El calendario debe coordinarse con la persona responsable del edificio y con el acceso a las viviendas. No hace falta prometer un plazo universal: influyen el tamaño de la comunidad, el estado de los conductos y los trabajos previstos. Lo útil es saber qué pasos se seguirán y cómo se comunicarán.",
+          "Al terminar, comprueba que cada pulsador llama a la vivienda correcta y que audio, imagen y apertura funcionan. Las funciones remotas se prueban aparte con los equipos y cuentas autorizados. También deben quedar claros los ajustes básicos para el uso diario."
+        ]
+      },
+      {
+        "title": "Materiales, mantenimiento y condiciones",
+        "paragraphs": [
+          "Antes de aceptar, revisa si el importe incluye impuestos, retirada del material sustituido y desplazamientos previstos, y cómo se presupuestarán imprevistos. Las condiciones de garantía, asistencia y mantenimiento deben constar de forma específica. No se debe interpretar que un contrato de mantenimiento incluye cualquier recambio.",
+          "Una comunidad toma una decisión más sólida cuando entiende las diferencias de alcance. La opción adecuada es la que resuelve su instalación y explica sus condiciones, con referencias y trabajos verificables."
+        ]
+      }
+    ],
+    "relatedServices": [
+      "comunidades",
+      "instalacion",
+      "mantenimiento"
+    ],
+    "sourceUrls": [
+      "https://www.bticino.com/products/video-door-entry-systems/professional-video-door-entry-kits/design-and-installation",
+      "https://www.tegui.es/documentacion/manuales-tecnicos",
+      "https://staticpro.comelitgroup.com/storage/2025/05/49592/2g31000700.pdf"
+    ]
+  }
+]
