@@ -1,0 +1,152 @@
+{
+  "image": "/assets/coverage-spain.svg",
+  "width": 600,
+  "height": 440,
+  "alt": "Mapa de España con las 19 provincias de servicio destacadas: zona norte y Castilla y León en salvia; Madrid, Guadalajara y Toledo en cobre.",
+  "source": {
+    "publisher": "Instituto Geográfico Nacional de España (IGN)",
+    "title": "Unidades administrativas de España · nivel provincial",
+    "url": "https://www.ign.es/web/ign/portal/rcc-descarga-lineas-limite",
+    "serviceUrl": "https://www.ign.es/wfs-inspire/unidades-administrativas",
+    "downloadUrl": "https://www.ign.es/wfs-inspire/unidades-administrativas?service=WFS&version=2.0.0&request=GetFeature&typeNames=au%3AAdministrativeUnit&count=90&outputFormat=application%2Fgeo%2Bjson&srsName=EPSG%3A4326&filter=%3Cfes%3AFilter+xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22+xmlns%3Aau%3D%22http%3A%2F%2Finspire.ec.europa.eu%2Fschemas%2Fau%2F4.0%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cfes%3APropertyIsEqualTo%3E%3Cfes%3AValueReference%3Eau%3AnationalLevel%2F%40xlink%3Ahref%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3Ehttps%3A%2F%2Finspire.ec.europa.eu%2Fcodelist%2FAdministrativeHierarchyLevel%2F3rdOrder%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsEqualTo%3E%3C%2Ffes%3AFilter%3E",
+    "retrievedAt": "2026-10-26",
+    "sha256": "e1743dbf69598224411dda9585f608b0ff6d7aad9864d0af82992d0e15938468",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf",
+    "attribution": "Obra derivada de Unidades administrativas de España, descarga 26/10/2026, CC BY 4.0 ign.es"
+  },
+  "transformation": {
+    "projection": "Equirectangular con paralelo estándar 40° N",
+    "simplificationPixels": 1.1,
+    "canaryIslands": "Recuadro desplazado; escala independiente",
+    "colors": {
+      "norte": "#a6bea7",
+      "centro": "#df9e7c",
+      "other": "#3a4540"
+    },
+    "limitations": "Mapa de situación a pequeña escala. No representa oficinas, desplazamientos, tiempos de llegada ni disponibilidad en tiempo real."
+  },
+  "stats": {
+    "administrativeUnitsInSource": 53,
+    "highlightedProvinces": 19,
+    "northProvinces": 16,
+    "centralProvinces": 3,
+    "svgBytes": 35956
+  },
+  "provinces": [
+    {
+      "code": "01",
+      "name": "Araba/Álava",
+      "slug": "alava",
+      "area": "norte"
+    },
+    {
+      "code": "05",
+      "name": "Ávila",
+      "slug": "avila",
+      "area": "norte"
+    },
+    {
+      "code": "09",
+      "name": "Burgos",
+      "slug": "burgos",
+      "area": "norte"
+    },
+    {
+      "code": "19",
+      "name": "Guadalajara",
+      "slug": "guadalajara",
+      "area": "centro"
+    },
+    {
+      "code": "20",
+      "name": "Gipuzkoa",
+      "slug": "gipuzkoa",
+      "area": "norte"
+    },
+    {
+      "code": "24",
+      "name": "León",
+      "slug": "leon",
+      "area": "norte"
+    },
+    {
+      "code": "26",
+      "name": "La Rioja",
+      "slug": "la-rioja",
+      "area": "norte"
+    },
+    {
+      "code": "28",
+      "name": "Madrid",
+      "slug": "madrid",
+      "area": "centro"
+    },
+    {
+      "code": "31",
+      "name": "Navarra",
+      "slug": "navarra",
+      "area": "norte"
+    },
+    {
+      "code": "33",
+      "name": "Asturias",
+      "slug": "asturias",
+      "area": "norte"
+    },
+    {
+      "code": "34",
+      "name": "Palencia",
+      "slug": "palencia",
+      "area": "norte"
+    },
+    {
+      "code": "37",
+      "name": "Salamanca",
+      "slug": "salamanca",
+      "area": "norte"
+    },
+    {
+      "code": "39",
+      "name": "Cantabria",
+      "slug": "cantabria",
+      "area": "norte"
+    },
+    {
+      "code": "40",
+      "name": "Segovia",
+      "slug": "segovia",
+      "area": "norte"
+    },
+    {
+      "code": "42",
+      "name": "Soria",
+      "slug": "soria",
+      "area": "norte"
+    },
+    {
+      "code": "45",
+      "name": "Toledo",
+      "slug": "toledo",
+      "area": "centro"
+    },
+    {
+      "code": "47",
+      "name": "Valladolid",
+      "slug": "valladolid",
+      "area": "norte"
+    },
+    {
+      "code": "48",
+      "name": "Bizkaia",
+      "slug": "bizkaia",
+      "area": "norte"
+    },
+    {
+      "code": "49",
+      "name": "Zamora",
+      "slug": "zamora",
+      "area": "norte"
+    }
+  ]
+}

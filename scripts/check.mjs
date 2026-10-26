@@ -10,6 +10,8 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
 const started = performance.now();
 const contactConfig=JSON.parse(fs.readFileSync(path.join(root,'data/site.json'),'utf8'));
+contactConfig.phone=process.env.CONTACT_PHONE || contactConfig.phone;
+contactConfig.whatsapp=process.env.CONTACT_WHATSAPP || contactConfig.whatsapp;
 for(const area of contactConfig.contactAreas || []){
   area.phone=process.env[`CONTACT_PHONE_${area.id.toUpperCase()}`] || area.phone;
   area.whatsapp=process.env[`CONTACT_WHATSAPP_${area.id.toUpperCase()}`] || area.whatsapp;
@@ -93,6 +95,15 @@ function parsePage(filename) {
   for(const name of ['site.css','site.js']){
     if(!html.includes(`/assets/${name}?v=${expectedAssetVersion}`))issue('error','MIXED_BUILD','La versión del HTML no coincide con los recursos del build.',filename);
   }
+  const pageProvince=record.route.startsWith('/porteros-videoporteros/')?record.route.split('/')[2]:'';
+  const pageContact=contactForProvince(contactConfig,pageProvince) || contactConfig;
+  const footer=html.match(/<footer\b[^>]*>([\s\S]*?)<\/footer>/)?.[1] || '';
+  if(!footer.includes(`data-footer-primary="${phoneDigits(pageContact.phone)}"`) || !footer.includes(`href="tel:+${phoneDigits(pageContact.phone)}"`))issue('error','FOOTER_PHONE','El pie no muestra el teléfono principal de la página.',filename);
+  if(!footer.includes(`href="https://wa.me/${phoneDigits(pageContact.whatsapp)}"`))issue('error','FOOTER_WHATSAPP','Falta el enlace directo de WhatsApp en el pie.',filename);
+  if(!footer.includes('/assets/coverage-spain.svg'))issue('error','FOOTER_MAP','Falta el mapa de cobertura en el pie.',filename);
+  const header=html.match(/<header\b[^>]*>([\s\S]*?)<\/header>/)?.[1] || '';
+  if(!header.includes('Urgencias 24 horas'))issue('error','EMERGENCY_HEADER','Falta la franja superior de urgencias.',filename);
+  if(!header.includes(`href="https://wa.me/${phoneDigits(pageContact.whatsapp)}"`))issue('error','HEADER_WHATSAPP','WhatsApp de cabecera no corresponde a la zona.',filename);
   if(record.route.startsWith('/porteros-videoporteros/')){
     const slug=record.route.split('/')[2];
     const contact=contactForProvince(contactConfig,slug);

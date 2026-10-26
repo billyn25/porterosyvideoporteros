@@ -52,3 +52,98 @@
 body[data-page="diagnostics"] .diagnostic-intro{align-self:start;position:sticky;top:120px}
 @media(max-width:760px){.locality-list{grid-template-columns:repeat(2,minmax(0,1fr))}.locality-list a{font-size:.79rem;padding:13px 12px}.locality-heading h2 br{display:none}body[data-page="diagnostics"] .diagnostic-intro{position:static}.diagnostic-filter{grid-template-columns:1fr}}
 @media(max-width:460px){.locality-list{grid-template-columns:1fr}.form-recipient{grid-column:1}.contact-detail{font-size:1.35rem}}
+
+/* Accesos municipales de la portada. */
+.coverage-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.coverage-province{display:flex;flex-direction:column;min-width:0;padding:25px 26px 19px;border:1px solid var(--line);border-top:3px solid #899e8a;border-radius:3px;background:#fffdf8}
+.coverage-province h3{font-size:1.12rem;letter-spacing:-.025em;margin:0 0 17px}
+.coverage-province h3>a{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.coverage-province h3 .arrow{width:19px;height:19px;color:var(--copper)}
+.coverage-town-links{display:flex;flex-wrap:wrap;gap:8px 16px;list-style:none;padding:0;margin:0 0 24px}
+.coverage-town-links li{display:flex;align-items:baseline;gap:7px}
+.coverage-town-links li:before{content:'';width:3px;height:3px;border-radius:50%;background:#a6b5a4;flex:none;align-self:center}
+.coverage-town-links a{font-size:.8rem;line-height:1.75;text-decoration:underline;text-decoration-color:#d0d4c9;text-underline-offset:4px}
+.coverage-town-links a:hover{color:var(--copper);text-decoration-color:currentColor}
+.coverage-all-towns{display:flex;align-items:center;gap:8px;padding-top:14px;border-top:1px solid var(--line);margin-top:auto;font-size:.65rem;font-weight:650;color:var(--muted)}
+.coverage-all-towns>span{font-size:.59rem;font-weight:500;border:1px solid #d7ddcf;border-radius:20px;padding:2px 7px;line-height:1.4}
+.coverage-all-towns>.arrow{width:16px;height:16px;margin-left:auto;color:var(--ink)}
+.coverage-all-towns:hover,.coverage-province h3>a:hover{color:var(--copper)}
+.coverage-directory-end{display:flex;justify-content:space-between;align-items:center;gap:40px;margin-top:25px}
+.coverage-directory-end .coverage-note{max-width:760px;margin:0}
+.coverage-directory-end .text-link{flex:none;font-size:.78rem}
+@media(max-width:1020px){.coverage-directory{grid-template-columns:repeat(2,minmax(0,1fr))}.coverage-province{padding:23px}}
+@media(max-width:760px){.coverage-directory{gap:15px}.coverage-province{padding:21px 19px 17px}.coverage-province h3{font-size:1.05rem}.coverage-town-links{gap:6px 13px;margin-bottom:20px}.coverage-directory-end{align-items:start;flex-direction:column;gap:20px}.coverage-all-towns{font-size:.62rem}}
+@media(max-width:540px){.coverage-directory{grid-template-columns:1fr}.coverage-town-links a{font-size:.84rem}.coverage-province h3{font-size:1.15rem}.coverage-all-towns{font-size:.7rem}}
+/* Atención directa y pie de cobertura. */
+html{scroll-padding-top:145px}
+.emergency-bar{background:#20362c;color:#f6f4ed;border-bottom:1px solid #3b5145}
+.emergency-inner{display:flex;align-items:center;gap:24px;min-height:36px;font-size:.71rem}
+.emergency-label{display:flex;align-items:center;gap:9px;font-weight:700;white-space:nowrap}
+.availability-dot{width:6px;height:6px;border-radius:50%;background:#dca17f;box-shadow:0 0 0 4px #dca17f14;flex:none}
+.emergency-description{color:#c3d0c5;font-size:.67rem}
+.emergency-phone{display:inline-flex;align-items:center;gap:8px;margin-left:auto;font-weight:750;letter-spacing:.04em;font-size:.8rem}
+.emergency-phone .arrow{width:14px;height:14px}
+.emergency-phone:hover{color:#e4ae8c}
+.button--whatsapp{background:#287b51;color:#fff;border-color:#287b51;gap:10px}
+.button--whatsapp:hover{background:#1e6440;border-color:#1e6440;color:#fff}
+.whatsapp-icon{width:21px;height:21px;flex:none}
+.header-contact.button--whatsapp{display:inline-flex;min-height:46px;padding:11px 20px;font-size:.79rem}
+.site-footer{padding:66px 0 24px;background:#172621;color:#f6f4ed;border-top:1px solid #3c5246}
+.footer-heading{display:flex;align-items:center;justify-content:space-between;gap:45px;padding-bottom:46px;margin-bottom:45px;border-bottom:1px solid #3c5145}
+.site-footer .eyebrow{color:#b3c7b5}
+.footer-heading h2{font-size:clamp(2rem,4.2vw,3.65rem);font-weight:550;letter-spacing:-.055em;line-height:1.08;margin-bottom:0}
+.footer-heading h2 em{font-style:normal;color:#dfa582}
+.footer-hours{display:flex;align-items:center;gap:18px;flex:none}
+.footer-hours>span{display:flex;align-items:baseline;justify-content:center;padding-top:16px;width:76px;height:76px;border:1px solid #69806d;border-radius:50%;font-size:2.1rem;font-weight:550;line-height:1.25;letter-spacing:-.06em;color:#c3d3c1}
+.footer-hours>span>span{font-size:1.1rem;margin-left:2px}
+.footer-hours p{font-weight:600;font-size:.85rem;line-height:1.5;margin:0}
+.footer-hours small{display:block;font-size:.72rem;font-weight:400;color:#aebfb2;margin-top:4px}
+.footer-main{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:start}
+.footer-brand .brand-copy,.footer-brand .brand-copy small{color:#f6f4ed}
+.footer-brand .brand-icon{background:#f6f4ed;border-radius:9px;padding:3px;width:43px;height:49px}
+.footer-intro-copy{font-size:.91rem;line-height:1.8;color:#c0cec2;max-width:410px;margin:22px 0 36px}
+.footer-area-label{font-size:.7rem;font-weight:650;letter-spacing:.05em;color:#b4c7b6;margin-bottom:9px}
+.footer-phone{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:430px;font-size:clamp(2rem,3.8vw,3.2rem);line-height:1.25;font-weight:600;letter-spacing:-.045em;white-space:nowrap}
+.footer-phone>.arrow{width:30px;height:30px;color:#dfa582}
+.footer-phone:hover{color:#dfa582}
+.footer-contact-actions{display:flex;align-items:center;flex-wrap:wrap;gap:21px;margin-top:24px}
+.footer-contact-actions .button{font-size:.78rem;min-height:48px;padding:13px 18px}
+.footer-contact-actions .text-link{font-size:.73rem;color:#d5e0d3}
+.footer-secondary-contact{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 22px;margin-top:30px;border:1px solid #415a49;border-radius:10px;background:#1d2f26}
+.footer-secondary-contact p{font-size:.68rem;color:#b9c9bc;margin:0 0 6px}
+.footer-secondary-contact>div>a{font-size:1.32rem;font-weight:650;letter-spacing:.015em}
+.footer-secondary-contact>div>a:hover{color:#dfa582}
+.footer-whatsapp-secondary{display:flex;align-items:center;gap:7px;color:#b5d8ba;font-size:.72rem}
+.footer-whatsapp-secondary:hover{color:#fff}
+.footer-whatsapp-secondary .whatsapp-icon{width:20px;height:20px}
+.footer-map{margin:0;padding:26px 28px 18px;border:1px solid #3b5646;border-radius:18px;background:#20332b;min-width:0}
+.footer-map .eyebrow{font-size:.63rem;margin-bottom:10px}
+.footer-map h3{font-size:1.45rem;line-height:1.25;letter-spacing:-.025em;margin:0}
+.footer-map-image{display:block;margin:6px -8px 8px}
+.footer-map-image img{display:block;width:100%;height:auto;max-height:325px;object-fit:contain}
+.map-legend{display:flex;flex-direction:column;gap:8px;font-size:.64rem;line-height:1.5;color:#d1dfd1}
+.map-legend>span{display:flex;align-items:center;gap:8px}
+.map-key{width:8px;height:8px;border-radius:2px;flex:none}
+.map-key--north{background:#a6bea7}
+.map-key--central{background:#df9e7c}
+.map-credit{margin:15px 0 0;font-size:.57rem;color:#a3b7a8}
+.map-credit a{text-decoration:underline;text-underline-offset:3px}
+.footer-coverage{display:grid;grid-template-columns:1.7fr 1fr;gap:55px;padding:35px 0;margin-top:38px;border-top:1px solid #3c5145;border-bottom:1px solid #3c5145}
+.footer-coverage-group>p{font-size:.7rem;font-weight:650;margin:0 0 14px;color:#b8ceb9}
+.footer-coverage-group--centro>p{color:#e4ab88}
+.footer-coverage nav{display:flex;flex-wrap:wrap;gap:8px 16px}
+.footer-coverage nav>a{font-size:.72rem;color:#d3ded2;line-height:1.7}
+.footer-coverage nav>a:hover,.footer-coverage nav>a[aria-current]{color:#e9b590;text-decoration:underline;text-underline-offset:4px}
+.footer-links-row{display:flex;justify-content:space-between;gap:40px;padding:29px 0;border-bottom:1px solid #3c5145}
+.site-footer .footer-title{color:#9fb5a4;font-size:.59rem;letter-spacing:.13em;margin-bottom:12px}
+.footer-service-links,.footer-utility-links{display:flex;flex-wrap:wrap;gap:10px 22px}
+.footer-service-links a,.footer-utility-links a{font-size:.7rem;color:#d5dfd4}
+.footer-utility-links{align-items:end;justify-content:end}
+.footer-service-links a:hover,.footer-utility-links a:hover{color:#e4ab88}
+.site-footer .footer-bottom{font-size:.63rem;color:#9eb4a4;padding-top:21px;gap:20px}
+.site-footer .footer-bottom-links a:hover{color:#e4ab88}
+.mobile-cta .button--whatsapp{color:#fff;border-color:#287b51}
+.mobile-cta .whatsapp-icon{width:18px;height:18px}
+@media(max-width:1020px){.header-inner{gap:20px}.footer-main{gap:35px}.footer-contact-actions{gap:16px}.footer-coverage{gap:35px}.footer-hours{gap:12px}.footer-hours>span{width:65px;height:65px;padding-top:14px;font-size:1.75rem}.footer-map{padding:24px}}
+@media(max-width:760px){html{scroll-padding-top:124px}.emergency-inner{min-height:33px;gap:10px;font-size:.65rem}.emergency-description{display:none}.emergency-phone{font-size:.72rem}.emergency-phone .arrow{width:13px;height:13px}.header-contact.button--whatsapp{min-height:39px;padding:9px 12px;font-size:.7rem}.header-contact .whatsapp-icon{width:17px;height:17px}.site-nav{top:100%}.site-footer{padding:44px 0 100px}.footer-heading{display:block;padding-bottom:28px;margin-bottom:30px}.footer-heading h2{font-size:2.5rem}.footer-hours{margin-top:25px}.footer-hours>span{width:50px;height:50px;padding-top:9px;font-size:1.55rem}.footer-hours>span>span{font-size:.8rem}.footer-hours p{font-size:.78rem}.footer-hours small{font-size:.68rem;margin-top:2px}.footer-main{grid-template-columns:1fr;gap:32px}.footer-intro-copy{max-width:520px;margin:20px 0 27px}.footer-phone{font-size:2.65rem;max-width:400px}.footer-secondary-contact{max-width:520px;margin-top:24px}.footer-map{max-width:550px;width:100%;justify-self:center}.footer-map-image{margin:0 -5px 10px}.footer-map-image img{max-height:330px}.footer-coverage{grid-template-columns:1fr;gap:24px;margin-top:30px;padding:26px 0}.footer-coverage nav{gap:8px 17px}.footer-links-row{display:block;padding:24px 0}.footer-utility-links{justify-content:start;margin-top:24px;gap:20px}.site-footer .footer-bottom{gap:17px}.footer-bottom-links{gap:12px 18px}.mobile-cta{gap:10px}.mobile-cta .button{padding:11px 12px;min-height:45px;gap:8px;white-space:nowrap}.mobile-cta .button>.arrow{width:16px;height:16px}}
+@media(max-width:460px){.header-inner{gap:10px}.header-contact.button--whatsapp{padding:9px 10px;font-size:.65rem;gap:7px}.footer-heading h2{font-size:2.2rem}.footer-phone{font-size:2.25rem}.footer-phone>.arrow{width:25px;height:25px}.footer-contact-actions{gap:18px}.footer-secondary-contact{padding:17px 15px;gap:12px}.footer-secondary-contact>div>a{font-size:1.15rem}.footer-whatsapp-secondary{font-size:.65rem;gap:5px}.footer-map{padding:23px 20px 18px}.footer-map h3{font-size:1.35rem}}

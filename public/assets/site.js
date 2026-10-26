@@ -118,12 +118,16 @@
         block.querySelector('.contact-area-label').textContent=option.dataset.contactLabel;
         const link=block.querySelector('.contact-detail');
         link.href=`tel:+${option.dataset.phoneDigits}`;
-        link.lastChild.textContent=option.dataset.phone;
+        link.querySelector('[data-phone-label]').textContent=option.dataset.phone;
       });
       document.querySelectorAll('[data-routed-phone]').forEach(link=>{
         if(!option?.value)return;
         link.href=`tel:+${option.dataset.phoneDigits}`;
-        link.firstChild.textContent=option.dataset.phone;
+        link.querySelector('[data-phone-label]').textContent=option.dataset.phone;
+        link.setAttribute('aria-label',`Llamar al ${option.dataset.phone}`);
+      });
+      document.querySelectorAll('[data-routed-whatsapp]').forEach(link=>{
+        if(option?.value && option.dataset.whatsapp)link.href=`https://wa.me/${option.dataset.whatsapp}`;
       });
       if(recipient)recipient.textContent=option?.value?`Contacto para ${option.textContent}: ${option.dataset.phone}.`:'Selecciona la provincia para dirigir tu consulta al teléfono de su zona.';
       if(submitLabel)submitLabel.textContent=whatsappNumber() || !option?.value?'Continuar en WhatsApp':'Preparar y copiar consulta';

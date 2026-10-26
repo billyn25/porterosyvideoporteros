@@ -8,6 +8,9 @@ Web de instalación y reparación de porteros automáticos y videoporteros, crea
 
 - [Portada y municipio en móvil](docs/porteros-mobile-1793002017828.jpg).
 - [Teléfonos por zona en móvil](docs/contactos-movil-1793004436248.jpg).
+- [Municipios destacados en el index](docs/municipios-index-1793005907781.jpg).
+- [Nuevo pie con teléfonos, WhatsApp y mapa](docs/footer-cobertura-1793006025098.jpg).
+- [Inicio, municipios y mapa en móvil](docs/contacto-municipios-movil-1793006009958.jpg).
 - [Auditoría de variedad editorial y límites](docs/content-audit.md), con [muestra reproducible](docs/content-audit.json).
 
 ## Contenido incluido
@@ -32,6 +35,8 @@ Las marcas son **Tegui, BTicino, Legrand, Golmar, Fermax, Comelit y Auta**. Los 
 ### Cobertura
 
 Asturias (78), Cantabria (102), Bizkaia (113), Gipuzkoa (88), León (211), Palencia (191), Álava (51), Navarra (272), Zamora (248), Valladolid (225), Burgos (371), La Rioja (174), Salamanca (362), Ávila (248), Segovia (209), Soria (183), Toledo (204), Madrid (179) y Guadalajara (288).
+
+La portada muestra **95 municipios destacados**, cinco por provincia, con enlaces HTML directos a sus páginas de servicio y acceso a cada directorio provincial completo. La selección utiliza la población del conjunto de datos municipal existente; se presenta como una selección de localidades, sin afirmar un ranking demográfico actualizado. El buscador sigue dando acceso a los 3.797 municipios.
 
 ## Ejecutar y verificar
 
@@ -87,9 +92,11 @@ Los números facilitados por el titular están configurados en `data/site.json`,
 | Madrid, Guadalajara y Toledo | **614 78 99 45** |
 | Asturias, Cantabria, Bizkaia, Gipuzkoa, Álava, Navarra, La Rioja y las nueve provincias de Castilla y León | **670 042 626** |
 
-Cada página de municipio o provincia selecciona su zona. La consulta y la barra móvil muestran su teléfono. Las páginas generales presentan las dos líneas y requieren elegir provincia; no asignan una por defecto. Cambiar de provincia actualiza el destinatario y los teléfonos de la consulta, limpia la ubicación anterior y retira sugerencias de otra provincia.
+Cada página de municipio o provincia selecciona su zona. La cabecera, el pie, la consulta y la barra móvil muestran su teléfono. La portada y las páginas generales utilizan **670 042 626** como contacto y WhatsApp predeterminados; el pie identifica también la línea de Madrid, Guadalajara y Toledo. Los enlaces directos de WhatsApp funcionan sin rellenar un formulario. El formulario detallado conserva el selector de provincia para dirigir cada consulta. Cambiar de provincia en el formulario actualiza el destinatario, los teléfonos de consulta y cabecera, y los accesos móviles de llamada/WhatsApp; limpia la ubicación anterior y retira sugerencias de otra provincia. Las dos zonas etiquetadas del pie mantienen sus teléfonos correspondientes.
 
 El formulario prepara el texto localmente y abre `wa.me` a petición del visitante. El envío se confirma dentro de WhatsApp, y también existe la opción de copiar. Sin JavaScript, la preparación de mensajes queda deshabilitada; los enlaces de llamada siguen funcionando. No se crea una reserva ni se transmite la consulta automáticamente. La asociación del número con una cuenta activa de WhatsApp no se ha comprobado mediante un mensaje real.
+
+La franja superior muestra **«Urgencias 24 horas»**, según la indicación del titular. El pie combina contacto directo, accesos a provincias y un mapa vectorial de España con las 19 provincias de servicio: norte y Castilla y León en salvia; Madrid, Guadalajara y Toledo en cobre. El mapa es una obra derivada de cartografía oficial del IGN bajo CC BY 4.0, con atribución visible y créditos ampliados. [Fuente y generación del mapa](docs/coverage-map-sources.md).
 
 ## Datos pendientes del titular
 
@@ -105,7 +112,7 @@ Siguen pendientes el dominio definitivo, correo, nombre o razón social, NIF y d
 | `LEGAL_TAX_ID` | NIF del titular |
 | `LEGAL_ADDRESS` | Domicilio legal |
 
-Los teléfonos de configuración llevan prefijo `+34` y nueve cifras. Las variables genéricas `CONTACT_PHONE` y `CONTACT_WHATSAPP` se conservan como alternativa para una configuración futura sin zonas; no reemplazan las asignaciones provinciales actuales.
+Los teléfonos de configuración llevan prefijo `+34` y nueve cifras. Las variables genéricas `CONTACT_PHONE` y `CONTACT_WHATSAPP` permiten sustituir el contacto predeterminado de la portada y páginas generales; no reemplazan las asignaciones provinciales actuales.
 
 No se han añadido analítica, píxeles publicitarios ni mapas de terceros. La información de privacidad y del titular indica expresamente qué datos identificativos quedan pendientes.
 
