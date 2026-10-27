@@ -88,12 +88,13 @@ test('homepage coverage links include more towns across all provinces and retain
   const selected=slugs.flatMap(slug=>{
     const members=towns.filter(town=>town.provinceSlug===slug);
     const featured=featuredTownsForProvince({slug,towns:members});
-    assert.ok(featured.length>=10);
+    assert.equal(featured.length,20);
     assert.ok(featured.every(town=>town.provinceSlug===slug));
+    if(slug==='madrid')for(const code of ['28130','28049'])assert.ok(featured.slice(0,15).some(town=>town.code===code));
     return featured;
   });
-  assert.equal(selected.length,192);
-  assert.equal(new Set(selected.map(town=>town.code)).size,192);
+  assert.equal(selected.length,380);
+  assert.equal(new Set(selected.map(town=>town.code)).size,380);
   for(const code of ['28130','28049','28148'])assert.ok(selected.some(town=>town.code===code));
 });
 
