@@ -352,3 +352,5 @@ details.locality-sources a{overflow-wrap:anywhere}
 .province-directory-bridge>p{font-size:.9rem;color:var(--muted);max-width:800px}
 .province-directory-bridge>.text-link{margin-top:20px}
 @media(max-width:900px){.province-service-grid{grid-template-columns:1fr;gap:15px}.province-service-grid article{padding:22px}.province-service-grid h3{font-size:1.2rem}}
+
+@media(max-width:760px){.home-hero .actions{display:flex;flex-wrap:wrap;gap:10px}.home-hero .actions .home-call,.home-hero .actions .button--whatsapp{flex:1 1 130px;justify-content:center;min-height:48px}.home-hero .actions .text-link{flex-basis:100%;width:max-content;flex-grow:0}.home-hero .actions .home-call svg{width:19px;height:19px}}
