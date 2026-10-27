@@ -356,3 +356,24 @@ details.locality-sources a{overflow-wrap:anywhere}
 @media(max-width:760px){.home-hero .actions{display:flex;flex-wrap:wrap;gap:10px}.home-hero .actions .home-call,.home-hero .actions .button--whatsapp{flex:1 1 130px;justify-content:center;min-height:48px}.home-hero .actions .text-link{flex-basis:100%;width:max-content;flex-grow:0}.home-hero .actions .home-call svg{width:19px;height:19px}}
 
 @media(max-width:760px){.header-contact.button--whatsapp,.emergency-phone{display:none!important}.mobile-cta{display:flex!important;position:fixed;z-index:100;bottom:0;left:0;right:0;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:#fffdf9;box-shadow:0 -3px 18px #17242d26}.mobile-cta .button{flex:1;justify-content:center;min-width:0;min-height:48px}.mobile-cta .button--outline{background:#253441;color:#fff;border-color:#253441}body{padding-bottom:calc(70px + env(safe-area-inset-bottom))}}
+
+/* Identidad visual y acabados comunes */
+.site-header{background:rgba(244,241,236,.97)}
+.emergency-bar{background:#253441;border-color:#405362}
+.emergency-inner{position:relative;justify-content:space-between}
+.emergency-label{position:absolute;left:50%;transform:translateX(-50%)}
+.emergency-description{color:#d0d9df}
+.emergency-phone{margin-left:auto}
+.button{border-radius:6px}
+.brand-card,.community-panel,.province-service-grid article,.coverage-province,.district-directory{border-radius:8px}
+.brand-card:hover,.coverage-province:hover{border-color:#aebcc6}
+.service-row{transition:background-color .2s,border-color .2s}
+.service-row:hover{border-color:#aebcc6}
+.brand-photo,.community-panel-photo{background:#fff}
+.hero-art--product{background:#e8edf0}
+.coverage-province{border-top-color:#889ca9;background:var(--white)}
+.coverage-index .coverage-town-links a{background:#f2f5f6;border-color:#dce3e7}
+.coverage-index .coverage-town-links a:hover{background:#e6edf1;border-color:#aebec8}
+.local-focus{background:var(--white);border-left-color:var(--copper)}
+@media(max-width:760px){.emergency-inner{justify-content:center;min-height:34px}.emergency-label{position:static;transform:none}.section{padding-block:60px}.section-head{gap:16px}.province-service-grid article,.community-panel,.brand-card{box-shadow:0 2px 10px #25344108}.mobile-cta .button--outline{background:var(--dark);border-color:var(--dark)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.brand-card,.service-row{transition:none}}
