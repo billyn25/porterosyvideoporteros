@@ -1,8 +1,8 @@
 {
   "name": "Porteros y Videoporteros",
   "siteUrl": "https://instalacionvideoporterourgente.com",
-  "phone": "+34 670 042 626",
-  "whatsapp": "+34 670 042 626",
+  "phone": "+34 641 49 05 36",
+  "whatsapp": "+34 641 49 05 36",
   "contactAreas": [
     {
       "id": "centro",
@@ -14,8 +14,8 @@
     {
       "id": "norte",
       "label": "Zona norte y Castilla y León",
-      "phone": "+34 670 042 626",
-      "whatsapp": "+34 670 042 626",
+      "phone": "+34 641 49 05 36",
+      "whatsapp": "+34 641 49 05 36",
       "provinceSlugs": ["asturias", "cantabria", "bizkaia", "gipuzkoa", "leon", "palencia", "alava", "navarra", "zamora", "valladolid", "burgos", "la-rioja", "salamanca", "avila", "segovia", "soria"]
     }
   ],

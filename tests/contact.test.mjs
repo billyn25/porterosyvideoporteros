@@ -12,7 +12,7 @@ const provinces=[...new Set(towns.map(town=>town.provinceSlug))].map(slug=>({slu
 test('Madrid, Guadalajara and Toledo route to the central number; every other covered province routes north',()=>{
   validateContacts(config,provinces);
   for(const province of provinces){
-    const expected=['madrid','guadalajara','toledo'].includes(province.slug)?'34614789945':'34670042626';
+    const expected=['madrid','guadalajara','toledo'].includes(province.slug)?'34614789945':'34641490536';
     const contact=contactForProvince(config,province.slug);
     assert.equal(phoneDigits(contact.phone),expected,province.slug);
     assert.equal(phoneDigits(contact.whatsapp),expected,province.slug);
