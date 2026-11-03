@@ -5,9 +5,9 @@
   "contacts": [
     {
       "label": "Contacto general, zona norte y Castilla y León",
-      "phone": "670 042 626",
-      "href": "tel:+34670042626",
-      "whatsapp": "https://wa.me/34670042626"
+      "phone": "641 49 05 36",
+      "href": "tel:+34641490536",
+      "whatsapp": "https://wa.me/34641490536"
     },
     {
       "label": "Madrid, Guadalajara y Toledo",
@@ -24,11 +24,11 @@
         "heading": "Responsable y contacto",
         "paragraphs": [
           "D.C.G. es titular de instalacionvideoporterourgente.com y responsable del tratamiento de las consultas que recibe a través de los medios de contacto de esta web.",
-          "Puedes contactar con D.C.G. en el 670 042 626. Para consultas de servicio en Madrid, Guadalajara y Toledo, el teléfono es 614 78 99 45. Ambos números disponen de enlace a WhatsApp."
+          "Puedes contactar con D.C.G. en el 641 49 05 36. Para consultas de servicio en Madrid, Guadalajara y Toledo, el teléfono es 614 78 99 45. Ambos números disponen de enlace a WhatsApp."
         ],
         "links": [
-          {"label": "Llamar al 670 042 626", "url": "tel:+34670042626"},
-          {"label": "WhatsApp de contacto general", "url": "https://wa.me/34670042626"},
+          {"label": "Llamar al 641 49 05 36", "url": "tel:+34641490536"},
+          {"label": "WhatsApp de contacto general", "url": "https://wa.me/34641490536"},
           {"label": "Llamar al 614 78 99 45", "url": "tel:+34614789945"}
         ]
       },
@@ -105,10 +105,10 @@
         "heading": "Titularidad",
         "paragraphs": [
           "El sitio instalacionvideoporterourgente.com es propiedad de D.C.G. y presenta servicios de instalación y reparación de porteros automáticos y videoporteros.",
-          "Contacto general, zona norte y Castilla y León: 670 042 626. Madrid, Guadalajara y Toledo: 614 78 99 45. Puedes llamar o utilizar los enlaces de WhatsApp de la web."
+          "Contacto general, zona norte y Castilla y León: 641 49 05 36. Madrid, Guadalajara y Toledo: 614 78 99 45. Puedes llamar o utilizar los enlaces de WhatsApp de la web."
         ],
         "links": [
-          {"label": "Llamar al 670 042 626", "url": "tel:+34670042626"},
+          {"label": "Llamar al 641 49 05 36", "url": "tel:+34641490536"},
           {"label": "Llamar al 614 78 99 45", "url": "tel:+34614789945"},
           {"label": "Política de privacidad", "url": "/privacidad/"}
         ]
