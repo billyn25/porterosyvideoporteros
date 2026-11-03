@@ -1,3 +1,7 @@
+# Actualización de cobertura — noviembre de 2026
+
+La versión actual conserva **474 páginas municipales** que cubren **3.797 municipios**, con **3.323 redirecciones 301**. El total del sitio es de **523 páginas**, 520 indexables. Las cifras históricas de auditorías anteriores no describen esta versión. Consulta [el criterio y los resultados](docs/consolidacion-municipal.md) y [la asignación completa](docs/cobertura-municipal.csv).
+
 # Porteros y Videoporteros
 
 Web de instalación y reparación de porteros automáticos y videoporteros, creada desde cero para este repositorio. Diseño propio en marfil, grafito y cobre; HTML estático, CSS adaptable y JavaScript pequeño para navegación, búsqueda municipal y preparación de consultas.
