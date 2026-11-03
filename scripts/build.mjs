@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {buildCoverage,coveragePolicy} from './coverage.mjs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
@@ -28,6 +29,7 @@ for(const field of ['phone','whatsapp']){
 }
 const {baseUrl,indexable}=sitePolicy(config,process.env);
 const towns=read('municipalities');
+const coverage=buildCoverage(towns);
 const provinceOrder=['asturias','cantabria','bizkaia','gipuzkoa','leon','palencia','alava','navarra','zamora','valladolid','burgos','la-rioja','salamanca','avila','segovia','soria','toledo','madrid','guadalajara'];
 const provinces=provinceOrder.map(slug=>{const members=towns.filter(t=>t.provinceSlug===slug);if(!members.length)throw new Error(`Provincia vacía: ${slug}`);return {slug,name:members[0].province,code:members[0].provinceCode,towns:members};});
 validateContacts(config,provinces);
@@ -35,7 +37,7 @@ const counts=new Map();for(const town of towns)counts.set(town.name,(counts.get(
 const duplicateTownNames=new Set([...counts].filter(([,count])=>count>1).map(([name])=>name));
 const assets=['public/assets/site.css','public/assets/site.js'].map(p=>fs.readFileSync(path.join(root,p)));
 const assetVersion=createHash('sha256').update(Buffer.concat(assets)).digest('hex').slice(0,10);
-const ctx={config,baseUrl,indexable,towns,provinces,duplicateTownNames,assetVersion,year:new Date().getUTCFullYear(),brands:read('brands'),hero:read('hero'),audio:read('audio-entry'),legal:read('legal'),services:read('services'),diagnostics:read('diagnostics'),faqs:read('faqs'),guides:read('guides'),localFocus:read('local-focus'),localities:read('localities')};
+const ctx={coverage,config,baseUrl,indexable,towns,provinces,duplicateTownNames,assetVersion,year:new Date().getUTCFullYear(),brands:read('brands'),hero:read('hero'),audio:read('audio-entry'),legal:read('legal'),services:read('services'),diagnostics:read('diagnostics'),faqs:read('faqs'),guides:read('guides'),localFocus:read('local-focus'),localities:read('localities')};
 ctx.streets=read('streets');
 ctx.streetMunicipalities={};
 for(const province of provinces){
@@ -70,10 +72,12 @@ for(const s of ctx.services)writePage(servicePage(ctx,s));
 for(const b of ctx.brands)writePage(brandPage(ctx,b));
 for(const g of ctx.guides)writePage(guidePage(ctx,g));
 for(const p of provinces)writePage(provincePage(ctx,p));
-for(const town of towns)writePage(townPage(ctx,town,nearbyTowns(town,towns)));
+for(const town of coverage.selected)writePage(townPage(ctx,town,nearbyTowns(town,coverage.selected)));
+const redirects=[...coverage.assignments.values()].filter(({town,hub})=>town.code!==hub.code).map(({town,hub})=>`/porteros-videoporteros/${town.provinceSlug}/${town.slug}/ /porteros-videoporteros/${hub.provinceSlug}/${hub.slug}/ 301!`);
+fs.appendFileSync(path.join(out,'_redirects'),redirects.join('\n')+'\n');
 for(const page of supportPages(ctx))writePage(page);
 
-const search=towns.map(t=>({name:t.name,province:t.province,provinceSlug:t.provinceSlug,aliases:t.aliases||[],population:t.population||0,url:`/porteros-videoporteros/${t.provinceSlug}/${t.slug}/`}));
+const search=towns.map(t=>({name:t.name,province:t.province,provinceSlug:t.provinceSlug,aliases:t.aliases||[],population:t.population||0,url:t.coverageUrl}));
 fs.writeFileSync(path.join(out,'search-index.json'),JSON.stringify(search));
 const sitemapFiles=[];
 if(baseUrl){
@@ -89,7 +93,8 @@ if(baseUrl){
 fs.writeFileSync(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\n${baseUrl&&indexable?`\nSitemap: ${baseUrl}/sitemap.xml\n`:''}`);
 if(!indexable)fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Robots-Tag: noindex, follow\n');
 fs.mkdirSync(path.join(root,'qa'),{recursive:true});
-const report={generatedAt:new Date().toISOString(),baseUrl,indexable,stats:{pages:pageRecords.length,municipalities:towns.length,provinces:provinces.length,brands:ctx.brands.length,services:ctx.services.length,guides:ctx.guides.length,indexablePages:pageRecords.filter(p=>p.indexable).length},contactConfigured:Boolean(config.phone||config.whatsapp||config.email||config.contactAreas?.length),ownerProvided:Boolean(config.legalName),pages:pageRecords};
+const report={generatedAt:new Date().toISOString(),baseUrl,indexable,stats:{pages:pageRecords.length,municipalities:towns.length,municipalityPages:coverage.selected.length,redirects:redirects.length,provinces:provinces.length,brands:ctx.brands.length,services:ctx.services.length,guides:ctx.guides.length,indexablePages:pageRecords.filter(p=>p.indexable).length},contactConfigured:Boolean(config.phone||config.whatsapp||config.email||config.contactAreas?.length),ownerProvided:Boolean(config.legalName),pages:pageRecords};
+fs.writeFileSync(path.join(root,'qa','coverage-report.json'),JSON.stringify({policy:coveragePolicy,total:towns.length,retained:coverage.selected.length,redirected:redirects.length,provinces:provinces.map(p=>({province:p.name,total:p.towns.length,retained:coverage.selected.filter(t=>t.provinceSlug===p.slug).length})),assignments:[...coverage.assignments.values()].map(({town,hub,distanceKm})=>({code:town.code,name:town.name,province:town.province,hub:hub.name,url:town.coverageUrl,distanceKm:Number(distanceKm.toFixed(2))}))},null,2));
 fs.writeFileSync(path.join(root,'qa','build-report.json'),JSON.stringify(report,null,2));
 console.log(`Generadas ${pageRecords.length} páginas: ${towns.length} municipios, ${provinces.length} provincias, ${ctx.services.length} servicios, ${ctx.brands.length} marcas y ${ctx.guides.length} guías.`);
 console.log(baseUrl?`Origen: ${baseUrl}. Indexación: ${indexable?'activada':'desactivada en revisión'}.`:'Build sin origen comercial: noindex.');

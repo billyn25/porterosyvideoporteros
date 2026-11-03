@@ -1,7 +1,7 @@
 export const escapeHtml = value => String(value ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
 export const jsonScript = value => JSON.stringify(value).replaceAll('<','\\u003c').replaceAll('>','\\u003e').replaceAll('&','\\u0026');
 export const slugify = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-export const townPath = town => `/porteros-videoporteros/${town.provinceSlug}/${town.slug}/`;
+export const townPath = town => town.coverageUrl || `/porteros-videoporteros/${town.provinceSlug}/${town.slug}/`;
 export const provincePath = province => `/porteros-videoporteros/${province.provinceSlug || province.slug}/`;
 export const servicePath = service => `/servicios/${service.slug}/`;
 export const guidePath = guide => `/guias/${guide.slug}/`;

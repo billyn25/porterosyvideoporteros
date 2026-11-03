@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {buildCoverage,coveragePolicy} from './coverage.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
@@ -280,6 +281,10 @@ function checkMunicipalities() {
     const municipalities = JSON.parse(fs.readFileSync(filename, 'utf8'));
     if (!Array.isArray(municipalities)) throw new Error('se esperaba un array');
     const requiredProvinces = new Set(['asturias', 'cantabria', 'bizkaia', 'gipuzkoa', 'leon', 'palencia', 'alava', 'navarra', 'zamora', 'valladolid', 'burgos', 'la-rioja', 'salamanca', 'avila', 'segovia', 'soria', 'toledo', 'madrid', 'guadalajara']);
+    const coverage=buildCoverage(municipalities);
+    const redirects=new Map(fs.readFileSync(path.join(dist,'_redirects'),'utf8').trim().split('\n').map(line=>line.trim().split(/\s+/)));
+    const search=JSON.parse(fs.readFileSync(path.join(dist,'search-index.json'),'utf8'));
+    if(search.length!==municipalities.length || new Set(search.map(t=>t.name+'|'+t.provinceSlug)).size!==municipalities.length)issue('error','COVERAGE_SEARCH','Buscador municipal incompleto o duplicado.');
     const provinceCounts = new Map();
     const codes = new Set();
     const routes = new Set();
@@ -291,8 +296,19 @@ function checkMunicipalities() {
       routes.add(route);
       provinceCounts.set(municipality.provinceSlug, (provinceCounts.get(municipality.provinceSlug) ?? 0) + 1);
       const target = path.join(dist, route, 'index.html');
-      if (!pages.has(target)) issue('error', 'MUNICIPALITY_PAGE', `Falta la página de ${municipality.name}: ${route}.`);
-      else stats.municipalityPages += 1;
+      const {hub,distanceKm}=coverage.assignments.get(municipality.code);
+      const destination=`/porteros-videoporteros/${hub.provinceSlug}/${hub.slug}/`;
+      const destinationFile=path.join(dist,destination,'index.html');
+      if(hub.provinceSlug!==municipality.provinceSlug || distanceKm>coveragePolicy.maxDistanceKm+0.001)issue('error','COVERAGE_DISTANCE',`Cobertura incorrecta: ${municipality.name}`);
+      if (!pages.has(destinationFile)) issue('error', 'MUNICIPALITY_PAGE', `Falta el destino de ${municipality.name}: ${destination}.`);
+      if(hub.code===municipality.code){stats.municipalityPages+=1;if(redirects.has(route))issue('error','COVERAGE_HUB_REDIRECT',route);}
+      else {
+        if(pages.has(target)||redirects.get(route)!==destination)issue('error','COVERAGE_REDIRECT',`Redirección incorrecta: ${route}`);
+        const html=fs.readFileSync(destinationFile,'utf8');
+        if(!html.includes(`id="cobertura-${municipality.slug}"`))issue('error','COVERAGE_ANCHOR',`Municipio sin cobertura visible: ${municipality.name}`);
+      }
+      const entry=search.find(t=>t.name===municipality.name&&t.provinceSlug===municipality.provinceSlug);
+      if(entry?.url!==municipality.coverageUrl)issue('error','COVERAGE_SEARCH',`Destino incorrecto en buscador: ${municipality.name}`);
     }
     stats.provinces = provinceCounts.size;
     if (municipalities.length !== 3797) issue('error', 'MUNICIPALITY_COUNT', `Se esperaban 3797 municipios y hay ${municipalities.length}.`);
