@@ -377,3 +377,10 @@ details.locality-sources a{overflow-wrap:anywhere}
 .local-focus{background:var(--white);border-left-color:var(--copper)}
 @media(max-width:760px){.emergency-inner{justify-content:center;min-height:34px}.emergency-label{position:static;transform:none}.section{padding-block:60px}.section-head{gap:16px}.province-service-grid article,.community-panel,.brand-card{box-shadow:0 2px 10px #25344108}.mobile-cta .button--outline{background:var(--dark);border-color:var(--dark)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.brand-card,.service-row{transition:none}}
+
+/* Fotografía propia: preservar el encuadre y limitar la altura en móvil. */
+.own-photo-feature{display:grid;grid-template-columns:minmax(240px,440px) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.own-photo-feature figure{margin:0;min-width:0}.own-photo-feature img{display:block;width:100%;height:auto;max-height:580px;object-fit:contain;background:#e9ece7;border-radius:12px}
+.own-photo-feature figcaption{font-size:.8rem;line-height:1.6;margin-top:12px;color:var(--muted,#59656b)}
+.own-photo-feature h2{margin-top:12px}.own-photo-feature p{max-width:62ch}.own-photo-feature .actions{margin-top:24px}
+@media(max-width:700px){.own-photo-feature{grid-template-columns:1fr;gap:26px}.own-photo-feature figure{width:100%;max-width:440px;margin-inline:auto}.own-photo-feature img{max-height:450px}.own-photo-feature p{overflow-wrap:anywhere}}
